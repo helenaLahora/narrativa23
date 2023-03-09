@@ -1,0 +1,22 @@
+# Blender MTL File: 'cuchillo.blend'
+# Material Count: 2
+
+newmtl DIFFUSE
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.050000 0.050000 0.050000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\ProgramData\\S4Studio\\Scripts\\02205d7e-ac91-4f9c-9710-fe7f197bb14c\\0.png
+
+newmtl DIFFUSE.001
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.050000 0.050000 0.050000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\ProgramData\\S4Studio\\Scripts\\02205d7e-ac91-4f9c-9710-fe7f197bb14c\\1.png
