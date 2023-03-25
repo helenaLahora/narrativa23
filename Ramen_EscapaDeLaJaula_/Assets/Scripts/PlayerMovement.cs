@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
 
-    public float speedDivider = 5f;
+    public float speed = 5f;
     private Vector2 raw_movement;
     private CharacterController Cc;
     public float gravity = -9.8f;
@@ -31,10 +31,10 @@ public class PlayerMovement : MonoBehaviour
     void Movement()
     {
 
-        transform.Translate(raw_movement.x / speedDivider, 0, raw_movement.y / speedDivider);
+        transform.Translate(raw_movement.x * speed * Time.deltaTime, 0, raw_movement.y * speed * Time.deltaTime);
         if (!Cc.isGrounded)
         {
-            //ApplyGravity();
+            ApplyGravity();
             Debug.Log("Volan2");
 
         }
@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
     void ApplyGravity()
     {
 
-            transform.Translate(0,gravity,0);
+            transform.Translate(0,gravity * Time.deltaTime, 0);
         
     }
 }
