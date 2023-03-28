@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ApplyGravity();
         Movement();
         
     }
@@ -29,25 +30,25 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void Movement()
-    {
+    { 
 
-        transform.Translate(raw_movement.x * speed * Time.deltaTime, 0, raw_movement.y * speed * Time.deltaTime);
+        Cc.Move(new Vector3(raw_movement.x * speed * Time.deltaTime, gravity * Time.deltaTime, raw_movement.y * speed * Time.deltaTime));
+    }
+    void ApplyGravity()
+    {
         if (!Cc.isGrounded)
         {
-            ApplyGravity();
-            Debug.Log("Volan2");
+            Debug.Log("volan2");
+            gravity = -9.8f; 
 
         }
         else
         {
+            gravity = 0;
             Debug.Log("Hola");
         }
+       
+       
 
-    }
-    void ApplyGravity()
-    {
-
-            transform.Translate(0,gravity * Time.deltaTime, 0);
-        
     }
 }
