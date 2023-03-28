@@ -27,6 +27,5 @@ public class CamMovement : MonoBehaviour
     {
         Camera.transform.RotateAround(transform.position, Vector3.up, LookPos.x);
         Camera.transform.LookAt(transform.position);
-        point = new Vector3 (transform.position.x + LookPos.x, transform.position.y, transform.position.z + LookPos.y);
     }
 }
