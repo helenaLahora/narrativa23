@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 raw_movement;
     private CharacterController Cc;
     public float gravity = -9.8f;
+    public Camera cam;
+    Vector3 movement;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,22 +32,31 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void Movement()
-    { 
+    {
+        Vector3 forward = cam.transform.forward;
+        Vector3 right = cam.transform.right;
+        forward.y = 0f;
+        right.y = 0f;
+        forward.Normalize();
+        right.Normalize();
+        movement = forward * raw_movement.y * speed+ right * raw_movement.x * speed;
+        movement.y = gravity;
+        Cc.Move(movement * Time.deltaTime);
 
-        Cc.Move(new Vector3(raw_movement.x * speed * Time.deltaTime, gravity * Time.deltaTime, raw_movement.y * speed * Time.deltaTime));
+
     }
     void ApplyGravity()
     {
         if (!Cc.isGrounded)
         {
-            Debug.Log("volan2");
+            
             gravity = -9.8f; 
 
         }
         else
         {
             gravity = 0;
-            Debug.Log("Hola");
+           
         }
        
        
