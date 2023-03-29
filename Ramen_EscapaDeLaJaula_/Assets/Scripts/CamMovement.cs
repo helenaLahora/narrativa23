@@ -7,6 +7,7 @@ public class CamMovement : MonoBehaviour
 {
     public GameObject Camera;
     private Vector2 LookPos;
+    public Vector3 point;
     // Start is called before the first frame update
     void Start()
     {
