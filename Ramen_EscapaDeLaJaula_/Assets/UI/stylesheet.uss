@@ -1,0 +1,59 @@
+.boton-principal {
+    flex-basis: auto;
+    width: 350px;
+    height: 80px;
+    background-color: rgb(171, 207, 225);
+    -unity-font: url('project://database/Assets/Graphics/motley_forces/MotleyForcesRegular.ttf?fileID=12800000&guid=3ba146d1cf95be74eb5166cc52477acf&type=3#MotleyForcesRegular');
+    font-size: 40px;
+    -unity-font-definition: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-left-color: rgba(255, 255, 255, 0);
+    border-right-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0);
+}
+
+.logotipo {
+    background-color: rgba(255, 255, 255, 0);
+    width: 600px;
+    height: 300px;
+    background-image: url('project://database/Assets/Graphics/logotipo.png?fileID=2800000&guid=12cf5275d752fe24495a599fc2722952&type=3#logotipo');
+    flex-basis: auto;
+}
+
+.contenedor-central {
+    flex-grow: 0;
+    flex-basis: 70%;
+    flex-shrink: 0;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    left: 25%;
+    right: 0;
+    top: 15%;
+}
+
+.boton-secundario-pequeno {
+}
+
+.boton-secundario-pequeno:hover {
+}
+
+.boton-principal-grande {
+    color: rgba(255, 255, 255, 255);
+    -unity-font-definition: none;
+    -unity-font: url('project://database/Assets/Graphics/motley_forces/MotleyForcesRegular.ttf?fileID=12800000&guid=3ba146d1cf95be74eb5166cc52477acf&type=3#MotleyForcesRegular');
+    font-size: 40px;
+    width: 350px;
+    height: 80px;
+    -unity-background-image-tint-color: rgba(255, 255, 255, 255);
+    background-color: rgba(171, 207, 225, 255);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
