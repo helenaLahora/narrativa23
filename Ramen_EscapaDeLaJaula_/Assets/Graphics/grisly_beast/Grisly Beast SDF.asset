@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: Grisly Beast SDF
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: -1451323030
   material: {fileID: 1155349991450022501}
-  materialHashCode: 0
+  materialHashCode: 391188874
   m_Version: 1.1.0
   m_SourceFontFileGUID: 537204a784f29cc4e8ecd63837c5a1e9
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 537204a784f29cc4e8ecd63837c5a1e9, type: 3}
