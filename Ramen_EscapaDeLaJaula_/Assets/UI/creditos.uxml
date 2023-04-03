@@ -1,9 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
-<engine:UXML
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:engine="UnityEngine.UIElements"
-    xmlns:editor="UnityEditor.UIElements"
-    xsi:noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd"
->
-    
-</engine:UXML>
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/stylesheet.uss?fileID=7433441132597879392&amp;guid=d7734b8b2630cc34b9b336b2b0e2a4f4&amp;type=3#stylesheet" />
+    <ui:VisualElement name="bubble" class="contenedor-central" style="width: 50%; flex-basis: auto; left: 25%; top: 30%; background-color: rgb(255, 255, 255); border-top-left-radius: 50px; border-bottom-left-radius: 50px; border-top-right-radius: 50px; border-bottom-right-radius: 50px; align-items: center; height: 50%; padding-left: 5%; padding-right: 5%; padding-top: 3%; padding-bottom: 3%; justify-content: space-between;">
+        <ui:VisualElement name="dialogo-contenedor" style="width: 100%; height: auto; -unity-text-align: middle-left; align-items: center;">
+            <ui:Label text="Créditos" display-tooltip-when-elided="false" name="dialogo" enable-rich-text="true" style="-unity-font: url(&apos;project://database/Assets/Graphics/motley_forces/MotleyForcesRegular.ttf?fileID=12800000&amp;guid=3ba146d1cf95be74eb5166cc52477acf&amp;type=3#MotleyForcesRegular&apos;); color: rgb(231, 185, 116); font-size: 40px; -unity-font-definition: none; height: 100%; width: 90%; white-space: normal; align-items: center; -unity-text-align: middle-center;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="creditos" style="width: 100%; height: 100%; -unity-text-align: middle-left; align-items: center; margin-left: 30px; margin-right: 30px; margin-top: 30px; margin-bottom: 30px; flex-direction: row;">
+            <ui:Label text="Arnau Font&#10;Helena Lahora &#10;Victoria Morera&#10;David Pujol" display-tooltip-when-elided="false" name="creadores" enable-rich-text="true" style="-unity-font: url(&apos;project://database/Assets/Graphics/motley_forces/MotleyForcesRegular.ttf?fileID=12800000&amp;guid=3ba146d1cf95be74eb5166cc52477acf&amp;type=3#MotleyForcesRegular&apos;); color: rgb(171, 207, 225); font-size: 40px; -unity-font-definition: none; height: 100%; width: 50%; white-space: normal; align-items: center; -unity-text-align: middle-center;" />
+            <ui:VisualElement name="subcreditos" style="width: 100%; height: 100%; -unity-text-align: middle-left; align-items: center; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; justify-content: space-between;">
+                <ui:VisualElement name="subcreditos" style="width: 100%; height: 50%; -unity-text-align: middle-left; align-items: center; margin-left: 30px; margin-right: 30px; margin-top: 30px; margin-bottom: 30px; justify-content: space-between;">
+                    <ui:Label text="historia original de&#10;Fanck cai&#10;sonia puerto&#10;Yun solá" display-tooltip-when-elided="false" name="historia" enable-rich-text="true" style="-unity-font: url(&apos;project://database/Assets/Graphics/motley_forces/MotleyForcesRegular.ttf?fileID=12800000&amp;guid=3ba146d1cf95be74eb5166cc52477acf&amp;type=3#MotleyForcesRegular&apos;); color: rgb(171, 207, 225); font-size: 20px; -unity-font-definition: none; height: 100%; width: 100%; white-space: normal; align-items: center; -unity-text-align: middle-center;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="subcreditos" style="width: 100%; height: 50%; -unity-text-align: middle-left; align-items: center; margin-left: 30px; margin-right: 30px; margin-top: 30px; margin-bottom: 30px; justify-content: space-between;">
+                    <ui:Label text="con la colaboración de&#10;Marta Fernández&#10;Pedro Omedas" display-tooltip-when-elided="false" name="historia" enable-rich-text="true" style="-unity-font: url(&apos;project://database/Assets/Graphics/motley_forces/MotleyForcesRegular.ttf?fileID=12800000&amp;guid=3ba146d1cf95be74eb5166cc52477acf&amp;type=3#MotleyForcesRegular&apos;); color: rgb(171, 207, 225); font-size: 20px; -unity-font-definition: none; height: 100%; width: 100%; white-space: normal; align-items: center; -unity-text-align: middle-center;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Botones" style="flex-direction: column; margin-top: 30px;">
+            <ui:Button text="Volver" display-tooltip-when-elided="true" name="volver" class="boton-secundario-pequeno" style="margin-top: auto; background-color: rgb(171, 207, 225);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
