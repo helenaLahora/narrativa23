@@ -19,9 +19,9 @@ public class CamMovement : MonoBehaviour
     {
         LookAround();
     }
-    void OnLook(InputValue value)
+    public void OnLook(InputAction.CallbackContext context)
     {
-        LookPos = value.Get<Vector2>();
+        LookPos = context.ReadValue<Vector2>();
     }
     void LookAround()
     {
