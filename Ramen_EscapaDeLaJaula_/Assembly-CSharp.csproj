@@ -59,6 +59,8 @@
     <Compile Include="Assets\Scripts\PlayerDetection.cs" />
     <Compile Include="Assets\Scripts\CamMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\UIHANDLE.cs" />
+    <Compile Include="Assets\Scripts\PanelManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
