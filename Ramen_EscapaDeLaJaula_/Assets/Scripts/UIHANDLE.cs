@@ -34,8 +34,6 @@ public class UIHANDLE : MonoBehaviour
     }
     IEnumerator TypeLine()
     {
-        label.text = string.Empty;
-
         foreach (var frase in currentDialogue.Frases)
         {
             label.text = string.Empty;
