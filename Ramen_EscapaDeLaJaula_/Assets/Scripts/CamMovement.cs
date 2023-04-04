@@ -7,7 +7,7 @@ public class CamMovement : MonoBehaviour
 {
     public GameObject Camera;
     private Vector2 LookPos;
-    public Vector3 point;
+    public float Sens = .5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +25,7 @@ public class CamMovement : MonoBehaviour
     }
     void LookAround()
     {
-        Camera.transform.RotateAround(transform.position, Vector3.up, LookPos.x);
+        Camera.transform.RotateAround(transform.position, Vector3.up, LookPos.x * Sens);
         Camera.transform.LookAt(transform.position);
     }
 }
