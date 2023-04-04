@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public Camera cam;
     Vector3 movement;
     public float gravity;
-    public float JumpForce = 10f;
+    public float JumpForce = 10f, jumpcounter=0;
     private bool Jump = false;
     // Start is called before the first frame update
     void Start()
@@ -23,14 +23,15 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ApplyGravity();
         Movement();
-        
+        ApplyGravity();
+
+
     }
 
-    void OnMove(InputValue value)
+    public void OnMove(InputAction.CallbackContext context)
     {
-        raw_movement = value.Get<Vector2>();
+        raw_movement = context.ReadValue<Vector2>();
     }
 
     void Movement()
@@ -42,36 +43,68 @@ public class PlayerMovement : MonoBehaviour
         forward.Normalize();
         right.Normalize();
         movement = forward* raw_movement.y * speed + right * raw_movement.x * speed;
-        movement.y = gravity;
-
-
-
+        if (Jump && Cc.isGrounded)
+        {
+            movement.y += JumpForce ;
+        }
+        else if(!Jump && !Cc.isGrounded)
+        {
+            movement.y += gravity;
+        }
         Cc.Move(movement * Time.deltaTime);
 
-        
+        if (Cc.isGrounded)
+        {
+
+            jumpcounter = 0;
+            
+        }
+
+
+
+
+
     }
     void ApplyGravity()
     {
         if (!Cc.isGrounded)
         {
 
-             gravity = -9.8f;
+            gravity = -9.8f;
+            movement.y += gravity;
             
         }
         else
         {
            gravity = 0;
-           
+         
         }
 
     }
-    void OnJump()
+    public void OnJump(InputAction.CallbackContext context)
 	{
-        if (!Cc.isGrounded)
-		{
-            Debug.Log("xd");
-            return;
-		}
-        movement.y += JumpForce;
-	}
+        if (context.started)
+        {
+            Jump = true;
+            if (Cc.isGrounded)
+            {
+                jumpcounter = 0;
+
+            }
+            if (jumpcounter < 1)
+            {
+                movement.y += JumpForce;
+
+            }
+            jumpcounter++;
+        }
+        if (context.canceled || !Cc.isGrounded){
+            Jump = false;
+
+        }
+
+        
+
+    }
 }
+
