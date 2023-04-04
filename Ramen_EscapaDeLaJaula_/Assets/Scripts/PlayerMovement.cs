@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 raw_movement;
     private CharacterController Cc;
     public Camera cam;
-    Vector3 movement;
+    private Vector3 movement;
     public float gravity;
     public float JumpForce = 10f, jumpcounter=0;
     private bool Jump = false;
