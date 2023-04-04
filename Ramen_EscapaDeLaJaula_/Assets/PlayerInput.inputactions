@@ -112,6 +112,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "NPC",
+            "id": "f7fcb5ea-0d1e-4c1a-a453-514765de3f94",
+            "actions": [
+                {
+                    "name": "Talk",
+                    "type": "Button",
+                    "id": "a64331b0-f223-402d-bb00-c32159cf417b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "2a9fa569-d275-46db-b3c8-514190ae7353",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Talk",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []
