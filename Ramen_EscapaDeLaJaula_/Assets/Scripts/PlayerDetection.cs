@@ -18,14 +18,14 @@ public class PlayerDetection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!talk)
-        {
-            uiHandle.UI.enabled = false;    
-        }
+        //if (!talk)
+        //{
+        //    uiHandle.UI.enabled = false;
+        //}
 
 
-       
-        
+
+
     }
 
     private void OnTriggerEnter(Collider other)

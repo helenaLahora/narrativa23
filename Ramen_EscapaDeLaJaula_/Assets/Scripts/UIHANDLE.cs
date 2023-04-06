@@ -12,11 +12,13 @@ public class UIHANDLE : MonoBehaviour
     public DialogueManager dialogueManager;
     private Dialogo currentDialogue;
     public float textSpeed =1f;
+
     // Start is called before the first frame update
     void Start()
     {
-       label = UI.rootVisualElement.Q<Label>("contenido");
-        nombre = UI.rootVisualElement.Q<Label>("nombre");
+        label = UI.rootVisualElement.Q<Label>("contenido");
+       nombre = UI.rootVisualElement.Q<Label>("nombre");
+        label.text = "";
     }
 
     // Update is called once per frame
@@ -36,7 +38,7 @@ public class UIHANDLE : MonoBehaviour
     {
         foreach (var frase in currentDialogue.Frases)
         {
-            label.text = string.Empty;
+            label.text = "";
 
             nombre.text = frase.Personaje;
             foreach (char c in frase.Texto.ToCharArray())
