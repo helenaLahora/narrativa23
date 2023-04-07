@@ -5,7 +5,7 @@ using UnityEngine;
 public class Coin : MonoBehaviour
 {
     public static int counter;
-
+    
     void Start()
     {
         counter = 0;
@@ -17,7 +17,8 @@ public class Coin : MonoBehaviour
         {
             Destroy(this.gameObject);
             counter++;
-            Debug.Log(counter);
+            
         }
     }
+
 }

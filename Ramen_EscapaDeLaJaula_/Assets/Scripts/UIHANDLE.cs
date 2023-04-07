@@ -6,19 +6,30 @@ using UnityEngine;
 using UnityEngine.UIElements; 
 public class UIHANDLE : MonoBehaviour
 {
-    public UIDocument UI;
+    private UIDocument UI;
     public Label label, nombre;
-
-    public DialogueManager dialogueManager;
+    public EventManager eventManager;
     private Dialogo currentDialogue;
     public float textSpeed =1f;
+    private Button salir, continuar;
 
     // Start is called before the first frame update
+    private void Awake()
+    {
+        UI = GetComponent<UIDocument>();
+        if (UI != null)
+        {
+            continuar = UI.rootVisualElement.Q<Button>("continuar");
+            salir = UI.rootVisualElement.Q<Button>("salir");
+
+            salir.clickable.clicked += () => Destroy(gameObject);
+            label = UI.rootVisualElement.Q<Label>("contenido");
+            nombre = UI.rootVisualElement.Q<Label>("nombre");
+        }
+    }
     void Start()
     {
-        label = UI.rootVisualElement.Q<Label>("contenido");
-       nombre = UI.rootVisualElement.Q<Label>("nombre");
-        label.text = "";
+
     }
 
     // Update is called once per frame
@@ -29,21 +40,20 @@ public class UIHANDLE : MonoBehaviour
     public void StartDialogue(string identifier)
     {
         
-        currentDialogue = Array.Find(dialogueManager.Dialogos, e => e.Identifier == identifier);
-        
+
+        currentDialogue = Array.Find(eventManager.eventos[0].dialogos, e => e.identifier == identifier);
         StartCoroutine(TypeLine());
                 
     }
     IEnumerator TypeLine()
     {
-        foreach (var frase in currentDialogue.Frases)
+        foreach (Nodo nodo in currentDialogue.nodos)
         {
-            label.text = "";
-
-            nombre.text = frase.Personaje;
-            foreach (char c in frase.Texto.ToCharArray())
+            
+            label.text = string.Empty;
+            nombre.text = nodo.personaje;
+            foreach (char c in nodo.texto.ToCharArray())
             {
-                
                 label.text += c;
                 yield return new WaitForSeconds(textSpeed);
             }

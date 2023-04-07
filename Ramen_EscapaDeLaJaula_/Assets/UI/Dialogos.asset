@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e23764bdc21dc5458fe9abb1148e136, type: 3}
+  m_Name: Dialogos
+  m_EditorClassIdentifier: 
+  eventos:
+  - identifier: Evento_Rosie
+    dialogos:
+    - identifier: 1
+      nodos:
+      - tipoNodo: 1
+        esPersonaje: 0
+        personaje: 
+        texto: "Ofrece consejos valiosos a cambio de monedas. Puedes encontrar monedas
+          debajo de la cama o el sof\xE1.\r"
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion:
+            m_PersistentCalls:
+              m_Calls: []
+        - tipoBoton: 1
+          nombre: Preguntar a Rosie
+          siguienteDialogo: 
+          accion:
+            m_PersistentCalls:
+              m_Calls: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Rosie La Cerdita Hucha
+        texto: "\xA1Hola Ramen! \xBFComo va tu aventura por la casa? Por lo que veo
+          no muy bien, ya que buscas mi ayuda. \xBFHas tra\xEDdo alguna moneda para
+          mi? Si no es as\xED no molestes m\xE1s, yo lo s\xE9 todo pero no regalo
+          nada."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion:
+            m_PersistentCalls:
+              m_Calls: []
+        - tipoBoton: 1
+          nombre: Dar Moneda a Rosie
+          siguienteDialogo: 
+          accion:
+            m_PersistentCalls:
+              m_Calls:
+              - m_Target: {fileID: 11500000, guid: ccef0acfeb44ae9468bd3044aaca0738, type: 3}
+                m_TargetAssemblyTypeName: 
+                m_MethodName: 
+                m_Mode: 1
+                m_Arguments:
+                  m_ObjectArgument: {fileID: 0}
+                  m_ObjectArgumentAssemblyTypeName: 
+                  m_IntArgument: 0
+                  m_FloatArgument: 0
+                  m_StringArgument: 
+                  m_BoolArgument: 0
+                m_CallState: 2

@@ -8,7 +8,9 @@ public class PlayerDetection : MonoBehaviour
     public bool playerdetected = false;
     public SphereCollider Collider;
     public bool talk = false;
-    public UIHANDLE uiHandle;
+    private UIHANDLE uiHandle;
+    public GameObject uiPrefab;
+    private GameObject uiInstance;
     private int dialogueCounter = 0;
     void Start()
     {
@@ -18,10 +20,6 @@ public class PlayerDetection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (!talk)
-        //{
-        //    uiHandle.UI.enabled = false;
-        //}
 
 
 
@@ -47,12 +45,20 @@ public class PlayerDetection : MonoBehaviour
         if (playerdetected)
         {
             talk = true;
-            uiHandle.UI.enabled = true;
             dialogueCounter++;
-            uiHandle.StartDialogue(gameObject.name + dialogueCounter);
+            if(uiInstance == null)
+            {
+                uiInstance = Instantiate(uiPrefab);
+                uiHandle = uiInstance.GetComponent<UIHANDLE>();
+                uiHandle.StartDialogue(gameObject.name + dialogueCounter);
+            }
+
 
         }
-        Debug.Log("Hola");
+        else
+        {
+            dialogueCounter = 0;
+        }
 
     }
 }

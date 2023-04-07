@@ -52,7 +52,11 @@ public class PlayerMovement : MonoBehaviour
             movement.y += gravity;
         }
         Cc.Move(movement * Time.deltaTime);
-        transform.rotation = Quaternion.LookRotation(new Vector3(-movement.z,0,movement.x));
+        if(movement.x != 0)
+        {
+            transform.rotation = Quaternion.LookRotation(new Vector3(-movement.z, 0, movement.x));
+
+        }
         if (Cc.isGrounded)
         {
 
