@@ -45,8 +45,14 @@ public class Boton
     public TipoBoton tipoBoton;
     public string nombre;
     public string siguienteDialogo;
-    public UnityEvent accion;
+    public Accion[] accion;
 
+}
+[System.Serializable]
+public class Accion
+{
+    public Variable variable;
+    public int valor;
 }
 public enum TipoNodo
 {
@@ -60,4 +66,13 @@ public enum TipoBoton
     Continuar,
     Volver,
     Eleccion
+}
+public enum Variable
+{
+    Juguetes_completedMission,
+    Polvo_completedMission,
+    bedroomDoor,
+    coin,
+    explainedMission,
+    collectedObjects
 }

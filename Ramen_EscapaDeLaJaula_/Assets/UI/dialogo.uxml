@@ -10,8 +10,8 @@
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="botones" style="flex-direction: row; justify-content: flex-end; margin-top: 30px; align-items: center;">
-            <ui:Button text="Salir" display-tooltip-when-elided="true" name="salir" class="boton-secundario-pequeno" style="background-color: rgb(170, 207, 225);" />
-            <ui:Button text="Continuar" display-tooltip-when-elided="true" name="continuar" class="boton-secundario-pequeno" style="background-color: rgb(170, 207, 225);" />
+            <ui:Button text="Salir" display-tooltip-when-elided="true" name="salir" class="boton-secundario-pequeno" style="background-color: rgb(170, 207, 225); display: none;" />
+            <ui:Button text="Continuar" display-tooltip-when-elided="true" name="continuar" class="boton-secundario-pequeno" style="background-color: rgb(170, 207, 225); display: none;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

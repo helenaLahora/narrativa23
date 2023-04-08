@@ -18,23 +18,19 @@ MonoBehaviour:
     - identifier: 1
       nodos:
       - tipoNodo: 1
-        esPersonaje: 0
-        personaje: 
+        esPersonaje: 1
+        personaje: Rosie La Cerdita Hucha
         texto: "Ofrece consejos valiosos a cambio de monedas. Puedes encontrar monedas
           debajo de la cama o el sof\xE1.\r"
         botones:
         - tipoBoton: 0
           nombre: Salir
           siguienteDialogo: 
-          accion:
-            m_PersistentCalls:
-              m_Calls: []
+          accion: []
         - tipoBoton: 1
           nombre: Preguntar a Rosie
           siguienteDialogo: 
-          accion:
-            m_PersistentCalls:
-              m_Calls: []
+          accion: []
       - tipoNodo: 0
         esPersonaje: 1
         personaje: Rosie La Cerdita Hucha
@@ -46,24 +42,125 @@ MonoBehaviour:
         - tipoBoton: 0
           nombre: Salir
           siguienteDialogo: 
-          accion:
-            m_PersistentCalls:
-              m_Calls: []
+          accion: []
         - tipoBoton: 1
           nombre: Dar Moneda a Rosie
           siguienteDialogo: 
           accion:
-            m_PersistentCalls:
-              m_Calls:
-              - m_Target: {fileID: 11500000, guid: ccef0acfeb44ae9468bd3044aaca0738, type: 3}
-                m_TargetAssemblyTypeName: 
-                m_MethodName: 
-                m_Mode: 1
-                m_Arguments:
-                  m_ObjectArgument: {fileID: 0}
-                  m_ObjectArgumentAssemblyTypeName: 
-                  m_IntArgument: 0
-                  m_FloatArgument: 0
-                  m_StringArgument: 
-                  m_BoolArgument: 0
-                m_CallState: 2
+          - variable: 3
+            valor: -1
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Rosie La Cerdita Hucha
+        texto: "\xA1Gracias! Al despistado de Leo siempre se le olvida darme las
+          monedas y las deja tiradas por la casa... \xA1Dime en que te puedo ayudar!"
+        botones:
+        - tipoBoton: 3
+          nombre: Motas de polvo
+          siguienteDialogo: 2
+          accion: []
+        - tipoBoton: 3
+          nombre: Juguetes
+          siguienteDialogo: 3
+          accion: []
+        - tipoBoton: 3
+          nombre: Roomba
+          siguienteDialogo: 4
+          accion: []
+        - tipoBoton: 3
+          nombre: Salidas
+          siguienteDialogo: 5
+          accion: []
+    - identifier: 2
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Rosie La Cerdita Hucha
+        texto: "\xA1Aish! \xBFOtra vez molestando? Parece ser que nunca se cansan.
+          Seguramente te pidan el peine de Leo y alguno de sus calcetines. Los puedes
+          encontrar en la misma habitaci\xF3n."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Rosie La Cerdita Hucha
+        texto: "Leo es muy desordenado y acostumbra a dejar tirada la colada sucia
+          debajo del escritorio. Para el peine deber\xE1s probar suerte y observar
+          bien cada rinc\xF3n de la habitaci\xF3n."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+    - identifier: 3
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Rosie La Cerdita Hucha
+        texto: "Los Juguetes del Ba\xFAl siempre est\xE1n alborotando. Sus gritos
+          y chillidos me molestan continuamente. Y ya no hablemos de cuando hacen
+          sus n\xFAmeros musicales..."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Rosie La Cerdita Hucha
+        texto: "Llevan un rato discutiendo por quien es el acompa\xF1ante favorito
+          ya que ese hueco quedar\xE1 vac\xEDo en cuanto te vayas. Te advierto, el
+          Llamacornio Julio tiene mucha informaci\xF3n, no hagas que se enfade."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+    - identifier: 4
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Rosie La Cerdita Hucha
+        texto: "Roomba aspira y mantiene limpia la casa. Evita que sus sensores te
+          detecten \xA1o te aspirar\xE1 en un pis p\xE1s!"
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Rosie La Cerdita Hucha
+        texto: "Puedes evitar a Roomba evit\xE1ndo los sensores o con tu querida
+          bola de ejercicio. Aunque no estoy muy segura de d\xF3nde est\xE1 ahora
+          mismo."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+    - identifier: 5
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Rosie La Cerdita Hucha
+        texto: "Al atravesar la casa encontrar\xE1s la puerta principal. Se abre
+          con la llave, b\xFAscala por todas las habitaciones para conseguir salir."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Rosie La Cerdita Hucha
+        texto: "Tambi\xE9n hay otras salidas m\xE1s originales... Habla con los habitantes
+          de la casa y desc\xFAbrelas."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []

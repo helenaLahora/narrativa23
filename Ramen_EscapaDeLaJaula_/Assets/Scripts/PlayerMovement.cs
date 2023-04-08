@@ -11,9 +11,9 @@ public class PlayerMovement : MonoBehaviour
     private CharacterController Cc;
     public Camera cam;
     private Vector3 movement;
-    public float gravity;
-    public float JumpForce = 10f, jumpcounter=0;
-    private bool Jump = false;
+    private float verticalSpeed;
+    private float gravity = -20f;
+    public float JumpForce = 10f;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,9 +23,12 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        verticalSpeed += gravity * Time.deltaTime;
+        Debug.Log(Cc.isGrounded);
         Movement();
-        ApplyGravity();
-
+        
+        //ApplyGravity();
+        
 
     }
 
@@ -43,14 +46,18 @@ public class PlayerMovement : MonoBehaviour
         forward.Normalize();
         right.Normalize();
         movement = forward* raw_movement.y * speed + right * raw_movement.x * speed;
-        if (Jump && Cc.isGrounded)
-        {
-            movement.y += JumpForce ;
-        }
-        else if(!Jump && !Cc.isGrounded)
-        {
-            movement.y += gravity;
-        }
+        movement.y = verticalSpeed;
+        //movement.y += gravity;
+        //if (Jump && Cc.isGrounded)
+        //{
+        //    movement.y += JumpForce ;
+        //}
+        //else if(Jump==false && Cc.isGrounded)
+        //{
+        //    movement.y = 0f;    
+        //}
+
+
         Cc.Move(movement * Time.deltaTime);
         if(movement.x != 0)
         {
@@ -59,8 +66,9 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Cc.isGrounded)
         {
-
-            jumpcounter = 0;
+            verticalSpeed = 0f;
+            movement.y = 0f;
+            
             
         }
 
@@ -89,23 +97,14 @@ public class PlayerMovement : MonoBehaviour
 	{
         if (context.started)
         {
-            Jump = true;
             if (Cc.isGrounded)
             {
-                jumpcounter = 0;
+                verticalSpeed += JumpForce;
 
             }
-            if (jumpcounter < 1)
-            {
-                movement.y += JumpForce;
-
-            }
-            jumpcounter++;
-        }
-        if (context.canceled || !Cc.isGrounded){
-            Jump = false;
 
         }
+
 
         
 

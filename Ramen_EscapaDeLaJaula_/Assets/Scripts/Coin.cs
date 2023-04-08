@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    public static int counter;
+    
     
     void Start()
     {
-        counter = 0;
+        
     }
 
     private void OnTriggerEnter(Collider collider)
@@ -16,8 +16,7 @@ public class Coin : MonoBehaviour
         if (collider.gameObject.tag == "Player")
         {
             Destroy(this.gameObject);
-            counter++;
-            
+            EventHandler.Variables[Variable.coin]++;
         }
     }
 

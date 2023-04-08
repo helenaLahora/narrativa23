@@ -61,5 +61,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65441800b94a7a74680da0bcd259da8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventManager: {fileID: 0}
-  textSpeed: 0.1
+  eventManager: {fileID: 11400000, guid: f46e5ab2dc526764787085bf694f6d64, type: 2}
+  textSpeed: 0.01
+  visualTreeAssets:
+  - {fileID: 9197481963319205126, guid: f87db0427aa9a2f47bb96579936d3a14, type: 3}
+  - {fileID: 9197481963319205126, guid: 9b4c5b3a7a0fb9c4ba4a93416b3e40a5, type: 3}
+  - {fileID: 9197481963319205126, guid: b32adbf849ad99b4da555e579f57faf3, type: 3}

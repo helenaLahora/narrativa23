@@ -3,21 +3,21 @@
     <ui:VisualElement name="contenedor" style="width: 1800px; justify-content: flex-end; bottom: auto; left: 3%; top: 57%; transform-origin: bottom; height: 400px; translate: 0 0;">
         <ui:VisualElement name="dialogo" style="width: 100%; height: auto;">
             <ui:VisualElement name="cabecera" style="background-color: rgb(255, 255, 255); justify-content: center; align-items: flex-start; border-top-left-radius: 40px; border-bottom-left-radius: 0; border-top-right-radius: 40px; width: initial; height: initial; padding-left: 20px; padding-bottom: 20px; padding-top: 25px; padding-right: 20px;">
-                <ui:Label text="Rosie la cerdita hucha" display-tooltip-when-elided="true" style="color: rgb(239, 199, 148); font-size: 40px; -unity-font-definition: none; -unity-font: url(&apos;project://database/Assets/Graphics/motley_forces/MotleyForcesRegular.ttf?fileID=12800000&amp;guid=3ba146d1cf95be74eb5166cc52477acf&amp;type=3#MotleyForcesRegular&apos;); -unity-text-align: middle-center; width: auto; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
+                <ui:Label text="Rosie la cerdita hucha" display-tooltip-when-elided="true" name="nombre" style="color: rgb(239, 199, 148); font-size: 40px; -unity-font-definition: none; -unity-font: url(&apos;project://database/Assets/Graphics/motley_forces/MotleyForcesRegular.ttf?fileID=12800000&amp;guid=3ba146d1cf95be74eb5166cc52477acf&amp;type=3#MotleyForcesRegular&apos;); -unity-text-align: middle-center; width: auto; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
             </ui:VisualElement>
             <ui:VisualElement name="texto" style="background-color: rgb(255, 255, 255); justify-content: center; align-items: center; border-top-left-radius: 0; border-bottom-left-radius: 40px; border-top-right-radius: 0; margin-top: 10px; border-bottom-right-radius: 40px; padding-top: 50px; padding-bottom: 50px; padding-left: 20px; padding-right: 20px;">
-                <ui:Label text="¡Hola Ramen! ¿Como va tu aventura por la casa? Por lo que veo no muy bien, ya que buscas mi ayuda. ¿Has traído alguna moneda para mi? Si no es así no molestes más, yo lo sé todo pero no regalo nada." display-tooltip-when-elided="true" style="color: rgb(239, 199, 148); font-size: 32px; -unity-font-definition: none; -unity-font: url(&apos;project://database/Assets/Graphics/motley_forces/MotleyForcesRegular.ttf?fileID=12800000&amp;guid=3ba146d1cf95be74eb5166cc52477acf&amp;type=3#MotleyForcesRegular&apos;); -unity-text-align: middle-left; width: 100%; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; height: 100%; white-space: normal; margin-top: 0; flex-wrap: wrap;" />
+                <ui:Label text="¡Hola Ramen! ¿Como va tu aventura por la casa? Por lo que veo no muy bien, ya que buscas mi ayuda. ¿Has traído alguna moneda para mi? Si no es así no molestes más, yo lo sé todo pero no regalo nada." display-tooltip-when-elided="true" name="contenido" style="color: rgb(239, 199, 148); font-size: 32px; -unity-font-definition: none; -unity-font: url(&apos;project://database/Assets/Graphics/motley_forces/MotleyForcesRegular.ttf?fileID=12800000&amp;guid=3ba146d1cf95be74eb5166cc52477acf&amp;type=3#MotleyForcesRegular&apos;); -unity-text-align: middle-left; width: 100%; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; height: 100%; white-space: normal; margin-top: 0; flex-wrap: wrap;" />
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="opciones" style="flex-direction: row; justify-content: flex-start; margin-top: 20px; align-items: center;">
-            <ui:Button text="Motas de Polvo" display-tooltip-when-elided="true" name="opcion1" class="boton-secundario-pequeno" style="margin-left: 0;" />
-            <ui:Button text="Juguetes" display-tooltip-when-elided="true" name="opcion2" enable-rich-text="false" class="boton-secundario-pequeno" />
-            <ui:Button text="Roomba" display-tooltip-when-elided="true" name="opcion3" class="boton-secundario-pequeno" />
-            <ui:Button text="Salidas" display-tooltip-when-elided="true" name="opcion4" class="boton-secundario-pequeno" />
+            <ui:Button text="Motas de Polvo" display-tooltip-when-elided="true" name="opcion1" class="boton-secundario-pequeno" style="margin-left: 0; display: none;" />
+            <ui:Button text="Juguetes" display-tooltip-when-elided="true" name="opcion2" enable-rich-text="false" class="boton-secundario-pequeno" style="display: none;" />
+            <ui:Button text="Roomba" display-tooltip-when-elided="true" name="opcion3" class="boton-secundario-pequeno" style="display: none;" />
+            <ui:Button text="Salidas" display-tooltip-when-elided="true" name="opcion4" class="boton-secundario-pequeno" style="display: none;" />
         </ui:VisualElement>
         <ui:VisualElement name="botones" style="flex-direction: row; justify-content: flex-end; margin-top: 30px; align-items: center;">
-            <ui:Button text="Salir" display-tooltip-when-elided="true" name="salir" class="boton-primario-pequeno" style="background-color: rgb(171, 207, 225);" />
-            <ui:Button text="Continuar" display-tooltip-when-elided="true" name="continuar" class="boton-primario-pequeno" style="background-color: rgb(170, 207, 225); margin-right: 0;" />
+            <ui:Button text="Salir" display-tooltip-when-elided="true" name="salir" class="boton-primario-pequeno" style="background-color: rgb(171, 207, 225); display: none;" />
+            <ui:Button text="Continuar" display-tooltip-when-elided="true" name="continuar" class="boton-primario-pequeno" style="background-color: rgb(170, 207, 225); margin-right: 0; display: none;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
