@@ -4,6 +4,6 @@
         <ui:VisualElement name="dialogo-contenedor" style="width: 100%; height: auto; -unity-text-align: middle-left; align-items: center;">
             <ui:Label text="Hace seis meses la familasa adoptó a un pequeño hámster por el sexto aniversario de Leo.&#10;&#10; El pequeño animal, al que bautizaron como Ramen, rápidamente se adaptó a su nueva vida." display-tooltip-when-elided="false" name="contenido" enable-rich-text="true" style="-unity-font: url(&apos;project://database/Assets/Graphics/motley_forces/MotleyForcesRegular.ttf?fileID=12800000&amp;guid=3ba146d1cf95be74eb5166cc52477acf&amp;type=3#MotleyForcesRegular&apos;); color: rgb(231, 185, 116); font-size: 40px; -unity-font-definition: none; height: 100%; width: 90%; white-space: normal; align-items: center; -unity-text-align: middle-center;" />
         </ui:VisualElement>
-        <ui:VisualElement name="botones" style="width: 700px; height: 160px; align-items: center; justify-content: center;" />
+        <ui:VisualElement name="botones" style="width: 700px; height: 160px; align-items: center; justify-content: center; display: flex;" />
     </ui:VisualElement>
 </ui:UXML>
