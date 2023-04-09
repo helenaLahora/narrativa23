@@ -420,14 +420,14 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones: []
-      - tipoNodo: 0
+      - tipoNodo: 2
         esPersonaje: 1
         personaje: Protectora Lila
         texto: "Ramen debe votar, a \xE9l le dar\xE1 igual quien gane."
         botones:
-        - tipoBoton: 1
+        - tipoBoton: 3
           nombre: Salir
-          siguienteDialogo: 
+          siguienteDialogo: 4
           accion: []
           condiciones: []
     - identifier: 4
@@ -703,4 +703,131 @@ MonoBehaviour:
           accion:
           - variable: 0
             valor: 1
+          condiciones: []
+  - identifier: Evento_Empezar
+    dialogos:
+    - identifier: 1
+      nodos:
+      - tipoNodo: 1
+        esPersonaje: 0
+        personaje: 
+        texto: Inicio Partida
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 0
+        personaje: 
+        texto: "Hace seis meses la familia de la casa adopt\xF3 a un peque\xF1o h\xE1mster
+          por el sexto aniversario de Leo."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 0
+        personaje: 
+        texto: "El diminuto animal, al que bautizaron como Ramen, r\xE1pidamente
+          se adapt\xF3 a su nueva vida."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 0
+        personaje: 
+        texto: "Ramen es un h\xE1mster activo que disfruta de su tiempo libre corriendo
+          en su rueda y comiendo sus semillas y frutas favoritas."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 0
+        personaje: 
+        texto: "Leo se lo pasa mucho mejor sacando a su mascota de la jaula, permiti\xE9ndole
+          explorar su dormitorio dentro de la bola de ejercicio."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 0
+        personaje: 
+        texto: "Ramen siempre ha deseado salir al exterior. Se siente solo, le gustar\xEDa
+          hablar con sus nuevos amigos los ratones."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 2
+        esPersonaje: 0
+        personaje: 
+        texto: "Pero aunque Leo es un ni\xF1o de seis a\xF1os despistado, nunca se
+          le olvida cerrar la jaula despues de jugar juntos aunque..."
+        botones:
+        - tipoBoton: 3
+          nombre: Continuar
+          siguienteDialogo: 2
+          accion: []
+          condiciones: []
+    - identifier: 2
+      nodos:
+      - tipoNodo: 2
+        esPersonaje: 0
+        personaje: 
+        texto: "\xA1No puede ser! \xA1\xBFA Leo se le ha olvidado cerrar bien la
+          puerta?! \xBFDeber\xEDa Ramen aprovechar la oportunidad?"
+        botones:
+        - tipoBoton: 1
+          nombre: Quedarse en la jaula
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: Salir de la jaula
+          siguienteDialogo: 3
+          accion: []
+          condiciones: []
+      - tipoNodo: 2
+        esPersonaje: 0
+        personaje: 
+        texto: "\xA1Ahora no es momento de dudar! \xA1Sal de la jaula y explora el
+          mundo exterior!"
+        botones:
+        - tipoBoton: 3
+          nombre: Salir de la jaula
+          siguienteDialogo: 3
+          accion: []
+          condiciones: []
+    - identifier: 3
+      nodos:
+      - tipoNodo: 1
+        esPersonaje: 0
+        personaje: 
+        texto: "\xA1No puede ser! \xA1\xBFA Leo se le ha olvidado cerrar bien la
+          puerta?! \xBFDeber\xEDa Ramen aprovechar la oportunidad?"
+        botones:
+        - tipoBoton: 1
+          nombre: Quedarse en la jaula
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: Salir de la jaula
+          siguienteDialogo: 3
+          accion: []
           condiciones: []
