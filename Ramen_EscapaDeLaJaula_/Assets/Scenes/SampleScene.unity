@@ -3745,6 +3745,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1912093732}
   - component: {fileID: 1912093731}
+  - component: {fileID: 1912093733}
   m_Layer: 5
   m_Name: ExpModo
   m_TagString: Untagged
@@ -3783,6 +3784,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1912093733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912093730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59945162392a2ec49a9c514041d9d5fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  calcetin:
+  - {fileID: 2800000, guid: 9ce8107e91d80614ba95d3e2a1e9925b, type: 3}
+  - {fileID: 2800000, guid: 2d0389ddc7d77cb4fb68db729027a55b, type: 3}
+  peine:
+  - {fileID: 2800000, guid: 3b8bbfbc36110c24385d7b1538b0a097, type: 3}
+  - {fileID: 2800000, guid: b9080832fc2b2974bbf088522b0d4404, type: 3}
+  pelota:
+  - {fileID: 2800000, guid: c4e0ff16798a8264cbf12e8ac3879766, type: 3}
+  - {fileID: 2800000, guid: b60271d6588ea04478201813aed210fd, type: 3}
 --- !u!1 &1917033217 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1927890188308578216, guid: 6be2901e9c20ca14c91297163d50b093, type: 3}

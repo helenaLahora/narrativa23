@@ -786,7 +786,7 @@ MonoBehaviour:
           condiciones: []
     - identifier: 2
       nodos:
-      - tipoNodo: 3
+      - tipoNodo: 2
         esPersonaje: 0
         personaje: 
         texto: "\xA1No puede ser! \xA1\xBFA Leo se le ha olvidado cerrar bien la
