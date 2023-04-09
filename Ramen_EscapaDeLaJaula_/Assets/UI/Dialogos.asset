@@ -765,7 +765,7 @@ MonoBehaviour:
       - tipoNodo: 3
         esPersonaje: 0
         personaje: 
-        texto: "Ramen siempre ha deseado salir al exterior. Se siente solo, le gustar\xEDa
+        texto: "Ramen siempre ha deseado salir al exterior. Se siente solo y le gustar\xEDa
           hablar con sus nuevos amigos los ratones."
         botones:
         - tipoBoton: 1
@@ -786,7 +786,7 @@ MonoBehaviour:
           condiciones: []
     - identifier: 2
       nodos:
-      - tipoNodo: 2
+      - tipoNodo: 3
         esPersonaje: 0
         personaje: 
         texto: "\xA1No puede ser! \xA1\xBFA Leo se le ha olvidado cerrar bien la
@@ -829,10 +829,10 @@ MonoBehaviour:
       - tipoNodo: 3
         esPersonaje: 0
         personaje: 
-        texto: "Lo de ser despistado viene de familia y nunca dejan la llave en el
-          mismo lugar, as\xED que tendr\xE1s que buscar la llave por todas las habitaciones
-          para conseguir salir. Pero tambi\xE9n puedes probar otras salidas m\xE1s
-          originales... "
+        texto: "Esto de ser despistado viene de familia. En esta casa nunca dejan
+          la llave en el mismo lugar, tendr\xE1s que buscar la llave por todas las
+          habitaciones para conseguir salir. Aunque tambi\xE9n puedes probar otras
+          salidas m\xE1s originales... "
         botones:
         - tipoBoton: 1
           nombre: Continuar
