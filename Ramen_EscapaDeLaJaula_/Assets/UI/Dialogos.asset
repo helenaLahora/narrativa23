@@ -831,7 +831,8 @@ MonoBehaviour:
         personaje: 
         texto: "Lo de ser despistado viene de familia y nunca dejan la llave en el
           mismo lugar, as\xED que tendr\xE1s que buscar la llave por todas las habitaciones
-          para conseguir salir."
+          para conseguir salir. Pero tambi\xE9n puedes probar otras salidas m\xE1s
+          originales... "
         botones:
         - tipoBoton: 1
           nombre: Continuar
@@ -841,7 +842,9 @@ MonoBehaviour:
       - tipoNodo: 3
         esPersonaje: 0
         personaje: 
-        texto: "Pero tambi\xE9n puedes probar otras salidas m\xE1s originales..."
+        texto: "Cuando te encuentres con algun habitante de la casa clica la tecla
+          F para inter\xE1ctuar con ellos. Puedes guardar un objeto presionando la
+          tecla E."
         botones:
         - tipoBoton: 0
           nombre: Salir
