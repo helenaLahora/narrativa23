@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerDetection : MonoBehaviour
 {
-    // Start is called before the first frame update
     public bool playerdetected = false;
     public SphereCollider Collider;
     public bool talk = false;
@@ -13,6 +12,7 @@ public class PlayerDetection : MonoBehaviour
     private GameObject uiInstance;
     private GameObject player;
     public string nombreEvento;
+
     void Start()
     {
         

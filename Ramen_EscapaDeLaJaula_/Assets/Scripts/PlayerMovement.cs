@@ -24,11 +24,13 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         verticalSpeed += gravity * Time.deltaTime;
-        Debug.Log(Cc.isGrounded);
+        //Debug.Log(Cc.isGrounded);
         Movement();
-        
+
+        //Debug.Log(EventHandler.Variables[Variable.collectedObjects]);
+
         //ApplyGravity();
-        
+
 
     }
 

@@ -8,7 +8,7 @@ public class EventHandler : MonoBehaviour
 {
     public static Dictionary<Variable, int> Variables = new Dictionary<Variable, int>();
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         foreach (Variable variable in Enum.GetValues(typeof(Variable)))
         {
