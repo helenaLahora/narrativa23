@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class PlayerDetection : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class PlayerDetection : MonoBehaviour
     private GameObject uiInstance;
     private GameObject player;
     public string nombreEvento;
-
+    public static bool modoExp = false;
     void Start()
     {
         
@@ -21,7 +22,14 @@ public class PlayerDetection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (playerdetected && talk)
+        {
+            modoExp = false;
+        }
+        else if (!talk)
+        {
+            modoExp = true;
+        }
 
 
 

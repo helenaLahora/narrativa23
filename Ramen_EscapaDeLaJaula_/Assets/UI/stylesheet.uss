@@ -37,7 +37,7 @@
 
 .boton-secundario-pequeno {
     flex-basis: auto;
-    width: 350px;
+    width: auto;
     height: 60px;
     background-color: rgb(199, 222, 235);
     -unity-font: url('project://database/Assets/Graphics/motley_forces/MotleyForcesRegular.ttf?fileID=12800000&guid=3ba146d1cf95be74eb5166cc52477acf&type=3#MotleyForcesRegular');
@@ -52,8 +52,8 @@
     border-top-color: rgb(199, 222, 235);
     border-bottom-color: rgb(199, 222, 235);
     color: rgb(255, 255, 255);
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
     margin-top: 0;
     margin-bottom: 0;
     border-left-width: 0;
@@ -61,11 +61,16 @@
     border-top-width: 0;
     border-bottom-width: 0;
     flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    scale: 1.2 1.2;
 }
 
 .boton-primario-pequeno {
     flex-basis: auto;
-    width: 350px;
+    width: auto;
     height: 60px;
     background-color: rgb(171, 207, 225);
     -unity-font: url('project://database/Assets/Graphics/motley_forces/MotleyForcesRegular.ttf?fileID=12800000&guid=3ba146d1cf95be74eb5166cc52477acf&type=3#MotleyForcesRegular');
@@ -80,8 +85,8 @@
     border-top-color: rgb(199, 222, 235);
     border-bottom-color: rgb(199, 222, 235);
     color: rgb(255, 255, 255);
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
     margin-top: 0;
     margin-bottom: 0;
     border-left-width: 0;
@@ -89,4 +94,9 @@
     border-top-width: 0;
     border-bottom-width: 0;
     flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    scale: 1.2 1;
 }

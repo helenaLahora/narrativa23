@@ -10,7 +10,7 @@
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="opciones" style="flex-direction: row; justify-content: flex-start; margin-top: 20px; align-items: center;">
-            <ui:Button text="Motas de Polvo" display-tooltip-when-elided="true" name="opcion1" class="boton-secundario-pequeno" style="margin-left: 0; display: none; white-space: normal;" />
+            <ui:Button text="Motas de Polvo" display-tooltip-when-elided="true" name="opcion1" class="boton-secundario-pequeno" style="margin-left: 0; display: none; white-space: normal; scale: 1.2 1.2;" />
             <ui:Button text="Juguetes" display-tooltip-when-elided="true" name="opcion2" enable-rich-text="false" class="boton-secundario-pequeno" style="display: none; white-space: normal;" />
             <ui:Button text="Roomba" display-tooltip-when-elided="true" name="opcion3" class="boton-secundario-pequeno" style="display: none; white-space: normal;" />
             <ui:Button text="Salidas" display-tooltip-when-elided="true" name="opcion4" class="boton-secundario-pequeno" style="display: none; white-space: normal;" />

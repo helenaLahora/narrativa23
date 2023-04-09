@@ -19,13 +19,14 @@ public class UIHANDLE : MonoBehaviour
     private Coroutine rutina;
     private Nodo currentNodo;
     private GameObject player;
+    public GameObject expModo;
 
 
     // Start is called before the first frame update
     private void Awake()
     {
         UI = GetComponent<UIDocument>();
-
+        expModo = GameObject.Find("ExpModo");
     }
     void Start()
     {
@@ -35,6 +36,14 @@ public class UIHANDLE : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (PlayerDetection.modoExp)
+        {
+            expModo.SetActive(true);
+        }
+        else
+        {
+            expModo.SetActive(false);
+        }
     }
 
     public void StartEvent(string identifier, GameObject playerGameObject)
