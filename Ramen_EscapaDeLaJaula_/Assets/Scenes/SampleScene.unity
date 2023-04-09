@@ -2281,7 +2281,7 @@ MonoBehaviour:
   Collider: {fileID: 1252710768}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
-  nombreEvento: 
+  nombreEvento: Evento_Juguetes
 --- !u!135 &1252710768
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2293,8 +2293,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.002
-  m_Center: {x: 0.0000037372079, y: 0.0010283248, z: -0.0002465881}
+  m_Radius: 0.005
+  m_Center: {x: 0.0000037372079, y: 0.0010283248, z: 0.005}
 --- !u!114 &1252710769
 MonoBehaviour:
   m_ObjectHideFlags: 0

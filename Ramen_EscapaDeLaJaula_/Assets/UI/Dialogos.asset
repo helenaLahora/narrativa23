@@ -360,7 +360,7 @@ MonoBehaviour:
           accion: []
           condiciones: []
         - tipoBoton: 4
-          nombre: Hablar con las Motas traviesas
+          nombre: "Hablar con Los Juguetes del Ba\xFAl"
           siguienteDialogo: 
           accion: []
           condiciones:
