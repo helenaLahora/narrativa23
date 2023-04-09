@@ -27,10 +27,12 @@ MonoBehaviour:
           nombre: Salir
           siguienteDialogo: 
           accion: []
+          condiciones: []
         - tipoBoton: 1
           nombre: Preguntar a Rosie
           siguienteDialogo: 
           accion: []
+          condiciones: []
       - tipoNodo: 0
         esPersonaje: 1
         personaje: Rosie La Cerdita Hucha
@@ -43,12 +45,14 @@ MonoBehaviour:
           nombre: Salir
           siguienteDialogo: 
           accion: []
+          condiciones: []
         - tipoBoton: 1
           nombre: Dar Moneda a Rosie
           siguienteDialogo: 
           accion:
           - variable: 3
             valor: -1
+          condiciones: []
       - tipoNodo: 2
         esPersonaje: 1
         personaje: Rosie La Cerdita Hucha
@@ -59,18 +63,22 @@ MonoBehaviour:
           nombre: Motas de polvo
           siguienteDialogo: 2
           accion: []
+          condiciones: []
         - tipoBoton: 3
           nombre: Juguetes
           siguienteDialogo: 3
           accion: []
+          condiciones: []
         - tipoBoton: 3
           nombre: Roomba
           siguienteDialogo: 4
           accion: []
+          condiciones: []
         - tipoBoton: 3
           nombre: Salidas
           siguienteDialogo: 5
           accion: []
+          condiciones: []
     - identifier: 2
       nodos:
       - tipoNodo: 0
@@ -84,6 +92,7 @@ MonoBehaviour:
           nombre: Continuar
           siguienteDialogo: 
           accion: []
+          condiciones: []
       - tipoNodo: 0
         esPersonaje: 1
         personaje: Rosie La Cerdita Hucha
@@ -95,6 +104,7 @@ MonoBehaviour:
           nombre: Salir
           siguienteDialogo: 
           accion: []
+          condiciones: []
     - identifier: 3
       nodos:
       - tipoNodo: 0
@@ -108,6 +118,7 @@ MonoBehaviour:
           nombre: Continuar
           siguienteDialogo: 
           accion: []
+          condiciones: []
       - tipoNodo: 0
         esPersonaje: 1
         personaje: Rosie La Cerdita Hucha
@@ -119,6 +130,7 @@ MonoBehaviour:
           nombre: Salir
           siguienteDialogo: 
           accion: []
+          condiciones: []
     - identifier: 4
       nodos:
       - tipoNodo: 0
@@ -131,6 +143,7 @@ MonoBehaviour:
           nombre: Continuar
           siguienteDialogo: 
           accion: []
+          condiciones: []
       - tipoNodo: 0
         esPersonaje: 1
         personaje: Rosie La Cerdita Hucha
@@ -142,6 +155,7 @@ MonoBehaviour:
           nombre: Salir
           siguienteDialogo: 
           accion: []
+          condiciones: []
     - identifier: 5
       nodos:
       - tipoNodo: 0
@@ -154,6 +168,7 @@ MonoBehaviour:
           nombre: Continuar
           siguienteDialogo: 
           accion: []
+          condiciones: []
       - tipoNodo: 0
         esPersonaje: 1
         personaje: Rosie La Cerdita Hucha
@@ -164,3 +179,528 @@ MonoBehaviour:
           nombre: Salir
           siguienteDialogo: 
           accion: []
+          condiciones: []
+  - identifier: Evento_Polvo
+    dialogos:
+    - identifier: 1
+      nodos:
+      - tipoNodo: 1
+        esPersonaje: 1
+        personaje: Las Tres Motas de Polvo
+        texto: "Ziggy Flicker y Whisk son habitantes habituales en el dormitorio,
+          Roomba no puede entrar y ellas tampoco est\xE1n dispuestas a irse.\nBloquean
+          las salidas del dormitorio. Consigue los objeto que te piden y te dejar\xE1n
+          marchar.\r"
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+        - tipoBoton: 4
+          nombre: Hablar con las Motas traviesas
+          siguienteDialogo: 
+          accion: []
+          condiciones:
+          - variable: 1
+            operador: 4
+            valor: 1
+            dialogoTrue: 2
+            dialogoFalse: 
+          - variable: 4
+            operador: 0
+            valor: 0
+            dialogoTrue: 5
+            dialogoFalse: 
+          - variable: 5
+            operador: 0
+            valor: 2
+            dialogoTrue: 3
+            dialogoFalse: 4
+    - identifier: 2
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Ziggy
+        texto: "Parece ser que nunca te marchas. \xBFNo estar\xE1s asustado de marchar?
+          Cuando decidas ser valiente (y en caso de volver) tr\xE1enos bombones,
+          vale?"
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+    - identifier: 3
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Flicker
+        texto: "\xA1Wow! \xA1Has conseguido lo que te ped\xEDan mis hermanas!"
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Ziggy
+        texto: "No debe ser tan in\xFAtil como parece. \xA1Dame mi peine! Finalmente
+          puedo peinar mi hermosa cabellera y ser una bonita princesa."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Whisk
+        texto: "CAL-CE-T\xCDN JAJAJA"
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Ziggy
+        texto: "Bueno Ramen, has cumplido el trato. Supongo que ya te podemos dejar
+          salir de la habitaci\xF3n"
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion:
+          - variable: 3
+            valor: -1
+          - variable: 2
+            valor: 1
+          - variable: 1
+            valor: 1
+          condiciones: []
+    - identifier: 4
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Ziggy
+        texto: "Si te est\xE1s burlando no tiene mucha gracia. Te dar\xEDa clases
+          de comedia pero no eres digno ni de ser mi estudiante. Regresa con el peine
+          y el calcet\xEDn o no saldr\xE1s."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+    - identifier: 5
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Flicker
+        texto: "Vaya vaya... Ramen el simp\xE1tico h\xE1mster baja de su preciosa
+          casa. \xBFQu\xE9 pasa? \xBFQuieres pasar? \xBFQuieres escapar? En tu jaula
+          seguro que te lo daban todo, aqu\xED te lo tienes que ganar."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Whisk
+        texto: "Dame un calcet\xEDn! Yo quiero un calcet\xEDn Ramen! CAL-CE-T\xCDN"
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Ziggy
+        texto: "Calla Whisk, estoy haciendo tratos. Tra\xE9me un peine, el peine
+          azul de Leo. Me da igual cuanto tardes en econtrarlo, no saldr\xE1s si
+          no me lo das. Y bueno... supongo que un calcet\xEDn para Whisk tambi\xE9n."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Flicker
+        texto: "Yo conf\xEDo en t\xED Ramen! Seguro que lo encuentras y consigues
+          salir y explorar el resto de la casa."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion:
+          - variable: 4
+            valor: 1
+          condiciones: []
+  - identifier: Evento_Juguetes
+    dialogos:
+    - identifier: 1
+      nodos:
+      - tipoNodo: 1
+        esPersonaje: 1
+        personaje: "Juguetes Del Ba\xFAl"
+        texto: Discuten por quien es el juguete favorito de Leo. Soluciona la pelea
+          y consigue una recompensa especial.
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+        - tipoBoton: 4
+          nombre: Hablar con las Motas traviesas
+          siguienteDialogo: 
+          accion: []
+          condiciones:
+          - variable: 0
+            operador: 4
+            valor: 1
+            dialogoTrue: 2
+            dialogoFalse: 3
+    - identifier: 2
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Llamacornio Julio
+        texto: "\xBFNo te marchabas? No marees mucho la perdiz que aqu\xED ya nos
+          hemos organizado para tu huida."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+    - identifier: 3
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Llamacornio Julio
+        texto: "\xA1Ramen! \xA1Hola! Hac\xEDa d\xEDas que Leo no te bajaba para jugar
+          con nosotros. \xBFD\xF3nde est\xE1 Leo?\L\xBFNo me digas que se ha dejado
+          la puerta abierta y has decidido escapar para explorar el mundo exterior?"
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Llamacornio Julio
+        texto: "Pues si que ha sido as\xED. Parece ser que que soy un gran adivino.
+          Eso o es que he visto como pasaba todo ja ja ja. Bueno... Ahora que te
+          vas, el puesto al mejor acompa\xF1ante de Leo queda vacio... \xA1Muchachos!
+          \xA1Tocan elecciones!"
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Teresa La Triceratops
+        texto: "\xA1Claramente tocan elecciones! Para que sea justo cada uno deber\xE1
+          decir una raz\xF3n por la que ser el mejor acompa\xF1ante."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Protectora Lila
+        texto: "Ramen debe votar, a \xE9l le dar\xE1 igual quien gane."
+        botones:
+        - tipoBoton: 1
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+    - identifier: 4
+      nodos:
+      - tipoNodo: 2
+        esPersonaje: 0
+        personaje: 
+        texto: Escucha las razones de todos los juguetes, lee atentamente. Al acabar
+          vota por el mejor de forma justa.
+        botones:
+        - tipoBoton: 3
+          nombre: Escuchar razones de cada juguete
+          siguienteDialogo: 5
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: "Votar acompa\xF1ante favorito"
+          siguienteDialogo: 11
+          accion: []
+          condiciones: []
+    - identifier: 5
+      nodos:
+      - tipoNodo: 2
+        esPersonaje: 0
+        personaje: 
+        texto: "Campa\xF1a electoral. Escucha las razones de cada juguete."
+        botones:
+        - tipoBoton: 3
+          nombre: "Poni Togot\xF3"
+          siguienteDialogo: 6
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: Teresa La Triceratops
+          siguienteDialogo: 7
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: "Oso Ar\xE1ndano"
+          siguienteDialogo: 8
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: Llamacornio Julio
+          siguienteDialogo: 9
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: Protectora Lila
+          siguienteDialogo: 10
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: Volver
+          siguienteDialogo: 4
+          accion: []
+          condiciones: []
+    - identifier: 6
+      nodos:
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: "Poni Togot\xF3"
+        texto: "Soy el m\xE1s veloz y el m\xE1s antiguo. Merezco el puetso como mejor
+          acompa\xF1ante."
+        botones:
+        - tipoBoton: 3
+          nombre: Volver
+          siguienteDialogo: 5
+          accion: []
+          condiciones: []
+    - identifier: 7
+      nodos:
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Teresa La Triceratops
+        texto: "Soy el m\xE1s grande y resistente de todos los juguetes aqu\xED,
+          as\xED que deber\xEDa ser el preferido."
+        botones:
+        - tipoBoton: 3
+          nombre: Volver
+          siguienteDialogo: 5
+          accion: []
+          condiciones: []
+    - identifier: 8
+      nodos:
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Soy el m\xE1s suave y peludo, \xBFqui\xE9n no querr\xEDa abrazarme
+          todo el tiempo?"
+        botones:
+        - tipoBoton: 3
+          nombre: Volver
+          siguienteDialogo: 5
+          accion: []
+          condiciones: []
+    - identifier: 9
+      nodos:
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Llamacornio Julio
+        texto: "Soy un llamacornio, mitad llama mitad unicornio, \xA1Eso es tan incre\xEDble!"
+        botones:
+        - tipoBoton: 3
+          nombre: Volver
+          siguienteDialogo: 5
+          accion: []
+          condiciones: []
+        - tipoBoton: 1
+          nombre: Escuchar segunda razon
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Llamacornio Julio
+        texto: "Adem\xE1s amigo... Tengo algo que te interesa si de verdad quieres
+          salir..."
+        botones:
+        - tipoBoton: 3
+          nombre: Volver
+          siguienteDialogo: 5
+          accion: []
+          condiciones: []
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Llamacornio Julio
+        texto: "\xA1Tu bola de ejercicio amigo! Si quieres pasar por el pasillo sin
+          que Roomba te aspire deber\xE1s tener la bola.\LTe dir\xE9 donde est\xE1
+          si me votas como mejor acompa\xF1ante."
+        botones:
+        - tipoBoton: 3
+          nombre: Volver
+          siguienteDialogo: 5
+          accion: []
+          condiciones: []
+    - identifier: 10
+      nodos:
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Protectora Lila
+        texto: "Soy la m\xE1s valiente y protectora de todos. \xBFQu\xE9 ser\xEDa
+          de ustedes sin m\xED para mantenerlos a salvo?"
+        botones:
+        - tipoBoton: 3
+          nombre: Volver
+          siguienteDialogo: 5
+          accion: []
+          condiciones: []
+    - identifier: 11
+      nodos:
+      - tipoNodo: 2
+        esPersonaje: 0
+        personaje: 
+        texto: "El d\xEDa de las elecciones ha llegado. Selecciona al futuro mejor
+          juguete:"
+        botones:
+        - tipoBoton: 3
+          nombre: "Poni Togot\xF3"
+          siguienteDialogo: 12
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: Teresa La Triceratops
+          siguienteDialogo: 13
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: "Oso Ar\xE1ndano"
+          siguienteDialogo: 14
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: Llamacornio Julio
+          siguienteDialogo: 15
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: Protectora Lila
+          siguienteDialogo: 16
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: Volver
+          siguienteDialogo: 4
+          accion: []
+          condiciones: []
+    - identifier: 12
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Poni Togot\xF3"
+        texto: "Has escogido a tu mejor sucesor. \xA1Gracias Ramen!"
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion:
+          - variable: 0
+            valor: 1
+          condiciones: []
+    - identifier: 13
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Teresa La Triceratops
+        texto: "Has escogido a tu mejor sucesor. \xA1Gracias Ramen!"
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion:
+          - variable: 0
+            valor: 1
+          condiciones: []
+    - identifier: 14
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Has escogido a tu mejor sucesor. \xA1Gracias Ramen!"
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion:
+          - variable: 0
+            valor: 1
+          condiciones: []
+    - identifier: 15
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Llamacornio Julio
+        texto: "Al final el sabotaje siempre gana. \xBFVerdad Amigo? Ya me he asegurado
+          de traerte tu bola."
+        botones:
+        - tipoBoton: 1
+          nombre: Conseguir bola de ejercicio
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Llamacornio Julio
+        texto: "Pero te lo advierto no vuelvas por aqu\xED amigo, ahora soy yo el
+          mejor acompa\xF1ante. \xA1Gracias amigo!"
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion:
+          - variable: 0
+            valor: 1
+          - variable: 6
+            valor: 1
+          condiciones: []
+    - identifier: 16
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Protectora Lila
+        texto: "Has escogido a tu mejor sucesor. \xA1Gracias Ramen!"
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion:
+          - variable: 0
+            valor: 1
+          condiciones: []

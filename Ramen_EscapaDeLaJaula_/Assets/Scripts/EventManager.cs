@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-
+using UnityEngine.Serialization;
 
 [CreateAssetMenu(menuName = "Lista de Dialogos")]
 public class EventManager : ScriptableObject
@@ -46,14 +46,28 @@ public class Boton
     public string nombre;
     public string siguienteDialogo;
     public Accion[] accion;
-
+    public Condicion[] condiciones;
 }
 [System.Serializable]
 public class Accion
 {
     public Variable variable;
     public int valor;
+    
 }
+[System.Serializable]
+public class Condicion
+{
+    public Variable variable;
+    public Operador operador;
+    public int valor;
+    [FormerlySerializedAs("Condicion cumplida")]
+    public string dialogoTrue;    
+    [FormerlySerializedAs("Condicion no cumplida")]
+    public string dialogoFalse;
+}
+
+
 public enum TipoNodo
 {
     conversacion,
@@ -65,7 +79,8 @@ public enum TipoBoton
     Salir,
     Continuar,
     Volver,
-    Eleccion
+    Eleccion,
+    Condicion
 }
 public enum Variable
 {
@@ -74,5 +89,15 @@ public enum Variable
     bedroomDoor,
     coin,
     explainedMission,
-    collectedObjects
+    collectedObjects,
+    bolaEjercicio
+}
+public enum Operador
+{
+    igual,
+    diferente,
+    mayor,
+    menor,
+    mayor_igual,
+    menor_igual
 }

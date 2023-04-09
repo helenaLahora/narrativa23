@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
@@ -48,7 +49,7 @@ public class UIHANDLE : MonoBehaviour
     }
     IEnumerator TypeLine()
     {
-
+       
         int index=0;
         player.GetComponent<CamMovement>().enabled = false;
         player.GetComponent<PlayerInput>().DeactivateInput();
@@ -91,8 +92,53 @@ public class UIHANDLE : MonoBehaviour
                         button.clickable.clicked += () => player.GetComponent<CamMovement>().enabled = true;
                         button.clickable.clicked += () => player.GetComponent<PlayerInput>().ActivateInput(); 
                         break;
+                    case TipoBoton.Condicion:
+                        if (boton.condiciones.Length > 0)
+                        {
+                            Debug.Log(boton.condiciones);
+                            foreach (Condicion condicion in boton.condiciones)
+                            {
+                                bool resultado = false;
+                                switch (condicion.operador) 
+                                {
+
+                                    case Operador.igual:
+                                        resultado = EventHandler.Variables[condicion.variable] == condicion.valor;
+                                        break;
+                                    case Operador.diferente:
+                                        resultado = EventHandler.Variables[condicion.variable] != condicion.valor;
+                                        break;
+                                    case Operador.mayor:
+                                        resultado = EventHandler.Variables[condicion.variable] > condicion.valor;
+                                        break;
+                                    case Operador.menor:
+                                        resultado = EventHandler.Variables[condicion.variable] < condicion.valor;
+                                        break;
+                                    case Operador.mayor_igual:
+                                        resultado = EventHandler.Variables[condicion.variable] >= condicion.valor;
+                                        break;
+                                    case Operador.menor_igual:
+                                        resultado = EventHandler.Variables[condicion.variable] <= condicion.valor;
+                                        break;
+                                }
+                                if (resultado)
+                                {
+                                    button.clickable.clicked += () => AsignarDialogo(condicion.dialogoTrue);
+                                    break;
+                                }
+                                else
+                                {
+                                    if (boton.condiciones.Last() == condicion)
+                                    {
+                                        button.clickable.clicked += () => AsignarDialogo(condicion.dialogoFalse);
+
+                                    }
+                                }
+                            }
+                        }
+                        break;
                     case TipoBoton.Eleccion:
-                        button.clickable.clicked += () => AsignarDialogo(boton.siguienteDialogo);
+                        button.clickable.clicked += () => AsignarDialogo(boton.siguienteDialogo);                   
                         break;
                     case TipoBoton.Continuar:
                         index = Array.IndexOf(currentDialogue.nodos, currentNodo) + 1;
@@ -112,7 +158,7 @@ public class UIHANDLE : MonoBehaviour
                         break;
 
                 }
-                if (boton.accion != null)
+                if (boton.accion.Length > 0)
                 {
                     foreach (Accion accion in boton.accion)
                     {
