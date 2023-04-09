@@ -40,7 +40,7 @@
     height: 60px;
     background-color: rgb(199, 222, 235);
     -unity-font: url('project://database/Assets/Graphics/motley_forces/MotleyForcesRegular.ttf?fileID=12800000&guid=3ba146d1cf95be74eb5166cc52477acf&type=3#MotleyForcesRegular');
-    font-size: 40px;
+    font-size: 30px;
     -unity-font-definition: none;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -67,7 +67,7 @@
     height: 60px;
     background-color: rgb(171, 207, 225);
     -unity-font: url('project://database/Assets/Graphics/motley_forces/MotleyForcesRegular.ttf?fileID=12800000&guid=3ba146d1cf95be74eb5166cc52477acf&type=3#MotleyForcesRegular');
-    font-size: 40px;
+    font-size: 30px;
     -unity-font-definition: none;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
