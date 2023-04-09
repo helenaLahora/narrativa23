@@ -72,7 +72,8 @@ public enum TipoNodo
 {
     conversacion,
     presentacion,
-    eleccion
+    eleccion,
+    historiaPresentacion
 }
 public enum TipoBoton
 {

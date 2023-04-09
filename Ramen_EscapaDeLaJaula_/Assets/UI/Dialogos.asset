@@ -708,7 +708,7 @@ MonoBehaviour:
     dialogos:
     - identifier: 1
       nodos:
-      - tipoNodo: 1
+      - tipoNodo: 3
         esPersonaje: 0
         personaje: 
         texto: Inicio Partida
@@ -718,7 +718,7 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones: []
-      - tipoNodo: 0
+      - tipoNodo: 3
         esPersonaje: 0
         personaje: 
         texto: "Hace seis meses la familia de la casa adopt\xF3 a un peque\xF1o h\xE1mster
@@ -729,7 +729,7 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones: []
-      - tipoNodo: 0
+      - tipoNodo: 3
         esPersonaje: 0
         personaje: 
         texto: "El diminuto animal, al que bautizaron como Ramen, r\xE1pidamente
@@ -740,7 +740,7 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones: []
-      - tipoNodo: 0
+      - tipoNodo: 3
         esPersonaje: 0
         personaje: 
         texto: "Ramen es un h\xE1mster activo que disfruta de su tiempo libre corriendo
@@ -751,7 +751,7 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones: []
-      - tipoNodo: 0
+      - tipoNodo: 3
         esPersonaje: 0
         personaje: 
         texto: "Leo se lo pasa mucho mejor sacando a su mascota de la jaula, permiti\xE9ndole
@@ -762,7 +762,7 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones: []
-      - tipoNodo: 0
+      - tipoNodo: 3
         esPersonaje: 0
         personaje: 
         texto: "Ramen siempre ha deseado salir al exterior. Se siente solo, le gustar\xEDa
@@ -815,19 +815,47 @@ MonoBehaviour:
           condiciones: []
     - identifier: 3
       nodos:
-      - tipoNodo: 1
+      - tipoNodo: 3
         esPersonaje: 0
         personaje: 
-        texto: "\xA1No puede ser! \xA1\xBFA Leo se le ha olvidado cerrar bien la
-          puerta?! \xBFDeber\xEDa Ramen aprovechar la oportunidad?"
+        texto: Escape exitoso
         botones:
         - tipoBoton: 1
-          nombre: Quedarse en la jaula
+          nombre: Continuar
           siguienteDialogo: 
           accion: []
           condiciones: []
-        - tipoBoton: 3
-          nombre: Salir de la jaula
-          siguienteDialogo: 3
+      - tipoNodo: 3
+        esPersonaje: 0
+        personaje: 
+        texto: "Has conseguido salir de la jaula. Para llegar al exterior debes encontrar
+          una salida. Al atravesar la casa encontrar\xE1s la puerta principal. Esta
+          se abre con la llave."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 3
+        esPersonaje: 0
+        personaje: 
+        texto: "Lo de ser despistado viene de familia y nunca dejan la llave en el
+          mismo lugar, as\xED que tendr\xE1s que buscar la llave por todas las habitaciones
+          para conseguir salir."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 3
+        esPersonaje: 0
+        personaje: 
+        texto: "Pero tambi\xE9n puedes probar otras salidas m\xE1s originales..."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
           accion: []
           condiciones: []

@@ -74,11 +74,17 @@ public class UIHANDLE : MonoBehaviour
                     UI.visualTreeAsset = visualTreeAssets[2];
 
                     break;
+                case TipoNodo.historiaPresentacion:
+                    UI.visualTreeAsset= visualTreeAssets[3];
+                    break;
 
+            }
+            if (currentNodo.tipoNodo != TipoNodo.historiaPresentacion)
+            {
+                nombre = UI.rootVisualElement.Q<Label>("nombre");
 
             }
             label = UI.rootVisualElement.Q<Label>("contenido");
-            nombre = UI.rootVisualElement.Q<Label>("nombre");
             foreach (Boton boton in currentNodo.botones)
             {
                 Button button = new Button();
@@ -168,17 +174,21 @@ public class UIHANDLE : MonoBehaviour
                     }
                 }
         }
-            if (currentNodo.esPersonaje)
+            if (currentNodo.esPersonaje && currentNodo.tipoNodo != TipoNodo.historiaPresentacion)
             {
                 nombre.text = currentNodo.personaje;
 
             }
-            else
+            else if(currentNodo.tipoNodo == TipoNodo.historiaPresentacion)
+            {
+            }
+            else if (!currentNodo.esPersonaje)
             {
                 nombre.style.display = DisplayStyle.None;
             }
 
-            label.text = string.Empty;
+                label.text = string.Empty;
+            
             for (int currentLetter = 0; currentLetter < currentNodo.texto.Length; currentLetter++)
             {
                 foreach (char c in currentNodo.texto.ToCharArray())
