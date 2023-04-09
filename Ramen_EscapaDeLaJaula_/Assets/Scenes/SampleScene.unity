@@ -722,6 +722,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bolaEjercicio
       objectReference: {fileID: 0}
+    - target: {fileID: 5358756827181363929, guid: 960cbbd61d2de4647836f1a07697fe16, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 960cbbd61d2de4647836f1a07697fe16, type: 3}
 --- !u!4 &450138176 stripped
@@ -3594,6 +3598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccef0acfeb44ae9468bd3044aaca0738, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pelota: {fileID: 1991480618}
 --- !u!4 &1837662865
 Transform:
   m_ObjectHideFlags: 0
@@ -3842,6 +3847,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6242891988469179924, guid: c3f1202930006b040b70fdd2bf4b8c72, type: 3}
+--- !u!1 &1991480618 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5358756827181363929, guid: 960cbbd61d2de4647836f1a07697fe16, type: 3}
+  m_PrefabInstance: {fileID: 450138175}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2024508759
 PrefabInstance:
   m_ObjectHideFlags: 0

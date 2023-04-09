@@ -8,6 +8,7 @@ using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCou
 public class EventHandler : MonoBehaviour
 {
     public static Dictionary<Variable, int> Variables = new Dictionary<Variable, int>();
+    public GameObject pelota;
 
     // Start is called before the first frame update
     void Awake()
@@ -22,7 +23,14 @@ public class EventHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (Variables[Variable.bolaEjercicio] > 0)
+        {
+            pelota.SetActive(true);
+        }
+        else
+        {
+            pelota.SetActive(false);
+        }
     }
    
 }

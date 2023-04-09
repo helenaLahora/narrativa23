@@ -792,22 +792,11 @@ MonoBehaviour:
         texto: "\xA1No puede ser! \xA1\xBFA Leo se le ha olvidado cerrar bien la
           puerta?! \xBFDeber\xEDa Ramen aprovechar la oportunidad?"
         botones:
-        - tipoBoton: 1
-          nombre: Quedarse en la jaula
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
         - tipoBoton: 3
-          nombre: Salir de la jaula
-          siguienteDialogo: 3
+          nombre: Quedarse en la jaula
+          siguienteDialogo: 4
           accion: []
           condiciones: []
-      - tipoNodo: 2
-        esPersonaje: 0
-        personaje: 
-        texto: "\xA1Ahora no es momento de dudar! \xA1Sal de la jaula y explora el
-          mundo exterior!"
-        botones:
         - tipoBoton: 3
           nombre: Salir de la jaula
           siguienteDialogo: 3
@@ -857,5 +846,18 @@ MonoBehaviour:
         - tipoBoton: 0
           nombre: Salir
           siguienteDialogo: 
+          accion: []
+          condiciones: []
+    - identifier: 4
+      nodos:
+      - tipoNodo: 2
+        esPersonaje: 0
+        personaje: 
+        texto: "\xA1Ahora no es momento de dudar! \xA1Sal de la jaula y explora el
+          mundo exterior!"
+        botones:
+        - tipoBoton: 3
+          nombre: Salir de la jaula
+          siguienteDialogo: 3
           accion: []
           condiciones: []
