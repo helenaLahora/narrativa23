@@ -177,13 +177,28 @@ public class UIHANDLE : MonoBehaviour
             {
                 nombre.style.display = DisplayStyle.None;
             }
-            label.text = string.Empty;
 
-            foreach (char c in currentNodo.texto.ToCharArray())
+            label.text = string.Empty;
+            for (int currentLetter = 0; currentLetter < currentNodo.texto.Length; currentLetter++)
             {
-                label.text += c;
-                yield return new WaitForSeconds(textSpeed);
+                foreach (char c in currentNodo.texto.ToCharArray())
+                {
+
+                    if (c == currentNodo.texto[currentLetter])
+                    {
+                        label.text += c;
+
+                    }
+                    currentLetter++;
+                    Debug.Log(currentLetter);
+
+                    yield return new WaitForSeconds(textSpeed);
+                }
+                
+
             }
+            Debug.Log(label.text);
+
         }
     }
     public void AsignarDialogo(string identifier)
