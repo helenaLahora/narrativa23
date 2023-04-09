@@ -209,14 +209,12 @@ public class UIHANDLE : MonoBehaviour
 
                     }
                     currentLetter++;
-                    Debug.Log(currentLetter);
 
                     yield return new WaitForSeconds(textSpeed);
                 }
                 
 
             }
-            Debug.Log(label.text);
 
         }
     }
