@@ -168,7 +168,6 @@ public class UIHANDLE : MonoBehaviour
                     }
                 }
         }
-            label.text = string.Empty;
             if (currentNodo.esPersonaje)
             {
                 nombre.text = currentNodo.personaje;
@@ -178,6 +177,8 @@ public class UIHANDLE : MonoBehaviour
             {
                 nombre.style.display = DisplayStyle.None;
             }
+            label.text = string.Empty;
+
             foreach (char c in currentNodo.texto.ToCharArray())
             {
                 label.text += c;

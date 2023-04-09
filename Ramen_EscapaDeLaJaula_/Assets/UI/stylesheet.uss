@@ -32,6 +32,7 @@
     border-right-color: rgba(0, 0, 0, 0);
     border-top-color: rgba(0, 0, 0, 0);
     border-bottom-color: rgba(0, 0, 0, 0);
+    flex-wrap: wrap;
 }
 
 .boton-secundario-pequeno {
@@ -59,6 +60,7 @@
     border-right-width: 0;
     border-top-width: 0;
     border-bottom-width: 0;
+    flex-wrap: wrap;
 }
 
 .boton-primario-pequeno {
@@ -86,4 +88,5 @@
     border-right-width: 0;
     border-top-width: 0;
     border-bottom-width: 0;
+    flex-wrap: wrap;
 }
