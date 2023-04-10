@@ -9,7 +9,7 @@
 /Ramen_EscapaDeLaJaula_/[Bb]uilds/
 /Ramen_EscapaDeLaJaula_/[Ll]ogs/
 /Ramen_EscapaDeLaJaula_/[Mm]emoryCaptures/
-
+/Ramen_EscapaDeLaJaula_/[Uu]serSettings/
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
 
