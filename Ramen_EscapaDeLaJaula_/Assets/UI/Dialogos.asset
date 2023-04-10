@@ -842,9 +842,10 @@ MonoBehaviour:
       - tipoNodo: 3
         esPersonaje: 0
         personaje: 
-        texto: "Cuando te encuentres con algun habitante de la casa clica la tecla
+        texto: "Cuando te encuentres con alg\xFAn habitante de la casa clica la tecla
           F para inter\xE1ctuar con ellos. Puedes guardar un objeto presionando la
-          tecla E."
+          tecla E.\n\nSi no sabes como solucionar alg\xFAn obst\xE0culo pregunta
+          a la cerda Rosie, est\xE1 en el esctorio de Leo."
         botones:
         - tipoBoton: 0
           nombre: Salir

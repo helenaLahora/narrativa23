@@ -15,9 +15,9 @@
             <ui:Button text="Roomba" display-tooltip-when-elided="true" name="opcion3" class="boton-secundario-pequeno" style="display: none; white-space: normal;" />
             <ui:Button text="Salidas" display-tooltip-when-elided="true" name="opcion4" class="boton-secundario-pequeno" style="display: none; white-space: normal;" />
         </ui:VisualElement>
-        <ui:VisualElement name="botones" style="flex-direction: row; justify-content: flex-end; margin-top: 30px; align-items: center; flex-wrap: wrap; height: 4px;">
+        <ui:VisualElement name="botones" style="flex-direction: row; justify-content: flex-start; margin-top: 0; align-items: center; flex-wrap: wrap; height: auto;">
             <ui:Button text="Salir" display-tooltip-when-elided="true" name="salir" class="boton-primario-pequeno" style="background-color: rgb(171, 207, 225); display: none; flex-wrap: wrap;" />
-            <ui:Button text="Continuar" display-tooltip-when-elided="true" name="continuar" class="boton-primario-pequeno" style="background-color: rgb(170, 207, 225); margin-right: 0; display: none; flex-wrap: wrap;" />
+            <ui:Button text="Continuar" display-tooltip-when-elided="true" name="continuar" class="boton-primario-pequeno" style="background-color: rgb(170, 207, 225); margin-right: 50px; display: none; flex-wrap: wrap;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
