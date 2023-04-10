@@ -13,7 +13,7 @@ public class PlayerDetection : MonoBehaviour
     private GameObject uiInstance;
     private GameObject player;
     public string nombreEvento;
-    public static bool modoExp = false;
+
     void Start()
     {
         
@@ -22,15 +22,7 @@ public class PlayerDetection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerdetected && talk)
-        {
-            modoExp = false;
-        }
-        else if (!talk)
-        {
-            modoExp = true;
-        }
-        Debug.Log(gameObject.name + playerdetected);
+
 
 
     }
