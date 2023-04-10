@@ -18,7 +18,6 @@ public class UIHANDLE : MonoBehaviour
     private GameObject player;
     public GameObject expModo;
 
-
     // Start is called before the first frame update
     private void Awake()
     {
@@ -33,19 +32,12 @@ public class UIHANDLE : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PlayerDetection.modoExp)
-        {
-            expModo.SetActive(true);
-        }
-        else
-        {
-            expModo.SetActive(false);
-        }
+
     }
 
     public void StartEvent(string identifier, GameObject playerGameObject)
     {
-
+        expModo.GetComponent<UIDocument>().rootVisualElement.style.display = DisplayStyle.None;
         player = playerGameObject;
         currentEvent = Array.Find(eventManager.eventos, e => e.identifier == identifier);
         currentDialogue = currentEvent.dialogos[0];
@@ -102,7 +94,9 @@ public class UIHANDLE : MonoBehaviour
                     case TipoBoton.Salir:
                         button.clickable.clicked += () => Destroy(gameObject);
                         button.clickable.clicked += () => player.GetComponent<CamMovement>().enabled = true;
-                        button.clickable.clicked += () => player.GetComponent<PlayerInput>().ActivateInput(); 
+                        button.clickable.clicked += () => player.GetComponent<PlayerInput>().ActivateInput();
+                        button.clickable.clicked += () => expModo.GetComponent<UIDocument>().rootVisualElement.style.display = DisplayStyle.Flex;
+
                         break;
                     case TipoBoton.Condicion:
                         if (boton.condiciones.Length > 0)
@@ -195,8 +189,7 @@ public class UIHANDLE : MonoBehaviour
 
                 label.text = string.Empty;
             
-            for (int currentLetter = 0; currentLetter < currentNodo.texto.Length; currentLetter++)
-            {
+            int currentLetter = 0;
                 foreach (char c in currentNodo.texto.ToCharArray())
                 {
 
@@ -211,7 +204,7 @@ public class UIHANDLE : MonoBehaviour
                 }
                 
 
-            }
+            
 
         }
     }
