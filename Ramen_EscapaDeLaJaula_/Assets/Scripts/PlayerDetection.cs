@@ -30,7 +30,7 @@ public class PlayerDetection : MonoBehaviour
         {
             modoExp = true;
         }
-
+        Debug.Log(gameObject.name + playerdetected);
 
 
     }
