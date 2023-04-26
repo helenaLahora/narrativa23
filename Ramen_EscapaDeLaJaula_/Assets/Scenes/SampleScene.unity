@@ -3261,6 +3261,7 @@ MonoBehaviour:
   speed: 5
   cam: {fileID: 963194227}
   JumpForce: 12
+  menu: 0
 --- !u!114 &1240095943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3342,6 +3343,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: ca6e50b4-24a5-416d-a843-d6dc2c34063f
     m_ActionName: Objects/Interact[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 31c65429-9fc1-4e0d-a460-f193b9555923
+    m_ActionName: Player/EscapeMenu[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -5232,6 +5237,7 @@ GameObject:
   - component: {fileID: 1837662865}
   - component: {fileID: 1837662864}
   - component: {fileID: 1837662866}
+  - component: {fileID: 1837662867}
   m_Layer: 0
   m_Name: NoTocar
   m_TagString: Untagged
@@ -5281,6 +5287,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   player: {fileID: 1240095941}
+--- !u!114 &1837662867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837662863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PanelSettings: {fileID: 11400000, guid: 3d2579663d704274995c28db26d959ac, type: 2}
+  m_ParentUI: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: 019ae5dd462f5e840be68e5baf04f4dc, type: 3}
+  m_SortingOrder: 0
 --- !u!1001 &1863312742
 PrefabInstance:
   m_ObjectHideFlags: 0
