@@ -42,10 +42,10 @@ public class UIHANDLE : MonoBehaviour
         currentEvent = Array.Find(eventManager.eventos, e => e.identifier == identifier);
         currentDialogue = currentEvent.dialogos[0];
         currentNodo = currentDialogue.nodos[0];
-        rutina = StartCoroutine(TypeLine());
+        TypeLine();
                 
     }
-    IEnumerator TypeLine()
+    void TypeLine()
     {
        
         int index=0;
@@ -189,36 +189,32 @@ public class UIHANDLE : MonoBehaviour
 
                 label.text = string.Empty;
             
-            int currentLetter = 0;
-                foreach (char c in currentNodo.texto.ToCharArray())
-                {
+            label.text = currentNodo.texto;
+                //foreach (char c in currentNodo.texto.ToCharArray())
+                //{
 
-                    if (c == currentNodo.texto[currentLetter])
-                    {
-                        label.text += c;
+                //    if (c == currentNodo.texto[currentLetter])
+                //    {
+                //        label.text += c;
 
-                    }
-                    currentLetter++;
+                //    }
+                //    currentLetter++;
 
-                    yield return new WaitForSeconds(textSpeed);
-                }
-                
-
-            
-
+                    //yield return new WaitForSeconds(textSpeed);
+                //}         
         }
     }
     public void AsignarDialogo(string identifier)
     {
-        StopCoroutine(rutina);
+        //StopCoroutine(rutina);
         currentDialogue = Array.Find(currentEvent.dialogos, e => e.identifier == identifier);
         currentNodo = currentDialogue.nodos[0];
-        StartCoroutine(TypeLine());
+        TypeLine();
     }
     public void AsignarNodo(int index)
     {
-        StopCoroutine(rutina);
+        //StopCoroutine(rutina);
         currentNodo = currentDialogue.nodos[index];
-        StartCoroutine(TypeLine());
+        TypeLine();
     }
 }   

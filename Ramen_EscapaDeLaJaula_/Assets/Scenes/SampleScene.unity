@@ -634,6 +634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d8f1e3da43a284e905e8f710271e5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particlePrefab: {fileID: 0}
 --- !u!95 &350305729
 Animator:
   serializedVersion: 5
@@ -1893,6 +1894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d8f1e3da43a284e905e8f710271e5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particlePrefab: {fileID: 0}
 --- !u!95 &741139883
 Animator:
   serializedVersion: 5
@@ -4264,6 +4266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d8f1e3da43a284e905e8f710271e5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particlePrefab: {fileID: 1020392366648642137, guid: ddb572eaa513309439d79afb5938bcb7, type: 3}
 --- !u!95 &1545215271
 Animator:
   serializedVersion: 5
@@ -4396,6 +4399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d8f1e3da43a284e905e8f710271e5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particlePrefab: {fileID: 0}
 --- !u!95 &1548519207
 Animator:
   serializedVersion: 5
@@ -4848,6 +4852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d8f1e3da43a284e905e8f710271e5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particlePrefab: {fileID: 0}
 --- !u!95 &1622592590
 Animator:
   serializedVersion: 5
@@ -5255,6 +5260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d8f1e3da43a284e905e8f710271e5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particlePrefab: {fileID: 0}
 --- !u!95 &1789913601
 Animator:
   serializedVersion: 5
@@ -5577,6 +5583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d8f1e3da43a284e905e8f710271e5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particlePrefab: {fileID: 0}
 --- !u!95 &1876649593
 Animator:
   serializedVersion: 5
@@ -6092,6 +6099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d8f1e3da43a284e905e8f710271e5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particlePrefab: {fileID: 0}
 --- !u!95 &2058258638
 Animator:
   serializedVersion: 5

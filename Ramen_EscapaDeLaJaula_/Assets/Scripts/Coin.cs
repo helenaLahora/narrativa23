@@ -4,17 +4,14 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    
-    
-    void Start()
-    {
-        
-    }
+
+    [SerializeField] private GameObject particlePrefab;
 
     private void OnTriggerEnter(Collider collider)
     {
         if (collider.gameObject.tag == "Player")
         {
+            Instantiate(particlePrefab, transform.position, Quaternion.identity); 
             Destroy(this.gameObject);
             EventHandler.Variables[Variable.coin]++;
         }
