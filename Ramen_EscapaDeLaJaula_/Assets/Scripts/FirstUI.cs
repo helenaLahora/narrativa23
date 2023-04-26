@@ -18,6 +18,22 @@ public class FirstUI : MonoBehaviour
         uiHandle.StartEvent("Evento_Empezar", player);
 
     }
+    private void Update()
+    {
+        Menu();
+    }
 
+    private void Menu()
+    {
+        if (player.GetComponent<PlayerMovement>().menu)
+        {
+            gameObject.GetComponent<UIDocument>().enabled = true;
+        }
+        else
+        {
+            gameObject.GetComponent<UIDocument>().enabled = false;
+
+        }
+    }
 
 }

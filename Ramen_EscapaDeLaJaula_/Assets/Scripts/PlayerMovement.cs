@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private float verticalSpeed;
     private float gravity = -20f;
     public float JumpForce = 10f;
+    [HideInInspector] public bool menu = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -110,6 +111,10 @@ public class PlayerMovement : MonoBehaviour
 
         
 
+    }
+    public void OnEscapeMenu(InputAction.CallbackContext context)
+    {
+        menu = !menu;
     }
 }
 
