@@ -16,24 +16,21 @@ public class FirstUI : MonoBehaviour
         uiInstance = Instantiate(uiPrefab);
         uiHandle =  uiInstance.GetComponent<UIHANDLE>();
         uiHandle.StartEvent("Evento_Empezar", player);
-
     }
     private void Update()
     {
-        Menu();
     }
 
-    private void Menu()
+    public void Menu()
     {
         if (player.GetComponent<PlayerMovement>().menu)
         {
-            gameObject.GetComponent<UIDocument>().enabled = true;
+            uiInstance = Instantiate(uiPrefab);
+            uiHandle = uiInstance.GetComponent<UIHANDLE>();
+            uiHandle.StartEvent("Evento_Menu", player);
         }
-        else
-        {
-            gameObject.GetComponent<UIDocument>().enabled = false;
 
-        }
+       
     }
 
 }
