@@ -73,7 +73,8 @@ public enum TipoNodo
     conversacion,
     presentacion,
     eleccion,
-    historiaPresentacion
+    historiaPresentacion,
+    menu_config
 }
 public enum TipoBoton
 {
@@ -81,7 +82,8 @@ public enum TipoBoton
     Continuar,
     Volver,
     Eleccion,
-    Condicion
+    Condicion,
+    Cerrar
 }
 public enum Variable
 {

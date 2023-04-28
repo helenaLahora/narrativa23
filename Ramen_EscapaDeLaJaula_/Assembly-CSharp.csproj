@@ -94,6 +94,7 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\UI\modo-exploracion.uxml" />
     <None Include="Assets\UI\presentacion-evento.uxml" />
+    <None Include="Assets\Modelos 3D\General\HabitacionesPrefabs\shaderDoubleSided.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\UI\menu-inicio.uxml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />

@@ -53,6 +53,5 @@ public class objectHandler : MonoBehaviour
             UI.rootVisualElement.Q<VisualElement>("bola").style.backgroundImage = pelota[0];
 
         }
-        Debug.Log(EventHandler.Variables[Variable.collectedObjects]);
     }
 }

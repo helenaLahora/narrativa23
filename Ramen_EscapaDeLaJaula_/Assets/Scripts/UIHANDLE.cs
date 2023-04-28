@@ -13,7 +13,6 @@ public class UIHANDLE : MonoBehaviour
     private Dialogo currentDialogue;
     public float textSpeed =1f;
     public VisualTreeAsset[] visualTreeAssets;
-    private Coroutine rutina;
     private Nodo currentNodo;
     private GameObject player;
     public GameObject expModo;
@@ -75,6 +74,9 @@ public class UIHANDLE : MonoBehaviour
                 case TipoNodo.historiaPresentacion:
                     UI.visualTreeAsset= visualTreeAssets[3];
                     break;
+                case TipoNodo.menu_config:
+                    UI.visualTreeAsset = visualTreeAssets[4];
+                    break;
 
             }
             if (currentNodo.tipoNodo != TipoNodo.historiaPresentacion)
@@ -92,11 +94,12 @@ public class UIHANDLE : MonoBehaviour
                 switch (boton.tipoBoton)
                 {
                     case TipoBoton.Salir:
-                        button.clickable.clicked += () => Destroy(gameObject);
-                        button.clickable.clicked += () => player.GetComponent<CamMovement>().enabled = true;
-                        button.clickable.clicked += () => player.GetComponent<PlayerInput>().ActivateInput();
-                        button.clickable.clicked += () => expModo.GetComponent<UIDocument>().rootVisualElement.style.display = DisplayStyle.Flex;
+                        button.clickable.clicked += () => CerrarDialogo();
 
+
+                        break;
+                    case TipoBoton.Cerrar:
+                        button.clickable.clicked += () => Application.Quit();
                         break;
                     case TipoBoton.Condicion:
                         if (boton.condiciones.Length > 0)
@@ -174,22 +177,26 @@ public class UIHANDLE : MonoBehaviour
                     }
                 }
         }
-            if (currentNodo.esPersonaje && currentNodo.tipoNodo != TipoNodo.historiaPresentacion)
+            if (nombre != null)
             {
-                nombre.text = currentNodo.personaje;
+                if (currentNodo.esPersonaje && currentNodo.tipoNodo != TipoNodo.historiaPresentacion)
+                {
+                    nombre.text = currentNodo.personaje;
 
-            }
-            else if(currentNodo.tipoNodo == TipoNodo.historiaPresentacion)
-            {
-            }
-            else if (!currentNodo.esPersonaje)
-            {
-                nombre.style.display = DisplayStyle.None;
+                }
+                else if (currentNodo.tipoNodo == TipoNodo.historiaPresentacion)
+                {
+                }
+                else if (!currentNodo.esPersonaje)
+                {
+                    nombre.style.display = DisplayStyle.None;
+                }
             }
 
+            if (label != null)
+            {
                 label.text = string.Empty;
-            
-            label.text = currentNodo.texto;
+                label.text = currentNodo.texto;
                 //foreach (char c in currentNodo.texto.ToCharArray())
                 //{
 
@@ -200,8 +207,10 @@ public class UIHANDLE : MonoBehaviour
                 //    }
                 //    currentLetter++;
 
-                    //yield return new WaitForSeconds(textSpeed);
-                //}         
+                //yield return new WaitForSeconds(textSpeed);
+                //}   
+            }
+
         }
     }
     public void AsignarDialogo(string identifier)
@@ -216,5 +225,12 @@ public class UIHANDLE : MonoBehaviour
         //StopCoroutine(rutina);
         currentNodo = currentDialogue.nodos[index];
         TypeLine();
+    }
+    public void CerrarDialogo()
+    {
+        Destroy(gameObject);
+        player.GetComponent<CamMovement>().enabled = true;
+        player.GetComponent<PlayerInput>().ActivateInput();
+        expModo.GetComponent<UIDocument>().rootVisualElement.style.display = DisplayStyle.Flex;
     }
 }   
