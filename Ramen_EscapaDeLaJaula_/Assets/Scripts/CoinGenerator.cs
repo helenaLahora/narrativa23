@@ -27,9 +27,12 @@ public class CoinGenerator : MonoBehaviour {
             // creamos la moneda en la posición aleatoria
             GameObject coin = Instantiate(coinPrefab, coinPosition, Quaternion.identity);
 
-            // obtenemos el componente Lifetime del prefab y configuramos su duración a 5 segundos
-            Lifetime lifetime = coin.GetComponent<Lifetime>();
-            lifetime.duration = 5f;
+            // hacemos que la moneda sea hija del objeto generador
+            coin.transform.parent = transform;
+
+            // destruimos la moneda después de 10 segundos
+            Destroy(coin, 10f);
+            
         }
     }
 }
