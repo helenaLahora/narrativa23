@@ -43,7 +43,7 @@ public class CamMovement : MonoBehaviour
     }
     void LookAround()
     {
-        Camera.transform.RotateAround(transform.position, Vector3.up, LookPos.x * Sens);
+        //Camera.transform.Translate(LookPos.y * Sens, 0 , LookPos.x * Sens);
         Camera.transform.LookAt(transform.position);
 
     }

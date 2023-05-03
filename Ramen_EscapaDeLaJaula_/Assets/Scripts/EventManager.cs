@@ -74,7 +74,8 @@ public enum TipoNodo
     presentacion,
     eleccion,
     historiaPresentacion,
-    menu_config
+    menu_config,
+    creditos
 }
 public enum TipoBoton
 {

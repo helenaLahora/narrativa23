@@ -49,17 +49,10 @@ public class PlayerMovement : MonoBehaviour
         right.y = 0f;
         forward.Normalize();
         right.Normalize();
-        movement = forward* raw_movement.y * speed + right * raw_movement.x * speed;
+        movement = forward * raw_movement.y * speed + right * raw_movement.x * speed;
+        //movement = new Vector3(raw_movement.x,0,raw_movement.y);
         movement.y = verticalSpeed;
-        //movement.y += gravity;
-        //if (Jump && Cc.isGrounded)
-        //{
-        //    movement.y += JumpForce ;
-        //}
-        //else if(Jump==false && Cc.isGrounded)
-        //{
-        //    movement.y = 0f;    
-        //}
+
 
 
         Cc.Move(movement * Time.deltaTime);

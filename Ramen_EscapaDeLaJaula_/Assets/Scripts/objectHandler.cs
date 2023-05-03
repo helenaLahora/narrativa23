@@ -9,7 +9,8 @@ public class objectHandler : MonoBehaviour
     public Texture2D[] calcetin;
     public Texture2D[] peine;
     public Texture2D[] pelota;
-
+    public float tiempoMuerte = 60;
+    private float time;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +21,7 @@ public class objectHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         UI.rootVisualElement.Q<Label>("cantidadMonedas").text = EventHandler.Variables[Variable.coin].ToString();
         if (EventHandler.Variables[Variable.collectedObjects] > 0)
         {
@@ -53,5 +55,9 @@ public class objectHandler : MonoBehaviour
             UI.rootVisualElement.Q<VisualElement>("bola").style.backgroundImage = pelota[0];
 
         }
+        time += Mathf.FloorToInt(Time.time / 60);
+        tiempoMuerte -= time;
+        UI.rootVisualElement.Q<Label>("tiempo").text = string.Empty;
+        UI.rootVisualElement.Q<Label>("tiempo").text += tiempoMuerte.ToString() ;
     }
 }

@@ -48,7 +48,6 @@ public class UIHANDLE : MonoBehaviour
     {
        
         int index=0;
-        player.GetComponent<CamMovement>().enabled = false;
         player.GetComponent<PlayerInput>().DeactivateInput();
         
         
@@ -76,6 +75,9 @@ public class UIHANDLE : MonoBehaviour
                     break;
                 case TipoNodo.menu_config:
                     UI.visualTreeAsset = visualTreeAssets[4];
+                    break;
+                case TipoNodo.creditos:
+                    UI.visualTreeAsset = visualTreeAssets[5];
                     break;
 
             }
@@ -229,7 +231,6 @@ public class UIHANDLE : MonoBehaviour
     public void CerrarDialogo()
     {
         Destroy(gameObject);
-        player.GetComponent<CamMovement>().enabled = true;
         player.GetComponent<PlayerInput>().ActivateInput();
         expModo.GetComponent<UIDocument>().rootVisualElement.style.display = DisplayStyle.Flex;
     }

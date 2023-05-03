@@ -22,7 +22,7 @@ public class CoinGenerator : MonoBehaviour {
             timer = 0f;
 
             // generamos la posición aleatoria de la moneda dentro de la zona de generación
-            Vector3 coinPosition = new Vector3(Random.Range(minXZ.x, maxXZ.x), 1f, Random.Range(minXZ.y, maxXZ.y));
+            Vector3 coinPosition = new Vector3(transform.position.x + Random.Range(minXZ.x, maxXZ.x), transform.position.y, transform.position.z + Random.Range(minXZ.y, maxXZ.y));
 
             // creamos la moneda en la posición aleatoria
             GameObject coin = Instantiate(coinPrefab, coinPosition, Quaternion.identity);

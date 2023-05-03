@@ -874,7 +874,7 @@ MonoBehaviour:
         personaje: 
         texto: Juego Pausado
         botones:
-        - tipoBoton: 0
+        - tipoBoton: 1
           nombre: Creditos
           siguienteDialogo: 0
           accion: []
@@ -884,6 +884,16 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones: []
+        - tipoBoton: 0
+          nombre: Volver
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 5
+        esPersonaje: 0
+        personaje: 
+        texto: CREDITOS
+        botones:
         - tipoBoton: 0
           nombre: Volver
           siguienteDialogo: 
