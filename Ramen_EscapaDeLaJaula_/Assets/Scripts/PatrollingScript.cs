@@ -8,7 +8,7 @@ public class PatrollingScript : MonoBehaviour
     public Transform[] wayPoints; 
     private int currentWayPoint = 0;
     public float minDistance = 15f;
-    [HideInInspector] public float speed = 0;
+    public float speed = 0;
     private bool isReturning;
     private Quaternion ogRotation;
     private Vector3 currentTargetPosition => wayPoints[currentWayPoint].position;
@@ -39,6 +39,7 @@ public class PatrollingScript : MonoBehaviour
     //Checkea si está cerca o encima del wayPoint
     private bool ReachedWayPoint()
     {
+        Debug.Log(Vector3.Distance(transform.position, currentTargetPosition));
         return Vector3.Distance(transform.position, currentTargetPosition) <= minDistance;
     }
 
@@ -68,8 +69,6 @@ public class PatrollingScript : MonoBehaviour
     {
         transform.LookAt(new Vector3 (currentTargetPosition.x, transform.position.y, currentTargetPosition.z));
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
-
-
     }
 
 }
