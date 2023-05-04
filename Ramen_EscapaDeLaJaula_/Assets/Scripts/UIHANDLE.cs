@@ -16,12 +16,13 @@ public class UIHANDLE : MonoBehaviour
     private Nodo currentNodo;
     private GameObject player;
     public GameObject expModo;
-
+    private GameObject cinemachine;
     // Start is called before the first frame update
     private void Awake()
     {
         UI = GetComponent<UIDocument>();
         expModo = GameObject.Find("ExpModo");
+        cinemachine = GameObject.FindGameObjectWithTag("Cine");
     }
     void Start()
     {
@@ -36,6 +37,7 @@ public class UIHANDLE : MonoBehaviour
 
     public void StartEvent(string identifier, GameObject playerGameObject)
     {
+        cinemachine.SetActive(false);
         expModo.GetComponent<UIDocument>().rootVisualElement.style.display = DisplayStyle.None;
         player = playerGameObject;
         currentEvent = Array.Find(eventManager.eventos, e => e.identifier == identifier);
@@ -230,6 +232,7 @@ public class UIHANDLE : MonoBehaviour
     }
     public void CerrarDialogo()
     {
+        cinemachine.SetActive(true);
         Destroy(gameObject);
         player.GetComponent<PlayerInput>().ActivateInput();
         expModo.GetComponent<UIDocument>().rootVisualElement.style.display = DisplayStyle.Flex;

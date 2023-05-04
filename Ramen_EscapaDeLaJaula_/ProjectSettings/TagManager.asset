@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Moneda
   - NPC
+  - Cine
   layers:
   - Default
   - TransparentFX

@@ -7,10 +7,10 @@ public class WonderBehaviour : StateMachineBehaviour
 {
     Transform player;
 
-    public List<Transform> wayPoints;
+    //public List<Transform> wayPoints;
     //private int nextPosition = 0;
     //private int lastPosition = 0;
-    public float speed = 3f;
+    //public float speed = 3f;
     //private Vector3 dir;
     //private Vector3 goTo;
     //private bool isReturning = false;
@@ -81,8 +81,7 @@ public class WonderBehaviour : StateMachineBehaviour
      private bool isPlayerClose(Transform player, Transform enemy)
     {
 
-        //return Vector3.Distance(player.position, enemy.position) < detectDistance;
-        return false;
+        return Vector3.Distance(player.position, enemy.position) < detectDistance;
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
