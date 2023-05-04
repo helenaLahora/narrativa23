@@ -11,7 +11,6 @@ public class WonderBehaviour : StateMachineBehaviour
     //private int nextPosition = 0;
     //private int lastPosition = 0;
     public float speed = 3f;
-    private int length;
     //private Vector3 dir;
     //private Vector3 goTo;
     //private bool isReturning = false;
@@ -19,17 +18,10 @@ public class WonderBehaviour : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        length = GameObject.FindGameObjectsWithTag("WayPoint").Length;
+
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
-        for (int i = 0; i < length; i++)
-        {
 
-                wayPoints.Add( GameObject.FindGameObjectsWithTag("WayPoint")[i].transform);
-
-
-            
-        }
     }
 
     //OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -89,7 +81,8 @@ public class WonderBehaviour : StateMachineBehaviour
      private bool isPlayerClose(Transform player, Transform enemy)
     {
 
-        return Vector3.Distance(player.position, enemy.position) < detectDistance;
+        //return Vector3.Distance(player.position, enemy.position) < detectDistance;
+        return false;
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
