@@ -52,13 +52,7 @@ public class PlayerDetection : MonoBehaviour
                 uiInstance = Instantiate(uiPrefab);
                 uiHandle = uiInstance.GetComponent<UIHANDLE>();
                 uiHandle.StartEvent(nombreEvento, player);
-                player.GetComponent<CamMovement>().Camera.transform.LookAt(transform.position);
-
             }
-
-
         }
-
-
     }
 }
