@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e46ae7856960e4b418da33ee6ac63c0e
+guid: b786700bc2084d945a4f2aa93a36d718
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -8,7 +8,22 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: DIFFUSE.001
-    second: {fileID: 2100000, guid: 8889663c5dad10e4e9db2642e4bc0e53, type: 2}
+    second: {fileID: 2100000, guid: 164385a2f39630e48babdc721cec8866, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.002
+    second: {fileID: 2100000, guid: b697647725276644c994de086d4435c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.003
+    second: {fileID: 2100000, guid: eebfd70f2a7ec33409c6d810b5e6123f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.006
+    second: {fileID: 2100000, guid: 87d1e52f12c058b44ade9fa5d8348ca9, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
