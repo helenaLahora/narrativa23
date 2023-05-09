@@ -72,8 +72,8 @@
     <Compile Include="Assets\Scripts\Coin.cs" />
     <Compile Include="Assets\Scripts\EventManager.cs" />
     <Compile Include="Assets\Scripts\CoinGenerator.cs" />
-    <Compile Include="Assets\Scripts\WonderBehaviour.cs" />
     <Compile Include="Assets\OnTriggerAction.cs" />
+    <Compile Include="Assets\Scripts\WonderBehaviour.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
