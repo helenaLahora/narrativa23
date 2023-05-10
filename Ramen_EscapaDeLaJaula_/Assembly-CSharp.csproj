@@ -58,7 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\IdleBehavior.cs" />
     <Compile Include="Assets\Scripts\PlayerDetection.cs" />
-    <Compile Include="Assets\Scripts\patrolingLlamacornio.cs" />
+    <Compile Include="Assets\Scripts\patrolingNPC.cs" />
     <Compile Include="Assets\Scripts\PatrollingScript.cs" />
     <Compile Include="Assets\Scripts\AttackBehaviour.cs" />
     <Compile Include="Assets\Scripts\Dormitorio\MovimientoRueda.cs" />

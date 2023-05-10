@@ -95,7 +95,8 @@ public enum Variable
     coin,
     explainedMission,
     collectedObjects,
-    bolaEjercicio
+    bolaEjercicio,
+    amistad
 }
 public enum Operador
 {
