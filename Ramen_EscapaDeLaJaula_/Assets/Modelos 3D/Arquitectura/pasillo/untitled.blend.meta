@@ -3,7 +3,22 @@ guid: 4d1a0825da5a4e74f8c596372c591bdc
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Paredes
+    second: {fileID: 2100000, guid: 4b6acb0df8cda26409080d33b0e80013, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Suelo
+    second: {fileID: 2100000, guid: 1528ebefac4e26e44ae934cc6b673d38, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Techo
+    second: {fileID: 2100000, guid: fb4361f65e580af42bba1b721133b590, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
