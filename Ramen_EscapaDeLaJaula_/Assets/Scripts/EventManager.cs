@@ -75,7 +75,8 @@ public enum TipoNodo
     eleccion,
     historiaPresentacion,
     menu_config,
-    creditos
+    creditos,
+    menu_inicio
 }
 public enum TipoBoton
 {
@@ -94,7 +95,8 @@ public enum Variable
     coin,
     explainedMission,
     collectedObjects,
-    bolaEjercicio
+    bolaEjercicio,
+    amistad
 }
 public enum Operador
 {

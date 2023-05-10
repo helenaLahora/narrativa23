@@ -81,6 +81,9 @@ public class UIHANDLE : MonoBehaviour
                 case TipoNodo.creditos:
                     UI.visualTreeAsset = visualTreeAssets[5];
                     break;
+                case TipoNodo.menu_inicio:
+                    UI.visualTreeAsset = visualTreeAssets[6];
+                    break;
 
             }
             if (currentNodo.tipoNodo != TipoNodo.historiaPresentacion)
