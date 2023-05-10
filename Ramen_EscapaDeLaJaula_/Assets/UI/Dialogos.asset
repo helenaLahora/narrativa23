@@ -708,6 +708,38 @@ MonoBehaviour:
     dialogos:
     - identifier: 1
       nodos:
+      - tipoNodo: 6
+        esPersonaje: 0
+        personaje: 
+        texto: 
+        botones:
+        - tipoBoton: 3
+          nombre: Jugar
+          siguienteDialogo: 2
+          accion: []
+          condiciones: []
+        - tipoBoton: 1
+          nombre: Creditos
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+        - tipoBoton: 5
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 5
+        esPersonaje: 0
+        personaje: 
+        texto: CREDITOS
+        botones:
+        - tipoBoton: 2
+          nombre: Volver
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+    - identifier: 2
+      nodos:
       - tipoNodo: 3
         esPersonaje: 0
         personaje: 
@@ -781,10 +813,10 @@ MonoBehaviour:
         botones:
         - tipoBoton: 3
           nombre: Continuar
-          siguienteDialogo: 2
+          siguienteDialogo: 3
           accion: []
           condiciones: []
-    - identifier: 2
+    - identifier: 3
       nodos:
       - tipoNodo: 2
         esPersonaje: 0
@@ -794,15 +826,15 @@ MonoBehaviour:
         botones:
         - tipoBoton: 3
           nombre: Quedarse en la jaula
-          siguienteDialogo: 4
+          siguienteDialogo: 5
           accion: []
           condiciones: []
         - tipoBoton: 3
           nombre: Salir de la jaula
-          siguienteDialogo: 3
+          siguienteDialogo: 4
           accion: []
           condiciones: []
-    - identifier: 3
+    - identifier: 4
       nodos:
       - tipoNodo: 3
         esPersonaje: 0
@@ -852,7 +884,7 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones: []
-    - identifier: 4
+    - identifier: 5
       nodos:
       - tipoNodo: 2
         esPersonaje: 0
