@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = System.Random;
 
-public class patrolingLlamacornio : MonoBehaviour
+public class patrolingNPC : MonoBehaviour
 {
     public Transform[] wayPoints;
     private int currentWayPoint = 0;
@@ -51,7 +51,7 @@ public class patrolingLlamacornio : MonoBehaviour
         }
     }
 
-    //Checkea si está cerca o encima del wayPoint
+    //Checkea si estï¿½ cerca o encima del wayPoint
     private bool ReachedWayPoint()
     {
         if (Vector3.Distance(transform.position, currentTargetPosition) <= minDistance)
