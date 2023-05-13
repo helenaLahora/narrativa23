@@ -9,7 +9,6 @@ public class FirstUI : MonoBehaviour
     private GameObject uiInstance;
     private UIHANDLE uiHandle;
     public GameObject player;
-    private int uiCounter = 0;
 
 
     // Start is called before the first frame update

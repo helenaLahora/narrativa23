@@ -111,7 +111,6 @@ public class UIHANDLE : MonoBehaviour
                     case TipoBoton.Condicion:
                         if (boton.condiciones.Length > 0)
                         {
-                            Debug.Log(boton.condiciones);
                             foreach (Condicion condicion in boton.condiciones)
                             {
                                 bool resultado = false;
