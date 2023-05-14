@@ -36,7 +36,7 @@ public class PatrollingScript : MonoBehaviour
         }
     }
 
-    //Checkea si está cerca o encima del wayPoint
+    //Checkea si estï¿½ cerca o encima del wayPoint
     private bool ReachedWayPoint()
     {
         
