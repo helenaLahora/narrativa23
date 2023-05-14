@@ -177,366 +177,6 @@ MonoBehaviour:
           - variable: 4
             valor: 1
           condiciones: []
-  - identifier: Evento_Juguetes
-    dialogos:
-    - identifier: 1
-      nodos:
-      - tipoNodo: 1
-        esPersonaje: 1
-        personaje: "Juguetes Del Ba\xFAl"
-        texto: Discuten por quien es el juguete favorito de Leo. Soluciona la pelea
-          y consigue una recompensa especial.
-        botones:
-        - tipoBoton: 0
-          nombre: Salir
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-        - tipoBoton: 4
-          nombre: "Hablar con Los Juguetes del Ba\xFAl"
-          siguienteDialogo: 
-          accion: []
-          condiciones:
-          - variable: 0
-            operador: 4
-            valor: 1
-            dialogoTrue: 2
-            dialogoFalse: 3
-    - identifier: 2
-      nodos:
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Llamacornio Julio
-        texto: "\xBFNo te marchabas? No marees mucho la perdiz que aqu\xED ya nos
-          hemos organizado para tu huida."
-        botones:
-        - tipoBoton: 0
-          nombre: Salir
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-    - identifier: 3
-      nodos:
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Llamacornio Julio
-        texto: "\xA1Ramen! \xA1Hola! Hac\xEDa d\xEDas que Leo no te bajaba para jugar
-          con nosotros. \xBFD\xF3nde est\xE1 Leo?\L\xBFNo me digas que se ha dejado
-          la puerta abierta y has decidido escapar para explorar el mundo exterior?"
-        botones:
-        - tipoBoton: 1
-          nombre: Continuar
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Llamacornio Julio
-        texto: "Pues si que ha sido as\xED. Parece ser que que soy un gran adivino.
-          Eso o es que he visto como pasaba todo ja ja ja. Bueno... Ahora que te
-          vas, el puesto al mejor acompa\xF1ante de Leo queda vacio... \xA1Muchachos!
-          \xA1Tocan elecciones!"
-        botones:
-        - tipoBoton: 1
-          nombre: Continuar
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Teresa La Triceratops
-        texto: "\xA1Claramente tocan elecciones! Para que sea justo cada uno deber\xE1
-          decir una raz\xF3n por la que ser el mejor acompa\xF1ante."
-        botones:
-        - tipoBoton: 1
-          nombre: Continuar
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-      - tipoNodo: 2
-        esPersonaje: 1
-        personaje: Protectora Lila
-        texto: "Ramen debe votar, a \xE9l le dar\xE1 igual quien gane."
-        botones:
-        - tipoBoton: 3
-          nombre: Salir
-          siguienteDialogo: 4
-          accion: []
-          condiciones: []
-    - identifier: 4
-      nodos:
-      - tipoNodo: 2
-        esPersonaje: 0
-        personaje: 
-        texto: Escucha las razones de todos los juguetes, lee atentamente. Al acabar
-          vota por el mejor de forma justa.
-        botones:
-        - tipoBoton: 3
-          nombre: Escuchar razones de cada juguete
-          siguienteDialogo: 5
-          accion: []
-          condiciones: []
-        - tipoBoton: 3
-          nombre: "Votar acompa\xF1ante favorito"
-          siguienteDialogo: 11
-          accion: []
-          condiciones: []
-    - identifier: 5
-      nodos:
-      - tipoNodo: 2
-        esPersonaje: 0
-        personaje: 
-        texto: "Campa\xF1a electoral. Escucha las razones de cada juguete."
-        botones:
-        - tipoBoton: 3
-          nombre: "Poni Togot\xF3"
-          siguienteDialogo: 6
-          accion: []
-          condiciones: []
-        - tipoBoton: 3
-          nombre: Teresa La Triceratops
-          siguienteDialogo: 7
-          accion: []
-          condiciones: []
-        - tipoBoton: 3
-          nombre: "Oso Ar\xE1ndano"
-          siguienteDialogo: 8
-          accion: []
-          condiciones: []
-        - tipoBoton: 3
-          nombre: Llamacornio Julio
-          siguienteDialogo: 9
-          accion: []
-          condiciones: []
-        - tipoBoton: 3
-          nombre: Protectora Lila
-          siguienteDialogo: 10
-          accion: []
-          condiciones: []
-        - tipoBoton: 3
-          nombre: Volver
-          siguienteDialogo: 4
-          accion: []
-          condiciones: []
-    - identifier: 6
-      nodos:
-      - tipoNodo: 2
-        esPersonaje: 1
-        personaje: "Poni Togot\xF3"
-        texto: "Soy el m\xE1s veloz y el m\xE1s antiguo. Merezco el puetso como mejor
-          acompa\xF1ante."
-        botones:
-        - tipoBoton: 3
-          nombre: Volver
-          siguienteDialogo: 5
-          accion: []
-          condiciones: []
-    - identifier: 7
-      nodos:
-      - tipoNodo: 2
-        esPersonaje: 1
-        personaje: Teresa La Triceratops
-        texto: "Soy el m\xE1s grande y resistente de todos los juguetes aqu\xED,
-          as\xED que deber\xEDa ser el preferido."
-        botones:
-        - tipoBoton: 3
-          nombre: Volver
-          siguienteDialogo: 5
-          accion: []
-          condiciones: []
-    - identifier: 8
-      nodos:
-      - tipoNodo: 2
-        esPersonaje: 1
-        personaje: "Oso Ar\xE1ndano"
-        texto: "Soy el m\xE1s suave y peludo, \xBFqui\xE9n no querr\xEDa abrazarme
-          todo el tiempo?"
-        botones:
-        - tipoBoton: 3
-          nombre: Volver
-          siguienteDialogo: 5
-          accion: []
-          condiciones: []
-    - identifier: 9
-      nodos:
-      - tipoNodo: 2
-        esPersonaje: 1
-        personaje: Llamacornio Julio
-        texto: "Soy un llamacornio, mitad llama mitad unicornio, \xA1Eso es tan incre\xEDble!"
-        botones:
-        - tipoBoton: 3
-          nombre: Volver
-          siguienteDialogo: 5
-          accion: []
-          condiciones: []
-        - tipoBoton: 1
-          nombre: Escuchar segunda razon
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-      - tipoNodo: 2
-        esPersonaje: 1
-        personaje: Llamacornio Julio
-        texto: "Adem\xE1s amigo... Tengo algo que te interesa si de verdad quieres
-          salir..."
-        botones:
-        - tipoBoton: 3
-          nombre: Volver
-          siguienteDialogo: 5
-          accion: []
-          condiciones: []
-        - tipoBoton: 1
-          nombre: Continuar
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-      - tipoNodo: 2
-        esPersonaje: 1
-        personaje: Llamacornio Julio
-        texto: "\xA1Tu bola de ejercicio amigo! Si quieres pasar por el pasillo sin
-          que Roomba te aspire deber\xE1s tener la bola.\LTe dir\xE9 donde est\xE1
-          si me votas como mejor acompa\xF1ante."
-        botones:
-        - tipoBoton: 3
-          nombre: Volver
-          siguienteDialogo: 5
-          accion: []
-          condiciones: []
-    - identifier: 10
-      nodos:
-      - tipoNodo: 2
-        esPersonaje: 1
-        personaje: Protectora Lila
-        texto: "Soy la m\xE1s valiente y protectora de todos. \xBFQu\xE9 ser\xEDa
-          de ustedes sin m\xED para mantenerlos a salvo?"
-        botones:
-        - tipoBoton: 3
-          nombre: Volver
-          siguienteDialogo: 5
-          accion: []
-          condiciones: []
-    - identifier: 11
-      nodos:
-      - tipoNodo: 2
-        esPersonaje: 0
-        personaje: 
-        texto: "El d\xEDa de las elecciones ha llegado. Selecciona al futuro mejor
-          juguete:"
-        botones:
-        - tipoBoton: 3
-          nombre: "Poni Togot\xF3"
-          siguienteDialogo: 12
-          accion: []
-          condiciones: []
-        - tipoBoton: 3
-          nombre: Teresa La Triceratops
-          siguienteDialogo: 13
-          accion: []
-          condiciones: []
-        - tipoBoton: 3
-          nombre: "Oso Ar\xE1ndano"
-          siguienteDialogo: 14
-          accion: []
-          condiciones: []
-        - tipoBoton: 3
-          nombre: Llamacornio Julio
-          siguienteDialogo: 15
-          accion: []
-          condiciones: []
-        - tipoBoton: 3
-          nombre: Protectora Lila
-          siguienteDialogo: 16
-          accion: []
-          condiciones: []
-        - tipoBoton: 3
-          nombre: Volver
-          siguienteDialogo: 4
-          accion: []
-          condiciones: []
-    - identifier: 12
-      nodos:
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: "Poni Togot\xF3"
-        texto: "Has escogido a tu mejor sucesor. \xA1Gracias Ramen!"
-        botones:
-        - tipoBoton: 0
-          nombre: Salir
-          siguienteDialogo: 
-          accion:
-          - variable: 0
-            valor: 1
-          condiciones: []
-    - identifier: 13
-      nodos:
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Teresa La Triceratops
-        texto: "Has escogido a tu mejor sucesor. \xA1Gracias Ramen!"
-        botones:
-        - tipoBoton: 0
-          nombre: Salir
-          siguienteDialogo: 
-          accion:
-          - variable: 0
-            valor: 1
-          condiciones: []
-    - identifier: 14
-      nodos:
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: "Oso Ar\xE1ndano"
-        texto: "Has escogido a tu mejor sucesor. \xA1Gracias Ramen!"
-        botones:
-        - tipoBoton: 0
-          nombre: Salir
-          siguienteDialogo: 
-          accion:
-          - variable: 0
-            valor: 1
-          condiciones: []
-    - identifier: 15
-      nodos:
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Llamacornio Julio
-        texto: "Al final el sabotaje siempre gana. \xBFVerdad Amigo? Ya me he asegurado
-          de traerte tu bola."
-        botones:
-        - tipoBoton: 1
-          nombre: Conseguir bola de ejercicio
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Llamacornio Julio
-        texto: "Pero te lo advierto no vuelvas por aqu\xED amigo, ahora soy yo el
-          mejor acompa\xF1ante. \xA1Gracias amigo!"
-        botones:
-        - tipoBoton: 0
-          nombre: Salir
-          siguienteDialogo: 
-          accion:
-          - variable: 0
-            valor: 1
-          - variable: 6
-            valor: 1
-          condiciones: []
-    - identifier: 16
-      nodos:
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Protectora Lila
-        texto: "Has escogido a tu mejor sucesor. \xA1Gracias Ramen!"
-        botones:
-        - tipoBoton: 0
-          nombre: Salir
-          siguienteDialogo: 
-          accion:
-          - variable: 0
-            valor: 1
-          condiciones: []
   - identifier: Evento_Empezar
     dialogos:
     - identifier: 1
@@ -576,7 +216,9 @@ MonoBehaviour:
       - tipoNodo: 3
         esPersonaje: 0
         personaje: 
-        texto: Inicio Partida
+        texto: 'Escapa De La Jaula
+
+          Ramen 2'
         botones:
         - tipoBoton: 1
           nombre: Continuar
@@ -586,8 +228,9 @@ MonoBehaviour:
       - tipoNodo: 3
         esPersonaje: 0
         personaje: 
-        texto: "Hace seis meses la familia de la casa adopt\xF3 a un peque\xF1o h\xE1mster
-          por el sexto aniversario de Leo."
+        texto: "Para el sexto cumplea\xF1os de Leo los abuelos Carla y Carlos le
+          regalaron un amigable h\xE1mster.\nEl ni\xF1o decidi\xF3 nombrar al h\xE1mster
+          como su comida favorita: Ramen. "
         botones:
         - tipoBoton: 1
           nombre: Continuar
@@ -597,8 +240,10 @@ MonoBehaviour:
       - tipoNodo: 3
         esPersonaje: 0
         personaje: 
-        texto: "El diminuto animal, al que bautizaron como Ramen, r\xE1pidamente
-          se adapt\xF3 a su nueva vida."
+        texto: "Durante este tiempo Ramen se ha acostumbrado a su familia. Carlos
+          le alimenta de f\xE1bula, Nora le acaricia a montones, Carla le arregla
+          la rueda cada vez que se rompe y Leo juega con \xE9l a todas horas. Y cuando
+          Marcos vuelve de viaje siempre se oye como canturrea."
         botones:
         - tipoBoton: 1
           nombre: Continuar
@@ -608,30 +253,10 @@ MonoBehaviour:
       - tipoNodo: 3
         esPersonaje: 0
         personaje: 
-        texto: "Ramen es un h\xE1mster activo que disfruta de su tiempo libre corriendo
-          en su rueda y comiendo sus semillas y frutas favoritas."
-        botones:
-        - tipoBoton: 1
-          nombre: Continuar
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-      - tipoNodo: 3
-        esPersonaje: 0
-        personaje: 
-        texto: "Leo se lo pasa mucho mejor sacando a su mascota de la jaula, permiti\xE9ndole
-          explorar su dormitorio dentro de la bola de ejercicio."
-        botones:
-        - tipoBoton: 1
-          nombre: Continuar
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-      - tipoNodo: 3
-        esPersonaje: 0
-        personaje: 
-        texto: "Ramen siempre ha deseado salir al exterior. Se siente solo y le gustar\xEDa
-          hablar con sus nuevos amigos los ratones."
+        texto: "Aunque el peque\xF1o h\xE1mster se pasa el d\xEDa viviendo aventuras
+          con Leo y sus juguetes, siempre ha tenido la curiosidad de salir al exterior
+          y sentir la hierba bajo sus patas. \xBFC\xF3mo debe ser sentir el calor
+          del sol en su pelaje? \xBFO pisar charcos con sus patitas?"
         botones:
         - tipoBoton: 1
           nombre: Continuar
@@ -641,8 +266,10 @@ MonoBehaviour:
       - tipoNodo: 2
         esPersonaje: 0
         personaje: 
-        texto: "Pero aunque Leo es un ni\xF1o de seis a\xF1os despistado, nunca se
-          le olvida cerrar la jaula despues de jugar juntos aunque..."
+        texto: "Leo es un ni\xF1o despreocupado que ama jugar con su mascota y a
+          menudo se olvida de cerrar bien la puerta de la jaula despu\xE9s de jugar
+          juntos. Hoy, Leo ha salido a jugar al parque con su abuela Carla y ha dejado
+          la puerta de la jaula abierta."
         botones:
         - tipoBoton: 3
           nombre: Continuar
@@ -654,8 +281,9 @@ MonoBehaviour:
       - tipoNodo: 2
         esPersonaje: 0
         personaje: 
-        texto: "\xA1No puede ser! \xA1\xBFA Leo se le ha olvidado cerrar bien la
-          puerta?! \xBFDeber\xEDa Ramen aprovechar la oportunidad?"
+        texto: "\xBFDeber\xEDa Ramen aprovechar la oportunidad para escapar y explorar
+          el mundo exterior o deber\xEDa quedarse en casa donde se siente seguro
+          y c\xF3modo?"
         botones:
         - tipoBoton: 3
           nombre: Quedarse en la jaula
@@ -672,45 +300,9 @@ MonoBehaviour:
       - tipoNodo: 3
         esPersonaje: 0
         personaje: 
-        texto: Escape exitoso
-        botones:
-        - tipoBoton: 1
-          nombre: Continuar
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-      - tipoNodo: 3
-        esPersonaje: 0
-        personaje: 
-        texto: "Has conseguido salir de la jaula. Para llegar al exterior debes encontrar
-          una salida. Al atravesar la casa encontrar\xE1s la puerta principal. Esta
-          se abre con la llave."
-        botones:
-        - tipoBoton: 1
-          nombre: Continuar
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-      - tipoNodo: 3
-        esPersonaje: 0
-        personaje: 
-        texto: "Esto de ser despistado viene de familia. En esta casa nunca dejan
-          la llave en el mismo lugar, tendr\xE1s que buscar la llave por todas las
-          habitaciones para conseguir salir. Aunque tambi\xE9n puedes probar otras
-          salidas m\xE1s originales... "
-        botones:
-        - tipoBoton: 1
-          nombre: Continuar
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-      - tipoNodo: 3
-        esPersonaje: 0
-        personaje: 
-        texto: "Cuando te encuentres con alg\xFAn habitante de la casa clica la tecla
-          F para inter\xE1ctuar con ellos. Puedes guardar un objeto presionando la
-          tecla E.\n\nSi no sabes como solucionar alg\xFAn obst\xE0culo pregunta
-          a la cerda Rosie, est\xE1 en el esctorio de Leo."
+        texto: "\xA1Te has atrevido a salir de la jaula! Pero\u2026 \xBFAhora que
+          pasa? La casa es muy grande y Ramen no tiene muy claro como salir. Ay\xFAdalo
+          a investigar las habitaciones en busca de un sitio donde huir."
         botones:
         - tipoBoton: 0
           nombre: Salir
@@ -727,7 +319,7 @@ MonoBehaviour:
         botones:
         - tipoBoton: 3
           nombre: Salir de la jaula
-          siguienteDialogo: 3
+          siguienteDialogo: 4
           accion: []
           condiciones: []
   - identifier: Evento_Menu
@@ -1068,6 +660,27 @@ MonoBehaviour:
         botones:
         - tipoBoton: 0
           nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+  - identifier: Evento_Julio
+    dialogos:
+    - identifier: 1
+      nodos:
+      - tipoNodo: 1
+        esPersonaje: 1
+        personaje: Llamacornio Julio
+        texto: "Juguete del ba\xFAl, juguet\xF3n pero astuto, siempre en busca de
+          su propio beneficio. Disfruta hablando con todos los habitantes de la casa
+          \xA1 y tiene muy buenos chistes!"
+        botones:
+        - tipoBoton: 0
+          nombre: 
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+        - tipoBoton: 0
+          nombre: 
           siguienteDialogo: 
           accion: []
           condiciones: []
