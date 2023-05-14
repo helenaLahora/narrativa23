@@ -13,173 +13,6 @@ MonoBehaviour:
   m_Name: Dialogos
   m_EditorClassIdentifier: 
   eventos:
-  - identifier: Evento_Rosie
-    dialogos:
-    - identifier: 1
-      nodos:
-      - tipoNodo: 1
-        esPersonaje: 1
-        personaje: Rosie La Cerdita Hucha
-        texto: "Ofrece consejos valiosos a cambio de monedas. Puedes encontrar monedas
-          debajo de la cama o el sof\xE1.\r"
-        botones:
-        - tipoBoton: 0
-          nombre: Salir
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-        - tipoBoton: 1
-          nombre: Preguntar a Rosie
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Rosie La Cerdita Hucha
-        texto: "\xA1Hola Ramen! \xBFComo va tu aventura por la casa? Por lo que veo
-          no muy bien, ya que buscas mi ayuda. \xBFHas tra\xEDdo alguna moneda para
-          mi? Si no es as\xED no molestes m\xE1s, yo lo s\xE9 todo pero no regalo
-          nada."
-        botones:
-        - tipoBoton: 0
-          nombre: Salir
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-        - tipoBoton: 1
-          nombre: Dar Moneda a Rosie
-          siguienteDialogo: 
-          accion:
-          - variable: 3
-            valor: -1
-          condiciones: []
-      - tipoNodo: 2
-        esPersonaje: 1
-        personaje: Rosie La Cerdita Hucha
-        texto: "\xA1Gracias! Al despistado de Leo siempre se le olvida darme las
-          monedas y las deja tiradas por la casa... \xA1Dime en que te puedo ayudar!"
-        botones:
-        - tipoBoton: 3
-          nombre: Motas de polvo
-          siguienteDialogo: 2
-          accion: []
-          condiciones: []
-        - tipoBoton: 3
-          nombre: Juguetes
-          siguienteDialogo: 3
-          accion: []
-          condiciones: []
-        - tipoBoton: 3
-          nombre: Roomba
-          siguienteDialogo: 4
-          accion: []
-          condiciones: []
-        - tipoBoton: 3
-          nombre: Salidas
-          siguienteDialogo: 5
-          accion: []
-          condiciones: []
-    - identifier: 2
-      nodos:
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Rosie La Cerdita Hucha
-        texto: "\xA1Aish! \xBFOtra vez molestando? Parece ser que nunca se cansan.
-          Seguramente te pidan el peine de Leo y alguno de sus calcetines. Los puedes
-          encontrar en la misma habitaci\xF3n."
-        botones:
-        - tipoBoton: 1
-          nombre: Continuar
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Rosie La Cerdita Hucha
-        texto: "Leo es muy desordenado y acostumbra a dejar tirada la colada sucia
-          debajo del escritorio. Para el peine deber\xE1s probar suerte y observar
-          bien cada rinc\xF3n de la habitaci\xF3n."
-        botones:
-        - tipoBoton: 0
-          nombre: Salir
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-    - identifier: 3
-      nodos:
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Rosie La Cerdita Hucha
-        texto: "Los Juguetes del Ba\xFAl siempre est\xE1n alborotando. Sus gritos
-          y chillidos me molestan continuamente. Y ya no hablemos de cuando hacen
-          sus n\xFAmeros musicales..."
-        botones:
-        - tipoBoton: 1
-          nombre: Continuar
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Rosie La Cerdita Hucha
-        texto: "Llevan un rato discutiendo por quien es el acompa\xF1ante favorito
-          ya que ese hueco quedar\xE1 vac\xEDo en cuanto te vayas. Te advierto, el
-          Llamacornio Julio tiene mucha informaci\xF3n, no hagas que se enfade."
-        botones:
-        - tipoBoton: 0
-          nombre: Salir
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-    - identifier: 4
-      nodos:
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Rosie La Cerdita Hucha
-        texto: "Roomba aspira y mantiene limpia la casa. Evita que sus sensores te
-          detecten \xA1o te aspirar\xE1 en un pis p\xE1s!"
-        botones:
-        - tipoBoton: 1
-          nombre: Continuar
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Rosie La Cerdita Hucha
-        texto: "Puedes evitar a Roomba evit\xE1ndo los sensores o con tu querida
-          bola de ejercicio. Aunque no estoy muy segura de d\xF3nde est\xE1 ahora
-          mismo."
-        botones:
-        - tipoBoton: 0
-          nombre: Salir
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-    - identifier: 5
-      nodos:
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Rosie La Cerdita Hucha
-        texto: "Al atravesar la casa encontrar\xE1s la puerta principal. Se abre
-          con la llave, b\xFAscala por todas las habitaciones para conseguir salir."
-        botones:
-        - tipoBoton: 1
-          nombre: Continuar
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Rosie La Cerdita Hucha
-        texto: "Tambi\xE9n hay otras salidas m\xE1s originales... Habla con los habitantes
-          de la casa y desc\xFAbrelas."
-        botones:
-        - tipoBoton: 0
-          nombre: Salir
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
   - identifier: Evento_Polvo
     dialogos:
     - identifier: 1
@@ -928,6 +761,313 @@ MonoBehaviour:
         botones:
         - tipoBoton: 0
           nombre: Volver
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+  - identifier: Evento_Rosie
+    dialogos:
+    - identifier: 1
+      nodos:
+      - tipoNodo: 1
+        esPersonaje: 1
+        personaje: Rosie
+        texto: "Consejera sabia, tranquila y reflexiva. Siempre est\xE1 dispuesta
+          a escuchar y dar consejos \xFAtiles a sus amigos, a cambio de una moneda,
+          claro."
+        botones:
+        - tipoBoton: 1
+          nombre: Hablar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Rosie
+        texto: "\xA1Hola Ramen! \xBFC\xF3mo est\xE1s hoy? Veo que necesitas mi ayuda.
+          \xBFHas tra\xEDdo alguna moneda para mi cofre de sabidur\xEDa? Si a\xFAn
+          no tienes ninguna, no te preocupes. Busca en la habitaci\xF3n y regresa.
+          Podemos hablar un rato, pero no puedo hacer magia sin una moneda."
+        botones:
+        - tipoBoton: 4
+          nombre: "\xA1Claro que te he tra\xEDdo una moneda!"
+          siguienteDialogo: 
+          accion: []
+          condiciones:
+          - variable: 3
+            operador: 2
+            valor: 0
+            dialogoTrue: 2
+            dialogoFalse: 3
+        - tipoBoton: 3
+          nombre: Se me ha olvidado Rosie.
+          siguienteDialogo: 4
+          accion: []
+          condiciones: []
+    - identifier: 2
+      nodos:
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Rosie
+        texto: "\xA1Ah, gracias! Leo siempre olvida darme las monedas y a veces me
+          cuesta encontrarlas por m\xED misma. Estoy aqu\xED para ayudarte en lo
+          que necesites, as\xED que no dudes en preguntarme cualquier cosa."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion:
+          - variable: 3
+            valor: -1
+          condiciones: []
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Rosie
+        texto: "Como consejera, siempre escucho y reflexiono antes de dar consejos.
+          Adem\xE1s, tengo una habilidad especial para la planificaci\xF3n financiera
+          y el ahorro. \xBFEn qu\xE9 puedo ayudarte?"
+        botones:
+        - tipoBoton: 3
+          nombre: "Juguetes del Ba\xFAl"
+          siguienteDialogo: 5
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: Motas de Polvo
+          siguienteDialogo: 6
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: Chispita
+          siguienteDialogo: 7
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: "Mam\xE1 Nora"
+          siguienteDialogo: 8
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: Patos Patosos
+          siguienteDialogo: 9
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: Ratas de la Nevera
+          siguienteDialogo: 10
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: Perro Max
+          siguienteDialogo: 11
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: Abu Carlos
+          siguienteDialogo: 12
+          accion: []
+          condiciones: []
+    - identifier: 3
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Rosie
+        texto: "Ramen, no trates de enga\xF1arme. Te he dicho antes que necesito
+          monedas para compartir mi sabidur\xEDa contigo. Pero no te preocupes, puedes
+          encontrar monedas por el dormitorio. \xA1Vuelve cuando tengas una moneda!"
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Rosie
+        texto: "Como consejera, siempre escucho y reflexiono antes de dar consejos.
+          Adem\xE1s, tengo una habilidad especial para la planificaci\xF3n financiera
+          y el ahorro. \xBFEn qu\xE9 puedo ayudarte?"
+        botones:
+        - tipoBoton: 3
+          nombre: "Juguetes del Ba\xFAl"
+          siguienteDialogo: 5
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: Motas de Polvo
+          siguienteDialogo: 6
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: Chispita
+          siguienteDialogo: 7
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: "Mam\xE1 Nora"
+          siguienteDialogo: 8
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: Patos Patosos
+          siguienteDialogo: 9
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: Ratas de la Nevera
+          siguienteDialogo: 10
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: Perro Max
+          siguienteDialogo: 11
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: Abu Carlos
+          siguienteDialogo: 12
+          accion: []
+          condiciones: []
+    - identifier: 4
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Rosie
+        texto: "No pasa nada, simplemente no puedo compartir mis consejos gratuitamente.
+          \xA1Cuando tengas monedas regresa!"
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+    - identifier: 5
+      nodos:
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Rosie
+        texto: Ah... si, se han enterado de que planeas escapar y han decidido montar
+          unas elecciones para escoger a tu sucesor. Si te piden que escojas quien
+          debe ser el elegido, procura escuchar bien las razones de todos.
+        botones:
+        - tipoBoton: 3
+          nombre: Continuar
+          siguienteDialogo: 13
+          accion: []
+          condiciones: []
+    - identifier: 6
+      nodos:
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Rosie
+        texto: "\xBFTe han sobornado para salir del dormitorio no? Espero que alg\xFAn
+          d\xEDa chispita entre y las aspire de una vez. Para conseguir monedas deber\xE1s
+          buscar las monedas y superar obst\xE1culos que se te interponen."
+        botones:
+        - tipoBoton: 3
+          nombre: Continuar
+          siguienteDialogo: 13
+          accion: []
+          condiciones: []
+    - identifier: 7
+      nodos:
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Rosie
+        texto: "Chispita patrulla el pasillo con sus feroces mini escobas. Para evitarla
+          aprovecha los muebles que hay en el pasillo. Tu bola de ejercicio tambi\xE9n
+          te puede proteger, aunque no aguanta muchos golpes."
+        botones:
+        - tipoBoton: 3
+          nombre: Continuar
+          siguienteDialogo: 13
+          accion: []
+          condiciones: []
+    - identifier: 8
+      nodos:
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Rosie
+        texto: "Intenta no molestar a Nora, lleva horas encerrada en el  despacho
+          por una reuni\xF3n de trabajo. En alg\xFAn momento para vigilar a Chispita.
+          Si te ve fuera te devolver\xE1 a la jaula y perder\xE1s tiempo."
+        botones:
+        - tipoBoton: 3
+          nombre: Continuar
+          siguienteDialogo: 13
+          accion: []
+          condiciones: []
+    - identifier: 9
+      nodos:
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Rosie
+        texto: "Fu\xE1 es un aventurero con muy mala suerte y Tim ha marchado en
+          su ayuda. Encuentra a los hermanos y acomp\xE1\xF1alos a casa. Su mam\xE1
+          t\xE9 recompensar\xE1."
+        botones:
+        - tipoBoton: 3
+          nombre: Continuar
+          siguienteDialogo: 13
+          accion: []
+          condiciones: []
+    - identifier: 10
+      nodos:
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Rosie
+        texto: "Las ratas siempre est\xE1n acumulando comida, cuando los abuelos
+          se despistan se cuelan en la nevera. Han conseguido el racionamiento de
+          salchichas especiales de Max, pero su queso favorito est\xE1 custodiado
+          por la trampa de ratas."
+        botones:
+        - tipoBoton: 3
+          nombre: Continuar
+          siguienteDialogo: 13
+          accion: []
+          condiciones: []
+    - identifier: 11
+      nodos:
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Rosie
+        texto: "Max es un glot\xF3n y en cuanto se acaba su comida tiende a molestar
+          a todos los que se encuentra. Si necesitas distraerlo busca comida, las
+          ratas de la nevera tienen muchos escondrijos por la casa."
+        botones:
+        - tipoBoton: 3
+          nombre: Continuar
+          siguienteDialogo: 13
+          accion: []
+          condiciones: []
+    - identifier: 12
+      nodos:
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Rosie
+        texto: "Carlos se cansa mucho al acabar de cocinar deliciosas recetas. Para
+          descansar deja las gafas, enciende la televisi\xF3n y duerme en el sof\xE1.
+          Vigila que no se le apague la televisi\xF3n."
+        botones:
+        - tipoBoton: 3
+          nombre: Continuar
+          siguienteDialogo: 13
+          accion: []
+          condiciones: []
+    - identifier: 13
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Rosie
+        texto: "\xA1Buena suerte en tu aventura Ramen! Te deseo lo mejor. Y si vuelves
+          a tener alg\xFAn problema te puedo ayudar, si traes monedas eh."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
           siguienteDialogo: 
           accion: []
           condiciones: []
