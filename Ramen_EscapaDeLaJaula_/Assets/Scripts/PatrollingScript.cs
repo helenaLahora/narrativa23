@@ -39,7 +39,7 @@ public class PatrollingScript : MonoBehaviour
     //Checkea si está cerca o encima del wayPoint
     private bool ReachedWayPoint()
     {
-        Debug.Log(Vector3.Distance(transform.position, currentTargetPosition));
+        //Debug.Log(Vector3.Distance(transform.position, currentTargetPosition));
         return Vector3.Distance(transform.position, currentTargetPosition) <= minDistance;
     }
 

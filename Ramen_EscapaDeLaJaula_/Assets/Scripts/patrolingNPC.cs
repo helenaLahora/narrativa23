@@ -27,8 +27,6 @@ public class patrolingNPC : MonoBehaviour
             ChangeWayPoint();
         }
 
-        Debug.Log(aux);
-
         if (!aux)
 		{
             CheckRb();
