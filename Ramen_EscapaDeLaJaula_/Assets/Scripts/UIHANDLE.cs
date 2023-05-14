@@ -179,7 +179,7 @@ public class UIHANDLE : MonoBehaviour
                     {
 
                         button.clickable.clicked += () => EventHandler.Variables[accion.variable] += accion.valor;
-                        Debug.Log(EventHandler.Variables[accion.variable]);
+
                     }
                 }
         }

@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: DIFFUSE.002
+  m_Name: DIFFUSE.005
   m_Shader: {fileID: 4800000, guid: 92f5946b713a53b4b9b5db239fe762a5, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -41,7 +41,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: bcbca41b4fc76bc479952af12fd73527, type: 3}
+        m_Texture: {fileID: 2800000, guid: 84527e702babcc843b9d8e1e8e90a40d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
