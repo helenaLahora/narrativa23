@@ -3,7 +3,12 @@ guid: 66fcbaf26710db842ae977aab04314b8
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DIFFUSE.004
+    second: {fileID: 2100000, guid: f4be6c76d7bcf6246800c1bfc6b5721a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
