@@ -91,6 +91,11 @@ public enum Variable
 {
     Juguetes_completedMission,
     Polvo_completedMission,
+    elections_completedmission,
+    elections_explainedmission,
+    julio_talked,
+    oso_talked,
+    lila_talked,
     bedroomDoor,
     coin,
     explainedMission,

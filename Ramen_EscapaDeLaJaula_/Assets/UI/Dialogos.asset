@@ -674,11 +674,21 @@ MonoBehaviour:
           su propio beneficio. Disfruta hablando con todos los habitantes de la casa
           \xA1 y tiene muy buenos chistes!"
         botones:
-        - tipoBoton: 0
-          nombre: 
+        - tipoBoton: 1
+          nombre: Hablar
           siguienteDialogo: 
           accion: []
-          condiciones: []
+          condiciones:
+          - variable: 2
+            operador: 0
+            valor: 1
+            dialogoTrue: 2
+            dialogoFalse: 
+          - variable: 2
+            operador: 0
+            valor: 1
+            dialogoTrue: 2
+            dialogoFalse: 
         - tipoBoton: 0
           nombre: 
           siguienteDialogo: 
