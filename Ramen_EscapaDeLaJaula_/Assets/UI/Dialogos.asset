@@ -13,170 +13,6 @@ MonoBehaviour:
   m_Name: Dialogos
   m_EditorClassIdentifier: 
   eventos:
-  - identifier: Evento_Polvo
-    dialogos:
-    - identifier: 1
-      nodos:
-      - tipoNodo: 1
-        esPersonaje: 1
-        personaje: Las Tres Motas de Polvo
-        texto: "Ziggy Flicker y Whisk son habitantes habituales en el dormitorio,
-          Roomba no puede entrar y ellas tampoco est\xE1n dispuestas a irse.\nBloquean
-          las salidas del dormitorio. Consigue los objeto que te piden y te dejar\xE1n
-          marchar.\r"
-        botones:
-        - tipoBoton: 0
-          nombre: Salir
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-        - tipoBoton: 4
-          nombre: Hablar con las Motas traviesas
-          siguienteDialogo: 
-          accion: []
-          condiciones:
-          - variable: 1
-            operador: 4
-            valor: 1
-            dialogoTrue: 2
-            dialogoFalse: 
-          - variable: 4
-            operador: 0
-            valor: 0
-            dialogoTrue: 5
-            dialogoFalse: 
-          - variable: 5
-            operador: 0
-            valor: 2
-            dialogoTrue: 3
-            dialogoFalse: 4
-    - identifier: 2
-      nodos:
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Ziggy
-        texto: "Parece ser que nunca te marchas. \xBFNo estar\xE1s asustado de marchar?
-          Cuando decidas ser valiente (y en caso de volver) tr\xE1enos bombones,
-          vale?"
-        botones:
-        - tipoBoton: 0
-          nombre: Salir
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-    - identifier: 3
-      nodos:
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Flicker
-        texto: "\xA1Wow! \xA1Has conseguido lo que te ped\xEDan mis hermanas!"
-        botones:
-        - tipoBoton: 1
-          nombre: Continuar
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Ziggy
-        texto: "No debe ser tan in\xFAtil como parece. \xA1Dame mi peine! Finalmente
-          puedo peinar mi hermosa cabellera y ser una bonita princesa."
-        botones:
-        - tipoBoton: 1
-          nombre: Continuar
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Whisk
-        texto: "CAL-CE-T\xCDN JAJAJA"
-        botones:
-        - tipoBoton: 1
-          nombre: Continuar
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Ziggy
-        texto: "Bueno Ramen, has cumplido el trato. Supongo que ya te podemos dejar
-          salir de la habitaci\xF3n"
-        botones:
-        - tipoBoton: 0
-          nombre: Salir
-          siguienteDialogo: 
-          accion:
-          - variable: 3
-            valor: -1
-          - variable: 2
-            valor: 1
-          - variable: 1
-            valor: 1
-          condiciones: []
-    - identifier: 4
-      nodos:
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Ziggy
-        texto: "Si te est\xE1s burlando no tiene mucha gracia. Te dar\xEDa clases
-          de comedia pero no eres digno ni de ser mi estudiante. Regresa con el peine
-          y el calcet\xEDn o no saldr\xE1s."
-        botones:
-        - tipoBoton: 0
-          nombre: Salir
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-    - identifier: 5
-      nodos:
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Flicker
-        texto: "Vaya vaya... Ramen el simp\xE1tico h\xE1mster baja de su preciosa
-          casa. \xBFQu\xE9 pasa? \xBFQuieres pasar? \xBFQuieres escapar? En tu jaula
-          seguro que te lo daban todo, aqu\xED te lo tienes que ganar."
-        botones:
-        - tipoBoton: 1
-          nombre: Continuar
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Whisk
-        texto: "Dame un calcet\xEDn! Yo quiero un calcet\xEDn Ramen! CAL-CE-T\xCDN"
-        botones:
-        - tipoBoton: 1
-          nombre: Continuar
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Ziggy
-        texto: "Calla Whisk, estoy haciendo tratos. Tra\xE9me un peine, el peine
-          azul de Leo. Me da igual cuanto tardes en econtrarlo, no saldr\xE1s si
-          no me lo das. Y bueno... supongo que un calcet\xEDn para Whisk tambi\xE9n."
-        botones:
-        - tipoBoton: 1
-          nombre: Continuar
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Flicker
-        texto: "Yo conf\xEDo en t\xED Ramen! Seguro que lo encuentras y consigues
-          salir y explorar el resto de la casa."
-        botones:
-        - tipoBoton: 0
-          nombre: Salir
-          siguienteDialogo: 
-          accion:
-          - variable: 4
-            valor: 1
-          condiciones: []
   - identifier: Evento_Empezar
     dialogos:
     - identifier: 1
@@ -691,6 +527,447 @@ MonoBehaviour:
             dialogoFalse: 
         - tipoBoton: 0
           nombre: 
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+  - identifier: Evento_Polvo
+    dialogos:
+    - identifier: 1
+      nodos:
+      - tipoNodo: 1
+        esPersonaje: 1
+        personaje: Las Tres Motas De Polvo
+        texto: "Ziggy Flicker y Whisk son habitantes habituales en el dormitorio,
+          Chispita no puede entrar y ellas no est\xE1n dispuestas a irse. Lo mejor
+          es darles aquello que quieren y continuar."
+        botones:
+        - tipoBoton: 1
+          nombre: Hablar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+    - identifier: 2
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Flicker
+        texto: "Parece ser que nunca te marchas. \xBFNo estar\xE1s asustado de la
+          casa? Cuando decidas ser valiente y salgas al exterior tr\xE1enos bombones,
+          vale?"
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+    - identifier: 3
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Flicker
+        texto: "Parece ser que la ratita lo ha conseguido... no eres tan in\xFAtil
+          como me pensaba."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Ziggy
+        texto: "Muy bien primo, confiaba en t\xED!"
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Whisk
+        texto: Hermanos... entonces... le podemos dejar pasar?
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Flicker
+        texto: "S\xED Whisk. Bueno Ramen, has cumplido el trato. Supongo que ya te
+          podemos dejar salir de la habitaci\xF3n."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+    - identifier: 4
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Flicker
+        texto: "A ver Ramen, parece ser que no has entendido demasiado la misi\xF3n
+          que te hemos encargado. Repito: 30 MO - NE - DAS.\n\xA1Busca!"
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Ziggy
+        texto: Paz y amor Flicker, paz y amor...
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+    - identifier: 5
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Whisk
+        texto: Muy bien! Has encoentrado monedas! Pero... em.... a ver... te faltan
+          algunas, perdon.
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Flicker
+        texto: "Whisk, tienes que imponer m\xE1s. Sino nunca te haran caso aquellos
+          que tu quieras. Aprende: Ramen, te faltan algunas monedas para que te dejemos
+          pasar. Corre y ve a buscarlas. R\xE1pido."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Ziggy
+        texto: No le hagas caso Whisk, lo has hecho muy bien!
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+    - identifier: 6
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Flicker
+        texto: "Vaya... Ramen el simp\xE1tico h\xE1mster baja de su preciosa casa.
+          \xBFQu\xE9 pasa? \xBFQuieres pasar? \xBFQuieres escapar? En tu jaula seguro
+          que te lo daban todo, aqu\xED te lo tienes que ganar."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Whisk
+        texto: "Ver\xE1s... necesitamos un poquito de... un poquito de monedillas..."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Ziggy
+        texto: "Hermanos, tranquilos... Respirad hondo. Paz y amor \xBFRecordais?
+          Al peque\xF1o Ramen le podemos pedir la cosas amablemente, \xBFno creeis?"
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Flicker
+        texto: "Mira, necesitamos unas 30 monedas. No te tenemos que dar explicaciones
+          de por qu\xE9, solo que las consigas. En el caso de que no las traigas
+          no te dejaremos pasar."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+  - identifier: Evento_CepilloEscobilla
+    dialogos:
+    - identifier: 1
+      nodos:
+      - tipoNodo: 1
+        esPersonaje: 1
+        personaje: 'Asuntos de Trabajo '
+        texto: "En todo matrimonio hay altibajos, y la escobilla de ba\xF1o y el
+          cepillo de dientes no son la excepci\xF3n. \xBFCu\xE1l ser\xE1 su problema?
+          Es hora de descubrirlo y trabajar en equipo para superarlo."
+        botones:
+        - tipoBoton: 1
+          nombre: Hablar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+    - identifier: 2
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Cepillo de dientes
+        texto: Muchas gracias Ramen, por ayudarnos a solucionar nuestras diferencias.
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Escobilla de v\xE1ter"
+        texto: "S\xED, gracias por ayudarnos a ver las cosas desde una perspectiva
+          diferente. Es dif\xEDcil para nosotros reconocer que ambos trabajos son
+          importantes y tienen sus desaf\xEDos."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+    - identifier: 3
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Cepillo de dientes
+        texto: "Uff, no puedo m\xE1s. Otro d\xEDa limpiando los mismos dientes una
+          y otra vez."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Escobilla de v\xE1ter"
+        texto: "\xBFQu\xE9 te pasa, amor? \xBFEst\xE1s teniendo un mal d\xEDa?"
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Cepillo de dientes
+        texto: "Claramente , no puedo evitar pensar en lo horrible que es mi trabajo
+          y lo mucho que agradecer\xEDa tener el tuyo."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Escobilla de v\xE1ter"
+        texto: "\xA1Por favor! T\xFA solo tienes que estar en la boca de las personas
+          dos veces al d\xEDa, mientras que yo tengo que limpiar la suciedad del
+          inodoro."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Cepillo de dientes
+        texto: "Bueno, s\xED, pero al menos tienes la satisfacci\xF3n de dejar el
+          ba\xF1o limpio. Yo solo me quedo ah\xED, esperando a que alguien me use."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Escobilla de v\xE1ter "
+        texto: "Pero eso es solo porque eres tan eficiente en tu trabajo que no tienes
+          que quedarte m\xE1s tiempo del necesario. Adem\xE1s, al menos tu trabajo
+          no tiene que soportar el mal olor del ba\xF1o."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: "Escobilla de v\xE1ter "
+        texto: "Ramen, t\xFA que eres imparcial, \xBFcu\xE1l de nosotros tiene el
+          peor trabajo?"
+        botones:
+        - tipoBoton: 3
+          nombre: "Escobilla de ba\xF1o"
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: Cepillo de dientes
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: Los dos tienen sus cosas malas
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+    - identifier: 4
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Escobilla de v\xE1ter"
+        texto: "Bien, mi trabajo puede ser sucio, pero al menos s\xE9 que estoy limpiando
+          algo importante. Sin m\xED, el inodoro ser\xEDa un desastre."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Cepillo de dientes
+        texto: 'Esta bien... esta vez tu ganas. Pero por lo menos significa que tengo
+          un buen trabajo. '
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+    - identifier: 5
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Escobilla de v\xE1ter"
+        texto: "Bueno... Si que es verdad que tener que ver caries y comida masticada
+          tiene que dar bastante \u201Casquete\u201D."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Cepillo de dientes
+        texto: "Yo no niego que tu trabajo no sea duro... Pero a veces agradecer\xEDa
+          un poco de compasi\xF3n."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+    - identifier: 6
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Escobilla de v\xE1ter"
+        texto: "Eso es cierto. Ambos trabajos son importantes y necesarios para mantener
+          un ba\xF1o limpio y saludable."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Cepillo de dientes
+        texto: "S\xED, tienes raz\xF3n. Al final, lo importante es trabajar juntos
+          como un equipo y apreciar el trabajo del otro."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+  - identifier: Evento_Nora
+    dialogos:
+    - identifier: 1
+      nodos:
+      - tipoNodo: 1
+        esPersonaje: 1
+        personaje: Nora
+        texto: "\xA1Ay, ay, ay, Nora est\xE1 atrapada en una reuni\xF3n interminable
+          de trabajo! Ten cuidado por si decide salir del despacho. \xA1Mantente
+          alerta y aseg\xFArate de tener tus habilidades de sigilo a punto!"
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+  - identifier: Evento_MaxDescontrolado
+    dialogos:
+    - identifier: 1
+      nodos:
+      - tipoNodo: 1
+        esPersonaje: 1
+        personaje: Max Descontrolado
+        texto: "\xA1Oh no, parece que Max est\xE1 en modo \"hangry\"! No quiere ni
+          mirar su pienso y est\xE1 m\xE1s enfadado que un perro en un ba\xF1o de
+          pulgas. \xBFLe traer\xE1s algo de comer y salvar\xE1s a Fu\xE1? \xA1Max
+          te lo agradecer\xE1 con lametones y movimientos de cola!"
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+  - identifier: Evento_Carlos
+    dialogos:
+    - identifier: 1
+      nodos:
+      - tipoNodo: 1
+        esPersonaje: 1
+        personaje: Carlos
+        texto: "Carlos se ha dado un d\xEDa de cocinero profesional y ahora ronca
+          en el sof\xE1 con la F1 encendida y sus pies en remojo. No dejes que la
+          tele se apague o despertar\xE1 de su siesta. \xA1Mantengamos esa carrera
+          en marcha!"
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
           siguienteDialogo: 
           accion: []
           condiciones: []
