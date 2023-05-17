@@ -58,15 +58,18 @@ public class Accion
 [System.Serializable]
 public class Condicion
 {
+    public string identifier;
     public Variable variable;
     public Operador operador;
     public int valor;
     public bool ConditionAfterTrue;
+    public  string condicionTrue;
     [FormerlySerializedAs("Condicion cumplida")]
     public string dialogoTrue;
     public bool ConditionAfterFalse;
     [FormerlySerializedAs("Condicion no cumplida")]
     public string dialogoFalse;
+    public string condicionFalse;
 }
 
 
