@@ -229,7 +229,9 @@ MonoBehaviour:
           - variable: 3
             operador: 2
             valor: 0
+            ConditionAfterTrue: 0
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 3
         - tipoBoton: 3
           nombre: Se me ha olvidado Rosie.
@@ -518,12 +520,16 @@ MonoBehaviour:
           - variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
           - variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
         - tipoBoton: 0
           nombre: 
