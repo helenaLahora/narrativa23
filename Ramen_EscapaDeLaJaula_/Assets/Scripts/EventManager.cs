@@ -61,8 +61,10 @@ public class Condicion
     public Variable variable;
     public Operador operador;
     public int valor;
+    public bool ConditionAfterTrue;
     [FormerlySerializedAs("Condicion cumplida")]
-    public string dialogoTrue;    
+    public string dialogoTrue;
+    public bool ConditionAfterFalse;
     [FormerlySerializedAs("Condicion no cumplida")]
     public string dialogoFalse;
 }

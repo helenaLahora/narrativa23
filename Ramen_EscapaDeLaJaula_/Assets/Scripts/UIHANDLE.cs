@@ -138,12 +138,16 @@ public class UIHANDLE : MonoBehaviour
                                 }
                                 if (resultado)
                                 {
-                                    button.clickable.clicked += () => AsignarDialogo(condicion.dialogoTrue);
-                                    break;
+                                    if (!condicion.ConditionAfterTrue || boton.condiciones.Last() == condicion)
+                                    {
+                                        button.clickable.clicked += () => AsignarDialogo(condicion.dialogoTrue);
+                                        break;
+                                    }
+
                                 }
                                 else
                                 {
-                                    if (boton.condiciones.Last() == condicion)
+                                    if (!condicion.ConditionAfterFalse || boton.condiciones.Last() == condicion)
                                     {
                                         button.clickable.clicked += () => AsignarDialogo(condicion.dialogoFalse);
 
