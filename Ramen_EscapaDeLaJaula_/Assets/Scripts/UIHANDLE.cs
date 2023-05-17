@@ -114,43 +114,52 @@ public class UIHANDLE : MonoBehaviour
                             foreach (Condicion condicion in boton.condiciones)
                             {
                                 bool resultado = false;
-                                switch (condicion.operador) 
-                                {
-
-                                    case Operador.igual:
-                                        resultado = EventHandler.Variables[condicion.variable] == condicion.valor;
-                                        break;
-                                    case Operador.diferente:
-                                        resultado = EventHandler.Variables[condicion.variable] != condicion.valor;
-                                        break;
-                                    case Operador.mayor:
-                                        resultado = EventHandler.Variables[condicion.variable] > condicion.valor;
-                                        break;
-                                    case Operador.menor:
-                                        resultado = EventHandler.Variables[condicion.variable] < condicion.valor;
-                                        break;
-                                    case Operador.mayor_igual:
-                                        resultado = EventHandler.Variables[condicion.variable] >= condicion.valor;
-                                        break;
-                                    case Operador.menor_igual:
-                                        resultado = EventHandler.Variables[condicion.variable] <= condicion.valor;
-                                        break;
-                                }
+                                resultado = Comparador(condicion);
                                 if (resultado)
                                 {
-                                    if (!condicion.ConditionAfterTrue || boton.condiciones.Last() == condicion)
+                                    if (!condicion.ConditionAfterTrue)
                                     {
                                         button.clickable.clicked += () => AsignarDialogo(condicion.dialogoTrue);
                                         break;
                                     }
-
+                                    else
+                                    {
+                                        foreach (Condicion miniCondicion in boton.condiciones)
+                                        {
+                                            if (miniCondicion.identifier == condicion.condicionTrue)
+                                            {
+                                                bool miniResult = Comparador(miniCondicion);
+                                                if (!miniCondicion.ConditionAfterTrue)
+                                                {
+                                                    button.clickable.clicked += () => AsignarDialogo(condicion.dialogoTrue);
+                                                    break;
+                                                }
+                                            }
+                                        }
+                                        
+                                    }
                                 }
                                 else
                                 {
-                                    if (!condicion.ConditionAfterFalse || boton.condiciones.Last() == condicion)
+                                    if (!condicion.ConditionAfterFalse)
                                     {
                                         button.clickable.clicked += () => AsignarDialogo(condicion.dialogoFalse);
-
+                                        break;
+                                    }
+                                    else
+                                    {
+                                        foreach (Condicion miniCondicion in boton.condiciones)
+                                        {
+                                            if (miniCondicion.identifier == condicion.condicionFalse)
+                                            {
+                                                bool miniResult = Comparador(miniCondicion);
+                                                if (!miniCondicion.ConditionAfterTrue)
+                                                {
+                                                    button.clickable.clicked += () => AsignarDialogo(condicion.dialogoFalse); 
+                                                    break;
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -223,6 +232,35 @@ public class UIHANDLE : MonoBehaviour
 
         }
     }
+
+    private bool Comparador(Condicion condicion)
+    {
+        bool resultado = false;
+        switch (condicion.operador)
+        {
+
+            case Operador.igual:
+                resultado = EventHandler.Variables[condicion.variable] == condicion.valor;
+                break;
+            case Operador.diferente:
+                resultado = EventHandler.Variables[condicion.variable] != condicion.valor;
+                break;
+            case Operador.mayor:
+                resultado = EventHandler.Variables[condicion.variable] > condicion.valor;
+                break;
+            case Operador.menor:
+                resultado = EventHandler.Variables[condicion.variable] < condicion.valor;
+                break;
+            case Operador.mayor_igual:
+                resultado = EventHandler.Variables[condicion.variable] >= condicion.valor;
+                break;
+            case Operador.menor_igual:
+                resultado = EventHandler.Variables[condicion.variable] <= condicion.valor;
+                break;
+        }
+        return resultado;
+    }
+
     public void AsignarDialogo(string identifier)
     {
         //StopCoroutine(rutina);
