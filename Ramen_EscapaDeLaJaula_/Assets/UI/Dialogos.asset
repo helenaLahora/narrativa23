@@ -226,13 +226,16 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones:
-          - variable: 3
+          - identifier: 
+            variable: 3
             operador: 2
             valor: 0
             ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
             ConditionAfterFalse: 0
             dialogoFalse: 3
+            condicionFalse: 
         - tipoBoton: 3
           nombre: Se me ha olvidado Rosie.
           siguienteDialogo: 4
@@ -517,20 +520,26 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones:
-          - variable: 2
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
             ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
             ConditionAfterFalse: 0
             dialogoFalse: 
-          - variable: 2
+            condicionFalse: 
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
             ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
             ConditionAfterFalse: 0
             dialogoFalse: 
+            condicionFalse: 
         - tipoBoton: 0
           nombre: 
           siguienteDialogo: 
@@ -560,16 +569,26 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones:
-          - variable: 2
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
-          - variable: 2
+            condicionFalse: 
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
+            condicionFalse: 
         - tipoBoton: 0
           nombre: Salir
           siguienteDialogo: 
@@ -586,16 +605,26 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones:
-          - variable: 2
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
-          - variable: 2
+            condicionFalse: 
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
+            condicionFalse: 
       - tipoNodo: 0
         esPersonaje: 1
         personaje: Llamacornio Julio
@@ -607,16 +636,26 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones:
-          - variable: 2
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
-          - variable: 2
+            condicionFalse: 
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
+            condicionFalse: 
     - identifier: 4
       nodos:
       - tipoNodo: 0
@@ -630,16 +669,26 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones:
-          - variable: 2
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
-          - variable: 2
+            condicionFalse: 
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
+            condicionFalse: 
         - tipoBoton: 0
           nombre: 
           siguienteDialogo: 
@@ -656,16 +705,26 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones:
-          - variable: 2
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
-          - variable: 2
+            condicionFalse: 
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
+            condicionFalse: 
         - tipoBoton: 1
           nombre: London
           siguienteDialogo: 
@@ -683,16 +742,26 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones:
-          - variable: 2
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
-          - variable: 2
+            condicionFalse: 
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
+            condicionFalse: 
         - tipoBoton: 0
           nombre: Salir
           siguienteDialogo: 
@@ -724,16 +793,26 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones:
-          - variable: 2
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
-          - variable: 2
+            condicionFalse: 
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
+            condicionFalse: 
         - tipoBoton: 3
           nombre: "A\xFAn me lo estoy pensando\u2026"
           siguienteDialogo: 
@@ -753,16 +832,26 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones:
-          - variable: 2
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
-          - variable: 2
+            condicionFalse: 
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
+            condicionFalse: 
       - tipoNodo: 2
         esPersonaje: 1
         personaje: Llamacornio Julio
@@ -774,16 +863,26 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones:
-          - variable: 2
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
-          - variable: 2
+            condicionFalse: 
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
+            condicionFalse: 
     - identifier: 7
       nodos:
       - tipoNodo: 0
@@ -797,16 +896,26 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones:
-          - variable: 2
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
-          - variable: 2
+            condicionFalse: 
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
+            condicionFalse: 
       - tipoNodo: 2
         esPersonaje: 1
         personaje: Llamacornio Julio
@@ -819,16 +928,26 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones:
-          - variable: 2
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
-          - variable: 2
+            condicionFalse: 
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
+            condicionFalse: 
     - identifier: 8
       nodos:
       - tipoNodo: 1
@@ -843,16 +962,26 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones:
-          - variable: 2
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
-          - variable: 2
+            condicionFalse: 
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
+            condicionFalse: 
       - tipoNodo: 2
         esPersonaje: 1
         personaje: Llamacornio Julio
@@ -865,31 +994,51 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones:
-          - variable: 2
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
-          - variable: 2
+            condicionFalse: 
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
+            condicionFalse: 
         - tipoBoton: 3
           nombre: "Ser\xE1 mejor que te busques a otro"
           siguienteDialogo: 
           accion: []
           condiciones:
-          - variable: 2
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
-          - variable: 2
+            condicionFalse: 
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
+            condicionFalse: 
     - identifier: 2
       nodos:
       - tipoNodo: 1
@@ -904,16 +1053,26 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones:
-          - variable: 2
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
-          - variable: 2
+            condicionFalse: 
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
+            condicionFalse: 
         - tipoBoton: 0
           nombre: 
           siguienteDialogo: 
@@ -933,16 +1092,26 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones:
-          - variable: 2
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
-          - variable: 2
+            condicionFalse: 
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
+            condicionFalse: 
         - tipoBoton: 0
           nombre: 
           siguienteDialogo: 
@@ -962,16 +1131,26 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones:
-          - variable: 2
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
-          - variable: 2
+            condicionFalse: 
+          - identifier: 
+            variable: 2
             operador: 0
             valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
             dialogoTrue: 2
+            ConditionAfterFalse: 0
             dialogoFalse: 
+            condicionFalse: 
         - tipoBoton: 0
           nombre: 
           siguienteDialogo: 
@@ -1725,11 +1904,41 @@ MonoBehaviour:
           multitud de recetas y Emile disfruta prob\xE1ndolas. Los chefs originales
           de la casa, Carlos y Carla, est\xE1n cansados de ver sus ingredientes desaparecer."
         botones:
-        - tipoBoton: 1
+        - tipoBoton: 4
           nombre: Hablar
           siguienteDialogo: 
           accion: []
-          condiciones: []
+          condiciones:
+          - identifier: 1
+            variable: 13
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 2
+            ConditionAfterFalse: 1
+            dialogoFalse: 
+            condicionFalse: 2
+          - identifier: 2
+            variable: 14
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 1
+            condicionTrue: 3
+            dialogoTrue: 
+            ConditionAfterFalse: 0
+            dialogoFalse: 5
+            condicionFalse: 
+          - identifier: 3
+            variable: 15
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 3
+            ConditionAfterFalse: 1
+            dialogoFalse: 4
+            condicionFalse: 
         - tipoBoton: 0
           nombre: Salir
           siguienteDialogo: 
@@ -1881,12 +2090,12 @@ MonoBehaviour:
         botones:
         - tipoBoton: 3
           nombre: "Remy, \xA1yo conseguir\xE9 el queso!"
-          siguienteDialogo: 
+          siguienteDialogo: 6
           accion: []
           condiciones: []
         - tipoBoton: 3
           nombre: 'Lo siento, pero no puedo. '
-          siguienteDialogo: 
+          siguienteDialogo: 7
           accion: []
           condiciones: []
     - identifier: 6
@@ -1900,7 +2109,9 @@ MonoBehaviour:
         - tipoBoton: 0
           nombre: Salir
           siguienteDialogo: 
-          accion: []
+          accion:
+          - variable: 14
+            valor: 1
           condiciones: []
     - identifier: 7
       nodos:
@@ -1912,5 +2123,7 @@ MonoBehaviour:
         - tipoBoton: 0
           nombre: Salir
           siguienteDialogo: 
-          accion: []
+          accion:
+          - variable: 14
+            valor: 1
           condiciones: []

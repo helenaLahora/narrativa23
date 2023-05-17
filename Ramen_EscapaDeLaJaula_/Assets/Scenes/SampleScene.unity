@@ -19531,7 +19531,7 @@ MonoBehaviour:
   Collider: {fileID: 1252710768}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
-  nombreEvento: Evento_Juguetes
+  nombreEvento: Evento_Ratas
 --- !u!135 &1252710768
 SphereCollider:
   m_ObjectHideFlags: 0

@@ -106,7 +106,10 @@ public enum Variable
     explainedMission,
     collectedObjects,
     bolaEjercicio,
-    amistad
+    amistad, 
+    rata_completedmission,
+    rata_explainedmission,
+    rata_cheese
 }
 public enum Operador
 {
