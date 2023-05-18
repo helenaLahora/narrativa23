@@ -102,6 +102,7 @@ public enum Variable
     //Elecciones
     elections_completedmission,
     elections_explainedmission,
+    toys_talked,
     julio_talked,
     oso_talked,
     lila_talked,

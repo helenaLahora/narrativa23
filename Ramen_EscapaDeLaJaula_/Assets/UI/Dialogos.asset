@@ -531,17 +531,37 @@ MonoBehaviour:
             dialogoFalse: 
             condicionFalse: 1
           - identifier: 1
-            variable: 2
+            variable: 3
             operador: 0
             valor: 1
+            ConditionAfterTrue: 1
+            condicionTrue: 2
+            dialogoTrue: 
+            ConditionAfterFalse: 0
+            dialogoFalse: 5
+            condicionFalse: 
+          - identifier: 2
+            variable: 5
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 1
+            condicionTrue: 3
+            dialogoTrue: 
+            ConditionAfterFalse: 0
+            dialogoFalse: 4
+            condicionFalse: 
+          - identifier: 3
+            variable: 4
+            operador: 0
+            valor: 3
             ConditionAfterTrue: 0
             condicionTrue: 
-            dialogoTrue: 2
+            dialogoTrue: 3
             ConditionAfterFalse: 0
-            dialogoFalse: 
+            dialogoFalse: 11
             condicionFalse: 
         - tipoBoton: 0
-          nombre: 
+          nombre: Salir
           siguienteDialogo: 
           accion: []
           condiciones: []
@@ -604,27 +624,7 @@ MonoBehaviour:
           nombre: Conseguir Bola de Ejercicio
           siguienteDialogo: 
           accion: []
-          condiciones:
-          - identifier: 
-            variable: 2
-            operador: 0
-            valor: 1
-            ConditionAfterTrue: 0
-            condicionTrue: 
-            dialogoTrue: 2
-            ConditionAfterFalse: 0
-            dialogoFalse: 
-            condicionFalse: 
-          - identifier: 
-            variable: 2
-            operador: 0
-            valor: 1
-            ConditionAfterTrue: 0
-            condicionTrue: 
-            dialogoTrue: 2
-            ConditionAfterFalse: 0
-            dialogoFalse: 
-            condicionFalse: 
+          condiciones: []
       - tipoNodo: 0
         esPersonaje: 1
         personaje: Llamacornio Julio
@@ -634,28 +634,14 @@ MonoBehaviour:
         - tipoBoton: 0
           nombre: Salir
           siguienteDialogo: 
-          accion: []
-          condiciones:
-          - identifier: 
-            variable: 2
-            operador: 0
+          accion:
+          - variable: 2
             valor: 1
-            ConditionAfterTrue: 0
-            condicionTrue: 
-            dialogoTrue: 2
-            ConditionAfterFalse: 0
-            dialogoFalse: 
-            condicionFalse: 
-          - identifier: 
-            variable: 2
-            operador: 0
+          - variable: 8
             valor: 1
-            ConditionAfterTrue: 0
-            condicionTrue: 
-            dialogoTrue: 2
-            ConditionAfterFalse: 0
-            dialogoFalse: 
-            condicionFalse: 
+          - variable: 1
+            valor: 20
+          condiciones: []
     - identifier: 4
       nodos:
       - tipoNodo: 0
@@ -668,63 +654,24 @@ MonoBehaviour:
           nombre: "Escuchar Raz\xF3n"
           siguienteDialogo: 
           accion: []
-          condiciones:
-          - identifier: 
-            variable: 2
-            operador: 0
-            valor: 1
-            ConditionAfterTrue: 0
-            condicionTrue: 
-            dialogoTrue: 2
-            ConditionAfterFalse: 0
-            dialogoFalse: 
-            condicionFalse: 
-          - identifier: 
-            variable: 2
-            operador: 0
-            valor: 1
-            ConditionAfterTrue: 0
-            condicionTrue: 
-            dialogoTrue: 2
-            ConditionAfterFalse: 0
-            dialogoFalse: 
-            condicionFalse: 
+          condiciones: []
         - tipoBoton: 0
-          nombre: 
+          nombre: Salir
           siguienteDialogo: 
           accion: []
           condiciones: []
       - tipoNodo: 0
         esPersonaje: 1
         personaje: Llamacornio Julio
-        texto: "Obviamente debes votarme porque tengo los mejores chistes y las bromas
-          m\xE1s entretenidas. Ah\xED va una: \xBFDe d\xF3nde vienen los h\xE1msteres?"
+        texto: "Genial amigo, siempre he podido contar contigo. Obviamente debes
+          votarme porque tengo los mejores chistes y las bromas m\xE1s entretenidas.
+          Ah\xED va una: \xBFDe d\xF3nde vienen los h\xE1msteres?"
         botones:
         - tipoBoton: 1
           nombre: Barcelona
           siguienteDialogo: 
           accion: []
-          condiciones:
-          - identifier: 
-            variable: 2
-            operador: 0
-            valor: 1
-            ConditionAfterTrue: 0
-            condicionTrue: 
-            dialogoTrue: 2
-            ConditionAfterFalse: 0
-            dialogoFalse: 
-            condicionFalse: 
-          - identifier: 
-            variable: 2
-            operador: 0
-            valor: 1
-            ConditionAfterTrue: 0
-            condicionTrue: 
-            dialogoTrue: 2
-            ConditionAfterFalse: 0
-            dialogoFalse: 
-            condicionFalse: 
+          condiciones: []
         - tipoBoton: 1
           nombre: London
           siguienteDialogo: 
@@ -735,7 +682,235 @@ MonoBehaviour:
         personaje: Llamacornio Julio
         texto: "Nooooo, vienen de H\xE1msterdam jajajajajaja, \xBFves como soy divertido?
           si te marchas Leo no estar\xE1 tan triste. Adem\xE1s\u2026 si me votas
-          te dar\xE9 algo que te interesa \xBFquieres saberlo?"
+          te dar\xE9 algo que te interesa \xBFquieres o\xEDrla?"
+        botones:
+        - tipoBoton: 1
+          nombre: "\xA1Claro! Cu\xE9ntame"
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Llamacornio Julio
+        texto: "Ver\xE1s.. tengo algo que te interesa si de verdad quieres salir\u2026
+          \xA1Tu bola de ejercicio amigo! Si quieres pasar por el pasillo sin que
+          Chispita te aspire deber\xE1s tener la bola. Te la devuelvo solo si me
+          votas."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+    - identifier: 5
+      nodos:
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Llamacornio Julio
+        texto: "\xA1Hola amigo! \xBFQu\xE9 onda? Me lleg\xF3 el rumor de que est\xE1s
+          planeando largarte de la casa, \xBFes cierto?"
+        botones:
+        - tipoBoton: 3
+          nombre: Necesito salir y pisar hierba con mis patas.
+          siguienteDialogo: 6
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: "A\xFAn me lo estoy pensando\u2026"
+          siguienteDialogo: 7
+          accion: []
+          condiciones: []
+    - identifier: 6
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Llamacornio Julio
+        texto: "Amigo, reflexiona bien antes de tomar una decisi\xF3n, yo no cambiar\xEDa
+          a mi Leo por nada del mundo. Los dem\xE1s juguetes ya se han enterado de
+          tus planes,"
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Llamacornio Julio
+        texto: "est\xE1n prepar\xE1ndose para cuando te vayas amigo. Est\xE1n organizando
+          unas elecciones para elegir a tu sucesor como favorito de la casa."
+        botones:
+        - tipoBoton: 3
+          nombre: Continuar
+          siguienteDialogo: 8
+          accion: []
+          condiciones:
+          - identifier: 
+            variable: 2
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 2
+            ConditionAfterFalse: 0
+            dialogoFalse: 
+            condicionFalse: 
+          - identifier: 
+            variable: 2
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 2
+            ConditionAfterFalse: 0
+            dialogoFalse: 
+            condicionFalse: 
+    - identifier: 7
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Llamacornio Julio
+        texto: Bueno cuando te decidas, y si eso es lo que quieres, yo te apoyo amigo.
+          En esta casa todos te queremos y nos lo pasamos bien jugando contigo amigo.
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Llamacornio Julio
+        texto: "Los otros juguetes ya se han enterado y se preparan para tu huida.
+          Est\xE1n organizando unas elecciones para elegir a tu sucesor como favorito
+          de la casa."
+        botones:
+        - tipoBoton: 3
+          nombre: Continuar
+          siguienteDialogo: 8
+          accion: []
+          condiciones:
+          - identifier: 
+            variable: 2
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 2
+            ConditionAfterFalse: 0
+            dialogoFalse: 
+            condicionFalse: 
+          - identifier: 
+            variable: 2
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 2
+            ConditionAfterFalse: 0
+            dialogoFalse: 
+            condicionFalse: 
+    - identifier: 8
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Llamacornio Julio
+        texto: "De hecho estamos buscando un juez porque la cerda no ha querido,
+          dice que conf\xEDa en que te quedes en casa y bla bla bla, es una aburrida.
+          Pero ya que te vas amigo..."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Llamacornio Julio
+        texto: "\xBFPodr\xEDas votar t\xFA a que juguete prefieres como tu sucesor?
+          Solo tendr\xEDas que escucharnos a los tres un ratito y despu\xE9s votar
+          al mejor de nosotros tres. Si lo haces te daremos 20 monedas amigo."
+        botones:
+        - tipoBoton: 3
+          nombre: "\xA1De acuerdo! Dime porqu\xE9 debo elegirte a ti"
+          siguienteDialogo: 9
+          accion: []
+          condiciones:
+          - identifier: 
+            variable: 2
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 2
+            ConditionAfterFalse: 0
+            dialogoFalse: 
+            condicionFalse: 
+          - identifier: 
+            variable: 2
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 2
+            ConditionAfterFalse: 0
+            dialogoFalse: 
+            condicionFalse: 
+        - tipoBoton: 3
+          nombre: "Ser\xE1 mejor que te busques a otro"
+          siguienteDialogo: 10
+          accion: []
+          condiciones:
+          - identifier: 
+            variable: 2
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 2
+            ConditionAfterFalse: 0
+            dialogoFalse: 
+            condicionFalse: 
+          - identifier: 
+            variable: 2
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 2
+            ConditionAfterFalse: 0
+            dialogoFalse: 
+            condicionFalse: 
+    - identifier: 9
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Llamacornio Julio
+        texto: "Genial amigo, siempre he podido contar contigo. Obviamente debes
+          votarme porque tengo los mejores chistes y las bromas m\xE1s entretenidas.
+          Ah\xED va una: \xBFDe d\xF3nde vienen los h\xE1msteres?"
+        botones:
+        - tipoBoton: 1
+          nombre: Barcelona
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+        - tipoBoton: 1
+          nombre: London
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Llamacornio Julio
+        texto: "Nooooo, vienen de H\xE1msterdam jajajajajaja, \xBFves como soy divertido?
+          si te marchas Leo no estar\xE1 tan triste. Adem\xE1s\u2026 si me votas
+          te dar\xE9 algo que te interesa \xBFquieres o\xEDrla?"
         botones:
         - tipoBoton: 1
           nombre: "\xA1Claro! Cu\xE9ntame"
@@ -778,18 +953,37 @@ MonoBehaviour:
         - tipoBoton: 0
           nombre: Salir
           siguienteDialogo: 
-          accion: []
+          accion:
+          - variable: 5
+            valor: 1
+          - variable: 4
+            valor: 1
+          - variable: 3
+            valor: 1
           condiciones: []
-    - identifier: 5
+    - identifier: 10
       nodos:
-      - tipoNodo: 2
+      - tipoNodo: 0
         esPersonaje: 1
         personaje: Llamacornio Julio
-        texto: "\xA1Hola amigo! \xBFQu\xE9 onda? Me lleg\xF3 el rumor de que est\xE1s
-          planeando largarte de la casa, \xBFes cierto?"
+        texto: Una pena amigo.
         botones:
-        - tipoBoton: 3
-          nombre: Necesito salir y pisar hierba con mis patas.
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+    - identifier: 11
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Llamacornio Julio
+        texto: "Nooooo, vienen de H\xE1msterdam jajajajajaja, \xBFves como soy divertido?
+          si te marchas Leo no estar\xE1 tan triste. Adem\xE1s\u2026 si me votas
+          te dar\xE9 algo que te interesa \xBFquieres o\xEDrla?"
+        botones:
+        - tipoBoton: 1
+          nombre: "\xA1Claro! Cu\xE9ntame"
           siguienteDialogo: 
           accion: []
           condiciones:
@@ -813,54 +1007,267 @@ MonoBehaviour:
             ConditionAfterFalse: 0
             dialogoFalse: 
             condicionFalse: 
-        - tipoBoton: 3
-          nombre: "A\xFAn me lo estoy pensando\u2026"
+        - tipoBoton: 0
+          nombre: Salir
           siguienteDialogo: 
           accion: []
           condiciones: []
-    - identifier: 6
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Llamacornio Julio
+        texto: "Parece ser que no has cumplido tu obligaci\xF3n de hablar con todos
+          los candidatos. Regresa despu\xE9s de escuchar todas las campa\xF1as."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+  - identifier: Evento_Lila
+    dialogos:
+    - identifier: 1
       nodos:
       - tipoNodo: 1
         esPersonaje: 1
-        personaje: Llamacornio Julio
-        texto: "Amigo, reflexiona bien antes de tomar una decisi\xF3n, yo no cambiar\xEDa
-          a mi Leo por nada del mundo. Los dem\xE1s juguetes ya se han enterado de
-          tus planes,"
+        personaje: Protectora Lila
+        texto: "Guerrera protectora, fuerte y valiente. Es una l\xEDder natural y
+          sus amigos conf\xEDan en ella para mantenerlos a salvo."
+        botones:
+        - tipoBoton: 4
+          nombre: Hablar
+          siguienteDialogo: 
+          accion: []
+          condiciones:
+          - identifier: 0
+            variable: 2
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 2
+            ConditionAfterFalse: 1
+            dialogoFalse: 
+            condicionFalse: 1
+          - identifier: 1
+            variable: 3
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 1
+            condicionTrue: 2
+            dialogoTrue: 
+            ConditionAfterFalse: 0
+            dialogoFalse: 5
+            condicionFalse: 
+          - identifier: 2
+            variable: 5
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 1
+            condicionTrue: 3
+            dialogoTrue: 
+            ConditionAfterFalse: 0
+            dialogoFalse: 4
+            condicionFalse: 
+          - identifier: 3
+            variable: 4
+            operador: 0
+            valor: 3
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 3
+            ConditionAfterFalse: 0
+            dialogoFalse: 8
+            condicionFalse: 
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+    - identifier: 2
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Protectora Lila
+        texto: "\xBFPuedo ayudarte en algo, Ramen? Si necesitas ayuda de las autoridades
+          judiciales, estoy disponible para asistirte."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+    - identifier: 3
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Protectora Lila
+        texto: "Buenos d\xEDas, Ramen. \xBFHas tenido la oportunidad de hablar con
+          todos los candidatos? Es importante que, como ciudadano responsable, escuches
+          atentamente todas las propuestas antes de ejercer tu derecho al voto."
+        botones:
+        - tipoBoton: 1
+          nombre: Votar Protectora Lila
+          siguienteDialogo: 
+          accion: []
+          condiciones:
+          - identifier: 
+            variable: 2
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 2
+            ConditionAfterFalse: 0
+            dialogoFalse: 
+            condicionFalse: 
+          - identifier: 
+            variable: 2
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 2
+            ConditionAfterFalse: 0
+            dialogoFalse: 
+            condicionFalse: 
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Protectora Lila
+        texto: "Pero te lo advierto, no vuelvas por aqu\xED amigo, ahora soy yo el
+          mejor acompa\xF1ante. \xA1Gracias amigo!"
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion:
+          - variable: 2
+            valor: 1
+          - variable: 1
+            valor: 20
+          condiciones: []
+    - identifier: 4
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Protectora Lila
+        texto: "Buenos d\xEDas, Ramen. Es importante que como ciudadano responsable,
+          escuches atentamente todas las propuestas antes de ejercer tu derecho al
+          voto y tomar una decisi\xF3n informada."
+        botones:
+        - tipoBoton: 1
+          nombre: "Escuchar Raz\xF3n"
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Protectora Lila
+        texto: "Si decides votarme en las pr\xF3ximas elecciones que definir\xE1n
+          el rumbo de nuestra comunidad, te garantizo que trabajar\xE9 incansablemente
+          para proteger la seguridad y el bienestar de todos los ciudadanos."
         botones:
         - tipoBoton: 1
           nombre: Continuar
           siguienteDialogo: 
           accion: []
-          condiciones:
-          - identifier: 
-            variable: 2
-            operador: 0
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Protectora Lila
+        texto: "Me comprometo a castigar a aquellos que intenten hacer el mal y a
+          impulsar innovaciones que permitan el progreso y el desarrollo de nuestra
+          sociedad. Juntos podemos construir una comunidad m\xE1s pr\xF3spera y segura
+          para todos."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion:
+          - variable: 7
             valor: 1
-            ConditionAfterTrue: 0
-            condicionTrue: 
-            dialogoTrue: 2
-            ConditionAfterFalse: 0
-            dialogoFalse: 
-            condicionFalse: 
-          - identifier: 
-            variable: 2
-            operador: 0
+          - variable: 4
             valor: 1
-            ConditionAfterTrue: 0
-            condicionTrue: 
-            dialogoTrue: 2
-            ConditionAfterFalse: 0
-            dialogoFalse: 
-            condicionFalse: 
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Protectora Lila
+        texto: "Ver\xE1s.. tengo algo que te interesa si de verdad quieres salir\u2026
+          \xA1Tu bola de ejercicio amigo! Si quieres pasar por el pasillo sin que
+          Chispita te aspire deber\xE1s tener la bola. Te la devuelvo solo si me
+          votas."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+    - identifier: 5
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Protectora Lila
+        texto: "Buenos d\xEDas, Ramen. Me han llegado informes de que tienes planes
+          de escapar de la casa de los Pearlson. Quisiera aclarar si estas acusaciones
+          son verdaderas o no. No puedo comentar mis fuentes de informaci\xF3n, pero
+          te aseguro que no suelen equivocarse."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
       - tipoNodo: 2
         esPersonaje: 1
-        personaje: Llamacornio Julio
-        texto: "est\xE1n prepar\xE1ndose para cuando te vayas amigo. Est\xE1n organizando
-          unas elecciones para elegir a tu sucesor como favorito de la casa."
+        personaje: Protectora Lila
+        texto: "Debo recordarte que la evasi\xF3n de la custodia es un delito grave
+          y debe ser tratado con seriedad. Si tienes alg\xFAn problema, por favor
+          h\xE1zmelo saber y encontraremos una soluci\xF3n legal y apropiada."
+        botones:
+        - tipoBoton: 1
+          nombre: Necesito salir y pisar hierba con mis patas.
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: "A\xFAn me lo estoy pensando\u2026"
+          siguienteDialogo: 6
+          accion: []
+          condiciones: []
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Protectora Lila
+        texto: "Es importante que reflexiones cuidadosamente antes de tomar cualquier
+          decisi\xF3n que pueda afectar tu situaci\xF3n actual, Ramen. Entiendo que
+          quieras salir al exterior, pero escapar de la casa de los Pearlson no es
+          una soluci\xF3n adecuada."
         botones:
         - tipoBoton: 3
           nombre: Continuar
-          siguienteDialogo: 
+          siguienteDialogo: 7
+          accion: []
+          condiciones: []
+    - identifier: 6
+      nodos:
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Protectora Lila
+        texto: Comprendo que no te sientas suficientemente apreciado en la casa de
+          los Pearlson, Ramen. Recuerda que en esta casa todos los juguetes son valiosos
+          y apreciados, y debemos cuidar y respetar unos de otros.
+        botones:
+        - tipoBoton: 3
+          nombre: Continuar
+          siguienteDialogo: 7
           accion: []
           condiciones:
           - identifier: 
@@ -887,272 +1294,84 @@ MonoBehaviour:
       nodos:
       - tipoNodo: 0
         esPersonaje: 1
-        personaje: Llamacornio Julio
-        texto: Bueno cuando te decidas, y si eso es lo que quieres, yo te apoyo amigo.
-          En esta casa todos te queremos y nos lo pasamos bien jugando contigo amigo.
+        personaje: Protectora Lila
+        texto: "Adem\xE1s, me han llegado informes de que los dem\xE1s juguetes ya
+          saben sobre tus planes y est\xE1n organizando una elecci\xF3n para elegir
+          a tu sucesor como el nuevo favorito de la casa."
         botones:
         - tipoBoton: 1
           nombre: Continuar
           siguienteDialogo: 
           accion: []
-          condiciones:
-          - identifier: 
-            variable: 2
-            operador: 0
-            valor: 1
-            ConditionAfterTrue: 0
-            condicionTrue: 
-            dialogoTrue: 2
-            ConditionAfterFalse: 0
-            dialogoFalse: 
-            condicionFalse: 
-          - identifier: 
-            variable: 2
-            operador: 0
-            valor: 1
-            ConditionAfterTrue: 0
-            condicionTrue: 
-            dialogoTrue: 2
-            ConditionAfterFalse: 0
-            dialogoFalse: 
-            condicionFalse: 
+          condiciones: []
       - tipoNodo: 2
         esPersonaje: 1
-        personaje: Llamacornio Julio
-        texto: "Los otros juguetes ya se han enterado y se preparan para tu huida.
-          Est\xE1n organizando unas elecciones para elegir a tu sucesor como favorito
-          de la casa."
-        botones:
-        - tipoBoton: 3
-          nombre: Continuar
-          siguienteDialogo: 
-          accion: []
-          condiciones:
-          - identifier: 
-            variable: 2
-            operador: 0
-            valor: 1
-            ConditionAfterTrue: 0
-            condicionTrue: 
-            dialogoTrue: 2
-            ConditionAfterFalse: 0
-            dialogoFalse: 
-            condicionFalse: 
-          - identifier: 
-            variable: 2
-            operador: 0
-            valor: 1
-            ConditionAfterTrue: 0
-            condicionTrue: 
-            dialogoTrue: 2
-            ConditionAfterFalse: 0
-            dialogoFalse: 
-            condicionFalse: 
-    - identifier: 8
-      nodos:
-      - tipoNodo: 1
-        esPersonaje: 1
-        personaje: Llamacornio Julio
-        texto: "De hecho estamos buscando un juez porque la cerda no ha querido,
-          dice que conf\xEDa en que te quedes en casa y bla bla bla, es una aburrida.
-          Pero ya que te vas amigo..."
+        personaje: Protectora Lila
+        texto: "Actualmente estamos en la b\xFAsqueda de un juez, ya que Rosie ha
+          declinado el papel. Ella ha manifestado su confianza en que decidas quedarte
+          en casa."
         botones:
         - tipoBoton: 1
           nombre: Continuar
-          siguienteDialogo: 
+          siguienteDialogo: 8
           accion: []
-          condiciones:
-          - identifier: 
-            variable: 2
-            operador: 0
-            valor: 1
-            ConditionAfterTrue: 0
-            condicionTrue: 
-            dialogoTrue: 2
-            ConditionAfterFalse: 0
-            dialogoFalse: 
-            condicionFalse: 
-          - identifier: 
-            variable: 2
-            operador: 0
-            valor: 1
-            ConditionAfterTrue: 0
-            condicionTrue: 
-            dialogoTrue: 2
-            ConditionAfterFalse: 0
-            dialogoFalse: 
-            condicionFalse: 
+          condiciones: []
       - tipoNodo: 2
         esPersonaje: 1
-        personaje: Llamacornio Julio
-        texto: "\xBFPodr\xEDas votar t\xFA a que juguete prefieres como tu sucesor?
-          Solo tendr\xEDas que escucharnos a los tres un ratito y despu\xE9s votar
-          al mejor de nosotros tres. Si lo haces te daremos 20 monedas amigo."
+        personaje: Protectora Lila
+        texto: "\xBFEstar\xEDas dispuesto a escuchar las propuestas de los tres candidatos
+          a sucesor y emitir tu voto? Al tomar el rol de juez en esta situaci\xF3n,
+          ser\xE1s compensado con 20 monedas."
         botones:
-        - tipoBoton: 3
+        - tipoBoton: 1
           nombre: "\xA1De acuerdo! Dime porqu\xE9 debo elegirte a ti"
           siguienteDialogo: 
           accion: []
-          condiciones:
-          - identifier: 
-            variable: 2
-            operador: 0
-            valor: 1
-            ConditionAfterTrue: 0
-            condicionTrue: 
-            dialogoTrue: 2
-            ConditionAfterFalse: 0
-            dialogoFalse: 
-            condicionFalse: 
-          - identifier: 
-            variable: 2
-            operador: 0
-            valor: 1
-            ConditionAfterTrue: 0
-            condicionTrue: 
-            dialogoTrue: 2
-            ConditionAfterFalse: 0
-            dialogoFalse: 
-            condicionFalse: 
-        - tipoBoton: 3
+          condiciones: []
+        - tipoBoton: 0
           nombre: "Ser\xE1 mejor que te busques a otro"
           siguienteDialogo: 
           accion: []
-          condiciones:
-          - identifier: 
-            variable: 2
-            operador: 0
-            valor: 1
-            ConditionAfterTrue: 0
-            condicionTrue: 
-            dialogoTrue: 2
-            ConditionAfterFalse: 0
-            dialogoFalse: 
-            condicionFalse: 
-          - identifier: 
-            variable: 2
-            operador: 0
-            valor: 1
-            ConditionAfterTrue: 0
-            condicionTrue: 
-            dialogoTrue: 2
-            ConditionAfterFalse: 0
-            dialogoFalse: 
-            condicionFalse: 
-    - identifier: 2
-      nodos:
-      - tipoNodo: 1
+          condiciones: []
+      - tipoNodo: 2
         esPersonaje: 1
-        personaje: Llamacornio Julio
-        texto: "Juguete del ba\xFAl, juguet\xF3n pero astuto, siempre en busca de
-          su propio beneficio. Disfruta hablando con todos los habitantes de la casa
-          \xA1 y tiene muy buenos chistes!"
+        personaje: Protectora Lila
+        texto: "Si decides votarme en las pr\xF3ximas elecciones que definir\xE1n
+          el rumbo de nuestra comunidad, te garantizo que trabajar\xE9 incansablemente
+          para proteger la seguridad y el bienestar de todos los ciudadanos."
         botones:
         - tipoBoton: 1
-          nombre: Hablar
-          siguienteDialogo: 
-          accion: []
-          condiciones:
-          - identifier: 
-            variable: 2
-            operador: 0
-            valor: 1
-            ConditionAfterTrue: 0
-            condicionTrue: 
-            dialogoTrue: 2
-            ConditionAfterFalse: 0
-            dialogoFalse: 
-            condicionFalse: 
-          - identifier: 
-            variable: 2
-            operador: 0
-            valor: 1
-            ConditionAfterTrue: 0
-            condicionTrue: 
-            dialogoTrue: 2
-            ConditionAfterFalse: 0
-            dialogoFalse: 
-            condicionFalse: 
-        - tipoBoton: 0
-          nombre: 
+          nombre: Continuar
           siguienteDialogo: 
           accion: []
           condiciones: []
-    - identifier: 2
-      nodos:
-      - tipoNodo: 1
+      - tipoNodo: 2
         esPersonaje: 1
-        personaje: Llamacornio Julio
-        texto: "Juguete del ba\xFAl, juguet\xF3n pero astuto, siempre en busca de
-          su propio beneficio. Disfruta hablando con todos los habitantes de la casa
-          \xA1 y tiene muy buenos chistes!"
+        personaje: Protectora Lila
+        texto: "Me comprometo a castigar a aquellos que intenten hacer el mal y a
+          impulsar innovaciones que permitan el progreso y el desarrollo de nuestra
+          sociedad. Juntos podemos construir una comunidad m\xE1s pr\xF3spera y segura
+          para todos."
         botones:
-        - tipoBoton: 1
-          nombre: Hablar
-          siguienteDialogo: 
-          accion: []
-          condiciones:
-          - identifier: 
-            variable: 2
-            operador: 0
-            valor: 1
-            ConditionAfterTrue: 0
-            condicionTrue: 
-            dialogoTrue: 2
-            ConditionAfterFalse: 0
-            dialogoFalse: 
-            condicionFalse: 
-          - identifier: 
-            variable: 2
-            operador: 0
-            valor: 1
-            ConditionAfterTrue: 0
-            condicionTrue: 
-            dialogoTrue: 2
-            ConditionAfterFalse: 0
-            dialogoFalse: 
-            condicionFalse: 
         - tipoBoton: 0
-          nombre: 
+          nombre: Salir
           siguienteDialogo: 
-          accion: []
+          accion:
+          - variable: 7
+            valor: 1
+          - variable: 3
+            valor: 1
           condiciones: []
-    - identifier: 2
+    - identifier: 8
       nodos:
-      - tipoNodo: 1
+      - tipoNodo: 0
         esPersonaje: 1
-        personaje: Llamacornio Julio
-        texto: "Juguete del ba\xFAl, juguet\xF3n pero astuto, siempre en busca de
-          su propio beneficio. Disfruta hablando con todos los habitantes de la casa
-          \xA1 y tiene muy buenos chistes!"
+        personaje: Protectora Lila
+        texto: "Parece ser que no has cumplido tu obligaci\xF3n de hablar con todos
+          los candidatos. Regresa despu\xE9s de escuchar todas las campa\xF1as."
         botones:
-        - tipoBoton: 1
-          nombre: Hablar
-          siguienteDialogo: 
-          accion: []
-          condiciones:
-          - identifier: 
-            variable: 2
-            operador: 0
-            valor: 1
-            ConditionAfterTrue: 0
-            condicionTrue: 
-            dialogoTrue: 2
-            ConditionAfterFalse: 0
-            dialogoFalse: 
-            condicionFalse: 
-          - identifier: 
-            variable: 2
-            operador: 0
-            valor: 1
-            ConditionAfterTrue: 0
-            condicionTrue: 
-            dialogoTrue: 2
-            ConditionAfterFalse: 0
-            dialogoFalse: 
-            condicionFalse: 
         - tipoBoton: 0
-          nombre: 
+          nombre: Salir
           siguienteDialogo: 
           accion: []
           condiciones: []
