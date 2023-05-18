@@ -6,9 +6,8 @@ public class ChispasHandler : MonoBehaviour
 {
    
         [SerializeField]private Transform[] wayPoints;
-    [SerializeField] private Transform[] wayPoints;
-
-    private int currentWayPoint = 0;
+        [SerializeField] private Transform[] energyWayPoints;
+        private int currentWayPoint = 0;
         public float minDistance = 15f;
         public float speed = 0;
         private bool isReturning;
