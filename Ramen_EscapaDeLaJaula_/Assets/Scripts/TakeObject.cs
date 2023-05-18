@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TakeObject : MonoBehaviour
 {
-    public bool playerDetectedObject = false;
+    [HideInInspector]public bool playerDetectedObject = false;
 
     public SphereCollider SphereCollider;
 

@@ -20,7 +20,7 @@ public class EventHandler : MonoBehaviour
     }
     private void Start()
     {
-        
+        Variables[Variable.rata_cheese] = 1;
     }
     void Update()
     {

@@ -20759,7 +20759,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1308377711}
-  m_LocalRotation: {x: 0.12488751, y: -0.76131815, z: 0.15402094, w: 0.617313}
+  m_LocalRotation: {x: 0.1248875, y: -0.76131815, z: 0.15402092, w: 0.617313}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -27088,7 +27088,7 @@ MonoBehaviour:
   wayPoints:
   - {fileID: 1610486390}
   - {fileID: 384393572}
-  charger: {fileID: 0}
+  charger: {fileID: 404056261}
   minDistance: 2
   speed: 5
 --- !u!114 &1829599523
