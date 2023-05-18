@@ -3,31 +3,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PatrollingScript : MonoBehaviour
+public class ChispasHandler : MonoBehaviour
 {
-    public Transform[] wayPoints; 
+    [SerializeField] private Transform[] wayPoints;
+    [SerializeField] private Transform charger;
     private int currentWayPoint = 0;
     public float minDistance = 15f;
     public float speed = 0;
-    private float energy = 100f;
+    private float energy = 0;
     private bool isReturning;
     private Quaternion ogRotation;
     private Vector3 currentTargetPosition => wayPoints[currentWayPoint].position;
-
+    private bool isMoving = true;
     private void Start()
     {
         ogRotation = transform.rotation;
-        if (transform.gameObject.name == "Chispita")
-        {
-            StartCoroutine(EnergyEditor(-1));
-        }
+
     }
 
     private IEnumerator EnergyEditor(float value)
     {
         while (true)
         {
-            yield return new WaitForSeconds(60);
+            yield return new WaitForSeconds(10);
             energy += value;
         }
 
@@ -36,19 +34,33 @@ public class PatrollingScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (ReachedWayPoint())
+        if (isMoving)
         {
-            ChangeWayPoint();
+            if (ReachedWayPoint())
+            {
+                ChangeWayPoint();
+            }
+            CheckRb();
+            Move();
         }
-        CheckRb();
-        Move();
-        if (!EnergyCheck())
+
+        if (CheckCharger())
         {
-            StopCoroutine(EnergyEditor(-1));
-            transform.gameObject.GetComponent<ChispasHandler>().enabled = true;
-            transform.gameObject.GetComponent<PatrollingScript>().enabled = false;
+            isMoving = false;
+            StartCoroutine(EnergyEditor(1));
             
         }
+        if (energy >= 100)
+        {
+            StopCoroutine(EnergyEditor(1));
+            transform.gameObject.GetComponent<PatrollingScript>().enabled = true;
+            transform.gameObject.GetComponent<ChispasHandler>().enabled = false;
+        }
+    }
+
+    private bool CheckCharger()
+    {
+        return Vector3.Distance(transform.position, charger.position) <= minDistance;
     }
 
     private bool EnergyCheck()
@@ -59,14 +71,14 @@ public class PatrollingScript : MonoBehaviour
     {
         if (transform.rotation.x != 0 && transform.rotation.z != 0)
         {
-            transform.rotation = Quaternion.Slerp(transform.rotation,ogRotation,Time.deltaTime*speed);
+            transform.rotation = Quaternion.Slerp(transform.rotation, ogRotation, Time.deltaTime * speed);
         }
     }
 
-    //Checkea si est� cerca o encima del wayPoint
+    //Checkea si est? cerca o encima del wayPoint
     private bool ReachedWayPoint()
     {
-        
+
         return Vector3.Distance(transform.position, currentTargetPosition) <= minDistance;
     }
 
@@ -94,8 +106,9 @@ public class PatrollingScript : MonoBehaviour
     }
     private void Move()
     {
-        transform.LookAt(new Vector3 (currentTargetPosition.x, transform.position.y, currentTargetPosition.z));
+        transform.LookAt(new Vector3(currentTargetPosition.x, transform.position.y, currentTargetPosition.z));
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
+
 
 }

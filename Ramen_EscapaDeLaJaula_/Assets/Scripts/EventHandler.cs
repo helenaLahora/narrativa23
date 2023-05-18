@@ -10,7 +10,6 @@ public class EventHandler : MonoBehaviour
     public static Dictionary<Variable, int> Variables = new Dictionary<Variable, int>();
     public GameObject pelota;
 
-    // Start is called before the first frame update
     void Awake()
     {
         foreach (Variable variable in Enum.GetValues(typeof(Variable)))
@@ -20,7 +19,6 @@ public class EventHandler : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Variables[Variable.bolaEjercicio] > 0)

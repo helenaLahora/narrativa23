@@ -65,13 +65,14 @@
     <Compile Include="Assets\Scripts\Dormitorio\MovimientoRueda.cs" />
     <Compile Include="Assets\Scripts\GuardarCargarPartida.cs" />
     <Compile Include="Assets\Scripts\CamMovement.cs" />
+    <Compile Include="Assets\Scripts\ChispasHandler.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\objectHandler.cs" />
     <Compile Include="Assets\Scripts\UIHANDLE.cs" />
     <Compile Include="Assets\Scripts\FirstUI.cs" />
     <Compile Include="Assets\Scripts\EventHandler.cs" />
     <Compile Include="Assets\Scripts\ControladorDatosJuego.cs" />
-    <Compile Include="Assets\DamageScript.cs" />
+    <Compile Include="Assets\Scripts\DamageScript.cs" />
     <Compile Include="Assets\Scripts\TakeObject.cs" />
     <Compile Include="Assets\Scripts\Coin.cs" />
     <Compile Include="Assets\Scripts\EventManager.cs" />

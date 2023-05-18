@@ -520,17 +520,17 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones:
-          - identifier: 
+          - identifier: 0
             variable: 2
             operador: 0
             valor: 1
             ConditionAfterTrue: 0
             condicionTrue: 
             dialogoTrue: 2
-            ConditionAfterFalse: 0
+            ConditionAfterFalse: 1
             dialogoFalse: 
-            condicionFalse: 
-          - identifier: 
+            condicionFalse: 1
+          - identifier: 1
             variable: 2
             operador: 0
             valor: 1
@@ -1936,7 +1936,7 @@ MonoBehaviour:
             ConditionAfterTrue: 0
             condicionTrue: 
             dialogoTrue: 3
-            ConditionAfterFalse: 1
+            ConditionAfterFalse: 0
             dialogoFalse: 4
             condicionFalse: 
         - tipoBoton: 0
