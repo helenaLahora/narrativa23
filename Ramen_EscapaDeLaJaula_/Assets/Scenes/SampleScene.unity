@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1838704, g: 0.22901934, b: 0.30311272, a: 1}
+  m_IndirectSpecularColor: {r: 0.18387006, g: 0.22901866, b: 0.30311123, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -19139,6 +19139,14 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 31c65429-9fc1-4e0d-a460-f193b9555923
     m_ActionName: Player/EscapeMenu[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3794beeb-4a76-47c1-8fce-aaa6cde79b9e
+    m_ActionName: SaveGame/Save[/Keyboard/p]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f16993d0-9866-4a38-8f66-d48a87faaaa7
+    m_ActionName: SaveGame/Load[/Keyboard/o]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -19531,7 +19539,7 @@ MonoBehaviour:
   Collider: {fileID: 1252710768}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
-  nombreEvento: Evento_Ratas
+  nombreEvento: Evento_Julio
 --- !u!135 &1252710768
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -21888,7 +21896,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1366293491}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.3321686, y: 1.7236111, z: 0.6919508}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -27023,23 +27031,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c6f7c195b97cdcc458dd37a8ca596d29, type: 3}
   m_PrefabInstance: {fileID: 1510109418}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1829599510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1829599505}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bd4f90b26af3134e8dc91d76809d63a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wayPoints:
-  - {fileID: 1610486390}
-  - {fileID: 384393572}
-  minDistance: 2
-  speed: 5
 --- !u!64 &1829599515
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27066,7 +27057,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee4e0a268ce508a40b6954524dc0b939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushForce: 5e+11
+  player: {fileID: 1240095946}
+  pushForce: 0.5
+  pushDuration: 1
 --- !u!135 &1829599519
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -27080,6 +27073,23 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.00230766
   m_Center: {x: 0, y: 0.000501115, z: 0.000002590008}
+--- !u!114 &1829599522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829599505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18f82a93ad7651b48944429a3f1efa67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wayPoints:
+  - {fileID: 1610486390}
+  - {fileID: 384393572}
+  minDistance: 2
+  speed: 5
 --- !u!1001 &1830784482
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28314,7 +28324,7 @@ MonoBehaviour:
   pelota:
   - {fileID: 2800000, guid: c4e0ff16798a8264cbf12e8ac3879766, type: 3}
   - {fileID: 2800000, guid: b60271d6588ea04478201813aed210fd, type: 3}
-  tiempoMuerte: 60
+  tiempoMuerte: 30
 --- !u!1 &1916345245
 GameObject:
   m_ObjectHideFlags: 3

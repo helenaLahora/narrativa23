@@ -131,12 +131,36 @@ public class UIHANDLE : MonoBehaviour
                                                 bool miniResult = Comparador(miniCondicion);
                                                 if (!miniCondicion.ConditionAfterTrue)
                                                 {
-                                                    button.clickable.clicked += () => AsignarDialogo(condicion.dialogoTrue);
-                                                    break;
+                                                    if (miniResult)
+                                                    {
+                                                        button.clickable.clicked += () => AsignarDialogo(miniCondicion.dialogoTrue);
+                                                        break;
+                                                    }
+
+                                                }
+                                                else
+                                                {
+                                                    foreach (Condicion miniCondicion2 in boton.condiciones)
+                                                    {
+                                                        if (miniCondicion2.identifier == condicion.condicionTrue)
+                                                        {
+                                                            bool miniResult2 = Comparador(miniCondicion2);
+                                                            if (!miniCondicion2.ConditionAfterTrue)
+                                                            {
+                                                                if (miniResult2)
+                                                                {
+                                                                    button.clickable.clicked += () => AsignarDialogo(miniCondicion2.dialogoTrue);
+                                                                    break;
+                                                                }
+
+                                                            }
+
+                                                        }
+                                                    }
                                                 }
                                             }
                                         }
-                                        
+
                                     }
                                 }
                                 else
@@ -155,8 +179,28 @@ public class UIHANDLE : MonoBehaviour
                                                 bool miniResult = Comparador(miniCondicion);
                                                 if (!miniCondicion.ConditionAfterTrue)
                                                 {
-                                                    button.clickable.clicked += () => AsignarDialogo(condicion.dialogoFalse); 
-                                                    break;
+                                                    button.clickable.clicked += () => AsignarDialogo(miniCondicion.dialogoFalse);
+                                                   
+                                                }
+                                                else
+                                                {
+                                                    foreach (Condicion miniCondicion2 in boton.condiciones)
+                                                    {
+                                                        if (miniCondicion2.identifier == condicion.condicionFalse)
+                                                        {
+                                                            bool miniResult2 = Comparador(miniCondicion2);
+                                                            if (!miniCondicion2.ConditionAfterFalse)
+                                                            {
+                                                                if (miniResult2)
+                                                                {
+                                                                    button.clickable.clicked += () => AsignarDialogo(miniCondicion2.dialogoFalse);
+                                                                   
+                                                                }
+
+                                                            }
+
+                                                        }
+                                                    }
                                                 }
                                             }
                                         }

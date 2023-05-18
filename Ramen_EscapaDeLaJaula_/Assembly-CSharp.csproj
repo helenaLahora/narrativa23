@@ -71,13 +71,14 @@
     <Compile Include="Assets\Scripts\FirstUI.cs" />
     <Compile Include="Assets\Scripts\EventHandler.cs" />
     <Compile Include="Assets\Scripts\ControladorDatosJuego.cs" />
-    <Compile Include="Assets\DamageScript.cs" />
+    <Compile Include="Assets\Scripts\DamageScript.cs" />
     <Compile Include="Assets\Scripts\TakeObject.cs" />
     <Compile Include="Assets\Scripts\Coin.cs" />
     <Compile Include="Assets\Scripts\EventManager.cs" />
     <Compile Include="Assets\Scripts\CoinGenerator.cs" />
     <Compile Include="Assets\Scripts\OnTriggerAction.cs" />
     <Compile Include="Assets\Scripts\WonderBehaviour.cs" />
+    <Compile Include="Assets\Scripts\ChispasHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

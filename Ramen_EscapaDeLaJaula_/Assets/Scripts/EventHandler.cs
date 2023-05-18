@@ -19,7 +19,10 @@ public class EventHandler : MonoBehaviour
         }
 
     }
-
+    private void Start()
+    {
+        Variables[Variable.bolaEjercicio] = 1;
+    }
     // Update is called once per frame
     void Update()
     {
