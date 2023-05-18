@@ -94,22 +94,38 @@ public enum TipoBoton
 }
 public enum Variable
 {
-    Juguetes_completedMission,
-    Polvo_completedMission,
+
+    collectedObjects,
+    //Rosie
+    coin,
+
+    //Elecciones
     elections_completedmission,
     elections_explainedmission,
     julio_talked,
     oso_talked,
     lila_talked,
-    bedroomDoor,
-    coin,
-    explainedMission,
-    collectedObjects,
     bolaEjercicio,
-    amistad, 
+    //Motas de polvo
+    motas_completedmission,
+    motas_explainedmission,
+    bedroomDoor,
+    //Asuntos de trabajo
+    banyo_completedmission,
+    //Patosos
+    vuelveConMama,
+    marga_completedmission,
+    marga_explainedmission,
+    patitos, 
+    sigueARamen,
+    //Salidas
+    final_happy,
+    final_sad,
+    //Ratas
     rata_completedmission,
     rata_explainedmission,
     rata_cheese
+
 }
 public enum Operador
 {
