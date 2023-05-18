@@ -9,6 +9,7 @@ public class PatrollingScript : MonoBehaviour
     private int currentWayPoint = 0;
     public float minDistance = 15f;
     public float speed = 0;
+    private float energy = 100f;
     private bool isReturning;
     private Quaternion ogRotation;
     private Vector3 currentTargetPosition => wayPoints[currentWayPoint].position;
@@ -16,7 +17,22 @@ public class PatrollingScript : MonoBehaviour
     private void Start()
     {
         ogRotation = transform.rotation;
+        if (transform.gameObject.name == "Chispita")
+        {
+            StartCoroutine(EnergyEditor(-1));
+        }
     }
+
+    private IEnumerator EnergyEditor(float value)
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(60);
+            energy += value;
+        }
+
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -26,8 +42,19 @@ public class PatrollingScript : MonoBehaviour
         }
         CheckRb();
         Move();
+        if (!EnergyCheck())
+        {
+            StopCoroutine(EnergyEditor(-1));
+            transform.gameObject.GetComponent<ChispasHandler>().enabled = true;
+            transform.gameObject.GetComponent<PatrollingScript>().enabled = false;
+            
+        }
     }
 
+    private bool EnergyCheck()
+    {
+        return energy > 10;
+    }
     private void CheckRb()
     {
         if (transform.rotation.x != 0 && transform.rotation.z != 0)
