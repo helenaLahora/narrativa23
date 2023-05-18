@@ -56,36 +56,7 @@ public class UIHANDLE : MonoBehaviour
         if (UI != null)
         {
 
-            switch (currentNodo.tipoNodo)
-            {
-                case TipoNodo.conversacion:
-                    UI.visualTreeAsset = visualTreeAssets[0];
-
-                    break;
-
-                case TipoNodo.presentacion:
-                    UI.visualTreeAsset = visualTreeAssets[1];
-
-                    break;
-
-                case TipoNodo.eleccion:
-                    UI.visualTreeAsset = visualTreeAssets[2];
-
-                    break;
-                case TipoNodo.historiaPresentacion:
-                    UI.visualTreeAsset= visualTreeAssets[3];
-                    break;
-                case TipoNodo.menu_config:
-                    UI.visualTreeAsset = visualTreeAssets[4];
-                    break;
-                case TipoNodo.creditos:
-                    UI.visualTreeAsset = visualTreeAssets[5];
-                    break;
-                case TipoNodo.menu_inicio:
-                    UI.visualTreeAsset = visualTreeAssets[6];
-                    break;
-
-            }
+            AssignUI(currentNodo);
             if (currentNodo.tipoNodo != TipoNodo.historiaPresentacion)
             {
                 nombre = UI.rootVisualElement.Q<Label>("nombre");
@@ -127,11 +98,9 @@ public class UIHANDLE : MonoBehaviour
                                         Condicion miniCondicion = CheckIdentifier(condicion.condicionTrue, boton);
                                         if (miniCondicion != null)
                                         {
-                                            AsignadorCondiciones(miniCondicion, button, boton, resultado);
+                                            AsignadorCondiciones(miniCondicion, button, boton, true);
 
                                         }
-
-
                                     }
                                 }
                                 else
@@ -146,7 +115,7 @@ public class UIHANDLE : MonoBehaviour
                                         Condicion miniCondicion = CheckIdentifier(condicion.condicionTrue, boton);     
                                         if (miniCondicion != null)
                                         {
-                                            AsignadorCondiciones(miniCondicion,button,boton,resultado);
+                                            AsignadorCondiciones(miniCondicion,button,boton,false);
                                         }
                                     }
                                 }
@@ -209,6 +178,41 @@ public class UIHANDLE : MonoBehaviour
 
         }
     }
+
+    private void AssignUI(Nodo currentNodo)
+    {
+        switch (currentNodo.tipoNodo)
+        {
+            case TipoNodo.conversacion:
+                UI.visualTreeAsset = visualTreeAssets[0];
+
+                break;
+
+            case TipoNodo.presentacion:
+                UI.visualTreeAsset = visualTreeAssets[1];
+
+                break;
+
+            case TipoNodo.eleccion:
+                UI.visualTreeAsset = visualTreeAssets[2];
+
+                break;
+            case TipoNodo.historiaPresentacion:
+                UI.visualTreeAsset = visualTreeAssets[3];
+                break;
+            case TipoNodo.menu_config:
+                UI.visualTreeAsset = visualTreeAssets[4];
+                break;
+            case TipoNodo.creditos:
+                UI.visualTreeAsset = visualTreeAssets[5];
+                break;
+            case TipoNodo.menu_inicio:
+                UI.visualTreeAsset = visualTreeAssets[6];
+                break;
+
+        }
+    }
+
     private void AsignadorCondiciones(Condicion miniCondicion, Button button, Boton boton, bool nextCondition)
     {
         //para pasar a condicion true
@@ -244,7 +248,6 @@ public class UIHANDLE : MonoBehaviour
                     button.clickable.clicked += () => AsignarDialogo(miniCondicion.dialogoFalse);
                     return;
                 }
-
             }
             else
             {
@@ -275,7 +278,6 @@ public class UIHANDLE : MonoBehaviour
         bool resultado = false;
         switch (condicion.operador)
         {
-
             case Operador.igual:
                 resultado = EventHandler.Variables[condicion.variable] == condicion.valor;
                 break;

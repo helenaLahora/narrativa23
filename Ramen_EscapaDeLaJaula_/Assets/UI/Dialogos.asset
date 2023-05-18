@@ -1910,7 +1910,7 @@ MonoBehaviour:
           accion: []
           condiciones:
           - identifier: 1
-            variable: 13
+            variable: 19
             operador: 0
             valor: 1
             ConditionAfterTrue: 0
@@ -1920,7 +1920,7 @@ MonoBehaviour:
             dialogoFalse: 
             condicionFalse: 2
           - identifier: 2
-            variable: 14
+            variable: 20
             operador: 0
             valor: 1
             ConditionAfterTrue: 1
@@ -1930,7 +1930,7 @@ MonoBehaviour:
             dialogoFalse: 5
             condicionFalse: 
           - identifier: 3
-            variable: 15
+            variable: 21
             operador: 0
             valor: 1
             ConditionAfterTrue: 0
@@ -2110,7 +2110,7 @@ MonoBehaviour:
           nombre: Salir
           siguienteDialogo: 
           accion:
-          - variable: 14
+          - variable: 20
             valor: 1
           condiciones: []
     - identifier: 7
@@ -2124,6 +2124,6 @@ MonoBehaviour:
           nombre: Salir
           siguienteDialogo: 
           accion:
-          - variable: 14
+          - variable: 20
             valor: 1
           condiciones: []
