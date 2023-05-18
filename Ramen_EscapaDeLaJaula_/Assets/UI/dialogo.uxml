@@ -9,7 +9,7 @@
                 <ui:Label text="¡Hola Ramen! ¿Como va tu aventura por la casa? Por lo que veo no muy bien, ya que buscas mi ayuda. ¿Has traído alguna moneda para mi? Si no es así no molestes más, yo lo sé todo pero no regalo nada." display-tooltip-when-elided="true" name="contenido" style="color: rgb(255, 153, 0); font-size: 32px; -unity-font-definition: none; -unity-font: url(&apos;project://database/Assets/Graphics/motley_forces/MotleyForcesRegular.ttf?fileID=12800000&amp;guid=3ba146d1cf95be74eb5166cc52477acf&amp;type=3#MotleyForcesRegular&apos;); -unity-text-align: middle-left; width: 100%; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; height: 100%; white-space: normal; margin-top: 0; flex-wrap: wrap;" />
             </ui:VisualElement>
         </ui:VisualElement>
-        <ui:VisualElement name="botones" style="flex-direction: row; justify-content: flex-end; margin-top: 30px; align-items: center;">
+        <ui:VisualElement name="botones" style="flex-direction: row; justify-content: flex-start; margin-top: 30px; align-items: center; display: flex;">
             <ui:Button text="Salir" display-tooltip-when-elided="true" name="salir" class="boton-secundario-pequeno" style="display: none;" />
             <ui:Button text="Continuar" display-tooltip-when-elided="true" name="continuar" class="boton-secundario-pequeno" style="display: none;" />
         </ui:VisualElement>

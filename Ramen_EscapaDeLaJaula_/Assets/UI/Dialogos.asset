@@ -52,18 +52,6 @@ MonoBehaviour:
       - tipoNodo: 3
         esPersonaje: 0
         personaje: 
-        texto: 'Escapa De La Jaula
-
-          Ramen 2'
-        botones:
-        - tipoBoton: 1
-          nombre: Continuar
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-      - tipoNodo: 3
-        esPersonaje: 0
-        personaje: 
         texto: "Para el sexto cumplea\xF1os de Leo los abuelos Carla y Carlos le
           regalaron un amigable h\xE1mster.\nEl ni\xF1o decidi\xF3 nombrar al h\xE1mster
           como su comida favorita: Ramen. "
@@ -971,7 +959,9 @@ MonoBehaviour:
         - tipoBoton: 0
           nombre: Salir
           siguienteDialogo: 
-          accion: []
+          accion:
+          - variable: 3
+            valor: 1
           condiciones: []
     - identifier: 11
       nodos:
@@ -1328,9 +1318,9 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones: []
-        - tipoBoton: 0
+        - tipoBoton: 3
           nombre: "Ser\xE1 mejor que te busques a otro"
-          siguienteDialogo: 
+          siguienteDialogo: 9
           accion: []
           condiciones: []
       - tipoNodo: 2
@@ -1374,6 +1364,629 @@ MonoBehaviour:
           nombre: Salir
           siguienteDialogo: 
           accion: []
+          condiciones: []
+    - identifier: 9
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Protectora Lila
+        texto: "Bueno... \xA1Entonces seguir\xE9 buscando!"
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+  - identifier: Evento_Oso
+    dialogos:
+    - identifier: 1
+      nodos:
+      - tipoNodo: 1
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Comelibros de manual. Le encanta aprender cosas nuevas, leer el diccionario
+          y compartir su conocimiento con los dem\xE1s."
+        botones:
+        - tipoBoton: 4
+          nombre: Hablar
+          siguienteDialogo: 
+          accion: []
+          condiciones:
+          - identifier: 0
+            variable: 2
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 2
+            ConditionAfterFalse: 1
+            dialogoFalse: 
+            condicionFalse: 1
+          - identifier: 1
+            variable: 3
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 1
+            condicionTrue: 2
+            dialogoTrue: 
+            ConditionAfterFalse: 0
+            dialogoFalse: 6
+            condicionFalse: 
+          - identifier: 2
+            variable: 6
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 1
+            condicionTrue: 3
+            dialogoTrue: 
+            ConditionAfterFalse: 0
+            dialogoFalse: 5
+            condicionFalse: 
+          - identifier: 3
+            variable: 4
+            operador: 0
+            valor: 3
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 3
+            ConditionAfterFalse: 0
+            dialogoFalse: 4
+            condicionFalse: 
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+    - identifier: 2
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Saludos, Ramen. Presumo que has acudido a este manantial de erudici\xF3n
+          con el prop\xF3sito de adquirir conocimiento. Es oportuno mencionar que
+          los pulpos son criaturas acu\xE1ticas que adem\xE1s de disponer de ocho
+          tent\xE1culos, poseen tres corazones."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Esta caracter\xEDstica anat\xF3mica les brinda ventajas para sobrevivir
+          en su h\xE1bitat acu\xE1tico, en donde requieren de un flujo de ox\xEDgeno
+          continuo para subsistir."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Las hormigas son insectos altamente organizados y sociales que habitan
+          en comunidades. La soberana es la \xFAnica ant que tiene la capacidad de
+          poner huevos y asume el papel de la principal responsable del bienestar
+          de la colonia."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Existe un mito muy difundido en todo el mundo que sostiene que el
+          pelo y las u\xF1as contin\xFAan creciendo tras la muerte. No obstante,
+          esta afirmaci\xF3n es completamente falsa. Luego del deceso, el crecimiento
+          celular se detiene en su totalidad."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+    - identifier: 3
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Bienvenido seas Ramen, \xBFvienes a votarme no?"
+        botones:
+        - tipoBoton: 1
+          nombre: "Votar a Oso Ar\xE1ndano"
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "\xBFMe has otorgado tu voto? Aprecio tu capacidad para reconocer
+          a un l\xEDder dotado de vastos conocimientos, estimado Ramen. Emplear\xE9
+          mi talento para desarrollar a Leo como un prodigio intelectual."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Para celebrar mi triunfo en las elecciones te dir\xE9 una curiosidad
+          eleccionil: en Nueva Zelanda, en las elecciones generales, los votantes
+          pueden escribir el nombre de su mascota en la boleta electoral."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Siempre y cuando la mascota no sea una persona real, su voto ser\xE1
+          contado como voto nulo. \xBFA que es interesante?"
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion:
+          - variable: 2
+            valor: 1
+          - variable: 1
+            valor: 20
+          condiciones: []
+    - identifier: 4
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Parece ser que no has cumplido tu obligaci\xF3n de hablar con todos
+          los candidatos. Regresa despu\xE9s de escuchar todas las campa\xF1as."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+    - identifier: 5
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Buenos d\xEDas Ramen, \xBFbuscas razones para votarme?"
+        botones:
+        - tipoBoton: 1
+          nombre: "Escuchar a Oso Ar\xE1ndano"
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Para mi candidatura oficial me gustar\xEDa listarte diez razones
+          por las cuales yo soy tu mejor sucesor:"
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Soy un oso ar\xE1ndano inteligente, dotado de una envergadura cerebral
+          y capacidad de aprendizaje sobresalientes. Cuento con habilidades naturales
+          para la resoluci\xF3n de problemas y, estoy en capacidad de compartir mis
+          conocimientos con el ni\xF1o Leo."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Mi personalidad es t\xEDmida y tranquila, propia de mi especie. Soy
+          muy reservado y me desagrada llamar la atenci\xF3n en demas\xEDa, por lo
+          que ser\xE9 un miembro discreto y de bajo perfil en la casa."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Poseo una innata curiosidad por descubrir cosas nuevas, lo que me
+          convierte en un aventurero nato y, por ende, siempre estar\xE9 dispuesto
+          a acompa\xF1ar al ni\xF1o Leo en sus exploraciones."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Mi vasto conocimiento sobre diversos temas me convierte en un excelente
+          educador. A trav\xE9s de mis ense\xF1anzas, podr\xE9 guiar a Leo en su
+          aprendizaje sobre temas de ecolog\xEDa, historia, entre otros."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Mi naturaleza responsable y confiable me hace un gran candidato para
+          cuidar y proteger a Leo en todo momento, as\xED como ser su confidente
+          y amigo."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Mi afectuosidad y cari\xF1o hacia las personas me hace un gran compa\xF1ero
+          y amigo, por lo que estar\xE9 presente para el ni\xF1o Leo en momentos
+          de felicidad y tristeza."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Mi paciencia y tolerancia son excepcionales, lo que me permite lidiar
+          con situaciones estresantes y dif\xEDciles con tranquilidad y serenidad,
+          lo que es sumamente importante al cuidar y acompa\xF1ar a un ni\xF1o."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Siempre estar\xE9 dispuesto a proteger al ni\xF1o Leo y mantenerlo
+          seguro de cualquier peligro que pudiera presentarse, lo que hace de m\xED
+          un protector de confianza."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Mi personalidad divertida y juguetona me permitir\xE1 acompa\xF1ar
+          a Leo en su tiempo libre, lo que fomentar\xE1 su creatividad y desarrollo
+          saludable."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Finalmente, mi gran capacidad de adaptaci\xF3n me permite ser un
+          excelente compa\xF1ero en cualquier situaci\xF3n, lo que me permite ser
+          el compa\xF1ero ideal de Leo tanto en la ciudad como en el campo, en la
+          casa o en la escuela."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion:
+          - variable: 6
+            valor: 1
+          - variable: 4
+            valor: 1
+          condiciones: []
+    - identifier: 6
+      nodos:
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Ramen, bienvenido al recinto del conocimiento. Me he enterado por
+          medio de Rosie que est\xE1s necesitando un medio de escapar de la residencia,
+          \xBFpodr\xEDas confirmar si esto es verdadero?"
+        botones:
+        - tipoBoton: 1
+          nombre: Necesito salir y pisar hierba con mis patas.
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: "A\xFAn me lo estoy pensando\u2026"
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Ruego encarecidamente que medites concienzudamente antes de tomar
+          cualquier decisi\xF3n, ya que personalmente no cambiar\xEDa a mi querido
+          Leo por nada en este mundo. Adem\xE1s, quisiera comunicarte que los dem\xE1s
+          juguetes han tomado conocimiento de tus intenciones,"
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "y se est\xE1n preparando diligentemente para tu partida, querido
+          amigo. En tal sentido, han establecido un proceso electoral con el fin
+          de elegir a tu sucesor en calidad de juguete preferido del hogar."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+    - identifier: 7
+      nodos:
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Antes de adoptar una determinaci\xF3n, es menester que reflexiones
+          detenidamente. En lo personal, no cambiar\xEDa a mi estimado Leo por nada
+          del mundo. No obstante, es del dominio p\xFAblico que otros juguetes est\xE1n
+          al tanto de tus planes y se disponen a prepararse para tu partida."
+        botones:
+        - tipoBoton: 1
+          nombre: Necesito salir y pisar hierba con mis patas.
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: "A\xFAn me lo estoy pensando\u2026"
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Han concebido la idea de convocar unas elecciones para seleccionar
+          a tu sucesor como preferido de la casa. Si, en definitiva, decides ausentarte,
+          cuenta con mi respaldo, querido amigo. En este hogar, todos te apreciamos
+          y disfrutamos mucho de compartir contigo momentos l\xFAdicos."
+        botones:
+        - tipoBoton: 3
+          nombre: Continuar
+          siguienteDialogo: 8
+          accion: []
+          condiciones: []
+    - identifier: 8
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "De hecho, estamos en la b\xFAsqueda de un juez id\xF3neo, dado que
+          la perspicaz Rosie ha rechazado nuestra oferta, arguyendo su confianza
+          en tu permanencia en nuestra residencia. Sin embargo, en vista de tu inminente
+          partida, querido amigo..."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "\xBFSer\xEDa posible que usted emitiese su voto para elegir al sucesor
+          que lo reemplazar\xE1, estimado amigo? \xDAnicamente le pedimos que nos
+          dedique un momento de su tiempo para escuchar nuestras propuestas,"
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "y as\xED, mediante su voto, elegir al mejor candidato entre nosotros.
+          Si acepta esta propuesta, nos complacer\xEDa retribuirle con 20 monedas
+          como un gesto de agradecimiento."
+        botones:
+        - tipoBoton: 1
+          nombre: "\xA1De acuerdo! Dime porqu\xE9 debo elegirte a ti"
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: "Ser\xE1 mejor que te busques a otro"
+          siguienteDialogo: 9
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Para mi candidatura oficial me gustar\xEDa listarte diez razones
+          por las cuales yo soy tu mejor sucesor:"
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Soy un oso ar\xE1ndano inteligente, dotado de una envergadura cerebral
+          y capacidad de aprendizaje sobresalientes. Cuento con habilidades naturales
+          para la resoluci\xF3n de problemas y, estoy en capacidad de compartir mis
+          conocimientos con el ni\xF1o Leo."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Mi personalidad es t\xEDmida y tranquila, propia de mi especie. Soy
+          muy reservado y me desagrada llamar la atenci\xF3n en demas\xEDa, por lo
+          que ser\xE9 un miembro discreto y de bajo perfil en la casa."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Mi vasto conocimiento sobre diversos temas me convierte en un excelente
+          educador. A trav\xE9s de mis ense\xF1anzas, podr\xE9 guiar a Leo en su
+          aprendizaje sobre temas de ecolog\xEDa, historia, entre otros."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Mi naturaleza responsable y confiable me hace un gran candidato para
+          cuidar y proteger a Leo en todo momento, as\xED como ser su confidente
+          y amigo."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Mi paciencia y tolerancia son excepcionales, lo que me permite lidiar
+          con situaciones estresantes y dif\xEDciles con tranquilidad y serenidad,
+          lo que es sumamente importante al cuidar y acompa\xF1ar a un ni\xF1o."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Siempre estar\xE9 dispuesto a proteger al ni\xF1o Leo y mantenerlo
+          seguro de cualquier peligro que pudiera presentarse, lo que hace de m\xED
+          un protector de confianza."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Mi personalidad divertida y juguetona me permitir\xE1 acompa\xF1ar
+          a Leo en su tiempo libre, lo que fomentar\xE1 su creatividad y desarrollo
+          saludable."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Finalmente, mi gran capacidad de adaptaci\xF3n me permite ser un
+          excelente compa\xF1ero en cualquier situaci\xF3n, lo que me permite ser
+          el compa\xF1ero ideal de Leo tanto en la ciudad como en el campo, en la
+          casa o en la escuela."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion:
+          - variable: 6
+            valor: 1
+          - variable: 4
+            valor: 1
+          condiciones: []
+    - identifier: 9
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Lamento mucho su decisi\xF3n, estimado amigo. Sin embargo, respeto
+          tu elecci\xF3n y deseo que tenga \xE9xito en sus futuras aventuras. "
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Oso Ar\xE1ndano"
+        texto: "Me alegra haber tenido la oportunidad de compartir momentos l\xFAdicos
+          con usted y espero que nuestros caminos se crucen nuevamente en el futuro."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion:
+          - variable: 3
+            valor: 1
           condiciones: []
   - identifier: Evento_Polvo
     dialogos:
