@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18387006, g: 0.22901866, b: 0.30311123, a: 1}
+  m_IndirectSpecularColor: {r: 0.1838704, g: 0.22901934, b: 0.30311272, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -19539,7 +19539,7 @@ MonoBehaviour:
   Collider: {fileID: 1252710768}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
-  nombreEvento: Evento_Julio
+  nombreEvento: Evento_Ratas
 --- !u!135 &1252710768
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -20759,7 +20759,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1308377711}
-  m_LocalRotation: {x: 0.1248875, y: -0.76131815, z: 0.15402092, w: 0.617313}
+  m_LocalRotation: {x: 0.12488751, y: -0.76131815, z: 0.15402094, w: 0.617313}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -27085,10 +27085,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18f82a93ad7651b48944429a3f1efa67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wayPoints: []
+  wayPoints:
+  - {fileID: 1610486390}
+  - {fileID: 384393572}
   charger: {fileID: 0}
-  minDistance: 15
-  speed: 0
+  minDistance: 2
+  speed: 5
 --- !u!114 &1829599523
 MonoBehaviour:
   m_ObjectHideFlags: 0
