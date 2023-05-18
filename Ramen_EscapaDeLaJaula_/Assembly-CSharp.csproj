@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\TakeObject.cs" />
     <Compile Include="Assets\Scripts\Coin.cs" />
     <Compile Include="Assets\Scripts\EventManager.cs" />
+    <Compile Include="Assets\Scripts\SpawnParticles.cs" />
     <Compile Include="Assets\Scripts\CoinGenerator.cs" />
     <Compile Include="Assets\Scripts\OnTriggerAction.cs" />
     <Compile Include="Assets\Scripts\WonderBehaviour.cs" />

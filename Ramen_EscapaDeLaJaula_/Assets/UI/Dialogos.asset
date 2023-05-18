@@ -693,7 +693,11 @@ MonoBehaviour:
         - tipoBoton: 0
           nombre: Salir
           siguienteDialogo: 
-          accion: []
+          accion:
+          - variable: 5
+            valor: 1
+          - variable: 4
+            valor: 1
           condiciones: []
     - identifier: 5
       nodos:
@@ -1049,7 +1053,7 @@ MonoBehaviour:
             dialogoFalse: 5
             condicionFalse: 
           - identifier: 2
-            variable: 5
+            variable: 7
             operador: 0
             valor: 1
             ConditionAfterTrue: 1
@@ -1375,7 +1379,9 @@ MonoBehaviour:
         - tipoBoton: 0
           nombre: Salir
           siguienteDialogo: 
-          accion: []
+          accion:
+          - variable: 3
+            valor: 1
           condiciones: []
   - identifier: Evento_Oso
     dialogos:
