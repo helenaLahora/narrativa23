@@ -515,7 +515,7 @@ MonoBehaviour:
           su propio beneficio. Disfruta hablando con todos los habitantes de la casa
           \xA1 y tiene muy buenos chistes!"
         botones:
-        - tipoBoton: 1
+        - tipoBoton: 4
           nombre: Hablar
           siguienteDialogo: 
           accion: []

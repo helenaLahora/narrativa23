@@ -18,7 +18,10 @@ public class EventHandler : MonoBehaviour
         }
 
     }
-
+    private void Start()
+    {
+        
+    }
     void Update()
     {
         if (Variables[Variable.bolaEjercicio] > 0)

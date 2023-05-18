@@ -124,42 +124,13 @@ public class UIHANDLE : MonoBehaviour
                                     }
                                     else
                                     {
-                                        foreach (Condicion miniCondicion in boton.condiciones)
+                                        Condicion miniCondicion = CheckIdentifier(condicion.condicionTrue, boton);
+                                        if (miniCondicion != null)
                                         {
-                                            if (miniCondicion.identifier == condicion.condicionTrue)
-                                            {
-                                                bool miniResult = Comparador(miniCondicion);
-                                                if (!miniCondicion.ConditionAfterTrue)
-                                                {
-                                                    if (miniResult)
-                                                    {
-                                                        button.clickable.clicked += () => AsignarDialogo(miniCondicion.dialogoTrue);
-                                                        break;
-                                                    }
+                                            AsignadorCondiciones(miniCondicion, button, boton, resultado);
 
-                                                }
-                                                else
-                                                {
-                                                    foreach (Condicion miniCondicion2 in boton.condiciones)
-                                                    {
-                                                        if (miniCondicion2.identifier == condicion.condicionTrue)
-                                                        {
-                                                            bool miniResult2 = Comparador(miniCondicion2);
-                                                            if (!miniCondicion2.ConditionAfterTrue)
-                                                            {
-                                                                if (miniResult2)
-                                                                {
-                                                                    button.clickable.clicked += () => AsignarDialogo(miniCondicion2.dialogoTrue);
-                                                                    break;
-                                                                }
-
-                                                            }
-
-                                                        }
-                                                    }
-                                                }
-                                            }
                                         }
+
 
                                     }
                                 }
@@ -172,37 +143,10 @@ public class UIHANDLE : MonoBehaviour
                                     }
                                     else
                                     {
-                                        foreach (Condicion miniCondicion in boton.condiciones)
+                                        Condicion miniCondicion = CheckIdentifier(condicion.condicionTrue, boton);     
+                                        if (miniCondicion != null)
                                         {
-                                            if (miniCondicion.identifier == condicion.condicionFalse)
-                                            {
-                                                bool miniResult = Comparador(miniCondicion);
-                                                if (!miniCondicion.ConditionAfterTrue)
-                                                {
-                                                    button.clickable.clicked += () => AsignarDialogo(miniCondicion.dialogoFalse);
-                                                   
-                                                }
-                                                else
-                                                {
-                                                    foreach (Condicion miniCondicion2 in boton.condiciones)
-                                                    {
-                                                        if (miniCondicion2.identifier == condicion.condicionFalse)
-                                                        {
-                                                            bool miniResult2 = Comparador(miniCondicion2);
-                                                            if (!miniCondicion2.ConditionAfterFalse)
-                                                            {
-                                                                if (miniResult2)
-                                                                {
-                                                                    button.clickable.clicked += () => AsignarDialogo(miniCondicion2.dialogoFalse);
-                                                                   
-                                                                }
-
-                                                            }
-
-                                                        }
-                                                    }
-                                                }
-                                            }
+                                            AsignadorCondiciones(miniCondicion,button,boton,resultado);
                                         }
                                     }
                                 }
@@ -260,21 +204,70 @@ public class UIHANDLE : MonoBehaviour
             {
                 label.text = string.Empty;
                 label.text = currentNodo.texto;
-                //foreach (char c in currentNodo.texto.ToCharArray())
-                //{
-
-                //    if (c == currentNodo.texto[currentLetter])
-                //    {
-                //        label.text += c;
-
-                //    }
-                //    currentLetter++;
-
-                //yield return new WaitForSeconds(textSpeed);
-                //}   
+          
             }
 
         }
+    }
+    private void AsignadorCondiciones(Condicion miniCondicion, Button button, Boton boton, bool nextCondition)
+    {
+        //para pasar a condicion true
+        if (nextCondition)
+        {
+            bool miniResult = Comparador(miniCondicion);
+            if (!miniCondicion.ConditionAfterTrue)
+            {
+                if (miniResult)
+                {
+                    button.clickable.clicked += () => AsignarDialogo(miniCondicion.dialogoTrue);
+                    return;
+                }
+
+            }
+            else
+            {
+                Condicion condicion = CheckIdentifier(miniCondicion.condicionTrue, boton);
+                if (condicion != null)
+                {
+                    AsignadorCondiciones(condicion, button, boton, true);
+                }
+            }
+        }
+        //para pasar a condicion falsa
+        else
+        {
+            bool miniResult = Comparador(miniCondicion);
+            if (!miniCondicion.ConditionAfterTrue)
+            {
+                if (!miniResult)
+                {
+                    button.clickable.clicked += () => AsignarDialogo(miniCondicion.dialogoFalse);
+                    return;
+                }
+
+            }
+            else
+            {
+                Condicion condicion = CheckIdentifier(miniCondicion.condicionFalse, boton);
+                if (condicion != null)
+                {
+                    AsignadorCondiciones(condicion, button, boton, false);
+                }
+            }
+        }
+            
+        
+    }
+    private Condicion CheckIdentifier(string identifier, Boton boton )
+    {
+        foreach (Condicion condicion in boton.condiciones)
+        {
+            if (condicion.identifier == identifier)
+            {
+                return condicion;
+            }
+        }
+        return null;
     }
 
     private bool Comparador(Condicion condicion)
