@@ -27085,6 +27085,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18f82a93ad7651b48944429a3f1efa67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wayPoints: []
+  charger: {fileID: 0}
+  minDistance: 15
+  speed: 0
+--- !u!114 &1829599523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829599505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bd4f90b26af3134e8dc91d76809d63a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   wayPoints:
   - {fileID: 1610486390}
   - {fileID: 384393572}
