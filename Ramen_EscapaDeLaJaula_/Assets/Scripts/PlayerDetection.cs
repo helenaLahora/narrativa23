@@ -5,25 +5,32 @@ using UnityEngine.UIElements;
 
 public class PlayerDetection : MonoBehaviour
 {
-    public bool playerdetected = false;
+    [HideInInspector]public bool playerdetected = false;
     public SphereCollider Collider;
-    public bool talk = false;
+    [HideInInspector]public bool talk = false;
     private UIHANDLE uiHandle;
     public GameObject uiPrefab;
     private GameObject uiInstance;
     private GameObject player;
     public string nombreEvento;
-
+    private SpawnParticles spawner;
     void Start()
     {
-        
+        if ( transform.gameObject.name == "Marga")
+        {
+            spawner = transform.gameObject.GetComponent<SpawnParticles>();
+
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-
-
+        
+        if (!talk && spawner != null)
+        {
+            spawner.DestroyPS();
+        }
 
     }
 
@@ -53,6 +60,12 @@ public class PlayerDetection : MonoBehaviour
                 uiHandle = uiInstance.GetComponent<UIHANDLE>();
                 uiHandle.StartEvent(nombreEvento, player);
             }
+            if (spawner != null)
+            {
+                
+                spawner.SpawnPS();
+            }
+            
         }
     }
 }
