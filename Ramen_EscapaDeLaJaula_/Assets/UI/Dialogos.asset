@@ -972,43 +972,6 @@ MonoBehaviour:
       - tipoNodo: 0
         esPersonaje: 1
         personaje: Llamacornio Julio
-        texto: "Nooooo, vienen de H\xE1msterdam jajajajajaja, \xBFves como soy divertido?
-          si te marchas Leo no estar\xE1 tan triste. Adem\xE1s\u2026 si me votas
-          te dar\xE9 algo que te interesa \xBFquieres o\xEDrla?"
-        botones:
-        - tipoBoton: 1
-          nombre: "\xA1Claro! Cu\xE9ntame"
-          siguienteDialogo: 
-          accion: []
-          condiciones:
-          - identifier: 
-            variable: 2
-            operador: 0
-            valor: 1
-            ConditionAfterTrue: 0
-            condicionTrue: 
-            dialogoTrue: 2
-            ConditionAfterFalse: 0
-            dialogoFalse: 
-            condicionFalse: 
-          - identifier: 
-            variable: 2
-            operador: 0
-            valor: 1
-            ConditionAfterTrue: 0
-            condicionTrue: 
-            dialogoTrue: 2
-            ConditionAfterFalse: 0
-            dialogoFalse: 
-            condicionFalse: 
-        - tipoBoton: 0
-          nombre: Salir
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Llamacornio Julio
         texto: "Parece ser que no has cumplido tu obligaci\xF3n de hablar con todos
           los candidatos. Regresa despu\xE9s de escuchar todas las campa\xF1as."
         botones:
@@ -1132,8 +1095,9 @@ MonoBehaviour:
       - tipoNodo: 0
         esPersonaje: 1
         personaje: Protectora Lila
-        texto: "Pero te lo advierto, no vuelvas por aqu\xED amigo, ahora soy yo el
-          mejor acompa\xF1ante. \xA1Gracias amigo!"
+        texto: "Gracias por tu voto, ciudadano. Puedes estar seguro de que garantizar\xE9
+          la seguridad de Leo y lo proteger\xE9 de cualquier tipo de peligro o amenaza.
+          Mi compromiso es mantener la paz y el orden en la comunidad que servimos."
         botones:
         - tipoBoton: 0
           nombre: Salir
@@ -2009,7 +1973,47 @@ MonoBehaviour:
           nombre: Hablar
           siguienteDialogo: 
           accion: []
-          condiciones: []
+          condiciones:
+          - identifier: 
+            variable: 9
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 2
+            ConditionAfterFalse: 1
+            dialogoFalse: 
+            condicionFalse: 1
+          - identifier: 
+            variable: 3
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 1
+            condicionTrue: 
+            dialogoTrue: 2
+            ConditionAfterFalse: 0
+            dialogoFalse: 6
+            condicionFalse: 
+          - identifier: 
+            variable: 1
+            operador: 4
+            valor: 30
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 3
+            ConditionAfterFalse: 1
+            dialogoFalse: 3
+            condicionFalse: 
+          - identifier: 
+            variable: 1
+            operador: 5
+            valor: 15
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 4
+            ConditionAfterFalse: 0
+            dialogoFalse: 5
+            condicionFalse: 
         - tipoBoton: 0
           nombre: Salir
           siguienteDialogo: 
@@ -2071,7 +2075,13 @@ MonoBehaviour:
         - tipoBoton: 0
           nombre: Salir
           siguienteDialogo: 
-          accion: []
+          accion:
+          - variable: 11
+            valor: 1
+          - variable: 9
+            valor: 1
+          - variable: 1
+            valor: -30
           condiciones: []
     - identifier: 4
       nodos:
@@ -2101,7 +2111,7 @@ MonoBehaviour:
       - tipoNodo: 0
         esPersonaje: 1
         personaje: Whisk
-        texto: Muy bien! Has encoentrado monedas! Pero... em.... a ver... te faltan
+        texto: Muy bien! Has encontrado monedas! Pero... em.... a ver... te faltan
           algunas, perdon.
         botones:
         - tipoBoton: 1
@@ -2176,7 +2186,9 @@ MonoBehaviour:
         - tipoBoton: 0
           nombre: Salir
           siguienteDialogo: 
-          accion: []
+          accion:
+          - variable: 10
+            valor: 1
           condiciones: []
   - identifier: Evento_CepilloEscobilla
     dialogos:
@@ -2193,7 +2205,17 @@ MonoBehaviour:
           nombre: Hablar
           siguienteDialogo: 
           accion: []
-          condiciones: []
+          condiciones:
+          - identifier: 
+            variable: 12
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 2
+            ConditionAfterFalse: 0
+            dialogoFalse: 3
+            condicionFalse: 
         - tipoBoton: 0
           nombre: Salir
           siguienteDialogo: 
@@ -2300,17 +2322,17 @@ MonoBehaviour:
         botones:
         - tipoBoton: 3
           nombre: "Escobilla de ba\xF1o"
-          siguienteDialogo: 
+          siguienteDialogo: 4
           accion: []
           condiciones: []
         - tipoBoton: 3
           nombre: Cepillo de dientes
-          siguienteDialogo: 
+          siguienteDialogo: 5
           accion: []
           condiciones: []
         - tipoBoton: 3
           nombre: Los dos tienen sus cosas malas
-          siguienteDialogo: 
+          siguienteDialogo: 6
           accion: []
           condiciones: []
     - identifier: 4
@@ -2335,7 +2357,9 @@ MonoBehaviour:
         - tipoBoton: 0
           nombre: Salir
           siguienteDialogo: 
-          accion: []
+          accion:
+          - variable: 12
+            valor: 1
           condiciones: []
     - identifier: 5
       nodos:
@@ -2359,7 +2383,9 @@ MonoBehaviour:
         - tipoBoton: 0
           nombre: Salir
           siguienteDialogo: 
-          accion: []
+          accion:
+          - variable: 12
+            valor: 1
           condiciones: []
     - identifier: 6
       nodos:
@@ -2383,7 +2409,9 @@ MonoBehaviour:
         - tipoBoton: 0
           nombre: Salir
           siguienteDialogo: 
-          accion: []
+          accion:
+          - variable: 12
+            valor: 1
           condiciones: []
   - identifier: Evento_Nora
     dialogos:
@@ -2397,7 +2425,7 @@ MonoBehaviour:
           alerta y aseg\xFArate de tener tus habilidades de sigilo a punto!"
         botones:
         - tipoBoton: 0
-          nombre: Salir
+          nombre: "\xA1Entendido!"
           siguienteDialogo: 
           accion: []
           condiciones: []
@@ -2414,7 +2442,7 @@ MonoBehaviour:
           te lo agradecer\xE1 con lametones y movimientos de cola!"
         botones:
         - tipoBoton: 0
-          nombre: Salir
+          nombre: "\xA1Entendido!"
           siguienteDialogo: 
           accion: []
           condiciones: []
@@ -2431,7 +2459,7 @@ MonoBehaviour:
           en marcha!"
         botones:
         - tipoBoton: 0
-          nombre: Salir
+          nombre: "\xA1Entendido!"
           siguienteDialogo: 
           accion: []
           condiciones: []
@@ -2455,7 +2483,7 @@ MonoBehaviour:
         esPersonaje: 1
         personaje: Burbuja informativa
         texto: "\xA1Ten mucho cuidado! Este camino podr\xEDa ser m\xE1s peligroso
-          que una rata en un campo minado. \nPero, m\xE1s all\xE1 del peligro, debemos
+          que una rata en un campo minado.  Pero, m\xE1s all\xE1 del peligro, debemos
           reflexionar sobre la importancia de la edad y la experiencia."
         botones:
         - tipoBoton: 1
@@ -2499,7 +2527,7 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones: []
-        - tipoBoton: 3
+        - tipoBoton: 0
           nombre: Abandonar intento
           siguienteDialogo: 
           accion: []
@@ -2633,7 +2661,7 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones: []
-  - identifier: Evento_SalidaSalon
+  - identifier: Evento_TiempoAcabado
     dialogos:
     - identifier: 1
       nodos:
