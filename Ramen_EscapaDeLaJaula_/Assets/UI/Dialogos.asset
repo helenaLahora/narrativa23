@@ -2468,8 +2468,8 @@ MonoBehaviour:
     - identifier: 1
       nodos:
       - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Burbuja informativa
+        esPersonaje: 0
+        personaje: 
         texto: "\xA1Oh, querido amigo h\xE1mster! Parece que la Patonisa Marga ha
           predecido tu futuro y, seg\xFAn ella, has encontrado una salida, aunque
           es la menos segura de todas las opciones que tienes."
@@ -2480,8 +2480,8 @@ MonoBehaviour:
           accion: []
           condiciones: []
       - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Burbuja informativa
+        esPersonaje: 0
+        personaje: 
         texto: "\xA1Ten mucho cuidado! Este camino podr\xEDa ser m\xE1s peligroso
           que una rata en un campo minado.  Pero, m\xE1s all\xE1 del peligro, debemos
           reflexionar sobre la importancia de la edad y la experiencia."
@@ -2492,8 +2492,8 @@ MonoBehaviour:
           accion: []
           condiciones: []
       - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Burbuja informativa
+        esPersonaje: 0
+        personaje: 
         texto: "Como sabemos, eres un h\xE1mster joven y vivaz, lleno de energ\xEDa
           y vitalidad. Pero, \xBFser\xE1 que esto es suficiente para enfrentar los
           peligros que se avecinan?"
@@ -2504,8 +2504,8 @@ MonoBehaviour:
           accion: []
           condiciones: []
       - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Burbuja informativa
+        esPersonaje: 0
+        personaje: 
         texto: "\xBFO quiz\xE1s, deber\xEDas tomar una decisi\xF3n m\xE1s sabia y
           reflexiva, que te permita salvaguardar tu vida y tus futuras aventuras?
           En definitiva, mi peque\xF1o amigo, la decisi\xF3n es tuya. "
@@ -2516,8 +2516,8 @@ MonoBehaviour:
           accion: []
           condiciones: []
       - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Burbuja informativa
+        esPersonaje: 0
+        personaje: 
         texto: "Puedes seguir el camino m\xE1s peligroso, arriesg\xE1ndote a enfrentar
           peligros desconocidos, o puedes buscar una alternativa m\xE1s segura y
           prudente, que te permita pisar la hierba con tus patitas de forma segura."
@@ -2535,31 +2535,31 @@ MonoBehaviour:
     - identifier: 2
       nodos:
       - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Burbuja informativa
+        esPersonaje: 0
+        personaje: 
         texto: "Oh, no, \xA1qu\xE9 final tan desafortunado! Parece que Ramen, el
           h\xE1mster alegre, ha tenido un tr\xE1gico destino. A pesar de sus esfuerzos
           por escapar, no logr\xF3 nadar lo suficientemente r\xE1pido y qued\xF3
           atrapado en las tuber\xEDas. \xA1Es un final triste para un roedor tan
           encantador!"
         botones:
-        - tipoBoton: 5
-          nombre: Terminar partida
+        - tipoBoton: 0
+          nombre: Ir al cielo
           siguienteDialogo: 
           accion: []
           condiciones: []
     - identifier: 3
       nodos:
       - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Burbuja informativa
+        esPersonaje: 0
+        personaje: 
         texto: "\xA1Guau! \xA1Ramen ha arrasado en la carrera acu\xE1tica de las
           cloacas y ha llegado a la l\xEDnea de meta con estilo! \xA1Ramen, eres
           un h\xE9roe en el mundo de las cloacas! \xA1Ahora, vete y disfruta de tu
           libertad merecida!"
         botones:
-        - tipoBoton: 5
-          nombre: Terminar partida
+        - tipoBoton: 0
+          nombre: Salir al exterior
           siguienteDialogo: 
           accion: []
           condiciones: []
@@ -2568,8 +2568,8 @@ MonoBehaviour:
     - identifier: 1
       nodos:
       - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Burbuja informativa
+        esPersonaje: 0
+        personaje: 
         texto: "\xA1Incre\xEDble haza\xF1a de nuestro peque\xF1o y valiente Ramen!
           \xA1Desafiando todos los obst\xE1culos del camino como un verdadero ninja
           roedor! \xA1S\xED se\xF1or, esta bola de pelos ha salido triunfante de
@@ -2581,8 +2581,8 @@ MonoBehaviour:
           accion: []
           condiciones: []
       - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Burbuja informativa
+        esPersonaje: 0
+        personaje: 
         texto: "Pero... \xBFDeber\xEDa Ramen abandonar a su familia? Como ha podido
           comprobar, la casa es extensa y tiene multitud de secretos y personas por
           descubrir. Adem\xE1s, su primer amigo, Leo, est\xE1 en casa."
@@ -2593,8 +2593,8 @@ MonoBehaviour:
           accion: []
           condiciones: []
       - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Burbuja informativa
+        esPersonaje: 0
+        personaje: 
         texto: "Si Ramen se va ahora, no tendr\xE1 la oportunidad de jugar nunca
           m\xE1s con \xE9l. Carla tampoco le dar\xE1 m\xE1s juguetes graciosos y
           Carlos no le har\xE1 m\xE1s banquetes de comida."
@@ -2605,8 +2605,8 @@ MonoBehaviour:
           accion: []
           condiciones: []
       - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Burbuja informativa
+        esPersonaje: 0
+        personaje: 
         texto: "Por otro lado, si Ramen decide marcharse, podr\xE1 pisar hierba con
           sus patas, investigar nuevos rincones y conocer a nuevas personas. Incluso
           podr\xEDa probar un perrito caliente."
@@ -2617,25 +2617,25 @@ MonoBehaviour:
           accion: []
           condiciones: []
       - tipoNodo: 2
-        esPersonaje: 1
-        personaje: Burbuja informativa
+        esPersonaje: 0
+        personaje: 
         texto: 'Ha llegado el momento de escoger:'
         botones:
         - tipoBoton: 3
           nombre: Quedarse en casa
-          siguienteDialogo: 
+          siguienteDialogo: 2
           accion: []
           condiciones: []
         - tipoBoton: 3
           nombre: Abandonar casa
-          siguienteDialogo: 
+          siguienteDialogo: 3
           accion: []
           condiciones: []
     - identifier: 2
       nodos:
       - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Burbuja informativa
+        esPersonaje: 0
+        personaje: 
         texto: "Ramen ha decidido quedarse en la seguridad del hogar. Ramen podr\xE1
           explorar la casa y disfrutar de las aventuras que le ofrece mientras sigue
           siendo parte de su hogar. De esta manera, puede seguir disfrutando de la
@@ -2649,15 +2649,15 @@ MonoBehaviour:
     - identifier: 3
       nodos:
       - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Burbuja informativa
+        esPersonaje: 0
+        personaje: 
         texto: "Ramen ha dado un gran paso al salir al exterior, dejando atr\xE1s
           una etapa y comenzando una nueva aventura en su vida. Puede moverse libremente
           a trav\xE9s de nuevos lugares, elegir d\xF3nde quedarse y conocer a multitud
           de personas interesantes"
         botones:
-        - tipoBoton: 5
-          nombre: Terminar partida
+        - tipoBoton: 0
+          nombre: Salir al exterior
           siguienteDialogo: 
           accion: []
           condiciones: []
@@ -2666,96 +2666,13 @@ MonoBehaviour:
     - identifier: 1
       nodos:
       - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Burbuja informativa
-        texto: "\xA1Incre\xEDble haza\xF1a de nuestro peque\xF1o y valiente Ramen!
-          \xA1Desafiando todos los obst\xE1culos del camino como un verdadero ninja
-          roedor! \xA1S\xED se\xF1or, esta bola de pelos ha salido triunfante de
-          la aventura!"
+        esPersonaje: 0
+        personaje: 
+        texto: "\xA1Vaya! Leo ha regresado del parque con Carla y Ramen no ha conseguido
+          escapar. Otro d\xEDa ser\xE1 entonces..."
         botones:
-        - tipoBoton: 1
-          nombre: Continuar
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Burbuja informativa
-        texto: "Pero... \xBFDeber\xEDa Ramen abandonar a su familia? Como ha podido
-          comprobar, la casa es extensa y tiene multitud de secretos y personas por
-          descubrir. Adem\xE1s, su primer amigo, Leo, est\xE1 en casa."
-        botones:
-        - tipoBoton: 1
-          nombre: Continuar
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Burbuja informativa
-        texto: "Si Ramen se va ahora, no tendr\xE1 la oportunidad de jugar nunca
-          m\xE1s con \xE9l. Carla tampoco le dar\xE1 m\xE1s juguetes graciosos y
-          Carlos no le har\xE1 m\xE1s banquetes de comida."
-        botones:
-        - tipoBoton: 1
-          nombre: Continuar
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Burbuja informativa
-        texto: "Por otro lado, si Ramen decide marcharse, podr\xE1 pisar hierba con
-          sus patas, investigar nuevos rincones y conocer a nuevas personas. Incluso
-          podr\xEDa probar un perrito caliente."
-        botones:
-        - tipoBoton: 1
-          nombre: Continuar
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-      - tipoNodo: 2
-        esPersonaje: 1
-        personaje: Burbuja informativa
-        texto: 'Ha llegado el momento de escoger:'
-        botones:
-        - tipoBoton: 3
-          nombre: Quedarse en casa
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-        - tipoBoton: 3
-          nombre: Abandonar casa
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-    - identifier: 2
-      nodos:
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Burbuja informativa
-        texto: "Ramen ha decidido quedarse en la seguridad del hogar. Ramen podr\xE1
-          explorar la casa y disfrutar de las aventuras que le ofrece mientras sigue
-          siendo parte de su hogar. De esta manera, puede seguir disfrutando de la
-          compa\xF1\xEDa de sus amigos y de la seguridad que le brinda su familia."
-        botones:
-        - tipoBoton: 5
-          nombre: Terminar partida
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-    - identifier: 3
-      nodos:
-      - tipoNodo: 0
-        esPersonaje: 1
-        personaje: Burbuja informativa
-        texto: "Ramen ha dado un gran paso al salir al exterior, dejando atr\xE1s
-          una etapa y comenzando una nueva aventura en su vida. Puede moverse libremente
-          a trav\xE9s de nuevos lugares, elegir d\xF3nde quedarse y conocer a multitud
-          de personas interesantes"
-        botones:
-        - tipoBoton: 5
-          nombre: Terminar partida
+        - tipoBoton: 0
+          nombre: Volver a jaula
           siguienteDialogo: 
           accion: []
           condiciones: []

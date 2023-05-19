@@ -98,7 +98,6 @@ public enum Variable
     collectedObjects,
     //Rosie
     coin,
-
     //Elecciones
     elections_completedmission,
     elections_explainedmission,
@@ -125,7 +124,9 @@ public enum Variable
     //Ratas
     rata_completedmission,
     rata_explainedmission,
-    rata_cheese
+    rata_cheese,
+    //Juego
+    temporizador
 
 }
 public enum Operador
