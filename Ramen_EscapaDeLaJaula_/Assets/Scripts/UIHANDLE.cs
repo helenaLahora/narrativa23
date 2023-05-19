@@ -56,7 +56,7 @@ public class UIHANDLE : MonoBehaviour
         if (UI != null)
         {
 
-            AssignUI(currentNodo);
+           UI.visualTreeAsset =  AssignUI(currentNodo);
             if (currentNodo.tipoNodo != TipoNodo.historiaPresentacion)
             {
                 nombre = UI.rootVisualElement.Q<Label>("nombre");
@@ -101,6 +101,7 @@ public class UIHANDLE : MonoBehaviour
                                             AsignadorCondiciones(miniCondicion, button, boton, true);
 
                                         }
+                                        
                                     }
                                 }
                                 else
@@ -117,6 +118,7 @@ public class UIHANDLE : MonoBehaviour
                                         {
                                             AsignadorCondiciones(miniCondicion,button,boton,false);
                                         }
+                                        
                                     }
                                 }
                             }
@@ -179,38 +181,34 @@ public class UIHANDLE : MonoBehaviour
         }
     }
 
-    private void AssignUI(Nodo currentNodo)
+    private VisualTreeAsset AssignUI(Nodo currentNodo)
     {
         switch (currentNodo.tipoNodo)
         {
             case TipoNodo.conversacion:
-                UI.visualTreeAsset = visualTreeAssets[0];
-
-                break;
+                return visualTreeAssets[0];                
 
             case TipoNodo.presentacion:
-                UI.visualTreeAsset = visualTreeAssets[1];
-
-                break;
+                return visualTreeAssets[1];
 
             case TipoNodo.eleccion:
-                UI.visualTreeAsset = visualTreeAssets[2];
-
-                break;
+                return visualTreeAssets[2];
+                
             case TipoNodo.historiaPresentacion:
-                UI.visualTreeAsset = visualTreeAssets[3];
-                break;
+                return visualTreeAssets[3];
+                
             case TipoNodo.menu_config:
-                UI.visualTreeAsset = visualTreeAssets[4];
-                break;
+                return visualTreeAssets[4];
+                
             case TipoNodo.creditos:
-                UI.visualTreeAsset = visualTreeAssets[5];
-                break;
+                return visualTreeAssets[5];
+                
             case TipoNodo.menu_inicio:
-                UI.visualTreeAsset = visualTreeAssets[6];
-                break;
+                return visualTreeAssets[6];
+                
 
         }
+        return null;
     }
 
     private void AsignadorCondiciones(Condicion miniCondicion, Button button, Boton boton, bool nextCondition)
