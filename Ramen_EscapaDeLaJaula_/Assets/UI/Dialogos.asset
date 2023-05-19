@@ -215,7 +215,7 @@ MonoBehaviour:
           accion: []
           condiciones:
           - identifier: 
-            variable: 3
+            variable: 1
             operador: 2
             valor: 0
             ConditionAfterTrue: 0
@@ -225,7 +225,7 @@ MonoBehaviour:
             dialogoFalse: 3
             condicionFalse: 
         - tipoBoton: 3
-          nombre: Se me ha olvidado Rosie.
+          nombre: Se me ha olvidado Rosie
           siguienteDialogo: 4
           accion: []
           condiciones: []
@@ -242,7 +242,7 @@ MonoBehaviour:
           nombre: Continuar
           siguienteDialogo: 
           accion:
-          - variable: 3
+          - variable: 1
             valor: -1
           condiciones: []
       - tipoNodo: 2
@@ -1319,6 +1319,8 @@ MonoBehaviour:
             valor: 1
           - variable: 3
             valor: 1
+          - variable: 4
+            valor: 1
           condiciones: []
     - identifier: 8
       nodos:
@@ -1714,7 +1716,7 @@ MonoBehaviour:
           condiciones: []
         - tipoBoton: 3
           nombre: "A\xFAn me lo estoy pensando\u2026"
-          siguienteDialogo: 
+          siguienteDialogo: 7
           accion: []
           condiciones: []
       - tipoNodo: 0
@@ -1730,21 +1732,21 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones: []
-      - tipoNodo: 0
+      - tipoNodo: 2
         esPersonaje: 1
         personaje: "Oso Ar\xE1ndano"
         texto: "y se est\xE1n preparando diligentemente para tu partida, querido
           amigo. En tal sentido, han establecido un proceso electoral con el fin
           de elegir a tu sucesor en calidad de juguete preferido del hogar."
         botones:
-        - tipoBoton: 1
+        - tipoBoton: 3
           nombre: Continuar
-          siguienteDialogo: 
+          siguienteDialogo: 8
           accion: []
           condiciones: []
     - identifier: 7
       nodos:
-      - tipoNodo: 2
+      - tipoNodo: 0
         esPersonaje: 1
         personaje: "Oso Ar\xE1ndano"
         texto: "Antes de adoptar una determinaci\xF3n, es menester que reflexiones
@@ -1753,12 +1755,7 @@ MonoBehaviour:
           al tanto de tus planes y se disponen a prepararse para tu partida."
         botones:
         - tipoBoton: 1
-          nombre: Necesito salir y pisar hierba con mis patas.
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
-        - tipoBoton: 3
-          nombre: "A\xFAn me lo estoy pensando\u2026"
+          nombre: Continuar
           siguienteDialogo: 
           accion: []
           condiciones: []
@@ -1931,6 +1928,8 @@ MonoBehaviour:
             valor: 1
           - variable: 4
             valor: 1
+          - variable: 3
+            valor: 1
           condiciones: []
     - identifier: 9
       nodos:
@@ -1969,12 +1968,12 @@ MonoBehaviour:
           Chispita no puede entrar y ellas no est\xE1n dispuestas a irse. Lo mejor
           es darles aquello que quieren y continuar."
         botones:
-        - tipoBoton: 1
+        - tipoBoton: 4
           nombre: Hablar
           siguienteDialogo: 
           accion: []
           condiciones:
-          - identifier: 
+          - identifier: 0
             variable: 9
             operador: 0
             valor: 1
@@ -1984,17 +1983,17 @@ MonoBehaviour:
             ConditionAfterFalse: 1
             dialogoFalse: 
             condicionFalse: 1
-          - identifier: 
-            variable: 3
+          - identifier: 1
+            variable: 10
             operador: 0
             valor: 1
             ConditionAfterTrue: 1
-            condicionTrue: 
-            dialogoTrue: 2
+            condicionTrue: 2
+            dialogoTrue: 
             ConditionAfterFalse: 0
             dialogoFalse: 6
             condicionFalse: 
-          - identifier: 
+          - identifier: 2
             variable: 1
             operador: 4
             valor: 30
@@ -2004,7 +2003,7 @@ MonoBehaviour:
             ConditionAfterFalse: 1
             dialogoFalse: 3
             condicionFalse: 
-          - identifier: 
+          - identifier: 3
             variable: 1
             operador: 5
             valor: 15
@@ -2201,12 +2200,12 @@ MonoBehaviour:
           cepillo de dientes no son la excepci\xF3n. \xBFCu\xE1l ser\xE1 su problema?
           Es hora de descubrirlo y trabajar en equipo para superarlo."
         botones:
-        - tipoBoton: 1
+        - tipoBoton: 4
           nombre: Hablar
           siguienteDialogo: 
           accion: []
           condiciones:
-          - identifier: 
+          - identifier: 0
             variable: 12
             operador: 0
             valor: 1
@@ -2463,7 +2462,7 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones: []
-  - identifier: "Evento_SalidaBa\xF1o"
+  - identifier: Evento_SalidaBanyo
     dialogos:
     - identifier: 1
       nodos:
@@ -2693,7 +2692,7 @@ MonoBehaviour:
           accion: []
           condiciones:
           - identifier: 1
-            variable: 19
+            variable: 20
             operador: 0
             valor: 1
             ConditionAfterTrue: 0
@@ -2701,9 +2700,9 @@ MonoBehaviour:
             dialogoTrue: 2
             ConditionAfterFalse: 1
             dialogoFalse: 
-            condicionFalse: 2
+            condicionFalse: 1
           - identifier: 2
-            variable: 20
+            variable: 21
             operador: 0
             valor: 1
             ConditionAfterTrue: 1
@@ -2713,7 +2712,7 @@ MonoBehaviour:
             dialogoFalse: 5
             condicionFalse: 
           - identifier: 3
-            variable: 21
+            variable: 22
             operador: 0
             valor: 1
             ConditionAfterTrue: 0
@@ -2810,7 +2809,9 @@ MonoBehaviour:
         - tipoBoton: 0
           nombre: Salir
           siguienteDialogo: 
-          accion: []
+          accion:
+          - variable: 20
+            valor: 1
           condiciones: []
     - identifier: 4
       nodos:
@@ -2872,7 +2873,7 @@ MonoBehaviour:
           dar\xE9 la salchicha. "
         botones:
         - tipoBoton: 3
-          nombre: "Remy, \xA1yo conseguir\xE9 el queso!"
+          nombre: "Remy \xA1yo conseguir\xE9 el queso!"
           siguienteDialogo: 6
           accion: []
           condiciones: []
@@ -2910,3 +2911,469 @@ MonoBehaviour:
           - variable: 20
             valor: 1
           condiciones: []
+  - identifier: Evento_Fua
+    dialogos:
+    - identifier: 1
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Fu\xE0"
+        texto: "Ramen, \xA1gracias por salvarme de Max! \xC9l estaba tratando de
+          impedir que escapara mientras exploraba la ba\xF1era de pies de Carlos.
+          \xA1Quiero ir con mam\xE1, por favor!"
+        botones:
+        - tipoBoton: 0
+          nombre: "Llevar a Fu\xE1 con Marga La Patonisa"
+          siguienteDialogo: 
+          accion:
+          - variable: 16
+            valor: 1
+          - variable: 17
+            valor: 1
+          condiciones: []
+  - identifier: Evento_Tim
+    dialogos:
+    - identifier: 1
+      nodos:
+      - tipoNodo: 1
+        esPersonaje: 1
+        personaje: Tim
+        texto: "Ramen, hola, ahora no puedo hablar mucho contigo, estoy buscando
+          a Fu\xE1. Cuando mam\xE1 estaba en una sesi\xF3n se ha marchado a ver el
+          pez de la ba\xF1era de masajes y a\xFAn no ha vuelto. Como mam\xE1 se entere
+          nos la vamos a cargar..."
+        botones:
+        - tipoBoton: 1
+          nombre: Yo puedo ayudarte
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+        - tipoBoton: 0
+          nombre: "Buena suerte en tu b\xFAsqueda"
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Tim
+        texto: "No te lo tomes mal Ramen, pero no me f\xEDo de que puedas encontrarlo. "
+        botones:
+        - tipoBoton: 0
+          nombre: Mi sentido del olfato es bueno
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+        - tipoBoton: 0
+          nombre: "A\xFAn no me he aprendido muy bien la casa"
+          siguienteDialogo: 2
+          accion: []
+          condiciones: []
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Tim
+        texto: "Fu\xE1 necesita confiar en ti para seguirte."
+        botones:
+        - tipoBoton: 3
+          nombre: Puedo ser muy persistente
+          siguienteDialogo: 3
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: "Le atraer\xE9 con galletas"
+          siguienteDialogo: 4
+          accion: []
+          condiciones: []
+    - identifier: 2
+      nodos:
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Tim
+        texto: "\xBFY como confiar\xE1 Fu\xE1 en t\xED si no te sabes ni el camino
+          de vuelta?"
+        botones:
+        - tipoBoton: 3
+          nombre: Puedo ser muy persistente
+          siguienteDialogo: 3
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: "\xA1Le dar\xE9 una piruleta!"
+          siguienteDialogo: 4
+          accion: []
+          condiciones: []
+    - identifier: 3
+      nodos:
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Tim
+        texto: Ya he notado que eres persistente, pero yo tengo que buscar a mi hermano.
+        botones:
+        - tipoBoton: 3
+          nombre: "Podr\xEDas repartir responsabilidades"
+          siguienteDialogo: 5
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: "Ya volver\xE1 solo"
+          siguienteDialogo: 6
+          accion: []
+          condiciones: []
+    - identifier: 4
+      nodos:
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Tim
+        texto: "\xA1Fu\xE1 es al\xE9rgico al az\xFAcar Ramen! Est\xE1 claro que no
+          puedo fiarme de t\xED."
+        botones:
+        - tipoBoton: 3
+          nombre: "\xA1No Tim! Yo te ayudar\xE9"
+          siguienteDialogo: 5
+          accion:
+          - variable: 16
+            valor: 1
+          - variable: 17
+            valor: 1
+          condiciones: []
+        - tipoBoton: 3
+          nombre: "Soy un h\xE1mster muy responsable"
+          siguienteDialogo: 6
+          accion:
+          - variable: 16
+            valor: 1
+          - variable: 17
+            valor: 1
+          condiciones: []
+    - identifier: 5
+      nodos:
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Tim
+        texto: Pero es mi hermano Ramen, no quiero dejarlo solo.
+        botones:
+        - tipoBoton: 3
+          nombre: "No estar\xE1 solo, yo lo ayudar\xE9"
+          siguienteDialogo: 6
+          accion: []
+          condiciones: []
+        - tipoBoton: 3
+          nombre: "No est\xE1 solo, estar\xE1 de fiesta."
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+    - identifier: 6
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Tim
+        texto: Pero Ramen entonces yo no estoy ayudando.
+        botones:
+        - tipoBoton: 1
+          nombre: "Si vuelves con tu mam\xE1 ya ayudas mucho Tim"
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Tim
+        texto: "De acuerdo Ramen, volver\xE9 con mam\xE1 y le avisar\xE9 de todo."
+        botones:
+        - tipoBoton: 1
+          nombre: Salir
+          siguienteDialogo: 
+          accion:
+          - variable: 16
+            valor: 1
+          - variable: 13
+            valor: 1
+          condiciones: []
+  - identifier: Evento_Marga
+    dialogos:
+    - identifier: 1
+      nodos:
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Marga La Patonisa
+        texto: "Marga es la mam\xE1 de Fu\xE1 y Tim, es exagerada, teatral y a veces
+          melodram\xE1tica. Utiliza su intuici\xF3n para predecir el futuro y responder
+          preguntas."
+        botones:
+        - tipoBoton: 4
+          nombre: Hablar
+          siguienteDialogo: 
+          accion: []
+          condiciones:
+          - identifier: 0
+            variable: 14
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 2
+            ConditionAfterFalse: 1
+            dialogoFalse: 
+            condicionFalse: 1
+          - identifier: 1
+            variable: 15
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 1
+            condicionTrue: 2
+            dialogoTrue: 
+            ConditionAfterFalse: 0
+            dialogoFalse: 5
+            condicionFalse: 
+          - identifier: 2
+            variable: 16
+            operador: 0
+            valor: 2
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 3
+            ConditionAfterFalse: 0
+            dialogoFalse: 4
+            condicionFalse: 
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+    - identifier: 2
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Marga La Patonisa
+        texto: "\xA1Oh, mi energ\xEDa m\xE1gica se ha extenuado! Si deseas que te
+          revele el futuro, perm\xEDteme descansar un momento."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+    - identifier: 3
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Marga La Patonisa
+        texto: "\xA1Tim! \xA1Fu\xE0! \xA1Mis peque\xF1os! \xBFD\xF3nde estabais?
+          \xA1Os he dicho multitud de veces que no os march\xE9is sin mi consentimiento!"
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Marga La Patonisa
+        texto: "Gracias por tra\xE9rmelos, Ramen, \xA1de coraz\xF3n te lo digo! Ahora,
+          ni\xF1os, id a nadar que Ramen y yo tenemos una sesi\xF3n que no podemos
+          perder."
+        botones:
+        - tipoBoton: 1
+          nombre: "Iniciar predicci\xF3n del futuro"
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Marga La Patonisa
+        texto: "En lo profundo de la oscuridad yace, \nUna salida secreta que nadie
+          conoce.\nDebajo de tus pies se encuentra la clave,\nUn objeto cotidiano
+          que nadie imagina.\nUn poco de valent\xEDa y mucho ingenio,"
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Marga La Patonisa
+        texto: "Es lo que necesitar\xE1s para encontrar la salida.\r\nNo te asustes
+          si parece un poco sucio,\r\nNo temas mancharte las manos en el camino.\r\nA
+          trav\xE9s de un laberinto de tuber\xEDas deber\xE1s pasar,\r\nY en las
+          cloacas, un mundo nuevo descubrir\xE1s."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Marga La Patonisa
+        texto: "En la comodidad del hogar hay un lugar,\nDonde una salida oculta
+          espera ser encontrada.\nEn el sal\xF3n, en las paredes, debes explorar,\nA
+          trav\xE9s de un laberinto de tuber\xEDas deber\xE1s pasar,\r\nY en las
+          cloacas, un mundo nuevo descubrir\xE1s."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Marga La Patonisa
+        texto: "Con detenimiento y astucia, la clave para liberarte hallar\xE1s.\nObserva
+          con atenci\xF3n cada detalle y rinc\xF3n,\nPues la salida se esconde a
+          simple vista, sin raz\xF3n."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Marga La Patonisa
+        texto: "Un interruptor, un bot\xF3n o una palanca,\nPodr\xEDan ser la respuesta
+          para salir de esta trampa.\nNo te rindas ante la aparente obviedad,"
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Marga La Patonisa
+        texto: "Pues lo evidente a veces esconde lo que necesitas encontrar.\nS\xE9
+          paciente y perseverante en tu b\xFAsqueda,\nY la salida oculta en las paredes,
+          finalmente descubrir\xE1s."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion:
+          - variable: 14
+            valor: 0
+          condiciones: []
+    - identifier: 4
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Marga La Patonisa
+        texto: "\xA1Ramen, solo podr\xE9 predecirte el futuro si vienes con mis preciados
+          hijos! \xA1Oh, s\xED, s\xED! El destino lo requiere as\xED."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+    - identifier: 5
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Marga La Patonisa
+        texto: "\xA1Oh, gracias a los dioses que est\xE1s aqu\xED, Ramen! \xA1Tim
+          y Fu\xE1 han desaparecido! Estaba echando las cartas para Poni Togot\xF3
+          porque est\xE1 sumido en un drama interesant\xEDsimo."
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Marga La Patonisa
+        texto: "Su novia Koko lo ha dejado por Koku, \xA1una aut\xE9ntica tragedia!
+          Pero, \xA1oh no! No los encuentro por ninguna parte. \xA1Es demasiado emocionante!
+          Como buena patonisa, \xA1nunca me pierdo los dramas m\xE1s intensos!"
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Marga La Patonisa
+        texto: "Como muestra de mi agradecimiento, te predigo el futuro gratuitamente.
+          \xA1S\xED, as\xED es! Como una aut\xE9ntica patonisa, puedo leer las se\xF1ales
+          y ver m\xE1s all\xE1 de lo evidente. \xBFNo es maravilloso?"
+        botones:
+        - tipoBoton: 1
+          nombre: Continuar
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 2
+        esPersonaje: 1
+        personaje: Marga La Patonisa
+        texto: Pero es mi hermano Ramen, no quiero dejarlo solo.
+        botones:
+        - tipoBoton: 0
+          nombre: "\xA1Yo salvar\xE9 a tus hijos Marga!"
+          siguienteDialogo: 
+          accion:
+          - variable: 15
+            valor: 1
+          condiciones: []
+        - tipoBoton: 0
+          nombre: No soy digno de salvarlos
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Marga La Patonisa
+        texto: "\xA1Oh, gracias, gracias, gracias, Ramen! Cuando vuelvas con mis
+          ni\xF1os, hablaremos de tu sesi\xF3n."
+        botones:
+        - tipoBoton: 3
+          nombre: Salir
+          siguienteDialogo: 
+          accion:
+          - variable: 15
+            valor: 1
+          condiciones: []
+  - identifier: Evento_NoElegibles
+    dialogos:
+    - identifier: 1
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 0
+        personaje: 
+        texto: "Las elecciones est\xE1n a punto de acabar. \xBFHas o\xEDdo las campa\xF1as
+          de Llamacornio Julio, Oso Ar\xE1ndano y Protectora Lila?"
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones:
+          - identifier: 0
+            variable: 14
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 2
+            ConditionAfterFalse: 1
+            dialogoFalse: 
+            condicionFalse: 1
+          - identifier: 1
+            variable: 10
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 1
+            condicionTrue: 2
+            dialogoTrue: 
+            ConditionAfterFalse: 0
+            dialogoFalse: 5
+            condicionFalse: 
+          - identifier: 2
+            variable: 16
+            operador: 0
+            valor: 2
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 3
+            ConditionAfterFalse: 0
+            dialogoFalse: 4
+            condicionFalse: 
