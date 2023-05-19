@@ -70,6 +70,6 @@ public class objectHandler : MonoBehaviour
         }
         UI.rootVisualElement.Q<Label>("tiempo").text = string.Empty;
         UI.rootVisualElement.Q<Label>("tiempo").text =tiempoMuerte.ToString()+" min";
-
+        EventHandler.Variables[Variable.banyo_completedmission] = (int)tiempoMuerte;
     }
 }

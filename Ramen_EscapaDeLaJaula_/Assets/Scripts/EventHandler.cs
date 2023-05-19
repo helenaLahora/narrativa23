@@ -16,12 +16,8 @@ public class EventHandler : MonoBehaviour
         {
             Variables.Add(variable, 0);
         }
+    }
 
-    }
-    private void Start()
-    {
-        Variables[Variable.rata_cheese] = 1;
-    }
     void Update()
     {
         if (Variables[Variable.bolaEjercicio] > 0)
