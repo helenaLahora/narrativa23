@@ -255,9 +255,7 @@ public class UIHANDLE : MonoBehaviour
                     AsignadorCondiciones(condicion, button, boton, false);
                 }
             }
-        }
-            
-        
+        }      
     }
     private Condicion CheckIdentifier(string identifier, Boton boton )
     {
