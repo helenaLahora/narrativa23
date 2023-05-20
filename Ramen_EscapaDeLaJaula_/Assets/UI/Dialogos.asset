@@ -3377,3 +3377,48 @@ MonoBehaviour:
             ConditionAfterFalse: 0
             dialogoFalse: 4
             condicionFalse: 
+  - identifier: Evento_Pollito
+    dialogos:
+    - identifier: 1
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: Manuel El Pollito
+        texto: "\r\xA1Oh, vaya! Parece que me he desviado un poco. Estoy intentando
+          encontrar la granja Sant Feliu..."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones:
+          - identifier: 0
+            variable: 14
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 2
+            ConditionAfterFalse: 1
+            dialogoFalse: 
+            condicionFalse: 1
+          - identifier: 1
+            variable: 10
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 1
+            condicionTrue: 2
+            dialogoTrue: 
+            ConditionAfterFalse: 0
+            dialogoFalse: 5
+            condicionFalse: 
+          - identifier: 2
+            variable: 16
+            operador: 0
+            valor: 2
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 3
+            ConditionAfterFalse: 0
+            dialogoFalse: 4
+            condicionFalse: 
