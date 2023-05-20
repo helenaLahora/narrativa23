@@ -29,7 +29,7 @@
             <ui:VisualElement name="icono" style="position: relative; width: 30px; height: 30px; left: 0; top: 0; background-image: url(&apos;project://database/Assets/Graphics/keyboard_talk.png?fileID=2800000&amp;guid=dfb1c3a1b1481ae43bd5b43d4f08f8b3&amp;type=3#keyboard_talk&apos;); margin-left: 5px;" />
         </ui:VisualElement>
         <ui:VisualElement name="controlador2" style="white-space: normal; flex-direction: row; flex-wrap: nowrap; align-items: center;">
-            <ui:Label text="recoger objeto" display-tooltip-when-elided="false" name="recoger" style="-unity-font: url(&apos;project://database/Assets/Graphics/motley_forces/MotleyForcesRegular.ttf?fileID=12800000&amp;guid=3ba146d1cf95be74eb5166cc52477acf&amp;type=3#MotleyForcesRegular&apos;); -unity-font-definition: none; color: rgb(255, 255, 255); font-size: 24px; align-items: center; position: relative; left: 0; top: 0;" />
+            <ui:Label text="interactuar " display-tooltip-when-elided="false" name="recoger" style="-unity-font: url(&apos;project://database/Assets/Graphics/motley_forces/MotleyForcesRegular.ttf?fileID=12800000&amp;guid=3ba146d1cf95be74eb5166cc52477acf&amp;type=3#MotleyForcesRegular&apos;); -unity-font-definition: none; color: rgb(255, 255, 255); font-size: 24px; align-items: center; position: relative; left: 0; top: 0;" />
             <ui:VisualElement name="icono" style="position: relative; width: 30px; height: 30px; left: 0; top: 0; background-image: url(&apos;project://database/Assets/Graphics/keyboard_object.png?fileID=2800000&amp;guid=cf366d0bfb8e06543b427b793b053801&amp;type=3#keyboard_object&apos;); margin-left: 5px;" />
         </ui:VisualElement>
     </ui:VisualElement>

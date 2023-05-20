@@ -2466,7 +2466,7 @@ MonoBehaviour:
     dialogos:
     - identifier: 1
       nodos:
-      - tipoNodo: 0
+      - tipoNodo: 3
         esPersonaje: 0
         personaje: 
         texto: "\xA1Oh, querido amigo h\xE1mster! Parece que la Patonisa Marga ha
@@ -2478,7 +2478,7 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones: []
-      - tipoNodo: 0
+      - tipoNodo: 3
         esPersonaje: 0
         personaje: 
         texto: "\xA1Ten mucho cuidado! Este camino podr\xEDa ser m\xE1s peligroso
@@ -2490,7 +2490,7 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones: []
-      - tipoNodo: 0
+      - tipoNodo: 3
         esPersonaje: 0
         personaje: 
         texto: "Como sabemos, eres un h\xE1mster joven y vivaz, lleno de energ\xEDa
@@ -2502,7 +2502,7 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones: []
-      - tipoNodo: 0
+      - tipoNodo: 3
         esPersonaje: 0
         personaje: 
         texto: "\xBFO quiz\xE1s, deber\xEDas tomar una decisi\xF3n m\xE1s sabia y
@@ -2514,7 +2514,7 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones: []
-      - tipoNodo: 0
+      - tipoNodo: 3
         esPersonaje: 0
         personaje: 
         texto: "Puedes seguir el camino m\xE1s peligroso, arriesg\xE1ndote a enfrentar
@@ -2533,7 +2533,7 @@ MonoBehaviour:
           condiciones: []
     - identifier: 2
       nodos:
-      - tipoNodo: 0
+      - tipoNodo: 3
         esPersonaje: 0
         personaje: 
         texto: "Oh, no, \xA1qu\xE9 final tan desafortunado! Parece que Ramen, el
@@ -2549,7 +2549,7 @@ MonoBehaviour:
           condiciones: []
     - identifier: 3
       nodos:
-      - tipoNodo: 0
+      - tipoNodo: 3
         esPersonaje: 0
         personaje: 
         texto: "\xA1Guau! \xA1Ramen ha arrasado en la carrera acu\xE1tica de las
@@ -2566,7 +2566,7 @@ MonoBehaviour:
     dialogos:
     - identifier: 1
       nodos:
-      - tipoNodo: 0
+      - tipoNodo: 3
         esPersonaje: 0
         personaje: 
         texto: "\xA1Incre\xEDble haza\xF1a de nuestro peque\xF1o y valiente Ramen!
@@ -2579,7 +2579,7 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones: []
-      - tipoNodo: 0
+      - tipoNodo: 3
         esPersonaje: 0
         personaje: 
         texto: "Pero... \xBFDeber\xEDa Ramen abandonar a su familia? Como ha podido
@@ -2591,7 +2591,7 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones: []
-      - tipoNodo: 0
+      - tipoNodo: 3
         esPersonaje: 0
         personaje: 
         texto: "Si Ramen se va ahora, no tendr\xE1 la oportunidad de jugar nunca
@@ -2603,7 +2603,7 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones: []
-      - tipoNodo: 0
+      - tipoNodo: 3
         esPersonaje: 0
         personaje: 
         texto: "Por otro lado, si Ramen decide marcharse, podr\xE1 pisar hierba con
@@ -2615,7 +2615,7 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones: []
-      - tipoNodo: 2
+      - tipoNodo: 3
         esPersonaje: 0
         personaje: 
         texto: 'Ha llegado el momento de escoger:'
@@ -2664,7 +2664,7 @@ MonoBehaviour:
     dialogos:
     - identifier: 1
       nodos:
-      - tipoNodo: 0
+      - tipoNodo: 3
         esPersonaje: 0
         personaje: 
         texto: "\xA1Vaya! Leo ha regresado del parque con Carla y Ramen no ha conseguido
@@ -2679,7 +2679,7 @@ MonoBehaviour:
     dialogos:
     - identifier: 1
       nodos:
-      - tipoNodo: 0
+      - tipoNodo: 1
         esPersonaje: 1
         personaje: Las Ratas De La Nevera
         texto: "Los cocineros no invitados de la casa. Remy se lo pasa genial probando
@@ -2935,7 +2935,7 @@ MonoBehaviour:
     dialogos:
     - identifier: 1
       nodos:
-      - tipoNodo: 1
+      - tipoNodo: 0
         esPersonaje: 1
         personaje: Tim
         texto: "Ramen, hola, ahora no puedo hablar mucho contigo, estoy buscando
@@ -2953,17 +2953,17 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones: []
-      - tipoNodo: 0
+      - tipoNodo: 2
         esPersonaje: 1
         personaje: Tim
         texto: "No te lo tomes mal Ramen, pero no me f\xEDo de que puedas encontrarlo. "
         botones:
-        - tipoBoton: 0
+        - tipoBoton: 1
           nombre: Mi sentido del olfato es bueno
           siguienteDialogo: 
           accion: []
           condiciones: []
-        - tipoBoton: 0
+        - tipoBoton: 3
           nombre: "A\xFAn no me he aprendido muy bien la casa"
           siguienteDialogo: 2
           accion: []
@@ -3006,10 +3006,11 @@ MonoBehaviour:
       - tipoNodo: 2
         esPersonaje: 1
         personaje: Tim
-        texto: Ya he notado que eres persistente, pero yo tengo que buscar a mi hermano.
+        texto: Ya ya, ya he notado que persistente eres (y pesado), pero yo tengo
+          que buscar a mi hermano. Puede estar en peligro.
         botones:
         - tipoBoton: 3
-          nombre: "Podr\xEDas repartir responsabilidades"
+          nombre: Nos podemos repartir zonas
           siguienteDialogo: 5
           accion: []
           condiciones: []
@@ -3049,15 +3050,16 @@ MonoBehaviour:
       - tipoNodo: 2
         esPersonaje: 1
         personaje: Tim
-        texto: Pero es mi hermano Ramen, no quiero dejarlo solo.
+        texto: Pero es mi hermano Ramen, lo quiero mucho y no debo abandonarlo ni
+          dejarlo solo.
         botones:
         - tipoBoton: 3
-          nombre: "No estar\xE1 solo, yo lo ayudar\xE9"
+          nombre: "No estar\xE1 solo, yo estar\xE9 con \xE9l"
           siguienteDialogo: 6
           accion: []
           condiciones: []
         - tipoBoton: 3
-          nombre: "No est\xE1 solo, estar\xE1 de fiesta."
+          nombre: "Seguro que est\xE1 de fiesta"
           siguienteDialogo: 
           accion: []
           condiciones: []
@@ -3078,7 +3080,7 @@ MonoBehaviour:
         personaje: Tim
         texto: "De acuerdo Ramen, volver\xE9 con mam\xE1 y le avisar\xE9 de todo."
         botones:
-        - tipoBoton: 1
+        - tipoBoton: 0
           nombre: Salir
           siguienteDialogo: 
           accion:
@@ -3091,7 +3093,7 @@ MonoBehaviour:
     dialogos:
     - identifier: 1
       nodos:
-      - tipoNodo: 2
+      - tipoNodo: 1
         esPersonaje: 1
         personaje: Marga La Patonisa
         texto: "Marga es la mam\xE1 de Fu\xE1 y Tim, es exagerada, teatral y a veces
