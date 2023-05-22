@@ -13,7 +13,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: ojoExterior
-    second: {fileID: 2100000, guid: 690d4e62f9ac1a24e9c4c881b132a6c8, type: 2}
+    second: {fileID: 2100000, guid: cb8a975d5f883c945aae0547180643aa, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
