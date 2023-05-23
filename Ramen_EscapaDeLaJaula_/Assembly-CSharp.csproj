@@ -66,7 +66,6 @@
      <None Include="Assets\UI\salir.uxml" />
      <None Include="Assets\UI\menu-configuracion.uxml" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-     <None Include="Assets\Modelos 3D\Arquitectura\Double-Sided_Shader.shader" />
      <None Include="Assets\UI\dialogo-opciones.uxml" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
@@ -340,12 +339,6 @@
     <Reference Include="UnityEditor.UnityConnectModule">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="ReportGeneratorMerged">
-        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\PackageCache\com.unity.testtools.codecoverage@1.2.2\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Burst.Cecil.Mdb">
         <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
     </Reference>
@@ -357,6 +350,12 @@
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Rocks">
         <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="ReportGeneratorMerged">
+        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\PackageCache\com.unity.testtools.codecoverage@1.2.2\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -727,17 +726,17 @@
     <Reference Include="Unity.VisualScripting.Flow.Editor">
         <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Cinemachine">
-        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Cinemachine.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Shared.Editor">
-        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="PPv2URPConverters">
+        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
         <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
@@ -751,9 +750,6 @@
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
         <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Timeline">
         <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
@@ -766,14 +762,23 @@
     <Reference Include="Unity.VisualScripting.State.Editor">
         <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Burst.Editor">
+        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Searcher.Editor">
+        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
         <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
         <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+    <Reference Include="Unity.Postprocessing.Editor">
+        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
@@ -784,17 +789,17 @@
     <Reference Include="Unity.Rider.Editor">
         <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+    <Reference Include="Unity.VisualScripting.Flow">
+        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
         <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.State">
-        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+    <Reference Include="Unity.PlasticSCM.Editor">
+        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
         <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
@@ -802,56 +807,50 @@
     <Reference Include="Unity.EditorCoroutines.Editor">
         <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Postprocessing.Editor">
-        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Runtime">
-        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Runtime">
-        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Searcher.Editor">
-        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="PPv2URPConverters">
-        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Editor">
-        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mathematics.Editor">
-        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Editor">
-        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Mathematics">
         <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst">
-        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
         <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    <Reference Include="Cinemachine">
+        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Cinemachine.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Burst.Editor">
-        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+    <Reference Include="Unity.Burst">
+        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Editor">
+        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Shared.Editor">
+        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
+        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State">
+        <HintPath>C:\Users\helen\Documents\GitHub\narrativa\Ramen_EscapaDeLaJaula_\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
