@@ -13,7 +13,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: DIFFUSE.021
-    second: {fileID: 2100000, guid: 4940037e1b104c74ebc7ca8ad660c0fc, type: 2}
+    second: {fileID: 2100000, guid: 483f7df17c03e99439a274b0eb46c0ec, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
