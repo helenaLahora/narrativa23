@@ -9,12 +9,10 @@ public class Cafetera : MonoBehaviour
     public Color speedBoostColor = Color.red; // Color of the speed boost
     public GameObject playerObject; // Reference to the player's GameObject
 
-    private PlayerMovement playerMovement; // Reference to the PlayerMovement script
+    [SerializeField]private PlayerMovement playerMovement; // Reference to the PlayerMovement script
 
     private void Start()
     {
-        // Get the PlayerMovement component from the player's GameObject
-        playerMovement = playerObject.GetComponent<PlayerMovement>();
     }
 
     private void OnTriggerEnter(Collider other)
