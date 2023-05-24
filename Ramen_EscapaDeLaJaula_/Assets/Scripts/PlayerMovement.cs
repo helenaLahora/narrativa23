@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
 
         //ApplyGravity();
 
-        Debug.Log("Velocidad del jugador: " + speedModifier);
+        //Debug.Log("Velocidad del jugador: " + speedModifier);
     }
 
     public void OnMove(InputAction.CallbackContext context)

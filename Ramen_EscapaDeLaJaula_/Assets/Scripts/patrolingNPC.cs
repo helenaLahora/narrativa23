@@ -23,7 +23,7 @@ public class patrolingNPC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(pd.talk);
+        //Debug.Log(pd.talk);
         if (!pd.talk)
 		{
             if (ReachedWayPoint())
@@ -42,7 +42,7 @@ public class patrolingNPC : MonoBehaviour
 	private IEnumerator Wait()
 	{
         aux = true;
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(2);
         aux = false;
     }
 
