@@ -14,6 +14,7 @@ public class patrolingNPC : MonoBehaviour
     private Quaternion ogRotation;
     private Vector3 currentTargetPosition => wayPoints[currentWayPoint].position;
     private bool aux = false;
+    [SerializeField] PlayerDetection pd;
 
     private void Start()
     {
@@ -22,17 +23,19 @@ public class patrolingNPC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (ReachedWayPoint())
-        {
-            ChangeWayPoint();
-        }
-
-       
-
-        if (!aux)
+        Debug.Log(pd.talk);
+        if (!pd.talk)
 		{
-            CheckRb();
-            Move();
+            if (ReachedWayPoint())
+            {
+                ChangeWayPoint();
+            }
+
+            if (!aux)
+            {
+                CheckRb();
+                Move();
+            }
         }
     }
 

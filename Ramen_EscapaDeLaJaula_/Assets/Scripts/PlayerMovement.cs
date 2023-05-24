@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public float JumpForce = 10f;
     [SerializeField] private FirstUI firstUI;
     [HideInInspector] public bool menu = false;
+    [SerializeField] private PlayerDetection pd;
 
     private Coroutine speedBoostCoroutine; // Referencia al coroutine de aumento de velocidad
     private float baseSpeed; // Velocidad base del jugador
@@ -35,7 +36,9 @@ public class PlayerMovement : MonoBehaviour
     {
         verticalSpeed += gravity * Time.deltaTime;
         //Debug.Log(Cc.isGrounded);
+        
         Movement();
+
 
         //Debug.Log(EventHandler.Variables[Variable.collectedObjects]);
 

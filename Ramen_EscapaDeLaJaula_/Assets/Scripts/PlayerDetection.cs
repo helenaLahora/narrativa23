@@ -7,13 +7,14 @@ public class PlayerDetection : MonoBehaviour
 {
     [HideInInspector]public bool playerdetected = false;
     public SphereCollider Collider;
-    [HideInInspector]public bool talk = false;
+    [HideInInspector] public bool talk = false;
     private UIHANDLE uiHandle;
     public GameObject uiPrefab;
     private GameObject uiInstance;
     private GameObject player;
     public string nombreEvento;
     private SpawnParticles spawner;
+
     void Start()
     {
         if ( transform.gameObject.name == "Marga")
@@ -46,9 +47,11 @@ public class PlayerDetection : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
 
-            playerdetected = false;
+        playerdetected = false;
+        talk = false;
         
     }
+
     private void OnTalk()
     {
         if (playerdetected)
