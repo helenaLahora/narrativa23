@@ -23,7 +23,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: "ParedBa\xF1o_2.002"
-    second: {fileID: 2100000, guid: a81ac6c350c1d794999e7573b7c29118, type: 2}
+    second: {fileID: 2100000, guid: 87c56a76fc8154e4f9afe0125a1ee844, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
