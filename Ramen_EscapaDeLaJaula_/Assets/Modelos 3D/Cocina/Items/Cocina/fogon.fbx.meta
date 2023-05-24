@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 09c8df7c7669835489b622b13034e713
+guid: fcf53c18288654c45912142ed7e1cb6d
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -7,73 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: "ParedBa\xF1o"
-    second: {fileID: 2100000, guid: a81ac6c350c1d794999e7573b7c29118, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "ParedBa\xF1o.002"
-    second: {fileID: 2100000, guid: a81ac6c350c1d794999e7573b7c29118, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "ParedBa\xF1o_2"
-    second: {fileID: 2100000, guid: f7bdfc0f5358a334793c5d8126164a40, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "ParedBa\xF1o_2.002"
-    second: {fileID: 2100000, guid: a81ac6c350c1d794999e7573b7c29118, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: ParedCocina
-    second: {fileID: 2100000, guid: d6ba134fce899914fa9b1d69572a89cf, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: ParedCocina.002
-    second: {fileID: 2100000, guid: 9b1d211eddfdeed4dac2223225a60e5c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: ParedDormitorio
-    second: {fileID: 2100000, guid: acf77778bbb3c62409927f0dea4fb4d3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: ParedDormitorio.002
-    second: {fileID: 2100000, guid: acf77778bbb3c62409927f0dea4fb4d3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: ParedYeso
-    second: {fileID: 2100000, guid: 99b368d526fc8b94cb2193bf52b8d874, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: ParedYeso.002
-    second: {fileID: 2100000, guid: 99b368d526fc8b94cb2193bf52b8d874, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "SueloBa\xF1o"
-    second: {fileID: 2100000, guid: f0387663606030440864329e8d0b2275, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "SueloBa\xF1o.002"
-    second: {fileID: 2100000, guid: f0387663606030440864329e8d0b2275, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: SueloParquet
-    second: {fileID: 2100000, guid: 857f613c39d64ef4890f41f50d35c227, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: SueloParquet.002
-    second: {fileID: 2100000, guid: 857f613c39d64ef4890f41f50d35c227, type: 2}
+      name: DIFFUSE.024
+    second: {fileID: 2100000, guid: 9634c6fcade594342a02947aac7b1e20, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -117,7 +52,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1

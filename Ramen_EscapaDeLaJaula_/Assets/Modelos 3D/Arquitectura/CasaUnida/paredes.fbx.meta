@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: 2db065685bfbec542a806c13f06bd78f
+guid: f0ae1eeda6452484fb0df12e55a4c60e
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: DIFFUSE.024
-    second: {fileID: 2100000, guid: 9634c6fcade594342a02947aac7b1e20, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -52,7 +47,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1

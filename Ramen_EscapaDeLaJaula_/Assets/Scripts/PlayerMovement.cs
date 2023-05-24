@@ -52,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
         raw_movement = context.ReadValue<Vector2>();
     }
 
-    void Movement()
+    public void Movement()
     {
         
         Vector3 forward = cam.transform.forward;
