@@ -20,13 +20,13 @@ public class PlayerMovement : MonoBehaviour
     private float baseSpeed; // Velocidad base del jugador
     private float currentSpeed; // Velocidad actual del jugador
     public float speedBoostDuration = 5f; // Duración del aumento de velocidad
-
+    private float speedModifier = 1f;
     // Start is called before the first frame update
     void Start()
     {
         Cc = GetComponent<CharacterController>();
 
-        baseSpeed = speed;
+        baseSpeed = speedModifier;
         currentSpeed = baseSpeed;
     }
 
@@ -41,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
 
         //ApplyGravity();
 
-        //Debug.Log("Velocidad del jugador: " + currentSpeed);
+        Debug.Log("Velocidad del jugador: " + speedModifier);
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -51,6 +51,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Movement()
     {
+        
         Vector3 forward = cam.transform.forward;
         Vector3 right = cam.transform.right;
         forward.y = 0f;
@@ -61,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
         //movement = new Vector3(raw_movement.x,0,raw_movement.y);
         movement.y = verticalSpeed;
 
-        Cc.Move(movement * Time.deltaTime);
+        Cc.Move(movement * Time.deltaTime * speedModifier);
         if (movement.x != 0)
         {
             transform.rotation = Quaternion.LookRotation(new Vector3(-movement.z, 0, movement.x));
@@ -114,14 +115,14 @@ public class PlayerMovement : MonoBehaviour
             StopCoroutine(speedBoostCoroutine); // Detener el coroutine anterior si existe
         }
 
-        currentSpeed = baseSpeed + amount;
+        speedModifier = baseSpeed + amount;
         speedBoostCoroutine = StartCoroutine(ResetSpeedAfterDelay(speedBoostDuration));
     }
 
     // Método para restablecer la velocidad de movimiento
     public void ResetSpeed()
     {
-        currentSpeed = baseSpeed;
+        speedModifier = baseSpeed;
         if (speedBoostCoroutine != null)
         {
             StopCoroutine(speedBoostCoroutine); // Detener el coroutine anterior si existe
