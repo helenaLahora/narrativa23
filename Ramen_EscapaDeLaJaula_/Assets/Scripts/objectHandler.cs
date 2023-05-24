@@ -6,11 +6,11 @@ using UnityEngine.UIElements;
 public class objectHandler : MonoBehaviour
 {
     private UIDocument UI;
-    public Texture2D[] calcetin;
-    public Texture2D[] peine;
+    public Texture2D[] queso;
+    public Texture2D[] salchicha;
+    public Texture2D[] hueso;
     public Texture2D[] pelota;
     public float tiempoMuerte = 30;
-    private float time;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +23,7 @@ public class objectHandler : MonoBehaviour
     {
         while (tiempoMuerte > 0)
         {
-            Debug.Log(tiempoMuerte);
+            
             yield return new WaitForSeconds(60);
             tiempoMuerte--;
         }
@@ -36,28 +36,34 @@ public class objectHandler : MonoBehaviour
     {
 
         UI.rootVisualElement.Q<Label>("cantidadMonedas").text = EventHandler.Variables[Variable.coin].ToString();
-        if (EventHandler.Variables[Variable.collectedObjects] > 0)
-        {
-            if (GameObject.Find("calcetin") != null)
-            {
-                
-                UI.rootVisualElement.Q<VisualElement>("calcetin").style.backgroundImage = calcetin[0];
+        
+            if (EventHandler.Variables[Variable.rata_cheese] > 0)
+            {                
+                UI.rootVisualElement.Q<VisualElement>("queso").style.backgroundImage = queso[0];
             }
             else
             {
-                UI.rootVisualElement.Q<VisualElement>("calcetin").style.backgroundImage = calcetin[1];
+                UI.rootVisualElement.Q<VisualElement>("queso").style.backgroundImage = queso[1];
             }
-            if (GameObject.Find("peineLeo") != null)
+            if (EventHandler.Variables[Variable.salchicha] > 0)
             {
-                UI.rootVisualElement.Q<VisualElement>("peine").style.backgroundImage = peine[0];
+                UI.rootVisualElement.Q<VisualElement>("salchicha").style.backgroundImage = salchicha[0];
 
             }
            else
             {
-                UI.rootVisualElement.Q<VisualElement>("peine").style.backgroundImage = peine[1];
+                UI.rootVisualElement.Q<VisualElement>("salchicha").style.backgroundImage = salchicha[1];
+            }
+            if (EventHandler.Variables[Variable.hueso] > 0)
+            {
+                UI.rootVisualElement.Q<VisualElement>("hueso").style.backgroundImage = hueso[0];
+            }
+           else
+            {
+                UI.rootVisualElement.Q<VisualElement>("hueso").style.backgroundImage = hueso[1];
             }
             
-        }
+        
         if (EventHandler.Variables[Variable.bolaEjercicio] > 0)
         {
             UI.rootVisualElement.Q<VisualElement>("bola").style.backgroundImage = pelota[1];

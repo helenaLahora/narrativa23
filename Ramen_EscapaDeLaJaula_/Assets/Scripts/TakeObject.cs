@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class TakeObject : MonoBehaviour
 {
-    [HideInInspector]public bool playerDetectedObject = false;
+    public bool playerDetectedObject = false;
 
     public SphereCollider SphereCollider;
+
+    [SerializeField] private Variable variable;
 
     // Start is called before the first frame update
     void Start()
@@ -42,7 +44,7 @@ public class TakeObject : MonoBehaviour
 	{
         if (playerDetectedObject)
 		{
-            EventHandler.Variables[Variable.collectedObjects]++;
+            EventHandler.Variables[variable]++;
             Destroy(gameObject); 
 		}
 	}

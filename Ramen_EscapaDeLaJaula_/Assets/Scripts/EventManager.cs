@@ -126,7 +126,9 @@ public enum Variable
     rata_explainedmission,
     rata_cheese,
     //Juego
-    temporizador
+    temporizador,
+    salchicha,
+    hueso
 
 }
 public enum Operador

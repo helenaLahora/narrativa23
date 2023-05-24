@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Dormitorio\MovimientoRueda.cs" />
     <Compile Include="Assets\Scripts\GuardarCargarPartida.cs" />
     <Compile Include="Assets\Scripts\CamMovement.cs" />
+    <Compile Include="Assets\EtiquetaLookAt.cs" />
     <Compile Include="Assets\Scripts\ChispasHandler.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\objectHandler.cs" />

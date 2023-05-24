@@ -9217,7 +9217,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 423808987}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.000804465
@@ -9236,6 +9236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerDetectedObject: 0
   SphereCollider: {fileID: 423808989}
+  variable: 0
 --- !u!1 &425253435
 GameObject:
   m_ObjectHideFlags: 0
@@ -19539,8 +19540,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.12644185, y: 0.6957107, z: -0.12644213, w: 0.6957093}
-  m_LocalPosition: {x: -17.779995, y: -9.57, z: 9.98129}
+  m_LocalRotation: {x: 0.3205444, y: -0.6326626, z: 0.32386237, w: 0.6261809}
+  m_LocalPosition: {x: -96.71833, y: 5.520508, z: 9.997669}
   m_LocalScale: {x: 5.8691506, y: 5.8691516, z: 5.8691506}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24596,7 +24597,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1240095941}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -50.23, y: 1.11, z: 0.93}
+  m_LocalPosition: {x: -136.4, y: 16.2, z: 0.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -24814,7 +24815,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246375158}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.779995, y: -9.57, z: 9.98129}
+  m_LocalPosition: {x: -92.670006, y: 5.5200005, z: 9.997665}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -26237,7 +26238,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1308377711}
-  m_LocalRotation: {x: 0.14644767, y: 0.691776, z: -0.14644797, w: 0.6917746}
+  m_LocalRotation: {x: 0.3384649, y: -0.62306213, z: 0.3419683, w: 0.6166789}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -30302,6 +30303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerDetectedObject: 0
   SphereCollider: {fileID: 1534726234}
+  variable: 22
 --- !u!135 &1534726234
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -30310,11 +30312,41 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1534726231}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.00028502173
   m_Center: {x: 0.00028413773, y: 0.00021637372, z: 0.00002612305}
+--- !u!114 &1534726237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534726231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 1f3088b346827b041a3953f135f7689f, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Objects
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1001 &1541358367
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36484,7 +36516,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893674880}
-  m_LocalRotation: {x: 0.03693963, y: 0.70614195, z: -0.0369397, w: 0.7061406}
+  m_LocalRotation: {x: 0.23830824, y: -0.6687123, z: 0.24077499, w: 0.66186136}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -36768,12 +36800,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59945162392a2ec49a9c514041d9d5fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  calcetin:
-  - {fileID: 2800000, guid: 9ce8107e91d80614ba95d3e2a1e9925b, type: 3}
-  - {fileID: 2800000, guid: 2d0389ddc7d77cb4fb68db729027a55b, type: 3}
-  peine:
-  - {fileID: 2800000, guid: 3b8bbfbc36110c24385d7b1538b0a097, type: 3}
-  - {fileID: 2800000, guid: b9080832fc2b2974bbf088522b0d4404, type: 3}
+  queso:
+  - {fileID: 2800000, guid: 4a21f85dde2a52b4897d43a110105cac, type: 3}
+  - {fileID: 2800000, guid: 545dd48eb444beb49ac97c00f64daa81, type: 3}
+  salchicha:
+  - {fileID: 2800000, guid: 6c78e5236a611e24190666e7b799e89f, type: 3}
+  - {fileID: 2800000, guid: e1200cc6f745fa744ae43f691c68cd65, type: 3}
+  hueso:
+  - {fileID: 2800000, guid: e8de5d609738b6c47a6808316e6a5e7c, type: 3}
+  - {fileID: 2800000, guid: 5461b5896fc99b74db2f2d04c6568422, type: 3}
   pelota:
   - {fileID: 2800000, guid: c4e0ff16798a8264cbf12e8ac3879766, type: 3}
   - {fileID: 2800000, guid: b60271d6588ea04478201813aed210fd, type: 3}
@@ -39565,7 +39600,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2122960869}
-  m_LocalRotation: {x: 0.12644188, y: 0.6957107, z: -0.12644213, w: 0.6957093}
+  m_LocalRotation: {x: 0.32054436, y: -0.6326626, z: 0.32386234, w: 0.62618095}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
