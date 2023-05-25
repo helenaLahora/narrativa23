@@ -11,21 +11,28 @@ public class objectHandler : MonoBehaviour
     public Texture2D[] hueso;
     public Texture2D[] pelota;
     public float tiempoMuerte = 30;
+    private float segundos = 60;
 
     // Start is called before the first frame update
     void Start()
     {
         UI = GetComponent<UIDocument>();
-        StartCoroutine(TiempoRestar());
+        StartCoroutine(RestarSecs());
     }
 
-    private IEnumerator TiempoRestar()
+   
+    private IEnumerator RestarSecs()
     {
         while (tiempoMuerte > 0)
         {
             
-            yield return new WaitForSeconds(60);
-            tiempoMuerte--;
+            yield return new WaitForSeconds(1);
+            segundos--;
+            if (segundos <= 0)
+            {
+                segundos = 60;
+                tiempoMuerte--;
+            }
         }
 
 
@@ -75,7 +82,7 @@ public class objectHandler : MonoBehaviour
 
         }
         UI.rootVisualElement.Q<Label>("tiempo").text = string.Empty;
-        UI.rootVisualElement.Q<Label>("tiempo").text =tiempoMuerte.ToString()+" min";
+        UI.rootVisualElement.Q<Label>("tiempo").text =tiempoMuerte.ToString()+" : "+ segundos.ToString() +" min";
         EventHandler.Variables[Variable.temporizador] = (int)tiempoMuerte;
     }
 }
