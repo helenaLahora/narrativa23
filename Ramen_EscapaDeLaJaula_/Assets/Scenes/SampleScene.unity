@@ -3003,7 +3003,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 149428751}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_Marga
@@ -3532,7 +3531,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 175776908}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_Misty
@@ -4046,7 +4044,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 177555101}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_Pollito
@@ -4981,7 +4978,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 205387187}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_CepilloEscobilla
@@ -7397,6 +7393,21 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6242891988469179924, guid: 3b83cb831f84c034382e705cb8739dd4, type: 3}
+--- !u!114 &314670682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314670672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52777f887dfe11c49bab81959229b649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noSiginal: {fileID: 0}
+  formula1: {fileID: 0}
+  intervalo: 0
 --- !u!1001 &315534734
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13979,7 +13990,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 605840961}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_SalidaSalon
@@ -17083,7 +17093,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 740710767}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_Nora
@@ -18755,7 +18764,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 830356959}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_Carlos
@@ -20108,7 +20116,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 888471293}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_Rosie
@@ -20677,7 +20684,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 915723007}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_Fua
@@ -21542,8 +21548,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.03133936, y: 0.9685048, z: -0.16561408, w: 0.18327136}
-  m_LocalPosition: {x: -4.075508, y: 6.065668, z: -1.5519838}
+  m_LocalRotation: {x: 0.03133936, y: 0.9685048, z: -0.16561413, w: 0.1832713}
+  m_LocalPosition: {x: -4.0755043, y: 6.0656643, z: -1.5519934}
   m_LocalScale: {x: 5.8691506, y: 5.8691516, z: 5.8691506}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21738,7 +21744,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 969173571}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_MaxDescontrolado
@@ -25392,7 +25397,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 1181780131}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_Tim
@@ -26945,7 +26949,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 1252710768}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_Julio
@@ -28266,7 +28269,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1308377711}
-  m_LocalRotation: {x: 0.036610324, y: 0.9633272, z: -0.1934687, w: 0.1822916}
+  m_LocalRotation: {x: 0.036610316, y: 0.9633272, z: -0.19346875, w: 0.18229154}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -31821,7 +31824,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 1507721676}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_Lila
@@ -32295,7 +32297,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 1527210952}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_SalidaBanyo
@@ -33706,7 +33707,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 1596790611}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_NoElegibles
@@ -36826,7 +36826,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 1764035025}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_NoElegibles
@@ -38712,7 +38711,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 1875342857}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_Ratas
@@ -39246,7 +39244,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893674880}
-  m_LocalRotation: {x: 0.007777675, y: 0.98170274, z: -0.041101437, w: 0.18576881}
+  m_LocalRotation: {x: 0.0077776946, y: 0.9817027, z: -0.04110155, w: 0.1857688}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -41209,7 +41207,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 2024508769}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_Oso
@@ -42291,7 +42288,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2122960869}
-  m_LocalRotation: {x: 0.031339355, y: 0.9685048, z: -0.16561407, w: 0.18327133}
+  m_LocalRotation: {x: 0.031339355, y: 0.9685048, z: -0.16561411, w: 0.1832713}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -42448,7 +42445,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 2127718821}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_Polvo
@@ -43019,7 +43015,7 @@ MonoBehaviour:
   wayPoints:
   - {fileID: 1921078793}
   - {fileID: 1989653707}
-  minDistance: 1
+  minDistance: 3
   speed: 1
   pd: {fileID: 1252710767}
 --- !u!1 &919132149376840149
