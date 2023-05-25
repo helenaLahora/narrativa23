@@ -65,9 +65,11 @@
     <Compile Include="Assets\Scripts\Cuina\Fogones.cs" />
     <Compile Include="Assets\Scripts\AttackBehaviour.cs" />
     <Compile Include="Assets\Scripts\Dormitorio\MovimientoRueda.cs" />
+    <Compile Include="Assets\Scripts\CloseDoor.cs" />
     <Compile Include="Assets\Scripts\GuardarCargarPartida.cs" />
     <Compile Include="Assets\Scripts\CamMovement.cs" />
     <Compile Include="Assets\Scripts\EtiquetaLookAt.cs" />
+    <Compile Include="Assets\Scripts\NoraMovement.cs" />
     <Compile Include="Assets\Scripts\ChispasHandler.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\objectHandler.cs" />
@@ -77,6 +79,7 @@
     <Compile Include="Assets\Scripts\EventHandler.cs" />
     <Compile Include="Assets\Scripts\ControladorDatosJuego.cs" />
     <Compile Include="Assets\Scripts\DamageScript.cs" />
+    <Compile Include="Assets\Scripts\TriggerNora.cs" />
     <Compile Include="Assets\Scripts\Cuina\RotateDoor.cs" />
     <Compile Include="Assets\Scripts\TakeObject.cs" />
     <Compile Include="Assets\Scripts\Coin.cs" />
@@ -84,9 +87,9 @@
     <Compile Include="Assets\Scripts\SpawnParticles.cs" />
     <Compile Include="Assets\Scripts\CoinGenerator.cs" />
     <Compile Include="Assets\Scripts\OnTriggerAction.cs" />
+    <Compile Include="Assets\Scripts\OpenDoor.cs" />
     <Compile Include="Assets\Scripts\Cuina\CuchilloSubeBaja.cs" />
     <Compile Include="Assets\Scripts\WonderBehaviour.cs" />
-    <Compile Include="Assets\Scripts\TriggerNora.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
