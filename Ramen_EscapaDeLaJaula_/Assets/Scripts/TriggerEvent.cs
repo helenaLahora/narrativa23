@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TriggerNora : MonoBehaviour
+public class TriggerEvent : MonoBehaviour
 {
     private UIHANDLE uiHandle;
     public GameObject uiPrefab;
@@ -12,7 +12,7 @@ public class TriggerNora : MonoBehaviour
     private bool noraTalked = false;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && noraTalked)
+        if (other.CompareTag("Player") && !noraTalked)
         {
             player = other.gameObject;
             uiInstance = Instantiate(uiPrefab);

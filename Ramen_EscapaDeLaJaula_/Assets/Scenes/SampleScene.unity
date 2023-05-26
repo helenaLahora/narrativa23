@@ -2954,7 +2954,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 149428751}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_Marga
@@ -3290,6 +3289,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6062946782184156695, guid: 7a997931c44516c49899815db24caf87, type: 3}
+--- !u!1 &171479718 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5fc4b6701f701f440814f96c60e8b246, type: 3}
+  m_PrefabInstance: {fileID: 1244796404}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &173292505
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3483,7 +3487,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 175776908}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_Misty
@@ -3997,7 +4000,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 177555101}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_Pollito
@@ -4966,7 +4968,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 205387187}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_CepilloEscobilla
@@ -7475,6 +7476,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3503396607276044806, guid: 3b83cb831f84c034382e705cb8739dd4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 789870cd4b9689f41bcda8d712d4d907, type: 2}
     - target: {fileID: 919132149155446097, guid: 3b83cb831f84c034382e705cb8739dd4, type: 3}
       propertyPath: m_Name
       value: televisor
@@ -7532,6 +7537,52 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6242891988469179924, guid: 3b83cb831f84c034382e705cb8739dd4, type: 3}
+--- !u!114 &314670676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314670672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52777f887dfe11c49bab81959229b649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1240095946}
+  noSignal: {fileID: 2100000, guid: 789870cd4b9689f41bcda8d712d4d907, type: 2}
+  formula1: {fileID: 2100000, guid: c776f4514ab61d2468bcd8137c73c0ca, type: 2}
+  intervalo: 5
+  intervaloMuerte: 30
+  intervaloGrande: 180
+  matChanged: 0
+--- !u!65 &314670680
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314670672}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03348734, y: 0.007411419, z: 0.03099857}
+  m_Center: {x: -0.0000000037252903, y: -0.003, z: 0.01815085}
+--- !u!114 &314670684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314670672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef0c998910fe98f4899522bbdc7e6b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
+  nombreEvento: Evento_Carlos
 --- !u!1001 &315534734
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14224,7 +14275,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 605840961}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_SalidaSalon
@@ -17218,10 +17268,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 740710765}
-  - component: {fileID: 740710769}
+  - component: {fileID: 740710766}
   - component: {fileID: 740710768}
   - component: {fileID: 740710767}
-  - component: {fileID: 740710766}
   m_Layer: 0
   m_Name: NoraMision
   m_TagString: Untagged
@@ -17257,8 +17306,8 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 13, y: 25, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!135 &740710767
-SphereCollider:
+--- !u!65 &740710767
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -17268,8 +17317,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 6.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 13, y: 1, z: 28}
+  m_Center: {x: 0, y: 0, z: -12}
 --- !u!114 &740710768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17279,44 +17328,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 740710764}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c925c39f5eb2e94fbee80eacf7ec2dc, type: 3}
+  m_Script: {fileID: 11500000, guid: ef0c998910fe98f4899522bbdc7e6b61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerdetected: 0
-  Collider: {fileID: 740710767}
-  talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_Nora
---- !u!114 &740710769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 740710764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 1f3088b346827b041a3953f135f7689f, type: 3}
-  m_NotificationBehavior: 0
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: NPC
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!1001 &740864250
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18470,19 +18486,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6753712b60a7ef94bb126fb8d215e5c1, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6753712b60a7ef94bb126fb8d215e5c1, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6753712b60a7ef94bb126fb8d215e5c1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6753712b60a7ef94bb126fb8d215e5c1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6753712b60a7ef94bb126fb8d215e5c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -18490,7 +18506,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6753712b60a7ef94bb126fb8d215e5c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6753712b60a7ef94bb126fb8d215e5c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -18691,66 +18707,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: de1cf94163cd6cd4cb16b5f9427ef7ca, type: 3}
   m_PrefabInstance: {fileID: 1607596175}
   m_PrefabAsset: {fileID: 0}
---- !u!135 &830356959
-SphereCollider:
+--- !u!65 &830356964
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824323880}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.0085
-  m_Center: {x: 0.001172439, y: -0.00560802, z: 0.0028557205}
---- !u!114 &830356960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 824323880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 1f3088b346827b041a3953f135f7689f, type: 3}
-  m_NotificationBehavior: 0
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: NPC
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
---- !u!114 &830356961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 824323880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c925c39f5eb2e94fbee80eacf7ec2dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerdetected: 0
-  Collider: {fileID: 830356959}
-  talk: 0
-  uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
-  nombreEvento: Evento_Carlos
+  m_Size: {x: 0.006972875, y: 0.014046664, z: 0.010086259}
+  m_Center: {x: 0.00172439, y: -0.00560802, z: 0.0028557205}
 --- !u!1001 &839525314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20092,7 +20061,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 888471293}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_Rosie
@@ -20661,7 +20629,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 915723007}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_Fua
@@ -21568,8 +21535,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.14308399, y: 0.5372987, z: -0.09308066, w: 0.8259376}
-  m_LocalPosition: {x: -0.20710754, y: 0.41875458, z: -1.8351192}
+  m_LocalRotation: {x: 0.013686513, y: 0.9815315, z: -0.17461309, w: 0.076934345}
+  m_LocalPosition: {x: -3.8002777, y: 6.0656548, z: -1.5064325}
   m_LocalScale: {x: 5.8691506, y: 5.8691516, z: 5.8691506}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21708,36 +21675,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: caf6ff1b9eca3c847a4fa04ebf571b37, type: 3}
   m_PrefabInstance: {fileID: 915329445}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &969173570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969173569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 1f3088b346827b041a3953f135f7689f, type: 3}
-  m_NotificationBehavior: 0
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: NPC
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!135 &969173571
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -21751,7 +21688,20 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.3
   m_Center: {x: 0, y: 0.24, z: -0.03}
---- !u!114 &969173572
+--- !u!65 &969173573
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969173569}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1, y: 1, z: 0.6}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &969173574
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -21760,12 +21710,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 969173569}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c925c39f5eb2e94fbee80eacf7ec2dc, type: 3}
+  m_Script: {fileID: 11500000, guid: ef0c998910fe98f4899522bbdc7e6b61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerdetected: 0
-  Collider: {fileID: 969173571}
-  talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_MaxDescontrolado
 --- !u!1001 &983924001
@@ -25556,7 +25503,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 1181780131}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_Tim
@@ -26891,7 +26837,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1240095941}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -34.2, y: 11.7, z: -9.07}
+  m_LocalPosition: {x: -41.3, y: 17.6, z: -14.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -26979,6 +26925,45 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5fc4b6701f701f440814f96c60e8b246, type: 3}
   m_PrefabInstance: {fileID: 1244796404}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1244796408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171479718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cd1d804c4ae0224faafe4ce54350d9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleChange: {fileID: 314670676}
+--- !u!65 &1244796409
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171479718}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.00088107015, y: 0.0013347899, z: 0.00276162}
+  m_Center: {x: 0.0000004549966, y: -0.00003311584, z: 0.0005488875}
+--- !u!65 &1244796410
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171479718}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0006, y: 0.00033478995, z: 0.00276162}
+  m_Center: {x: 0.0000004549966, y: -0.00003311584, z: 0.0005488875}
 --- !u!1 &1246375158
 GameObject:
   m_ObjectHideFlags: 0
@@ -27110,7 +27095,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246375158}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.2687073, y: 1.0199995, z: -2.2984781}
+  m_LocalPosition: {x: -4.966694, y: 6.92, z: 0.11071873}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -27377,7 +27362,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 1252710768}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_Julio
@@ -28948,7 +28932,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1308377711}
-  m_LocalRotation: {x: 0.16683751, y: 0.5343916, z: -0.10853307, w: 0.821469}
+  m_LocalRotation: {x: 0.01589896, y: 0.9760891, z: -0.20283952, w: 0.07650779}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -32541,7 +32525,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 1507721676}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_Lila
@@ -33015,7 +32998,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 1527210952}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_SalidaBanyo
@@ -34550,7 +34532,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 1596790611}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_NoElegibles
@@ -37768,7 +37749,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 1764035025}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_NoElegibles
@@ -39662,7 +39642,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 1875342857}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_Ratas
@@ -40197,7 +40176,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893674880}
-  m_LocalRotation: {x: 0.036885016, y: 0.54477346, z: -0.023994867, w: 0.83742803}
+  m_LocalRotation: {x: 0.0037913942, y: 0.99576813, z: -0.048370764, w: 0.07805023}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -42253,7 +42232,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 2024508769}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_Oso
@@ -43533,7 +43511,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2122960869}
-  m_LocalRotation: {x: 0.14308397, y: 0.5372987, z: -0.09308068, w: 0.8259377}
+  m_LocalRotation: {x: 0.013686512, y: 0.9815315, z: -0.17461307, w: 0.076934345}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -43725,7 +43703,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdetected: 0
-  Collider: {fileID: 2127718821}
   talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_Polvo

@@ -4,29 +4,61 @@ using UnityEngine;
 
 public class TeleChange : MonoBehaviour
 {
-    [SerializeField] private Texture2D noSiginal;
-    [SerializeField] private Texture2D formula1;
-    [SerializeField] private Material material;
+    [SerializeField] private Transform player;
+    private Vector3 startingPosition;
+    [SerializeField] private Material noSignal;
+    [SerializeField] private Material formula1;
+    private Renderer tvRenderer;
+    [Header("Los intervalos se miden en segundos")]
     [SerializeField] private float intervalo = 40f;
+    [SerializeField] private float intervaloMuerte = 30f;
+    [SerializeField] private float intervaloGrande = 180;
     [HideInInspector] public bool matChanged = false;
-
-    public IEnumerator ChangeTV()
+    private Coroutine cambiandoTV;
+    private void Awake()
     {
-        while (true)
+        startingPosition = player.position;
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        tvRenderer = GetComponent<Renderer>();
+        if (other.CompareTag("Player"))
         {
+            StartCoroutine(SafeTime());
+        }
+    }
+    private IEnumerator SafeTime()
+    {
+        yield return new WaitForSeconds(intervaloGrande);
+        cambiandoTV = StartCoroutine(ChangeTV());
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player") && cambiandoTV != null)
+        {
+            StopCoroutine(ChangeTV());
+        }
+    }
+    private IEnumerator ChangeTV()
+    {       
             if (!matChanged)
             {
                 yield return new WaitForSeconds(intervalo);
-                material.SetTexture("_BaseMap", formula1);
+                tvRenderer.material = formula1;
                 matChanged = true;
-            }
-
-        }
-
+            }      
     }
     public void ResetMat()
     {
-        material.SetTexture("_BaseMap", noSiginal);
+        tvRenderer.material = noSignal;
         matChanged = false;
+    }
+    private IEnumerator KillPlayer()
+    {
+        yield return new WaitForSeconds(intervaloMuerte);
+        if (tvRenderer.material == formula1)
+        {
+            player.position = startingPosition;
+        }
     }
 }

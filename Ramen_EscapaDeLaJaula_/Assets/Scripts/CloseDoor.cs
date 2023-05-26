@@ -11,11 +11,6 @@ public class CloseDoor : MonoBehaviour
     public float angle;
     [SerializeField] private float tiempo;
 
-    void Start()
-    {
-
-    }
-
 
     void Update()
     {
