@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\IdleBehavior.cs" />
+    <Compile Include="Assets\Scripts\ScriptEnabler.cs" />
     <Compile Include="Assets\Scripts\PlayerDetection.cs" />
     <Compile Include="Assets\Scripts\patrolingNPC.cs" />
     <Compile Include="Assets\Scripts\PatrollingScript.cs" />
@@ -94,7 +95,6 @@
     <Compile Include="Assets\Scripts\MandoScript.cs" />
     <Compile Include="Assets\Scripts\Cuina\CuchilloSubeBaja.cs" />
     <Compile Include="Assets\Scripts\WonderBehaviour.cs" />
-    <Compile Include="Assets\Scripts\ScriptEnabler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

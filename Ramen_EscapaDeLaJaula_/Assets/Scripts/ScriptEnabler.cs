@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class ScriptEnabler : MonoBehaviour
 {
-    public float energy;
+    [HideInInspector]public float energy;
     private PatrollingScript patrollingScript;
     private ChispasHandler chispasHandler;
     private bool startLoosing = false;
     private void Start()
     {
-        energy = 100f;
+        energy = 15f;
         patrollingScript = GetComponent<PatrollingScript>();    
         chispasHandler = GetComponent<ChispasHandler>();    
     }
@@ -25,14 +25,13 @@ public class ScriptEnabler : MonoBehaviour
                StartCoroutine( chispasHandler.EnergyEditor(-1));
                 startLoosing = true;
             }
-                Debug.Log(energy);
         }
-        else
+        else if(!EnergyCheck() && energy<=100)
         {
             
             patrollingScript.enabled = false;
-            chispasHandler.enabled = true; 
-            
+            chispasHandler.enabled = true;
+            startLoosing = false;
         }
     }
     private bool EnergyCheck()
