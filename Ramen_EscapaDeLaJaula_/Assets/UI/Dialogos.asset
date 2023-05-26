@@ -127,7 +127,7 @@ MonoBehaviour:
         texto: "\xA1Te has atrevido a salir de la jaula! Pero\u2026 \xBFAhora que?
           La casa es muy grande y Ramen no tiene muy claro como escapar. Ayuda a
           Ramen a investigar las habitaciones en busca de un sitio donde huir. Interact\xFAa
-          con los habitantes de la casa y \xA1recuerda que no te pillen!"
+          con los habitantes de la casa y recuerda \xA1que no te pillen!"
         botones:
         - tipoBoton: 0
           nombre: Salir
