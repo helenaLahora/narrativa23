@@ -10,7 +10,7 @@ public class ChispasHandler : MonoBehaviour
     private int currentWayPoint = 0;
     public float minDistance = 15f;
     public float speed = 0;
-    private float energy = 0;
+    private ScriptEnabler script;
     private bool isReturning;
     private Quaternion ogRotation;
     private Vector3 currentTargetPosition => wayPoints[currentWayPoint].position;
@@ -18,15 +18,15 @@ public class ChispasHandler : MonoBehaviour
     private void Start()
     {
         ogRotation = transform.rotation;
-
+        script = GetComponent<ScriptEnabler>();
     }
 
-    private IEnumerator EnergyEditor(float value)
+    public IEnumerator EnergyEditor(float value)
     {
         while (true)
         {
-            yield return new WaitForSeconds(10);
-            energy += value;
+            yield return new WaitForSeconds(1);
+            script.energy += value;
         }
 
     }
@@ -50,12 +50,7 @@ public class ChispasHandler : MonoBehaviour
             StartCoroutine(EnergyEditor(1));
             
         }
-        if (energy >= 100)
-        {
-            StopCoroutine(EnergyEditor(1));
-            transform.gameObject.GetComponent<PatrollingScript>().enabled = true;
-            transform.gameObject.GetComponent<ChispasHandler>().enabled = false;
-        }
+        
     }
 
     private bool CheckCharger()
@@ -63,10 +58,7 @@ public class ChispasHandler : MonoBehaviour
         return Vector3.Distance(transform.position, charger.position) <= minDistance;
     }
 
-    private bool EnergyCheck()
-    {
-        return energy > 10;
-    }
+
     private void CheckRb()
     {
         if (transform.rotation.x != 0 && transform.rotation.z != 0)

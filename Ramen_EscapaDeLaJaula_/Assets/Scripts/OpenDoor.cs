@@ -47,7 +47,7 @@ public class OpenDoor : MonoBehaviour
             yield return null;
             elapsed += Time.deltaTime;
         }
-
+        canOpen = false;
         doorIsOpenned = true;
     }
 }
