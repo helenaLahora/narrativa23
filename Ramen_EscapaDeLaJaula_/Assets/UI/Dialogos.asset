@@ -52,9 +52,9 @@ MonoBehaviour:
       - tipoNodo: 3
         esPersonaje: 0
         personaje: 
-        texto: "Para el sexto cumplea\xF1os de Leo los abuelos Carla y Carlos le
-          regalaron un amigable h\xE1mster.\nEl ni\xF1o decidi\xF3 nombrar al h\xE1mster
-          como su comida favorita: Ramen. "
+        texto: "Para su sexto cumplea\xF1os los abuelos Carla y Carlos le regalaron
+          a Leo un amigable h\xE1mster.\nEl peque\xF1o ni\xF1o decidi\xF3 nombrar
+          al h\xE1mster como su comida favorita: Ramen. "
         botones:
         - tipoBoton: 1
           nombre: Continuar
@@ -124,9 +124,10 @@ MonoBehaviour:
       - tipoNodo: 3
         esPersonaje: 0
         personaje: 
-        texto: "\xA1Te has atrevido a salir de la jaula! Pero\u2026 \xBFAhora que
-          pasa? La casa es muy grande y Ramen no tiene muy claro como salir. Ay\xFAdalo
-          a investigar las habitaciones en busca de un sitio donde huir."
+        texto: "\xA1Te has atrevido a salir de la jaula! Pero\u2026 \xBFAhora que?
+          La casa es muy grande y Ramen no tiene muy claro como escapar. Ayuda a
+          Ramen a investigar las habitaciones en busca de un sitio donde huir. Interact\xFAa
+          con los habitantes de la casa y \xA1recuerda que no te pillen!"
         botones:
         - tipoBoton: 0
           nombre: Salir
