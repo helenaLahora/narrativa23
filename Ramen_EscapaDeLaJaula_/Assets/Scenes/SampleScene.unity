@@ -20314,7 +20314,7 @@ SphereCollider:
   m_GameObject: {fileID: 777728836}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.003
   m_Center: {x: 2.1919602e-12, y: 0.00121128, z: -0.000073549985}
@@ -23634,7 +23634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
-  nombreEvento: Evento_VacacionesPearl
+  nombreEvento: Evento_MarcosPearl
 --- !u!1 &1079498282
 GameObject:
   m_ObjectHideFlags: 0
@@ -38492,7 +38492,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5187f1b84ca222e47b08bc928234766b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4
+      value: -0.25
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5187f1b84ca222e47b08bc928234766b, type: 3}
       propertyPath: m_LocalPosition.z

@@ -1268,9 +1268,9 @@ MonoBehaviour:
       - tipoNodo: 2
         esPersonaje: 1
         personaje: Protectora Lila
-        texto: "Actualmente estamos en la b\xFAsqueda de un juez, ya que Rosie ha
-          declinado el papel. Ella ha manifestado su confianza en que decidas quedarte
-          en casa."
+        texto: "Actualmente estamos en la b\xFAsqueda de un votante, ya que Rosie
+          ha declinado el papel. Ella ha manifestado su confianza en que decidas
+          quedarte en casa."
         botones:
         - tipoBoton: 1
           nombre: Continuar
@@ -1780,8 +1780,8 @@ MonoBehaviour:
       - tipoNodo: 0
         esPersonaje: 1
         personaje: "Oso Ar\xE1ndano"
-        texto: "De hecho, estamos en la b\xFAsqueda de un juez id\xF3neo, dado que
-          la perspicaz Rosie ha rechazado nuestra oferta, arguyendo su confianza
+        texto: "De hecho, estamos en la b\xFAsqueda de un votante id\xF3neo, dado
+          que la perspicaz Rosie ha rechazado nuestra oferta, arguyendo su confianza
           en tu permanencia en nuestra residencia. Sin embargo, en vista de tu inminente
           partida, querido amigo..."
         botones:
@@ -3311,7 +3311,8 @@ MonoBehaviour:
       - tipoNodo: 2
         esPersonaje: 1
         personaje: Marga La Patonisa
-        texto: Pero es mi hermano Ramen, no quiero dejarlo solo.
+        texto: "Por favor, ay\xFAdame a encontrar a mis hijos y te aseguro que tendr\xE1s
+          una lectura de tarot inolvidable."
         botones:
         - tipoBoton: 0
           nombre: "\xA1Yo salvar\xE9 a tus hijos Marga!"
@@ -3570,8 +3571,8 @@ MonoBehaviour:
         esPersonaje: 0
         personaje: 
         texto: "Si en alg\xFAn momento no sabes como afrontar alg\xFAn obst\xE1culo
-          recuerda que tienes disponible a tu amiga Rosie por un peque\xF1o precio.
-          Est\xE1 en el escritorio.\n\xA1Bon voyage!"
+          recuerda que tienes disponible a tu amiga la cerdita Rosie por un peque\xF1o
+          precio. Est\xE1 en el escritorio.\n\xA1Bon voyage!"
         botones:
         - tipoBoton: 0
           nombre: Salir
