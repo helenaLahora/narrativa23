@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,11 +11,16 @@ public class ScriptEnabler : MonoBehaviour
     private bool startLoosing = false;
     private void Start()
     {
-        energy = 15f;
+        energy = 100f;
         patrollingScript = GetComponent<PatrollingScript>();    
         chispasHandler = GetComponent<ChispasHandler>();    
     }
     void Update()
+    {
+        EnableScripts();
+    }
+
+    private void EnableScripts()
     {
         if (EnergyCheck())
         {
@@ -22,18 +28,20 @@ public class ScriptEnabler : MonoBehaviour
             patrollingScript.enabled = true;
             if (!startLoosing)
             {
-               StartCoroutine( chispasHandler.EnergyEditor(-1));
+                StartCoroutine(chispasHandler.EnergyEditor(-1));
                 startLoosing = true;
             }
         }
-        else if(!EnergyCheck() && energy<=100)
+        else if (!EnergyCheck() && energy <= 100)
         {
-            
+
             patrollingScript.enabled = false;
             chispasHandler.enabled = true;
             startLoosing = false;
         }
+        
     }
+
     private bool EnergyCheck()
     {
         return energy >= 10;

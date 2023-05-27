@@ -19,6 +19,7 @@ public class patrolingNPC : MonoBehaviour
     private void Start()
     {
         ogRotation = transform.rotation;
+        
     }
     // Update is called once per frame
     void Update()

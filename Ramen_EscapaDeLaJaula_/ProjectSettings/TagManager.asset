@@ -8,6 +8,7 @@ TagManager:
   - NPC
   - Cine
   - Ramen
+  - Chispa
   layers:
   - Default
   - TransparentFX
