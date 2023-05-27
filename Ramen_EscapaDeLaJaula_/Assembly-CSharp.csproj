@@ -75,6 +75,8 @@
      <Compile Include="Assets\Scripts\MandoScript.cs" />
      <Compile Include="Assets\Scripts\Cuina\CuchilloSubeBaja.cs" />
      <Compile Include="Assets\Scripts\WonderBehaviour.cs" />
+     <Compile Include="Assets\Scripts\ReturningScript.cs" />
+     <Compile Include="Assets\Scripts\ScriptHandler.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\UI\salir.uxml" />
