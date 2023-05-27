@@ -126,8 +126,9 @@ MonoBehaviour:
         personaje: 
         texto: "\xA1Te has atrevido a salir de la jaula! Pero\u2026 \xBFAhora que?
           La casa es muy grande y Ramen no tiene muy claro como escapar. Ayuda a
-          Ramen a investigar las habitaciones en busca de un sitio donde huir. Interact\xFAa
-          con los habitantes de la casa y recuerda \xA1que no te pillen!"
+          Ramen a investigar las habitaciones en busca de un sitio donde huir.\nInteract\xFAa
+          con los habitantes de la casa y vigila atentamente el tiempo, Leo regresar\xE1
+          en cualquier momento. Y recuerda \xA1que no te pillen!"
         botones:
         - tipoBoton: 0
           nombre: Salir
@@ -827,7 +828,8 @@ MonoBehaviour:
         personaje: Llamacornio Julio
         texto: "\xBFPodr\xEDas votar t\xFA a que juguete prefieres como tu sucesor?
           Solo tendr\xEDas que escucharnos a los tres un ratito y despu\xE9s votar
-          al mejor de nosotros tres. Si lo haces te daremos 20 monedas amigo."
+          al mejor. Si lo haces te daremos 20 monedas amigo, he o\xEDdo que las motas
+          te chantajean para poder salir."
         botones:
         - tipoBoton: 3
           nombre: "\xA1De acuerdo! Dime porqu\xE9 debo elegirte a ti"
@@ -2682,7 +2684,7 @@ MonoBehaviour:
       nodos:
       - tipoNodo: 1
         esPersonaje: 1
-        personaje: Las Ratas De La Nevera
+        personaje: Remy y Emile
         texto: "Los cocineros no invitados de la casa. Remy se lo pasa genial probando
           multitud de recetas y Emile disfruta prob\xE1ndolas. Los chefs originales
           de la casa, Carlos y Carla, est\xE1n cansados de ver sus ingredientes desaparecer."
@@ -3335,13 +3337,13 @@ MonoBehaviour:
           - variable: 15
             valor: 1
           condiciones: []
-  - identifier: Evento_NoElegibles
+  - identifier: Evento_Teresa
     dialogos:
     - identifier: 1
       nodos:
       - tipoNodo: 0
-        esPersonaje: 0
-        personaje: 
+        esPersonaje: 1
+        personaje: Teresa La Triceratops
         texto: "Las elecciones est\xE1n a punto de acabar. \xBFHas o\xEDdo las campa\xF1as
           de Llamacornio Julio, Oso Ar\xE1ndano y Protectora Lila?"
         botones:
@@ -3475,8 +3477,190 @@ MonoBehaviour:
       nodos:
       - tipoNodo: 1
         esPersonaje: 1
-        personaje: Misty
-        texto: "Parece ser que la puerta est\xE1 cerrada, prueba otras alternativas."
+        personaje: Puerta Bloqueada
+        texto: "Parece ser que la puerta est\xE1 cerrada, no desistas y prueba otras
+          alternativas."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones:
+          - identifier: 0
+            variable: 14
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 2
+            ConditionAfterFalse: 1
+            dialogoFalse: 
+            condicionFalse: 1
+          - identifier: 1
+            variable: 10
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 1
+            condicionTrue: 2
+            dialogoTrue: 
+            ConditionAfterFalse: 0
+            dialogoFalse: 5
+            condicionFalse: 
+          - identifier: 2
+            variable: 16
+            operador: 0
+            valor: 2
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 3
+            ConditionAfterFalse: 0
+            dialogoFalse: 4
+            condicionFalse: 
+  - identifier: Evento_Poni
+    dialogos:
+    - identifier: 1
+      nodos:
+      - tipoNodo: 0
+        esPersonaje: 1
+        personaje: "Poni Togot\xF3"
+        texto: "Las elecciones est\xE1n a punto de acabar. \xBFHas o\xEDdo las campa\xF1as
+          de Llamacornio Julio, Oso Ar\xE1ndano y Protectora Lila?"
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones:
+          - identifier: 0
+            variable: 14
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 2
+            ConditionAfterFalse: 1
+            dialogoFalse: 
+            condicionFalse: 1
+          - identifier: 1
+            variable: 10
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 1
+            condicionTrue: 2
+            dialogoTrue: 
+            ConditionAfterFalse: 0
+            dialogoFalse: 5
+            condicionFalse: 
+          - identifier: 2
+            variable: 16
+            operador: 0
+            valor: 2
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 3
+            ConditionAfterFalse: 0
+            dialogoFalse: 4
+            condicionFalse: 
+  - identifier: Evento_AvisoRosie
+    dialogos:
+    - identifier: 1
+      nodos:
+      - tipoNodo: 1
+        esPersonaje: 0
+        personaje: 
+        texto: "Si en alg\xFAn momento no sabes como afrontar alg\xFAn obst\xE1culo
+          recuerda que tienes disponible a tu amiga Rosie por un peque\xF1o precio.
+          Est\xE1 en el escritorio.\n\xA1Bon voyage!"
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones:
+          - identifier: 0
+            variable: 14
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 2
+            ConditionAfterFalse: 1
+            dialogoFalse: 
+            condicionFalse: 1
+          - identifier: 1
+            variable: 10
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 1
+            condicionTrue: 2
+            dialogoTrue: 
+            ConditionAfterFalse: 0
+            dialogoFalse: 5
+            condicionFalse: 
+          - identifier: 2
+            variable: 16
+            operador: 0
+            valor: 2
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 3
+            ConditionAfterFalse: 0
+            dialogoFalse: 4
+            condicionFalse: 
+  - identifier: Evento_VacacionesPearl
+    dialogos:
+    - identifier: 1
+      nodos:
+      - tipoNodo: 1
+        esPersonaje: 0
+        personaje: 
+        texto: "La familia Pearl es una gran aventurera. Estas fotograf\xEDas son
+          de su m\xE1s reciente viaje a Positanio, Italia."
+        botones:
+        - tipoBoton: 0
+          nombre: Salir
+          siguienteDialogo: 
+          accion: []
+          condiciones:
+          - identifier: 0
+            variable: 14
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 2
+            ConditionAfterFalse: 1
+            dialogoFalse: 
+            condicionFalse: 1
+          - identifier: 1
+            variable: 10
+            operador: 0
+            valor: 1
+            ConditionAfterTrue: 1
+            condicionTrue: 2
+            dialogoTrue: 
+            ConditionAfterFalse: 0
+            dialogoFalse: 5
+            condicionFalse: 
+          - identifier: 2
+            variable: 16
+            operador: 0
+            valor: 2
+            ConditionAfterTrue: 0
+            condicionTrue: 
+            dialogoTrue: 3
+            ConditionAfterFalse: 0
+            dialogoFalse: 4
+            condicionFalse: 
+  - identifier: Evento_MarcosPearl
+    dialogos:
+    - identifier: 1
+      nodos:
+      - tipoNodo: 1
+        esPersonaje: 0
+        personaje: 
+        texto: "El pap\xE1 de Leo, Marcos, siempre est\xE1 de viaje porque es piloto.
+          Aunque siempre procura enviarle a Leo una postal all\xED donde est\xE9."
         botones:
         - tipoBoton: 0
           nombre: Salir
