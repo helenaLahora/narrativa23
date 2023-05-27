@@ -1281,8 +1281,8 @@ MonoBehaviour:
         esPersonaje: 1
         personaje: Protectora Lila
         texto: "\xBFEstar\xEDas dispuesto a escuchar las propuestas de los tres candidatos
-          a sucesor y emitir tu voto? Al tomar el rol de juez en esta situaci\xF3n,
-          ser\xE1s compensado con 20 monedas."
+          a sucesor y emitir tu voto? Al tomar el rol de votante \xFAnico en esta
+          situaci\xF3n, ser\xE1s compensado con 20 monedas."
         botones:
         - tipoBoton: 1
           nombre: "\xA1De acuerdo! Dime porqu\xE9 debo elegirte a ti"
@@ -2183,7 +2183,8 @@ MonoBehaviour:
         personaje: Flicker
         texto: "Mira, necesitamos unas 30 monedas. No te tenemos que dar explicaciones
           de por qu\xE9, solo que las consigas. En el caso de que no las traigas
-          no te dejaremos pasar."
+          no te dejaremos pasar. Puedes pedir ayuda a los in\xFAtiles de los juguetes
+          si quieres."
         botones:
         - tipoBoton: 0
           nombre: Salir
