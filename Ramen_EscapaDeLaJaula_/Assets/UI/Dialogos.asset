@@ -2652,7 +2652,7 @@ MonoBehaviour:
           siendo parte de su hogar. De esta manera, puede seguir disfrutando de la
           compa\xF1\xEDa de sus amigos y de la seguridad que le brinda su familia."
         botones:
-        - tipoBoton: 5
+        - tipoBoton: 0
           nombre: Terminar partida
           siguienteDialogo: 
           accion: []
