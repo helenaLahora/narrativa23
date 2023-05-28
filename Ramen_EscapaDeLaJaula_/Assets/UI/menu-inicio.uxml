@@ -1,6 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/stylesheet.uss?fileID=7433441132597879392&amp;guid=d7734b8b2630cc34b9b336b2b0e2a4f4&amp;type=3#stylesheet" />
-    <ui:VisualElement name="fondo" class="fondo" />
+    <ui:VisualElement name="fondo" class="fondo" style="background-color: rgb(218, 235, 242);" />
     <ui:VisualElement name="contenedorPrincipal" style="flex-grow: 0; flex-basis: 70%; flex-shrink: 0; width: 930px; height: 800px; align-items: center; justify-content: space-between; left: 25%; right: 0; top: 15%; padding-left: 100px; padding-right: 100px; padding-top: 80px; padding-bottom: 80px;">
         <ui:VisualElement name="logo" style="background-color: rgba(255, 255, 255, 0); width: 600px; height: 300px; background-image: url(&apos;project://database/Assets/Graphics/logotipo.png?fileID=2800000&amp;guid=12cf5275d752fe24495a599fc2722952&amp;type=3#logotipo&apos;); flex-basis: auto;" />
         <ui:VisualElement name="botones" style="flex-grow: 0; flex-basis: auto; -unity-background-image-tint-color: rgb(255, 255, 255); width: 730px; height: 190px; background-color: rgba(255, 255, 255, 0); align-items: center; justify-content: space-around; flex-direction: column; margin-top: 0;">
