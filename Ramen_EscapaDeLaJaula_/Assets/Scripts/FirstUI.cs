@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.Video;
 
 public class FirstUI : MonoBehaviour
 {
@@ -9,15 +10,19 @@ public class FirstUI : MonoBehaviour
     private GameObject uiInstance;
     private UIHANDLE uiHandle;
     public GameObject player;
-
+    private bool hasStarted = false;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        if (!hasStarted)
+        {
             uiInstance = Instantiate(uiPrefab);
             uiHandle = uiInstance.GetComponent<UIHANDLE>();
             uiHandle.StartEvent("Evento_Empezar", player);
+            hasStarted = true;
+        }
+
         
 
     }
@@ -36,5 +41,6 @@ public class FirstUI : MonoBehaviour
 
        
     }
+   
 
 }

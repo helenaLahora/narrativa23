@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4515434479105990406}
   m_Layer: 5
   m_Name: UIDocument_Dialogos
-  m_TagString: Untagged
+  m_TagString: UI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_PanelSettings: {fileID: 11400000, guid: 3d2579663d704274995c28db26d959ac, type: 2}
   m_ParentUI: {fileID: 0}
   sourceAsset: {fileID: 9197481963319205126, guid: f87db0427aa9a2f47bb96579936d3a14, type: 3}
-  m_SortingOrder: 0
+  m_SortingOrder: 1
 --- !u!114 &4515434479105990406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,3 +72,7 @@ MonoBehaviour:
   - {fileID: 9197481963319205126, guid: ff301902aecfa584f9e3e889fc01dce7, type: 3}
   - {fileID: 9197481963319205126, guid: 9de3e62218847ff40b8512ef9730df00, type: 3}
   expModo: {fileID: 0}
+  videoPrefab: {fileID: 7183785147228446689, guid: b033fdce4a1e27d4b91dcc9ce137413b, type: 3}
+  videoHappy: {fileID: 32900000, guid: 9b98d695774d4354b96f67fc4227678d, type: 3}
+  videoSady: {fileID: 32900000, guid: 0a3216c725e648e4dbe82e65e20d75e1, type: 3}
+  videoStart: {fileID: 32900000, guid: 48033d12ab8894f4398990016fda7bc6, type: 3}

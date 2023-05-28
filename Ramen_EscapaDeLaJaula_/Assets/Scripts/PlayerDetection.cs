@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.Video;
 
 public class PlayerDetection : MonoBehaviour
 {
@@ -14,8 +15,11 @@ public class PlayerDetection : MonoBehaviour
     public string nombreEvento;
     private SpawnParticles spawner;
     private GameObject chispa;
-    private bool sciptEnabled = false;
-    private bool sciptEnabled1 = false;
+    private float ogSpeed = 0;
+
+    
+    private PatrollingScript patrollingScript;
+
     void Start()
     {
         if ( transform.gameObject.name == "Marga")
@@ -24,6 +28,8 @@ public class PlayerDetection : MonoBehaviour
 
         }
         chispa = GameObject.FindGameObjectWithTag("Chispa");
+
+
     }
 
     // Update is called once per frame
@@ -43,8 +49,7 @@ public class PlayerDetection : MonoBehaviour
         {
             playerdetected = true;
             player = other.gameObject;
-            sciptEnabled = chispa.GetComponent<ChispasHandler>().enabled ;
-            sciptEnabled1 =  chispa.GetComponent<PatrollingScript>().enabled ;
+          
         }
 
     }
@@ -54,9 +59,7 @@ public class PlayerDetection : MonoBehaviour
 
         playerdetected = false;
         talk = false;
-        chispa.GetComponent<ChispasHandler>().enabled = sciptEnabled;
-        chispa.GetComponent<PatrollingScript>().enabled = sciptEnabled1;
-        chispa.GetComponent<ScriptEnabler>().enabled = true;
+        chispa.GetComponent<PatrollingScript>().speed = ogSpeed;
 
     }
 
@@ -70,16 +73,16 @@ public class PlayerDetection : MonoBehaviour
                 uiInstance = Instantiate(uiPrefab);
                 uiHandle = uiInstance.GetComponent<UIHANDLE>();
                 uiHandle.StartEvent(nombreEvento, player);
-                chispa.GetComponent<ChispasHandler>().enabled = false;
-                chispa.GetComponent<PatrollingScript>().enabled = false;
-                chispa.GetComponent<ScriptEnabler>().enabled = false;
+                ogSpeed = chispa.GetComponent<PatrollingScript>().speed;
+                chispa.GetComponent<PatrollingScript>().speed = 0;
             }
             if (spawner != null)
             {
                 
                 spawner.SpawnPS();
             }
-            
+          
+
         }
     }
 }

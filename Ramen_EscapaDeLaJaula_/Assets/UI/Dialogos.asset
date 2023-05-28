@@ -25,7 +25,9 @@ MonoBehaviour:
         - tipoBoton: 3
           nombre: Jugar
           siguienteDialogo: 2
-          accion: []
+          accion:
+          - variable: 26
+            valor: 1
           condiciones: []
         - tipoBoton: 1
           nombre: Creditos
@@ -2528,7 +2530,9 @@ MonoBehaviour:
         - tipoBoton: 3
           nombre: "Intentar salir por el v\xE1ter"
           siguienteDialogo: 
-          accion: []
+          accion:
+          - variable: 19
+            valor: 1
           condiciones: []
         - tipoBoton: 0
           nombre: Abandonar intento
@@ -2627,12 +2631,16 @@ MonoBehaviour:
         - tipoBoton: 3
           nombre: Quedarse en casa
           siguienteDialogo: 2
-          accion: []
+          accion:
+          - variable: 18
+            valor: 1
           condiciones: []
         - tipoBoton: 3
           nombre: Abandonar casa
           siguienteDialogo: 3
-          accion: []
+          accion:
+          - variable: 19
+            valor: 1
           condiciones: []
     - identifier: 2
       nodos:

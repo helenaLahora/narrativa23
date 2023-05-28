@@ -9,6 +9,7 @@ TagManager:
   - Cine
   - Ramen
   - Chispa
+  - Salida
   layers:
   - Default
   - TransparentFX

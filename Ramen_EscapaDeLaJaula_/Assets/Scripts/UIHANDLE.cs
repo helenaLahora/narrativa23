@@ -3,7 +3,10 @@ using System.Collections;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UIElements; 
+using UnityEngine.UIElements;
+using UnityEngine.Video;
+using Random = UnityEngine.Random;
+
 public class UIHANDLE : MonoBehaviour
 {
     private UIDocument UI;
@@ -15,14 +18,21 @@ public class UIHANDLE : MonoBehaviour
     public VisualTreeAsset[] visualTreeAssets;
     private Nodo currentNodo;
     private GameObject player;
-    public GameObject expModo;
+    [HideInInspector]public GameObject expModo;
     private GameObject cinemachine;
+    [SerializeField]private GameObject videoPrefab;
+    [SerializeField] private VideoClip videoHappy;
+    [SerializeField] private VideoClip videoSady;
+    [SerializeField] private VideoClip videoStart;
+    private GameObject eventHandlerObject;
     // Start is called before the first frame update
     private void Awake()
     {
         UI = GetComponent<UIDocument>();
         expModo = GameObject.Find("ExpModo");
         cinemachine = GameObject.FindGameObjectWithTag("Cine");
+        eventHandlerObject = GameObject.FindGameObjectWithTag("Salida");
+
     }
     void Start()
     {
@@ -37,19 +47,21 @@ public class UIHANDLE : MonoBehaviour
 
     public void StartEvent(string identifier, GameObject playerGameObject)
     {
-        cinemachine.SetActive(false);
+        
         expModo.GetComponent<UIDocument>().rootVisualElement.style.display = DisplayStyle.None;
         player = playerGameObject;
         currentEvent = Array.Find(eventManager.eventos, e => e.identifier == identifier);
         currentDialogue = currentEvent.dialogos[0];
         currentNodo = currentDialogue.nodos[0];
+        cinemachine.SetActive(false);
+
         TypeLine();
-                
+
     }
     void TypeLine()
     {
-       
-        int index=0;
+
+        int index =0;
         player.GetComponent<PlayerInput>().DeactivateInput();
         
         
@@ -125,7 +137,30 @@ public class UIHANDLE : MonoBehaviour
                         }
                         break;
                     case TipoBoton.Eleccion:
-                        button.clickable.clicked += () => AsignarDialogo(boton.siguienteDialogo);                   
+                        string identifier = string.Empty;
+                        if (currentEvent.identifier == "Evento_SalidaBanyo")
+                        {
+                            float probablity = Random.Range(0f, 3f);
+                            Debug.Log(probablity);
+                            if (probablity >= 2)
+                            {
+                                probablity = 3;
+                                identifier = probablity.ToString();
+                            }
+                            else
+                            {
+                                probablity = 2;
+                                identifier = probablity.ToString();
+                            }
+                            Debug.Log(identifier);
+
+                        }
+                        else
+                        {
+                            identifier = boton.siguienteDialogo;
+                            
+                        }
+                        button.clickable.clicked += () => AsignarDialogo(identifier);
                         break;
                     case TipoBoton.Continuar:
                         index = Array.IndexOf(currentDialogue.nodos, currentNodo) + 1;
@@ -137,10 +172,11 @@ public class UIHANDLE : MonoBehaviour
                         break;
                     case TipoBoton.Volver:
                         index = Array.IndexOf(currentDialogue.nodos, currentNodo) -1 ;
-                        if (index > 0)
+                        if (index >= 0)
                         {
 
                             button.clickable.clicked += () => AsignarNodo(index);
+                            
                         }
                         break;
 
@@ -299,9 +335,24 @@ public class UIHANDLE : MonoBehaviour
     public void AsignarDialogo(string identifier)
     {
         //StopCoroutine(rutina);
-        currentDialogue = Array.Find(currentEvent.dialogos, e => e.identifier == identifier);
-        currentNodo = currentDialogue.nodos[0];
-        TypeLine();
+        if(identifier!= null && EventHandler.Variables[Variable.empezar] >0)
+        {
+            currentDialogue = Array.Find(currentEvent.dialogos, e => e.identifier == identifier);
+            currentNodo = currentDialogue.nodos[0];
+            TypeLine();
+        
+       
+        }
+        else if(EventHandler.Variables[Variable.empezar] <= 0)
+        {
+            eventHandlerObject.GetComponent<EventHandler>().Salida(videoPrefab, videoStart, gameObject);
+            cinemachine.SetActive(true);
+            currentDialogue = Array.Find(currentEvent.dialogos, e => e.identifier == identifier);
+            currentNodo = currentDialogue.nodos[0];
+            TypeLine();
+        }
+     
+
     }
     public void AsignarNodo(int index)
     {
@@ -312,8 +363,24 @@ public class UIHANDLE : MonoBehaviour
     public void CerrarDialogo()
     {
         cinemachine.SetActive(true);
+        if (EventHandler.Variables[Variable.final_happy] > 0)
+        {
+            eventHandlerObject.GetComponent<EventHandler>().Salida(videoPrefab, videoHappy, gameObject);
+        }
+        else if (EventHandler.Variables[Variable.final_sad] > 0)
+        {      
+                
+            eventHandlerObject.GetComponent<EventHandler>().Salida(videoPrefab, videoSady,gameObject);
+        }
+        else if (EventHandler.Variables[Variable.final_happy] <= 0 && EventHandler.Variables[Variable.final_sad] <= 0)
+        {
+
+            player.GetComponent<PlayerInput>().ActivateInput();
+            expModo.GetComponent<UIDocument>().rootVisualElement.style.display = DisplayStyle.Flex;
+        }
+        
         Destroy(gameObject);
-        player.GetComponent<PlayerInput>().ActivateInput();
-        expModo.GetComponent<UIDocument>().rootVisualElement.style.display = DisplayStyle.Flex;
+
+
     }
 }   

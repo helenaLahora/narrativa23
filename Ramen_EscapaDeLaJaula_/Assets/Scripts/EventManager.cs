@@ -128,7 +128,8 @@ public enum Variable
     //Juego
     temporizador,
     salchicha,
-    hueso
+    hueso,
+    empezar
 
 }
 public enum Operador
