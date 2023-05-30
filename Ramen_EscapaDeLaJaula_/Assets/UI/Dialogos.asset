@@ -2824,6 +2824,10 @@ MonoBehaviour:
           accion:
           - variable: 20
             valor: 1
+          - variable: 22
+            valor: -1
+          - variable: 24
+            valor: 1
           condiciones: []
     - identifier: 4
       nodos:
@@ -3804,7 +3808,7 @@ MonoBehaviour:
       - tipoNodo: 1
         esPersonaje: 0
         personaje: 
-        texto: "Parece ser que la ventana est\xE1 cerrada"
+        texto: "Parece ser que la ventana est\xE1 cerrada."
         botones:
         - tipoBoton: 0
           nombre: Salir
