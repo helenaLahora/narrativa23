@@ -97,6 +97,7 @@
     <Compile Include="Assets\Scripts\Cuina\CuchilloSubeBaja.cs" />
     <Compile Include="Assets\Scripts\WonderBehaviour.cs" />
     <Compile Include="Assets\Scripts\ReturningScript.cs" />
+    <Compile Include="Assets\Scripts\ObjectHidder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
