@@ -2816,10 +2816,11 @@ MonoBehaviour:
         esPersonaje: 1
         personaje: Emile
         texto: "Mi hermano cocina rico y siempre me alimenta bien, aunque me como
-          todo sin importar el sabor. \xA1Es un genio en la cocina! Gracias hermano."
+          todo sin importar el sabor. \xA1Es un genio en la cocina! \xA1Aqu\xED tienes
+          la salchicha Ramen!"
         botones:
         - tipoBoton: 0
-          nombre: Salir
+          nombre: Conseguir Salchicha
           siguienteDialogo: 
           accion:
           - variable: 20
