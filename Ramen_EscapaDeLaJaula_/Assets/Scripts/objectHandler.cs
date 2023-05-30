@@ -18,9 +18,7 @@ public class objectHandler : MonoBehaviour
     public float tiempoMuerte = 30;
     private float segundos = 60;
     [SerializeField] private GameObject player;
-    [SerializeField] private EventHandler script;
-    [SerializeField] private GameObject videoPrefab;
-    [SerializeField] private VideoClip videoTiempo;
+
     // Start is called before the first frame update
     void Start()
     {
