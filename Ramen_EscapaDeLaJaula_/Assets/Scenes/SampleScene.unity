@@ -22888,6 +22888,64 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6062946782184156695, guid: 7027d9135abbcc641a5a9765f975cedb, type: 3}
+--- !u!135 &993215003
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993214999}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.0007334
+  m_Center: {x: -0.0000000018626451, y: 0.00009002931, z: -9.313226e-10}
+--- !u!114 &993215004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993214999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3c247105ed6dd5479b900f7af3c8b08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerDetectedObject: 0
+  SphereCollider: {fileID: 993215003}
+  variable: 0
+--- !u!114 &993215005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993214999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 1f3088b346827b041a3953f135f7689f, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: e12be32d-a8e8-4f87-b5be-0ffde94fd62d
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &994006257
 GameObject:
   m_ObjectHideFlags: 0
@@ -38835,7 +38893,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 13.162682, y: 17.867931, z: 28.145124}
-  m_Center: {x: 0.7711868, y: -5.3873606, z: -8.062215}
+  m_Center: {x: -14.97, y: -5.3873606, z: -8.062215}
 --- !u!114 &1694359713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42733,7 +42791,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893674880}
-  m_LocalRotation: {x: -0.008189776, y: 0.9801452, z: -0.041434716, w: -0.19373055}
+  m_LocalRotation: {x: -0.008189776, y: 0.9801452, z: -0.041434716, w: -0.19373053}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -43026,8 +43084,9 @@ MonoBehaviour:
   pelota:
   - {fileID: 2800000, guid: c4e0ff16798a8264cbf12e8ac3879766, type: 3}
   - {fileID: 2800000, guid: b60271d6588ea04478201813aed210fd, type: 3}
-  tiempoMuerte: 30
+  tiempoMuerte: 1
   player: {fileID: 1240095941}
+  script: {fileID: 0}
 --- !u!1 &1916345245
 GameObject:
   m_ObjectHideFlags: 3

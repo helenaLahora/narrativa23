@@ -13,6 +13,7 @@ public class objectHandler : MonoBehaviour
     public float tiempoMuerte = 30;
     private float segundos = 60;
     [SerializeField] private GameObject player;
+    [SerializeField] private EventHandler script;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,11 +30,22 @@ public class objectHandler : MonoBehaviour
             yield return new WaitForSeconds(1);
             if(!player.GetComponent<PlayerMovement>().menu) 
             {
-                segundos--;
-                if (segundos <= 0)
+                
+                if (segundos == 0 && tiempoMuerte>0)
                 {
-                    segundos = 60;
+                    segundos = 60;                    
                     tiempoMuerte--;
+                    
+                    
+                }
+                else if (tiempoMuerte == 0 && segundos == 0)
+                {
+                   script.ReStartUI();
+                }
+                else if (segundos > 0)
+                {
+
+                    segundos--;
                 }
             }
 

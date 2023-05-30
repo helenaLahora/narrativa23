@@ -103,11 +103,16 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnEscapeMenu(InputAction.CallbackContext context)
     {
-        menu = !menu;
-        if (menu)
+        if (context.started)
         {
-            firstUI.Menu();
+            menu = !menu;
+            if (menu)
+            {
+                firstUI.Menu();
+                menu = false;
+            }
         }
+
     }
 
     // Método para aumentar la velocidad de movimiento

@@ -93,7 +93,7 @@ public class EventHandler : MonoBehaviour
                 Variables[variable] = 0;           
         }
     }
-    private void ReStartUI()
+    public void ReStartUI()
     {
         ResetGame();
 
