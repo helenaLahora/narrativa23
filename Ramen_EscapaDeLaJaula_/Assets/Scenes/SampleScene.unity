@@ -5692,7 +5692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
-  nombreEvento: Evento_PuertaVentana
+  nombreEvento: Evento_Ventana
 --- !u!1001 &228782033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28070,7 +28070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
-  nombreEvento: Evento_PuertaVentana
+  nombreEvento: Evento_Ventana
 --- !u!1001 &1244796404
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28562,7 +28562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
-  nombreEvento: Evento_PuertaVentana
+  nombreEvento: Evento_Ventana
 --- !u!1001 &1252710760
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37874,7 +37874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
-  nombreEvento: Evento_PuertaVentana
+  nombreEvento: Evento_Ventana
 --- !u!1001 &1662932518
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45497,7 +45497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
-  nombreEvento: Evento_PuertaVentana
+  nombreEvento: Evento_Ventana
 --- !u!1 &2082273558
 GameObject:
   m_ObjectHideFlags: 0
