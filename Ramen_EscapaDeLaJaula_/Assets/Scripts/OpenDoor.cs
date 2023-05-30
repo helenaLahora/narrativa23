@@ -6,35 +6,28 @@ using UnityEngine;
 public class OpenDoor : MonoBehaviour
 {
     [SerializeField] private Transform pivot;
-    private bool canOpen = true;
+    [HideInInspector] public bool canOpen = true;
     [HideInInspector] public bool noraMove;
-    private bool doorIsOpenned;
     public float angle;
     [SerializeField] private float tiempo;
-
-    void Start()
-    {
-
-    }
-
+    [SerializeField] private NoraMovement nm;
+    [HideInInspector] public bool opennedOnce;
 
     void Update()
     {
-        if (canOpen)
+        if (canOpen && nm.patrol && !opennedOnce)
         {
+            opennedOnce = true;
             StartCoroutine(MoveNora());
-
         }
-
-        
     }
 
     private IEnumerator MoveNora()
     {
         noraMove = true;
         canOpen = false;
-        yield return new WaitForSeconds(2);
         StartCoroutine(DoorOpen(tiempo));
+        yield return new WaitForSeconds(1);
     }
 
     private IEnumerator DoorOpen(float time)
@@ -48,6 +41,5 @@ public class OpenDoor : MonoBehaviour
             elapsed += Time.deltaTime;
         }
         canOpen = false;
-        doorIsOpenned = true;
     }
 }

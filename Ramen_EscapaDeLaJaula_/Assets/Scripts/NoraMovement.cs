@@ -13,30 +13,44 @@ public class NoraMovement : MonoBehaviour
     private Quaternion ogRotation;
     private Vector3 currentTargetPosition => wayPoints[currentWayPoint].position;
     private bool aux = false;
+    [HideInInspector] public float cont = 0;
+
+    [HideInInspector] public float actualTime = 0;
+    public float time;
+    [HideInInspector] public bool patrol;
 
     void Start()
     {
         ogRotation = transform.rotation;
     }
 
-    void Update()
-    {
-        if (od.noraMove)
-        {
-            if (ReachedWayPoint())
-            {
-                ChangeWayPoint();
-            }
+	private void FixedUpdate()
+	{
+        actualTime += Time.fixedDeltaTime;
+        if (actualTime >= time)
+		{
+            patrol = true;
+		}
 
-            if (!aux)
+        if (patrol)
+        {
+            if (od.noraMove)
             {
-                CheckRb();
-                Move();
+                if (ReachedWayPoint())
+                {
+                    ChangeWayPoint();
+                }
+
+                if (!aux)
+                {
+                    CheckRb();
+                    Move();
+                }
             }
         }
     }
 
-    private IEnumerator Wait()
+	private IEnumerator Wait()
     {
         aux = true;
         yield return new WaitForSeconds(2);
@@ -64,6 +78,7 @@ public class NoraMovement : MonoBehaviour
     {
         currentWayPoint++;
         currentWayPoint = currentWayPoint % wayPoints.Length;
+        cont++;
     }
     private void Move()
     {
