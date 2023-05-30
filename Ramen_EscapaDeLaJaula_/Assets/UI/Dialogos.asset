@@ -3581,7 +3581,7 @@ MonoBehaviour:
           precio. Est\xE1 en el escritorio.\n\xA1Bon voyage!"
         botones:
         - tipoBoton: 0
-          nombre: Salir
+          nombre: Entendido!
           siguienteDialogo: 
           accion: []
           condiciones:
@@ -3849,7 +3849,7 @@ MonoBehaviour:
         esPersonaje: 0
         personaje: 
         texto: "Parece ser que la puerta est\xE1 bloqueada. Habla con las motas de
-          polvo."
+          polvo. Recuerda presionar E para interactuar con los objetos."
         botones:
         - tipoBoton: 0
           nombre: Salir

@@ -6,9 +6,9 @@
             <ui:Label text="Juego pausado" display-tooltip-when-elided="false" name="dialogo" enable-rich-text="true" style="-unity-font: url(&apos;project://database/Assets/Graphics/motley_forces/MotleyForcesRegular.ttf?fileID=12800000&amp;guid=3ba146d1cf95be74eb5166cc52477acf&amp;type=3#MotleyForcesRegular&apos;); color: rgb(255, 153, 0); font-size: 40px; -unity-font-definition: none; height: 100%; width: 90%; white-space: normal; align-items: center; -unity-text-align: middle-center;" />
         </ui:VisualElement>
         <ui:VisualElement name="botones" style="flex-direction: column; margin-top: 30px;">
+            <ui:Button text="Volver" display-tooltip-when-elided="true" name="volver" class="boton-secundario-pequeno" style="display: none;" />
             <ui:Button text="Créditos" display-tooltip-when-elided="true" name="creditos" class="boton-secundario-pequeno" style="display: none;" />
             <ui:Button text="Salir" display-tooltip-when-elided="true" name="salir" class="boton-secundario-pequeno" style="display: none;" />
-            <ui:Button text="Volver" display-tooltip-when-elided="true" name="volver" class="boton-secundario-pequeno" style="display: none;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
