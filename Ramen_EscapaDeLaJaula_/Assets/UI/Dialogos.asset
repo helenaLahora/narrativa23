@@ -2680,7 +2680,7 @@ MonoBehaviour:
         esPersonaje: 0
         personaje: 
         texto: "\xA1Vaya! Leo ha regresado del parque con Carla y Ramen no ha conseguido
-          escapar. Otro d\xEDa ser\xE1 entonces..."
+          escapar. Otro d\xEDa ser\xE1..."
         botones:
         - tipoBoton: 0
           nombre: Volver a jaula

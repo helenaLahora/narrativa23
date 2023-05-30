@@ -2,9 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.Video;
+using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 
 public class objectHandler : MonoBehaviour
 {
+    public GameObject uiPrefab;
+    private GameObject uiInstance;
+    private UIHANDLE uiHandle;
     private UIDocument UI;
     public Texture2D[] queso;
     public Texture2D[] salchicha;
@@ -14,6 +19,8 @@ public class objectHandler : MonoBehaviour
     private float segundos = 60;
     [SerializeField] private GameObject player;
     [SerializeField] private EventHandler script;
+    [SerializeField] private GameObject videoPrefab;
+    [SerializeField] private VideoClip videoTiempo;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,14 +51,14 @@ public class objectHandler : MonoBehaviour
                 }
                 else if (tiempoMuerte == 0 && segundos == 0)
                 {
-                    
-                    script.ReStartUI();
-                }
-                else if (segundos > 0)
-                {
-                    
+                    EventHandler.Variables[Variable.final_happy] = 1;
+                    uiInstance = Instantiate(uiPrefab);
+                    uiHandle = uiInstance.GetComponent<UIHANDLE>();
+                    uiHandle.StartEvent("Evento_TiempoAcabado", player);
+                   
+                }                    
                     segundos--;
-                }
+                
             }
 
         }
