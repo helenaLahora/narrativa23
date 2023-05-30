@@ -42791,7 +42791,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893674880}
-  m_LocalRotation: {x: -0.008189776, y: 0.9801452, z: -0.041434716, w: -0.19373053}
+  m_LocalRotation: {x: -0.008189777, y: 0.9801452, z: -0.041434724, w: -0.19373055}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -43084,9 +43084,9 @@ MonoBehaviour:
   pelota:
   - {fileID: 2800000, guid: c4e0ff16798a8264cbf12e8ac3879766, type: 3}
   - {fileID: 2800000, guid: b60271d6588ea04478201813aed210fd, type: 3}
-  tiempoMuerte: 1
+  tiempoMuerte: 0
   player: {fileID: 1240095941}
-  script: {fileID: 0}
+  script: {fileID: 1837662864}
 --- !u!1 &1916345245
 GameObject:
   m_ObjectHideFlags: 3

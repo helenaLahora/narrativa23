@@ -24,15 +24,19 @@ public class objectHandler : MonoBehaviour
    
     private IEnumerator RestarSecs()
     {
-        while (tiempoMuerte > 0)
+        while (tiempoMuerte >= 0)
         {
             
             yield return new WaitForSeconds(1);
-            if(!player.GetComponent<PlayerMovement>().menu) 
+            Debug.Log(segundos);
+            Debug.Log(tiempoMuerte);
+            if (!player.GetComponent<PlayerMovement>().menu) 
             {
                 
                 if (segundos == 0 && tiempoMuerte>0)
                 {
+                    
+
                     segundos = 60;                    
                     tiempoMuerte--;
                     
@@ -40,11 +44,12 @@ public class objectHandler : MonoBehaviour
                 }
                 else if (tiempoMuerte == 0 && segundos == 0)
                 {
-                   script.ReStartUI();
+                    
+                    script.ReStartUI();
                 }
                 else if (segundos > 0)
                 {
-
+                    
                     segundos--;
                 }
             }
