@@ -12,7 +12,7 @@ public class objectHandler : MonoBehaviour
     public Texture2D[] pelota;
     public float tiempoMuerte = 30;
     private float segundos = 60;
-
+    [SerializeField] private GameObject player;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,12 +27,16 @@ public class objectHandler : MonoBehaviour
         {
             
             yield return new WaitForSeconds(1);
-            segundos--;
-            if (segundos <= 0)
+            if(!player.GetComponent<PlayerMovement>().menu) 
             {
-                segundos = 60;
-                tiempoMuerte--;
+                segundos--;
+                if (segundos <= 0)
+                {
+                    segundos = 60;
+                    tiempoMuerte--;
+                }
             }
+
         }
 
 
