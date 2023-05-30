@@ -22235,7 +22235,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.032760695, y: 0.96691746, z: -0.16574655, w: -0.19111644}
+  m_LocalRotation: {x: -0.0327607, y: 0.96691746, z: -0.16574657, w: -0.19111644}
   m_LocalPosition: {x: -1.0737114, y: 6.065668, z: -1.0882759}
   m_LocalScale: {x: 5.8691506, y: 5.8691516, z: 5.8691506}
   m_ConstrainProportionsScale: 0
@@ -30432,7 +30432,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1308377711}
-  m_LocalRotation: {x: -0.038257245, y: 0.9617368, z: -0.19355531, w: -0.19009244}
+  m_LocalRotation: {x: -0.038257234, y: 0.9617368, z: -0.1935553, w: -0.19009244}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -43085,11 +43085,8 @@ MonoBehaviour:
   pelota:
   - {fileID: 2800000, guid: c4e0ff16798a8264cbf12e8ac3879766, type: 3}
   - {fileID: 2800000, guid: b60271d6588ea04478201813aed210fd, type: 3}
-  tiempoMuerte: 0
+  tiempoMuerte: 30
   player: {fileID: 1240095941}
-  script: {fileID: 1837662864}
-  videoPrefab: {fileID: 7183785147228446689, guid: b033fdce4a1e27d4b91dcc9ce137413b, type: 3}
-  videoTiempo: {fileID: 32900000, guid: 9b98d695774d4354b96f67fc4227678d, type: 3}
 --- !u!1 &1916345245
 GameObject:
   m_ObjectHideFlags: 3
@@ -46266,7 +46263,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2122960869}
-  m_LocalRotation: {x: -0.0327607, y: 0.9669175, z: -0.1657465, w: -0.19111648}
+  m_LocalRotation: {x: -0.0327607, y: 0.9669175, z: -0.16574651, w: -0.19111648}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
