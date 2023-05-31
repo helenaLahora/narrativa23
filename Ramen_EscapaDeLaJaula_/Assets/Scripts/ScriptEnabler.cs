@@ -18,14 +18,25 @@ public class ScriptEnabler : MonoBehaviour
     }
     void Update()
     {
-        EnableScripts();
+        Debug.Log(GetComponent<ChispitaFOV>().persuing);
         if (GetComponent<ChispitaFOV>().persuing)
         {
+            chispasHandler.enabled = false;
+            patrollingScript.enabled = false;
             Vector3 enemy = transform.position;
             Vector3 distance = enemy - new Vector3(player.transform.position.x, enemy.y, player.transform.position.z);
-            transform.Translate(distance - Vector3.forward);
+            transform.Translate(distance - Vector3.forward * 2);
+            patrollingScript.speed = 0;
             
         }
+        else
+        {
+            patrollingScript.speed = 5;
+        }
+        
+        
+            EnableScripts();
+        
     }
 
     private void EnableScripts()

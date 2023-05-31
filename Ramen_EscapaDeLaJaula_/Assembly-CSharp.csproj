@@ -79,7 +79,7 @@
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\objectHandler.cs" />
     <Compile Include="Assets\Scripts\Cuina\Cafetera.cs" />
-    <Compile Include="Assets\ChispitaFOV.cs" />
+    <Compile Include="Assets\Scripts\ChispitaFOV.cs" />
     <Compile Include="Assets\Scripts\NoraDoorController.cs" />
     <Compile Include="Assets\Scripts\UIHANDLE.cs" />
     <Compile Include="Assets\Scripts\FirstUI.cs" />
