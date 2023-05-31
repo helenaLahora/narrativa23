@@ -3,11 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NoraFov : MonoBehaviour
+public class PlayerInFov : MonoBehaviour
 {
 	[SerializeField] private Transform player;
-	private float FOV = 100;
-    [SerializeField] private float distance = 5.0f;
+	private float FOV = 135;
+    public float distance = 5.0f;
     public Transform castPoint;
     private bool killed = false;
     [SerializeField] private GameObject uiPrefab;
@@ -29,11 +29,7 @@ public class NoraFov : MonoBehaviour
 					{
                         if (!GameObject.FindWithTag("UI") && !killed)
                         {
-                            EventHandler.Variables[Variable.final_happy] = 1;
-                            uiInstance = Instantiate(uiPrefab);
-                            uiHandle = uiInstance.GetComponent<UIHANDLE>();
-                            uiHandle.StartEvent("Evento_NoraPillaRamen", player.gameObject);
-                            killed = true;
+                            DoAction();
                         }
                     }
 				}
@@ -41,7 +37,16 @@ public class NoraFov : MonoBehaviour
         }
     }
 
-	private bool CanSeeRamen()
+    public virtual void DoAction()
+    {
+        EventHandler.Variables[Variable.final_happy] = 1;
+        uiInstance = Instantiate(uiPrefab);
+        uiHandle = uiInstance.GetComponent<UIHANDLE>();
+        uiHandle.StartEvent("Evento_NoraPillaRamen", player.gameObject);
+        killed = true;
+    }
+
+    private bool CanSeeRamen()
 	{
         if (Physics.Raycast(castPoint.position, Vector3.forward, distance, LayerMask.NameToLayer("Ramen")))
         {

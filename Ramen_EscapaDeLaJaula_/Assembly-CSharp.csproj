@@ -62,7 +62,7 @@
     <Compile Include="Assets\Scripts\patrolingNPC.cs" />
     <Compile Include="Assets\Scripts\PatrollingScript.cs" />
     <Compile Include="Assets\Scripts\DatosJuego.cs" />
-    <Compile Include="Assets\Scripts\NoraFov.cs" />
+    <Compile Include="Assets\Scripts\PlayerInFov.cs" />
     <Compile Include="Assets\Scripts\Cuina\TriggerUniqueSpawnPoint.cs" />
     <Compile Include="Assets\Scripts\ObjectHidder.cs" />
     <Compile Include="Assets\Scripts\Cuina\Fogones.cs" />
@@ -101,6 +101,7 @@
     <Compile Include="Assets\Scripts\Cuina\CuchilloSubeBaja.cs" />
     <Compile Include="Assets\Scripts\WonderBehaviour.cs" />
     <Compile Include="Assets\Scripts\ReturningScript.cs" />
+    <Compile Include="Assets\ChispitaFOV.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

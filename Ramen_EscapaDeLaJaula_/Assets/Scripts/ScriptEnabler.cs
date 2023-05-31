@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class ScriptEnabler : MonoBehaviour
 {
+    [SerializeField] private Transform player;
     [HideInInspector]public float energy;
     private PatrollingScript patrollingScript;
     private ChispasHandler chispasHandler;
@@ -18,11 +19,18 @@ public class ScriptEnabler : MonoBehaviour
     void Update()
     {
         EnableScripts();
+        if (GetComponent<ChispitaFOV>().persuing)
+        {
+            Vector3 enemy = transform.position;
+            Vector3 distance = enemy - new Vector3(player.transform.position.x, enemy.y, player.transform.position.z);
+            transform.Translate(distance - Vector3.forward);
+            
+        }
     }
 
     private void EnableScripts()
     {
-        if (EnergyCheck())
+        if (EnergyCheck() && !GetComponent<ChispitaFOV>().persuing)
         {
             chispasHandler.enabled = false;
             patrollingScript.enabled = true;
@@ -31,8 +39,9 @@ public class ScriptEnabler : MonoBehaviour
                 StartCoroutine(chispasHandler.EnergyEditor(-1));
                 startLoosing = true;
             }
+             
         }
-        else if (!EnergyCheck() && energy <= 100)
+        else if (!EnergyCheck() && energy <= 100 && !GetComponent<ChispitaFOV>().persuing)
         {
 
             patrollingScript.enabled = false;

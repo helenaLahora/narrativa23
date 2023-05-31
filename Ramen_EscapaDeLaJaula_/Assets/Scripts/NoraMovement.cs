@@ -18,7 +18,8 @@ public class NoraMovement : MonoBehaviour
     [HideInInspector] public float actualTime = 0;
     public float time;
     [HideInInspector] public bool patrol;
-
+    private float fovDistanceIn = 0;
+    private float fovDistanceOut = 12;
     void Start()
     {
         ogRotation = transform.rotation;
@@ -38,6 +39,14 @@ public class NoraMovement : MonoBehaviour
             {
                 if (ReachedWayPoint())
                 {
+                    if (currentTargetPosition == wayPoints[wayPoints.Length - 2].position)
+                    {
+                        GetComponent<PlayerInFov>().distance = fovDistanceOut;
+                    }
+                    else
+                    {
+                        GetComponent<PlayerInFov>().distance = fovDistanceIn;
+                    }
                     ChangeWayPoint();
                 }
 
@@ -45,6 +54,7 @@ public class NoraMovement : MonoBehaviour
                 {
                     CheckRb();
                     Move();
+                   
                 }
             }
         }
