@@ -5,15 +5,16 @@ using UnityEngine;
 
 public class NoraFov : MonoBehaviour
 {
-	[SerializeField] private GameObject player;
+	[SerializeField] private Transform player;
 	private float FOV = 100;
     [SerializeField] private float distance = 5.0f;
     public Transform castPoint;
-    public Transform ramenSpawnPoint;
-
+    private bool killed = false;
+    [SerializeField] private GameObject uiPrefab;
+    private GameObject uiInstance;
+    private UIHANDLE uiHandle;  
     private void Start()
 	{
-
 	}
 
     void Update()
@@ -26,8 +27,14 @@ public class NoraFov : MonoBehaviour
 				{
                     if (CanSeeRamen())
 					{
-                        Debug.Log("aaa");
-                        player.transform.position = ramenSpawnPoint.position;
+                        if (!GameObject.FindWithTag("UI") && !killed)
+                        {
+                            EventHandler.Variables[Variable.final_happy] = 1;
+                            uiInstance = Instantiate(uiPrefab);
+                            uiHandle = uiInstance.GetComponent<UIHANDLE>();
+                            uiHandle.StartEvent("Evento_NoraPillaRamen", player.gameObject);
+                            killed = true;
+                        }
                     }
 				}
 			}

@@ -6,6 +6,7 @@ using UnityEngine.UIElements;
 public class objectHandler : MonoBehaviour
 {
     private UIDocument UI;
+    private UIHANDLE UiHandle;
     public Texture2D[] queso;
     public Texture2D[] salchicha;
     public Texture2D[] hueso;
@@ -13,7 +14,9 @@ public class objectHandler : MonoBehaviour
     public float tiempoMuerte = 30;
     private float segundos = 60;
     [SerializeField] private GameObject player;
-    [SerializeField] private EventHandler script;
+    [SerializeField] private GameObject UiPrefab;
+    private GameObject UiInstance;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +27,7 @@ public class objectHandler : MonoBehaviour
    
     private IEnumerator RestarSecs()
     {
-        while (tiempoMuerte > 0)
+        while (tiempoMuerte >= 0)
         {
             
             yield return new WaitForSeconds(1);
@@ -40,13 +43,15 @@ public class objectHandler : MonoBehaviour
                 }
                 else if (tiempoMuerte == 0 && segundos == 0)
                 {
-                   script.ReStartUI();
-                }
-                else if (segundos > 0)
-                {
+                    EventHandler.Variables[Variable.final_happy] = 1;
+                   UiInstance = Instantiate(UiPrefab);
+                   UiHandle = UiInstance.GetComponent<UIHANDLE>();
+                   UiHandle.StartEvent("Evento_TiempoAcabado",player);
+
+                }          
 
                     segundos--;
-                }
+                
             }
 
         }

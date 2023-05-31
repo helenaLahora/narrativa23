@@ -2672,21 +2672,6 @@ MonoBehaviour:
           siguienteDialogo: 
           accion: []
           condiciones: []
-  - identifier: Evento_TiempoAcabado
-    dialogos:
-    - identifier: 1
-      nodos:
-      - tipoNodo: 3
-        esPersonaje: 0
-        personaje: 
-        texto: "\xA1Vaya! Leo ha regresado del parque con Carla y Ramen no ha conseguido
-          escapar. Otro d\xEDa ser\xE1 entonces..."
-        botones:
-        - tipoBoton: 0
-          nombre: Volver a jaula
-          siguienteDialogo: 
-          accion: []
-          condiciones: []
   - identifier: Evento_Ratas
     dialogos:
     - identifier: 1
@@ -3891,3 +3876,33 @@ MonoBehaviour:
             ConditionAfterFalse: 0
             dialogoFalse: 4
             condicionFalse: 
+  - identifier: Evento_TiempoAcabado
+    dialogos:
+    - identifier: 1
+      nodos:
+      - tipoNodo: 3
+        esPersonaje: 0
+        personaje: 
+        texto: "\xA1Vaya! Leo ha regresado del parque con Carla y Ramen no ha conseguido
+          escapar. Otro d\xEDa ser\xE1 entonces..."
+        botones:
+        - tipoBoton: 0
+          nombre: Volver a jaula
+          siguienteDialogo: 
+          accion: []
+          condiciones: []
+  - identifier: Evento_NoraPillaRamen
+    dialogos:
+    - identifier: 1
+      nodos:
+      - tipoNodo: 3
+        esPersonaje: 0
+        personaje: 
+        texto: "\xA1Vaya! Nora se ha percatado de que te has escapado de la jaula
+          y te ha hecho regresar a esta. Otro d\xEDa ser\xE1..."
+        botones:
+        - tipoBoton: 0
+          nombre: Volver a jaula
+          siguienteDialogo: 
+          accion: []
+          condiciones: []

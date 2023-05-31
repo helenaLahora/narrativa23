@@ -3823,7 +3823,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e6a0afa11ab7f404c9bddb945641b453, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.19999954
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e6a0afa11ab7f404c9bddb945641b453, type: 3}
       propertyPath: m_LocalPosition.z
@@ -22355,8 +22355,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.03847701, y: 0.9608353, z: -0.17462727, w: -0.21170847}
-  m_LocalPosition: {x: -25.539661, y: -8.68, z: 17.169003}
+  m_LocalRotation: {x: -0.054174516, y: 0.9376426, z: -0.17041211, w: -0.2980794}
+  m_LocalPosition: {x: -25.943192, y: -8.68, z: 16.65593}
   m_LocalScale: {x: 5.8691506, y: 5.8691516, z: 5.8691506}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26435,10 +26435,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc77849a3ef2b844d939cf186758e391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1240095941}
-  distance: 50
+  player: {fileID: 1240095946}
+  distance: 10
   castPoint: {fileID: 471840845}
-  ramenSpawnPoint: {fileID: 1722070064}
+  uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
 --- !u!1 &1179447989
 GameObject:
   m_ObjectHideFlags: 0
@@ -28113,7 +28113,7 @@ GameObject:
   - component: {fileID: 1240095942}
   m_Layer: 7
   m_Name: PLAYER
-  m_TagString: Ramen
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28257,13 +28257,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 1
-  m_Radius: 0.63
+  m_Height: 0
+  m_Radius: 0.65
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.0001
   m_MinMoveDistance: 0
-  m_Center: {x: 0, y: -0.6, z: 0}
+  m_Center: {x: 0, y: -0.3, z: 0}
 --- !u!4 &1240095946
 Transform:
   m_ObjectHideFlags: 0
@@ -28272,7 +28272,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1240095941}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -66, y: 2, z: 3}
+  m_LocalPosition: {x: -67.29, y: 2, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -28619,7 +28619,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246375158}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -25.539661, y: -8.68, z: 17.169003}
+  m_LocalPosition: {x: -25.943192, y: -8.68, z: 16.65593}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -30642,7 +30642,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1308377711}
-  m_LocalRotation: {x: -0.044564888, y: 0.95540106, z: -0.20225699, w: -0.21051107}
+  m_LocalRotation: {x: -0.062746085, y: 0.93233955, z: -0.19737491, w: -0.29639357}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -43076,7 +43076,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893674880}
-  m_LocalRotation: {x: -0.01124094, y: 0.9752417, z: -0.051016815, w: -0.21488273}
+  m_LocalRotation: {x: -0.015826922, y: 0.9517012, z: -0.049785383, w: -0.30254868}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -43369,9 +43369,9 @@ MonoBehaviour:
   pelota:
   - {fileID: 2800000, guid: c4e0ff16798a8264cbf12e8ac3879766, type: 3}
   - {fileID: 2800000, guid: b60271d6588ea04478201813aed210fd, type: 3}
-  tiempoMuerte: 1
+  tiempoMuerte: 0
   player: {fileID: 1240095941}
-  script: {fileID: 0}
+  UiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
 --- !u!1 &1916345245
 GameObject:
   m_ObjectHideFlags: 3
@@ -46548,7 +46548,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2122960869}
-  m_LocalRotation: {x: -0.038476992, y: 0.9608353, z: -0.17462724, w: -0.21170844}
+  m_LocalRotation: {x: -0.05417451, y: 0.9376426, z: -0.17041208, w: -0.29807943}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
