@@ -138,6 +138,84 @@
     <None Include="Assets\UI\creditos.uxml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< Updated upstream
+=======
+     <Compile Include="Assets\Scripts\IdleBehavior.cs" />
+     <Compile Include="Assets\Scripts\ScriptEnabler.cs" />
+     <Compile Include="Assets\Scripts\PlayerDetection.cs" />
+     <Compile Include="Assets\Scripts\patrolingNPC.cs" />
+     <Compile Include="Assets\Scripts\PatrollingScript.cs" />
+     <Compile Include="Assets\Scripts\DatosJuego.cs" />
+     <Compile Include="Assets\Scripts\Cuina\TriggerUniqueSpawnPoint.cs" />
+     <Compile Include="Assets\Scripts\ObjectHidder.cs" />
+     <Compile Include="Assets\Scripts\Cuina\Fogones.cs" />
+     <Compile Include="Assets\Scripts\AttackBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Dormitorio\MovimientoRueda.cs" />
+     <Compile Include="Assets\Scripts\CloseDoor.cs" />
+     <Compile Include="Assets\Scripts\TeleChange.cs" />
+     <Compile Include="Assets\Scripts\GuardarCargarPartida.cs" />
+     <Compile Include="Assets\Scripts\CamMovement.cs" />
+     <Compile Include="Assets\Scripts\EtiquetaLookAt.cs" />
+     <Compile Include="Assets\Scripts\NoraMovement.cs" />
+     <Compile Include="Assets\Scripts\ScriptHandler.cs" />
+     <Compile Include="Assets\Scripts\ChispasHandler.cs" />
+     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\objectHandler.cs" />
+     <Compile Include="Assets\Scripts\Cuina\Cafetera.cs" />
+     <Compile Include="Assets\Scripts\UIHANDLE.cs" />
+     <Compile Include="Assets\Scripts\FirstUI.cs" />
+     <Compile Include="Assets\Scripts\EventHandler.cs" />
+     <Compile Include="Assets\Scripts\ControladorDatosJuego.cs" />
+     <Compile Include="Assets\Scripts\DamageScript.cs" />
+     <Compile Include="Assets\Scripts\Dormitorio\TubosJaula.cs" />
+     <Compile Include="Assets\Scripts\TriggerEvent.cs" />
+     <Compile Include="Assets\Scripts\Cuina\RotateDoor.cs" />
+     <Compile Include="Assets\Scripts\TakeObject.cs" />
+     <Compile Include="Assets\Scripts\Cuina\Nevera.cs" />
+     <Compile Include="Assets\Scripts\PrefabNPC\canvasScaler.cs" />
+     <Compile Include="Assets\Scripts\Coin.cs" />
+     <Compile Include="Assets\Scripts\EventManager.cs" />
+     <Compile Include="Assets\Scripts\SpawnParticles.cs" />
+     <Compile Include="Assets\Scripts\CoinGenerator.cs" />
+     <Compile Include="Assets\Scripts\OnTriggerAction.cs" />
+     <Compile Include="Assets\Scripts\OpenDoor.cs" />
+     <Compile Include="Assets\Scripts\MandoScript.cs" />
+     <Compile Include="Assets\Scripts\Cuina\CuchilloSubeBaja.cs" />
+     <Compile Include="Assets\Scripts\WonderBehaviour.cs" />
+     <Compile Include="Assets\Scripts\ReturningScript.cs" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\UI\salir.uxml" />
+     <None Include="Assets\UI\menu-configuracion.uxml" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\UI\dialogo-opciones.uxml" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\UI\stylesheet.uss" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\Skybox\Free Stylized Skybox\ReadMe.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\UI\dialogo.uxml" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\UI\modo-exploracion.uxml" />
+     <None Include="Assets\UI\presentacion-evento.uxml" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\UI\menu-inicio.uxml" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+     <None Include="Assets\UI\historia-inicial.uxml" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+     <None Include="Assets\UI\creditos.uxml" />
+>>>>>>> Stashed changes
     <Reference Include="UnityEngine">
       <HintPath>E:\Unity 2021.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
