@@ -49,9 +49,7 @@ public class PlayerDetection : MonoBehaviour
         {
             playerdetected = true;
             player = other.gameObject;
-          
         }
-
     }
 
     private void OnTriggerExit(Collider other)

@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 raw_movement;
     private CharacterController Cc;
     public Camera cam;
-    private Vector3 movement;
+    public Vector3 movement;
     private float verticalSpeed;
     private float gravity = -20f;
     public float JumpForce = 10f;

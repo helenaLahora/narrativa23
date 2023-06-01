@@ -18,7 +18,6 @@ public class ScriptEnabler : MonoBehaviour
     }
     void Update()
     {
-        Debug.Log(GetComponent<ChispitaFOV>().persuing);
         if (GetComponent<ChispitaFOV>().persuing)
         {
             chispasHandler.enabled = false;
