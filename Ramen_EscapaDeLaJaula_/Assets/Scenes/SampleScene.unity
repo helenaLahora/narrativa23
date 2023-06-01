@@ -28545,6 +28545,7 @@ GameObject:
   - component: {fileID: 1246375160}
   - component: {fileID: 1246375159}
   - component: {fileID: 1246375161}
+  - component: {fileID: 1246375162}
   m_Layer: 0
   m_Name: CAMARA CINEMACHINE
   m_TagString: Cine
@@ -28704,6 +28705,23 @@ MonoBehaviour:
   m_Damping: 0
   m_DampingWhenOccluded: 0
   m_OptimalTargetDistance: 0
+--- !u!114 &1246375162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246375158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 729aad4491e915a41bda2b8325cf757a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FocusTracksTarget: 0
+  m_FocusTracking: 1
+  m_FocusTarget: {fileID: 0}
+  m_FocusOffset: 1
+  m_Profile: {fileID: 11400000, guid: 0f22d2b0146ebb44aa729557db513972, type: 2}
 --- !u!1 &1246421397
 GameObject:
   m_ObjectHideFlags: 0
@@ -32694,7 +32712,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1397783828}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.002}
+  m_LocalPosition: {x: 0, y: 0.00045, z: 0.00194}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34612,7 +34630,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c6f7c195b97cdcc458dd37a8ca596d29, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -26.8
+      value: -51.56
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c6f7c195b97cdcc458dd37a8ca596d29, type: 3}
       propertyPath: m_LocalPosition.y
@@ -39133,7 +39151,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1692250473}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -86.04474, y: -463.67307, z: -241.24367}
+  m_LocalPosition: {x: -35, y: 0, z: -108}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41758,8 +41776,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1240095946}
-  distance: 5
-  castPoint: {fileID: 471840845}
+  distance: 9
+  castPoint: {fileID: 1397783829}
   persuing: 0
 --- !u!1001 &1830784482
 PrefabInstance:
@@ -43462,7 +43480,7 @@ MonoBehaviour:
   pelota:
   - {fileID: 2800000, guid: c4e0ff16798a8264cbf12e8ac3879766, type: 3}
   - {fileID: 2800000, guid: b60271d6588ea04478201813aed210fd, type: 3}
-  tiempoMuerte: 0
+  tiempoMuerte: 30
   player: {fileID: 1240095941}
   UiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
 --- !u!1 &1916345245

@@ -25,7 +25,19 @@ public class ChispitaFOV :MonoBehaviour
                     {
                         DoAction();
                     }
+                    else
+                    {
+                        persuing = false;
+                    }
                 }
+                else
+                {
+                    persuing = false;
+                }
+            }
+            else
+            {
+                persuing = false;
             }
         }
         else
