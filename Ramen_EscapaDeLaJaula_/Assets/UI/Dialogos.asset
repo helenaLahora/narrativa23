@@ -3431,7 +3431,7 @@ MonoBehaviour:
       nodos:
       - tipoNodo: 0
         esPersonaje: 1
-        personaje: Misty
+        personaje: "Rigod\xF3n"
         texto: "Shhhhhh \xA1Ramen! \xA1Vete! No quiero que Emile y Remy me vean..."
         botones:
         - tipoBoton: 0
