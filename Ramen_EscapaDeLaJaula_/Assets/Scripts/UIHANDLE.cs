@@ -47,15 +47,18 @@ public class UIHANDLE : MonoBehaviour
 
     public void StartEvent(string identifier, GameObject playerGameObject)
     {
-        
-        expModo.GetComponent<UIDocument>().rootVisualElement.style.display = DisplayStyle.None;
-        player = playerGameObject;
-        currentEvent = Array.Find(eventManager.eventos, e => e.identifier == identifier);
-        currentDialogue = currentEvent.dialogos[0];
-        currentNodo = currentDialogue.nodos[0];
-        cinemachine.SetActive(false);
+      if (GameObject.FindGameObjectWithTag("UI"))
+        {
+            expModo.GetComponent<UIDocument>().rootVisualElement.style.display = DisplayStyle.None;
+            player = playerGameObject;
+            currentEvent = Array.Find(eventManager.eventos, e => e.identifier == identifier);
+            currentDialogue = currentEvent.dialogos[0];
+            currentNodo = currentDialogue.nodos[0];
+            cinemachine.SetActive(false);
 
-        TypeLine();
+            TypeLine();
+        }
+
 
     }
     void TypeLine()

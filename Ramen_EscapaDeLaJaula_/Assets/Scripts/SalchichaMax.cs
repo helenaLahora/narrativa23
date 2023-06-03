@@ -13,7 +13,6 @@ public class SalchichaMax : MonoBehaviour
 
 	private void Start()
 	{
-		EventHandler.Variables[Variable.salchicha] = 1;
 	}
 
 	private void OnTriggerEnter(Collider other)

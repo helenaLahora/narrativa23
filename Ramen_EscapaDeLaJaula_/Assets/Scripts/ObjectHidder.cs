@@ -15,11 +15,8 @@ public class ObjectHidder : MonoBehaviour
     {
         if (EventHandler.Variables[variable] > valorAComparar)
         {
-            Hide();
+            Destroy(gameObject);
         }
     }
-    public void Hide()
-    {       
-            gameObject.SetActive(false);                
-    }
+    
 }

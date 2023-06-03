@@ -15,6 +15,12 @@ public class ChispitaFOV :MonoBehaviour
 
     void Update()
     {
+        persuing = CheckVariables();
+                    
+    }
+
+    public bool CheckVariables()
+    {
         if (isInRange())
         {
             if (IsSeen())
@@ -23,38 +29,21 @@ public class ChispitaFOV :MonoBehaviour
                 {
                     if (CanSeeRamen())
                     {
-                        DoAction();
+                        return true;
                     }
-                    else
-                    {
-                        persuing = false;
-                    }
+                    return false;
                 }
-                else
-                {
-                    persuing = false;
-                }
+                return false;
             }
-            else
-            {
-                persuing = false;
-            }
+            return false;
         }
-        else
-        {
-            persuing = false;
-        }
+        return false;
     }
-
-    public virtual void DoAction()
-    {
-
-        persuing = true;
-    }
+  
 
     private bool CanSeeRamen()
     {
-        if (Physics.Raycast(castPoint.position, Vector3.forward, distance, LayerMask.NameToLayer("Ramen")))
+        if (Physics.Raycast(castPoint.position, Vector3.forward, distance , LayerMask.NameToLayer("Ramen")))
         {
             return true;
         }

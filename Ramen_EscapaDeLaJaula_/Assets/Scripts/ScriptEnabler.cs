@@ -10,6 +10,7 @@ public class ScriptEnabler : MonoBehaviour
     private PatrollingScript patrollingScript;
     private ChispasHandler chispasHandler;
     private bool startLoosing = false;
+    private bool startpersuing = false;
     private void Start()
     {
         energy = 100f;
@@ -18,23 +19,35 @@ public class ScriptEnabler : MonoBehaviour
     }
     void Update()
     {
-        if (GetComponent<ChispitaFOV>().persuing)
+        if (GetComponent<ChispitaFOV>().persuing && !startpersuing)
         {
-            chispasHandler.enabled = false;
-            patrollingScript.enabled = false;
-            Vector3 enemy = transform.position;
-            Vector3 distance = enemy - new Vector3(player.transform.position.x, enemy.y, player.transform.position.z);
-            transform.Translate(distance - Vector3.forward * 2);
-            patrollingScript.speed = 0;
+            startpersuing = true;
+            StartCoroutine(PersueRamen());
+
+           
             
         }
         else
         {
+            startpersuing = false;
             patrollingScript.speed = 5;
-        }
-        
-        
             EnableScripts();
+        }        
+              
+    }
+
+    private IEnumerator PersueRamen()
+    {
+        patrollingScript.speed = 0;
+        chispasHandler.enabled = false;
+        patrollingScript.enabled = false;
+        while (GetComponent<ChispitaFOV>().persuing)
+        {           
+            Vector3 distance = new Vector3(player.transform.position.x , transform.position.y, player.transform.position.z ) - transform.position ;
+            transform.Translate(distance * Time.deltaTime);
+            yield return null;
+        }
+        yield return new WaitForSeconds(3);
         
     }
 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class FuaVaConMadre : MonoBehaviour
 {
@@ -9,10 +10,12 @@ public class FuaVaConMadre : MonoBehaviour
     [HideInInspector] public bool fuaIsFollowing;
 	private float difference = 2f;
 	private Vector3 movementAux;
+	[SerializeField] private Transform fuaPosition;
+	[SerializeField] private float distance;
 
-	private void FixedUpdate()
+    private void FixedUpdate()
 	{
-		if (EventHandler.Variables[Variable.sigueARamen] == 1)
+		if (EventHandler.Variables[Variable.sigueARamen]>0)
 		{
 			fuaIsFollowing = true;
 		}
@@ -31,6 +34,12 @@ public class FuaVaConMadre : MonoBehaviour
 			transform.position = targetPosition;
 			Quaternion rotacionDeseada = Quaternion.LookRotation(movementAux);
 			transform.rotation = rotacionDeseada;
+			GetComponent<PlayerDetection>().enabled = false;
+			GetComponent<PlayerInput>().enabled = false;
 		}
+		
+
     }
+
+    
 }
