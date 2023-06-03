@@ -3249,6 +3249,73 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7835748015279266049, guid: 5d345bd30f713754eaf062d854a9ffe2, type: 3}
   m_PrefabInstance: {fileID: 155725900}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &159085165
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 159085166}
+  - component: {fileID: 159085167}
+  m_Layer: 5
+  m_Name: UICambioColores
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &159085166
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159085165}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -49.8, y: -12.501004, z: 24}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 611812228}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &159085167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159085165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db2d40f8d09a36049bace923ebcb4f61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiDocument: {fileID: 1912093731}
+  keyedImages:
+  - elementId: w
+    triggerKey: 119
+    tintOnKeyPressColor: {r: 1, g: 0.6, b: 0, a: 1}
+  - elementId: a
+    triggerKey: 97
+    tintOnKeyPressColor: {r: 1, g: 0.6, b: 0, a: 1}
+  - elementId: s
+    triggerKey: 115
+    tintOnKeyPressColor: {r: 1, g: 0.6, b: 0, a: 1}
+  - elementId: d
+    triggerKey: 100
+    tintOnKeyPressColor: {r: 1, g: 0.6, b: 0, a: 1}
+  - elementId: jump
+    triggerKey: 32
+    tintOnKeyPressColor: {r: 1, g: 0.6, b: 0, a: 1}
+  - elementId: talk
+    triggerKey: 102
+    tintOnKeyPressColor: {r: 1, g: 0.6, b: 0, a: 1}
+  - elementId: interact
+    triggerKey: 101
+    tintOnKeyPressColor: {r: 1, g: 0.6, b: 0, a: 1}
 --- !u!1 &161236331
 GameObject:
   m_ObjectHideFlags: 0
@@ -14342,7 +14409,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Pulsa E para dar la salchicha a Max
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 05b92330adc428a469fac2a22d391e25, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -14406,7 +14473,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &555195165
@@ -15611,6 +15678,7 @@ Transform:
   - {fileID: 1837662865}
   - {fileID: 1571054126}
   - {fileID: 1573436270}
+  - {fileID: 159085166}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -43833,7 +43901,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893674880}
-  m_LocalRotation: {x: 0.0033356654, y: 0.9965967, z: -0.05213399, w: 0.06376479}
+  m_LocalRotation: {x: 0.0033356647, y: 0.9965967, z: -0.05213398, w: 0.06376479}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
