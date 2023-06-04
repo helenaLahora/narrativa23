@@ -10,9 +10,13 @@ public class DamageScript : MonoBehaviour
     public float pushForce = 5;
     private Vector3 startingPosition = Vector3.zero;
     [SerializeField] private float pushDuration = 1.0f;
+    [SerializeField] private Image chispitaAtaca;
+
     private void Awake()
     {
-        startingPosition = player.position; 
+        startingPosition = player.position;
+        chispitaAtaca.ActiveSelf(false);
+        chispitaAtaca.Color.a = 0;
     }
  
     private void OnTriggerEnter(Collider other)
@@ -45,6 +49,7 @@ public class DamageScript : MonoBehaviour
         {
             other.gameObject.transform.Translate(Vector3.back * pushForce);
             tiempo += Time.deltaTime;
+            chispitaAtaca.Color.a ++;
             yield return null;
             
         }
