@@ -25,9 +25,9 @@ public class MaxPatrulla : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		//if (df.fuaOnSite)
-		//{
-			salchicha.SetActive(false);
+        if (df.fuaOnSite)
+        {
+            salchicha.SetActive(false);
 
 
 			
@@ -37,9 +37,9 @@ public class MaxPatrulla : MonoBehaviour
 					}
 					CheckRb();
 					Move();
-				
-		//}
-	}
+
+        }
+    }
 
 	private void CheckRb()
 	{
