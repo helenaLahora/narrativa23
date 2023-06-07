@@ -14,7 +14,6 @@ public class DamageScript : MonoBehaviour
     [SerializeField] private Image damageImage;
     private void Awake()
     {
-        EventHandler.Variables[Variable.bolaEjercicio] = 1;
         startingPosition = player.position;
         
     }

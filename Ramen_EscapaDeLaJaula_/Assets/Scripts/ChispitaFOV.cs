@@ -16,7 +16,7 @@ public class ChispitaFOV :MonoBehaviour
     void Update()
     {
         persuing = CheckVariables();
-                    
+        
     }
 
     public bool CheckVariables()

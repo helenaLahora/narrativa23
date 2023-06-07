@@ -109,6 +109,10 @@
     <Compile Include="Assets\Scripts\TimReturning.cs" />
     <Compile Include="Assets\Scripts\TimHandler.cs" />
     <Compile Include="Assets\Scripts\PuertaDialogo.cs" />
+    <Compile Include="Assets\Scripts\MaxPatrulla.cs" />
+    <Compile Include="Assets\Scripts\MaxFov.cs" />
+    <Compile Include="Assets\Scripts\MaxDetection.cs" />
+    <Compile Include="Assets\Scripts\DealDamage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

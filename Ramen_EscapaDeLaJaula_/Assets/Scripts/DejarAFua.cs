@@ -7,6 +7,7 @@ public class DejarAFua : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI dialogoFua;
     [SerializeField] private GameObject fuaGO;
+    [HideInInspector] public bool fuaOnSite;
     private bool isInRange = false;
 
     private void OnTriggerEnter(Collider other)
@@ -34,7 +35,8 @@ public class DejarAFua : MonoBehaviour
             EventHandler.Variables[Variable.sigueARamen] = 0;
             Debug.Log("Hola");
             fuaGO.GetComponent<FuaVaConMadre>().fuaIsFollowing = false;
-            
+            fuaOnSite = true;
+
             fuaGO.transform.position = transform.position;
             fuaGO.transform.rotation = transform.rotation;
         }
