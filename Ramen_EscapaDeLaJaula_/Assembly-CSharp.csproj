@@ -67,7 +67,7 @@
     <Compile Include="Assets\Scripts\ObjectHidder.cs" />
     <Compile Include="Assets\Scripts\Cuina\Fogones.cs" />
     <Compile Include="Assets\Scripts\AttackBehaviour.cs" />
-    <Compile Include="Assets\DejarAFua.cs" />
+    <Compile Include="Assets\Scripts\DejarAFua.cs" />
     <Compile Include="Assets\Scripts\Dormitorio\MovimientoRueda.cs" />
     <Compile Include="Assets\Scripts\CloseDoor.cs" />
     <Compile Include="Assets\Scripts\TeleChange.cs" />
@@ -106,6 +106,9 @@
     <Compile Include="Assets\Scripts\Cuina\CuchilloSubeBaja.cs" />
     <Compile Include="Assets\Scripts\WonderBehaviour.cs" />
     <Compile Include="Assets\Scripts\ReturningScript.cs" />
+    <Compile Include="Assets\Scripts\TimReturning.cs" />
+    <Compile Include="Assets\Scripts\TimHandler.cs" />
+    <Compile Include="Assets\Scripts\PuertaDialogo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

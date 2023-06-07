@@ -15569,10 +15569,10 @@ MonoBehaviour:
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: NPC
+  m_DefaultActionMap: Objects
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &605840963
+--- !u!114 &605840966
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15581,11 +15581,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 605840957}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c925c39f5eb2e94fbee80eacf7ec2dc, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b4c16ec7a284644fb25db8d1aef00c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerdetected: 0
-  talk: 0
   uiPrefab: {fileID: 4515434479105990404, guid: e1e3c38d371efe140b52db9fa6872883, type: 3}
   nombreEvento: Evento_SalidaSalon
 --- !u!1001 &606258991
@@ -23236,7 +23234,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.3718351, y: -0.3077765, z: 0.13218698, w: 0.86575913}
+  m_LocalRotation: {x: 0.37183508, y: -0.30777642, z: 0.13218693, w: 0.8657592}
   m_LocalPosition: {x: -31.0057, y: 6.4105244, z: 5.8517942}
   m_LocalScale: {x: 5.8691506, y: 5.8691516, z: 5.8691506}
   m_ConstrainProportionsScale: 0
@@ -27954,6 +27952,36 @@ MonoBehaviour:
   minDistance: 1
   speed: 3
   pd: {fileID: 1181780132}
+--- !u!114 &1181780135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181780127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f6439c86d4cb26439fb0bc25cc8d9ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1181780136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181780127}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0802907a75033348b16d9c5eacecf45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wayPoints:
+  - {fileID: 478388987}
+  - {fileID: 424907315}
+  minDistance: 1
+  speed: 3
+  pd: {fileID: 1181780132}
 --- !u!1001 &1183159810
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31740,7 +31768,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1308377711}
-  m_LocalRotation: {x: 0.39664164, y: -0.3038373, z: 0.14100565, w: 0.85467875}
+  m_LocalRotation: {x: 0.39664167, y: -0.30383733, z: 0.14100565, w: 0.85467875}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -47857,7 +47885,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2122960869}
-  m_LocalRotation: {x: 0.37183508, y: -0.30777645, z: 0.13218696, w: 0.8657592}
+  m_LocalRotation: {x: 0.37183505, y: -0.3077764, z: 0.13218695, w: 0.8657592}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
